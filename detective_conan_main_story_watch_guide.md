@@ -12,7 +12,7 @@
 
 ## Quick notes
 
-Use **original Japanese episode numbers** and watch in order. Services may split long specials; match by title when numbers differ. Movies are optional.
+Use **original Japanese episode numbers** and watch in order. Services may split long specials; match by title when numbers differ. Movies are optional. [Browse the complete movie checklist](detective_conan_movies.md).
 
 This fan-curated route follows the central story and its prerequisites, not every manga-canon case. Selection reviewed through episode 1212; the final included episode is 1205. Titles and source pages can contain spoilers.
 

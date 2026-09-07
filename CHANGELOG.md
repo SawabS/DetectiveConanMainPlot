@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-07: Complete movie library
+
+- Added Movies to desktop/mobile navigation and the keyboard-accessible view tabs. Direct links to `#movies` open the library.
+- Added 29 released main films plus six crossover, compilation, and 3D short entries, with original release dates, available runtimes, individual sources, and credited covers.
+- Added title/number/year search, category/status filters, date sorting, and separate movie progress with import/export.
+- Added a generated movie Markdown checklist and source dataset.
+
 ## 2026-09-07: Local grid deformation and aligned controls
 
 - Replaced whole-grid translation with a soft deformation confined to 140px around the pointer. The patch relaxes in place when the pointer leaves.

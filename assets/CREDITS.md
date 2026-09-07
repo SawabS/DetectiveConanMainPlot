@@ -13,3 +13,7 @@
 ## Typography and icon
 
 DM Sans and Space Grotesk are requested from Google Fonts with system fallbacks. The letter-based favicon was made for this project.
+
+## Movie library artwork
+
+The movie cards display promotional thumbnails from the [TMS official Detective Conan catalog](https://www.tms-e.co.jp/global/alltitles/conan/). Each image and its originating film page are recorded in [data/movies.json](../data/movies.json). The 2024 Kid compilation uses the existing Conan moonlight visual credited above. The two 3D shorts use a text cover. All third-party artwork belongs to its respective rights holders and is outside the code license.

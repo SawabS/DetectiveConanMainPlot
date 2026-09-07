@@ -9,7 +9,7 @@
   const filters = { query: '', arc: 0, rating: 0, status: 'all', sort: 'episode', hideTitles: false };
   let watched = new Set();
   let activeEpisode = null;
-  let graph = null;
+  let graph = null, movies = null;
   let activeView = 'list';
   let noticeTimer;
   let storageReady = true;
@@ -204,7 +204,7 @@
     if (event.key === '/' && !event.ctrlKey && !event.metaKey && !event.altKey &&
       !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName) &&
       !document.activeElement.isContentEditable && !document.querySelector('dialog[open]')) {
-      event.preventDefault(); $('search').focus();
+      event.preventDefault(); $(activeView === 'movies' ? 'movie-search' : activeView === 'graph' ? 'graph-search' : 'search').focus();
     }
   });
   window.addEventListener('storage', event => {
@@ -216,6 +216,7 @@
     activeView = view;
     $('watchlist').hidden = view !== 'list';
     $('story-map').hidden = view !== 'graph';
+    $('movies').hidden = view !== 'movies';
     document.querySelectorAll('[data-view]').forEach(button => {
       button.setAttribute('aria-selected', String(button.dataset.view === view));
       button.tabIndex = button.dataset.view === view ? 0 : -1;
@@ -227,14 +228,17 @@
         onViewEpisode: n => { history.replaceState(null, '', `#episode-${n}`); goToEpisode(n); } });
     }
     if (view === 'graph') graph.update();
-    if (updateHash) history.replaceState(null, '', view === 'graph' ? '#story-map' : '#watchlist');
+    if (view === 'movies' && !movies) movies = window.createConanMovies({ notice });
+    if (updateHash) history.replaceState(null, '', { list: '#watchlist', graph: '#story-map', movies: '#movies' }[view]);
   }
   document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => switchView(button.dataset.view)));
   document.querySelector('.view-tabs').addEventListener('keydown', event => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
     event.preventDefault();
-    const view = event.key === 'Home' ? 'list' : event.key === 'End' ? 'graph' : activeView === 'list' ? 'graph' : 'list';
-    switchView(view); $(view === 'list' ? 'list-tab' : 'graph-tab').focus();
+    const views = ['list', 'graph', 'movies'];
+    const index = event.key === 'Home' ? 0 : event.key === 'End' ? views.length - 1 :
+      (views.indexOf(activeView) + (event.key === 'ArrowRight' ? 1 : -1) + views.length) % views.length;
+    switchView(views[index]); $(`${views[index]}-tab`).focus();
   });
   document.querySelectorAll('[data-view-link]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault(); switchView(link.dataset.viewLink);
@@ -245,6 +249,7 @@
     if (match) goToEpisode(Number(match[1]), true);
     else if (location.hash === '#story-map') switchView('graph', false);
     else if (location.hash === '#watchlist') switchView('list', false);
+    else if (location.hash === '#movies') switchView('movies', false);
   }
   window.addEventListener('hashchange', handleHash);
   $('total-count').textContent = episodes.length;

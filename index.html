@@ -4,16 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071225">
-  <meta name="description" content="A focused Detective Conan main-story watchlist. Track episodes, explore nine arcs, and check individually sourced IMDb ratings.">
+  <meta name="description" content="A focused Detective Conan main-story watchlist. Track episodes and movies, explore nine arcs, and check individually sourced episode IMDb ratings.">
   <title>Conan Casebook | The Main Story</title>
   <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
   <script src="assets/theme.js"></script>
-  <link rel="stylesheet" href="assets/style.css?v=4">
+  <link rel="stylesheet" href="assets/style.css?v=5">
   <script src="assets/episodes.js" defer></script>
   <script src="assets/core.js" defer></script>
   <script src="assets/graph-core.js" defer></script>
   <script src="assets/graph.js" defer></script>
-  <script src="assets/app.js" defer></script>
+  <script src="assets/movies-data.js" defer></script>
+  <script src="assets/movies-core.js" defer></script>
+  <script src="assets/movies.js" defer></script>
+  <script src="assets/app.js?v=5" defer></script>
   <script src="assets/grid-core.js" defer></script>
   <script src="assets/presentation.js?v=4" defer></script>
 </head>
@@ -25,6 +28,7 @@
     <nav aria-label="Main navigation">
       <a class="nav-active" href="#watchlist" data-view-link="list">Watchlist</a>
       <a href="#story-map" data-view-link="graph">Story map</a>
+      <a href="#movies" data-view-link="movies">Movies</a>
       <a class="nav-guide" href="detective_conan_main_story_watch_guide.md">Guide</a>
     </nav>
     <div class="nav-tools">
@@ -50,9 +54,10 @@
       <div><strong id="total-count">255</strong><span>selected episodes</span></div><div><strong>09</strong><span>story arcs</span></div><div><strong id="rated-count">255</strong><span>IMDb ratings</span></div><div class="overview-date"><strong>07 SEP 2026</strong><span>ratings snapshot</span></div>
     </div>
     <div class="view-bar">
-      <div class="view-tabs" role="tablist" aria-label="Explore episodes">
+      <div class="view-tabs" role="tablist" aria-label="Explore the casebook">
         <button id="list-tab" role="tab" aria-selected="true" aria-controls="watchlist" data-view="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h12M9 12h12M9 18h12M3 6h.01M3 12h.01M3 18h.01"/></svg>Watchlist</button>
         <button id="graph-tab" role="tab" aria-selected="false" aria-controls="story-map" tabindex="-1" data-view="graph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="3"/><circle cx="19" cy="6" r="3"/><circle cx="12" cy="19" r="3"/><path d="M8 6h8M6.5 8.5l4 8M17.5 8.5l-4 8"/></svg>Story map<span class="tab-count">255</span></button>
+        <button id="movies-tab" role="tab" aria-selected="false" aria-controls="movies" tabindex="-1" data-view="movies"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg>Movies<span class="tab-count">35</span></button>
       </div>
       <span class="view-caption">Every clue has its place.</span>
     </div>
@@ -90,6 +95,23 @@
       </div>
       <div class="graph-legend"><span><i class="legend-node"></i>Episode</span><span><i class="legend-hub"></i>Arc</span><span><i class="legend-watched" aria-hidden="true"><svg viewBox="-7 -7 14 14"><path d="M-3.5 0-1.3 2.5 3.5-2.5"/></svg></i>Watched</span><span><i class="legend-edge"></i>Arc watch order</span><span>Node size: IMDb rating</span></div>
       <p id="graph-status" class="graph-status" role="status" aria-live="polite">255 episodes across nine arcs.</p>
+    </section>
+    <section id="movies" class="movies-panel" role="tabpanel" aria-labelledby="movies-tab" hidden>
+      <div class="movie-heading">
+        <div><p class="eyebrow">THE SCREENING ROOM</p><h2>Every film.<br> One casebook.</h2><p>29 main films + 6 extras, in release order.</p></div>
+        <div class="movie-progress"><p id="movie-progress-text">0 of 35 watched</p><progress id="movie-progress-bar" max="35" value="0" aria-label="Movies watched"></progress><small id="movie-storage-note">Saved on this device.</small><div class="movie-backups"><button id="movie-export" class="text-button">Export progress ↗</button><button id="movie-import" class="text-button">Import progress ↙</button><input id="movie-import-file" type="file" accept=".json,application/json" hidden></div></div>
+      </div>
+      <div class="movie-toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="movie-search" type="search" placeholder="Search title, film number, or year" aria-label="Search movies by title, number, or year" autocomplete="off"></label>
+        <label><span class="sr-only">Movie category</span><select id="movie-category"><option value="all">All films</option><option value="main">Main films (29)</option><option value="crossover">Crossover (1)</option><option value="compilation">Compilations (3)</option><option value="short">3D shorts (2)</option></select></label>
+        <label><span class="sr-only">Movie watch status</span><select id="movie-status"><option value="all">Any status</option><option value="unwatched">Unwatched</option><option value="watched">Watched</option></select></label>
+        <label><span class="sr-only">Sort movies</span><select id="movie-sort"><option value="release">Release order</option><option value="newest">Newest first</option></select></label>
+      </div>
+      <div class="results-meta"><p id="movie-result-count" role="status" aria-live="polite" tabindex="-1">35 films</p><a href="detective_conan_movies.md">Full movie checklist ↗</a></div>
+      <div id="movie-grid" class="movie-grid"></div>
+      <div id="movie-empty" class="empty-state" hidden><h3>No matching films.</h3><p>Try another title, year, or category.</p><button id="movie-clear" class="button quiet">Clear filters</button></div>
+      <div class="movie-sources"><p id="movie-reviewed">Catalog checked 7 September 2026. Japanese release dates. TV specials, OVAs, and unreleased films are excluded.</p><p><a href="https://www.detectiveconanworld.com/wiki/Movies" target="_blank" rel="noopener noreferrer">Detective Conan World ↗</a> · <a href="https://www.tms-e.co.jp/global/alltitles/conan/" target="_blank" rel="noopener noreferrer">TMS official catalog ↗</a> · <a href="data/movies.json">Movie data ↗</a></p><p>Artwork belongs to its respective rights holders. Image sources are recorded in the movie data.</p></div>
+      <noscript><p><a href="detective_conan_movies.md">Read the complete movie checklist</a>.</p></noscript>
     </section>
     <footer><a class="footer-brand" href="#">CONAN CASEBOOK <span>↑</span></a><p>Created by <a class="creator-credit" href="https://github.com/SawabS" target="_blank" rel="noopener noreferrer">SawabS ↗</a><span class="footer-separator"> / </span>Unofficial fan project.</p><button class="text-button" id="credits-button">Artwork credits</button></footer>
   </main>

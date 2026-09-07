@@ -16,6 +16,12 @@ Open [index.html](index.html) in a browser, or read the [Markdown guide](detecti
 - Navigate graph nodes with arrow keys, select with Enter/Space, zoom with +/−, and reset with Home. Colors identify arcs; check marks identify watched episodes. Node size reflects the episode's IMDb rating. Dashed links indicate arc watch order, not inferred plot relationships.
 - The faint blue grid bends locally around the pointer with a soft, delayed response. Toggle the effect with the motion button. System reduced-motion settings take precedence; animation stops when idle or the page is hidden.
 
+## Movies
+
+Open **Movies** in the navbar or visit the [movie library](https://sawabs.github.io/DetectiveConanMainPlot/#movies). It covers 29 released main films, one theatrical crossover, three compilations, and two 3D shorts, checked 7 September 2026. Search by title, film number, or year; filter by category and watch status; sort by release date. Movie progress has its own local storage and import/export controls.
+
+The [movie checklist](detective_conan_movies.md) and browser catalog are generated from [data/movies.json](data/movies.json), with individual sources and artwork credits. External covers load on demand and retain a readable fallback if unavailable.
+
 ## Run
 
 Download the repository and open `index.html`. No installation or server is required. The artwork and episode data are bundled; web fonts fall back to system fonts offline. Source links require internet access.
@@ -32,6 +38,7 @@ python3 scripts/build.py --check  # Detect stale generated files
 node --test tests/core.test.js    # Check filtering, progress, and data integrity
 node --test tests/graph.test.js   # Check graph coverage, camera bounds, and theme fallback
 node --test tests/grid.test.js    # Check local deformation bounds and return to rest
+node --test tests/movies.test.js  # Check film coverage, filtering, and movie backups
 python3 scripts/refresh_ratings.py # Download updated scores for the same IDs
 ```
 
