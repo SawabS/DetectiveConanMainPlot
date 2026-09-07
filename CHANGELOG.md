@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-07: Clearer glass and interactive grid
+
+- Removed the solid theme-button background, including on hover. Lowered navigation fill to 22% with a lighter blur.
+- Replaced particles with a blue grid that gently follows the pointer and lights up nearby lines. Reduced the pointer glow from 600px to 160px.
+- Added a smooth return to rest on pointer leave. Motion controls, reduced-motion preferences, and idle suspension remain supported.
+
 ## 2026-09-07: Blue themes and story map
 
 - Removed the favicon's dot and changed interface accents from red to Conan blue.

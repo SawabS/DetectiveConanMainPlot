@@ -6,7 +6,7 @@
   --ink: #e8f2ff; --muted: #a2b4cf; --line: #294160; --accent: #71b9ff;
   --accent-strong: #3c97f2; --accent-soft: #133762; --on-accent: #071b33;
   --gold: #eac781; --green: #8cdaca; --blue: #8fc9ff;
-  --glass: rgb(9 26 48 / .60); --glass-solid: #10223b; --shadow: 0 20px 70px #0003;
+  --glass: rgb(9 26 48 / .22); --glass-solid: #10223b; --shadow: 0 20px 70px #0003;
   --graph-bg: #08172c; --graph-grid: #244568; --node-outline: #0a1930;
   --ambient-rgb: 82, 159, 239; --hero-edge: #193151;
   --font: 'DM Sans', system-ui, sans-serif; --display: 'Space Grotesk', system-ui, sans-serif;
@@ -17,7 +17,7 @@
   --ink: #112b4a; --muted: #4a6381; --line: #c8d8ec; --accent: #1766b8;
   --accent-strong: #1265bd; --accent-soft: #dfedff; --on-accent: #fff;
   --gold: #805514; --green: #16766b; --blue: #155faf;
-  --glass: rgb(247 251 255 / .63); --glass-solid: #f7fbff; --shadow: 0 18px 65px #285ca31a;
+  --glass: rgb(247 251 255 / .22); --glass-solid: #f7fbff; --shadow: 0 18px 65px #285ca31a;
   --graph-bg: #f9fcff; --graph-grid: #aac5e4; --node-outline: #f9fcff;
   --ambient-rgb: 37, 113, 201; --hero-edge: #bed6ef;
 }
@@ -36,11 +36,24 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .skip-link { position: fixed; top: -80px; left: 20px; z-index: 100; background: var(--accent); color: var(--on-accent); padding: 12px; }
 .skip-link:focus { top: 10px; }
 .ambient { position: fixed; inset: 0; overflow: hidden; z-index: -1; pointer-events: none; }
-.ambient canvas { display: block; width: 100%; height: 100%; opacity: .6; }
-.pointer-light { position: absolute; inset: 0; background: radial-gradient(600px circle at var(--pointer-x, 50%) var(--pointer-y, 15%), rgba(var(--ambient-rgb), .13), transparent 70%); }
+/* A blueprint grid with a small, pointer-lit patch. All layers ignore input. */
+.ambient-grid, .grid-highlight {
+  position: absolute; inset: -48px;
+  background-image: linear-gradient(rgba(var(--ambient-rgb), .10) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--ambient-rgb), .10) 1px, transparent 1px), linear-gradient(rgba(var(--ambient-rgb), .06) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--ambient-rgb), .06) 1px, transparent 1px);
+  background-size: 48px 48px, 48px 48px, 192px 192px, 192px 192px;
+  transform: translate3d(var(--grid-x, 0px), var(--grid-y, 0px), 0);
+}
+.grid-highlight {
+  background-image: linear-gradient(rgba(var(--ambient-rgb), .42) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--ambient-rgb), .42) 1px, transparent 1px);
+  mask-image: radial-gradient(150px circle at calc(var(--pointer-x, 50%) + 48px - var(--grid-x, 0px)) calc(var(--pointer-y, 50%) + 48px - var(--grid-y, 0px)), #000, transparent 85%);
+  -webkit-mask-image: radial-gradient(150px circle at calc(var(--pointer-x, 50%) + 48px - var(--grid-x, 0px)) calc(var(--pointer-y, 50%) + 48px - var(--grid-y, 0px)), #000, transparent 85%);
+}
+.pointer-light { position: absolute; inset: 0; background: radial-gradient(160px circle at var(--pointer-x, 50%) var(--pointer-y, 50%), rgba(var(--ambient-rgb), .08), transparent 75%); }
+.grid-highlight, .pointer-light { opacity: 0; transition: opacity .25s ease; }
+[data-pointer-active='true'] .grid-highlight, [data-pointer-active='true'] .pointer-light { opacity: 1; }
 
 /* A single floating, translucent navigation surface. */
-.topbar { position: sticky; top: 14px; z-index: 30; max-width: 1280px; width: calc(100% - 48px); margin: 14px auto 0; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--glass); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 8px 35px #00102a12; backdrop-filter: blur(22px) saturate(160%); -webkit-backdrop-filter: blur(22px) saturate(160%); }
+.topbar { position: sticky; top: 14px; z-index: 30; max-width: 1280px; width: calc(100% - 48px); margin: 14px auto 0; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--glass); border: 1px solid rgba(var(--ambient-rgb), .19); border-radius: 16px; box-shadow: 0 8px 35px #00102a09; backdrop-filter: blur(14px) saturate(125%); -webkit-backdrop-filter: blur(14px) saturate(125%); }
 .brand { display: flex; align-items: center; gap: 12px; font: 700 16px/1.05 var(--display); letter-spacing: 2px; }
 .brand-symbol { font: bold 42px/.9 Georgia, serif; color: var(--accent); }
 .brand-sub { display: block; font: 500 10px/1.7 var(--font); letter-spacing: 3.7px; color: var(--muted); }
@@ -50,7 +63,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 9px; border: 1px solid transparent; border-radius: 11px; background: transparent; color: var(--muted); }
 .icon-button:hover { color: var(--accent); background: var(--accent-soft); border-color: var(--line); }
 .icon-button svg, .view-tabs svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.theme-toggle { border-color: var(--line); background: var(--panel); color: var(--accent); }
+.nav-tools .icon-button { background: transparent; transition: color .18s, border-color .18s; }
+.nav-tools .icon-button:hover { background: transparent; border-color: rgba(var(--ambient-rgb), .3); }
+.nav-tools .icon-button svg { transition: transform .2s ease; }
+.nav-tools .icon-button:hover:not(:disabled) svg { transform: rotate(-10deg) scale(1.08); }
+.theme-toggle { color: var(--accent); }
 .moon-icon, .motion-slash { display: none; }
 [data-theme='light'] .moon-icon { display: block; }
 [data-theme='light'] .sun-icon { display: none; }
@@ -414,5 +431,6 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
   html { scroll-behavior: auto; }
   *, *:before, *:after { transition: none !important; animation: none !important; }
   .hero-art { transform: none; }
-  .pointer-light { display: none; }
+  .pointer-light, .grid-highlight { display: none; }
+  .ambient-grid { transform: none; }
 }

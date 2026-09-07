@@ -14,7 +14,7 @@ Open [index.html](index.html) in a browser, or read the [Markdown guide](detecti
 - Switch between blue light and dark themes with the sun/moon button. Your choice is saved; the first visit follows your system theme.
 - Explore the **Story map**: select an arc or episode, drag with a mouse or pen, zoom with the buttons, or use Ctrl/Command + wheel. Touch users can select arcs, search for an episode, and use the zoom controls while retaining normal page scrolling.
 - Navigate graph nodes with arrow keys, select with Enter/Space, zoom with +/−, and reset with Home. Colors identify arcs; check marks identify watched episodes. Node size reflects the episode's IMDb rating. Dashed links indicate arc watch order, not inferred plot relationships.
-- Toggle the pointer-responsive background with the motion button. System reduced-motion settings take precedence; animation stops when idle or the page is hidden.
+- Toggle the pointer-responsive blue grid with the motion button. System reduced-motion settings take precedence; animation stops when idle or the page is hidden.
 
 ## Run
 
