@@ -16,8 +16,6 @@ Download the repository and open `index.html`. No installation or server is requ
 
 For a stable local origin, run `python3 -m http.server 8000` and open `http://localhost:8000`. Progress is browser-local; switching browsers, origins, or devices does not transfer it. Export a backup before moving or clearing browser data.
 
-To host on GitHub Pages, choose **Settings → Pages → Deploy from a branch → main → / (root)** after merging. The site uses relative paths and supports a repository subpath.
-
 ## Maintain
 
 `data/episodes.json` is the source of truth. It contains the reviewed selections, Japanese titles, original dates, source URLs, IMDb IDs, translated titles, mapping notes, scores, votes, and check dates.
