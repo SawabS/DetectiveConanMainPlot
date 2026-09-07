@@ -3,38 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090f20">
+  <meta name="theme-color" content="#071225">
   <meta name="description" content="A focused Detective Conan main-story watchlist. Track episodes, explore nine arcs, and check individually sourced IMDb ratings.">
   <title>Conan Casebook | The Main Story</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+  <script src="assets/theme.js"></script>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/episodes.js" defer></script>
   <script src="assets/core.js" defer></script>
+  <script src="assets/graph-core.js" defer></script>
+  <script src="assets/graph.js" defer></script>
   <script src="assets/app.js" defer></script>
+  <script src="assets/presentation.js" defer></script>
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"><canvas id="ambient-canvas"></canvas><div class="pointer-light"></div></div>
   <a class="skip-link" href="#watchlist">Skip to watchlist</a>
   <header class="topbar">
-    <a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">C<span>.</span></span><span>CONAN<span class="brand-sub">CASEBOOK</span></span></a>
-    <nav aria-label="Main navigation"><a class="nav-active" href="#watchlist">The main story</a><a href="detective_conan_main_story_watch_guide.md">Markdown guide</a><a href="https://github.com/SawabS/DetectiveConanMainPlot" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+    <a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">C</span><span>CONAN<span class="brand-sub">CASEBOOK</span></span></a>
+    <nav aria-label="Main navigation">
+      <a class="nav-active" href="#watchlist" data-view-link="list">Watchlist</a>
+      <a href="#story-map" data-view-link="graph">Story map</a>
+      <a class="nav-guide" href="detective_conan_main_story_watch_guide.md">Guide</a>
+    </nav>
+    <div class="nav-tools">
+      <button id="motion-toggle" class="icon-button" aria-label="Turn off background motion" aria-pressed="true" title="Background motion">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="5" transform="rotate(-35 12 12)"/><path class="motion-slash" d="m3 3 18 18"/></svg>
+      </button>
+      <button id="theme-toggle" class="icon-button theme-toggle" aria-label="Switch to light theme" title="Switch theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></svg>
+      </button>
+      <a class="icon-button github-icon" href="https://github.com/SawabS" target="_blank" rel="noopener noreferrer" aria-label="SawabS on GitHub" title="Created by SawabS">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7m12 5v-3.3c0-.9.1-1.4-.4-2 3-.3 6.1-1.5 6.1-6.8a5.3 5.3 0 0 0-1.4-3.7c.1-.4.6-1.8-.2-3.6 0 0-1.2-.4-3.9 1.4a13.5 13.5 0 0 0-7 0C5.5 1.5 4.3 1.9 4.3 1.9c-.8 1.8-.3 3.2-.2 3.6a5.3 5.3 0 0 0-1.4 3.7c0 5.3 3.1 6.5 6.1 6.8-.4.4-.7 1-.7 2v3.3"/></svg>
+      </a>
+    </div>
   </header>
   <main class="page">
     <section class="hero" aria-labelledby="hero-title">
       <img class="hero-art" src="assets/conan-moon.jpg" alt="Conan Edogawa standing above the city under a full moon" width="704" height="396" fetchpriority="high">
-      <div class="hero-copy"><p class="eyebrow"><span class="red-line"></span>DETECTIVE CONAN / MAIN STORY</p><h1 id="hero-title">One truth.<br><span>Follow the clues.</span></h1><p class="hero-description">The essential story, one episode at a time.</p><a class="button primary" href="#watchlist">Open the casebook <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-copy"><p class="eyebrow"><span class="accent-line"></span>DETECTIVE CONAN / MAIN STORY</p><h1 id="hero-title">One truth.<br>Follow the clues.</h1><p class="hero-description">The essential story, one episode at a time.</p><a class="button primary" href="#watchlist">Open the casebook <span aria-hidden="true">↓</span></a></div>
       <div class="hero-caption" aria-hidden="true">FILE 001 / THE INVESTIGATION BEGINS</div>
     </section>
     <div class="overview" aria-label="Watchlist overview">
       <div><strong id="total-count">255</strong><span>selected episodes</span></div><div><strong>09</strong><span>story arcs</span></div><div><strong id="rated-count">255</strong><span>IMDb ratings</span></div><div class="overview-date"><strong>07 SEP 2026</strong><span>ratings snapshot</span></div>
     </div>
-    <section id="watchlist" class="workspace" aria-label="Episode watchlist">
+    <div class="view-bar">
+      <div class="view-tabs" role="tablist" aria-label="Explore episodes">
+        <button id="list-tab" role="tab" aria-selected="true" aria-controls="watchlist" data-view="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h12M9 12h12M9 18h12M3 6h.01M3 12h.01M3 18h.01"/></svg>Watchlist</button>
+        <button id="graph-tab" role="tab" aria-selected="false" aria-controls="story-map" tabindex="-1" data-view="graph"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="3"/><circle cx="19" cy="6" r="3"/><circle cx="12" cy="19" r="3"/><path d="M8 6h8M6.5 8.5l4 8M17.5 8.5l-4 8"/></svg>Story map<span class="tab-count">255</span></button>
+      </div>
+      <span class="view-caption">Every clue has its place.</span>
+    </div>
+    <section id="watchlist" class="workspace" role="tabpanel" aria-labelledby="list-tab">
       <aside class="sidebar">
         <section class="progress-card" aria-labelledby="progress-title"><div class="progress-ring" id="progress-ring"><span id="progress-percent">0%</span></div><h2 id="progress-title">Your investigation</h2><p id="progress-text">0 of 255 watched</p><progress id="progress-bar" max="255" value="0" aria-label="Episodes watched"></progress><p class="local-note" id="storage-note">Saved on this device.</p><button id="continue-button" class="button continue">Continue with #001 <span aria-hidden="true">↗</span></button></section>
         <div class="section-label">STORY ARCS <button id="clear-arc" class="text-button" hidden>Clear</button></div><nav id="arc-list" class="arc-list" aria-label="Filter by story arc"></nav>
         <div class="backup-controls"><button id="export-button" class="text-button">Export progress ↗</button><button id="import-button" class="text-button">Import progress ↙</button><input type="file" id="import-file" accept=".json,application/json" hidden><button id="reset-button" class="text-button muted">Reset progress</button></div>
       </aside>
       <div class="case-list">
-        <div class="list-heading"><div><p class="eyebrow">THE CASE FILES</p><h2>Pick up the trail<span class="red-dot">.</span></h2></div><button id="sources-button" class="button quiet">Sources & notes ↗</button></div>
+        <div class="list-heading"><div><p class="eyebrow">THE CASE FILES</p><h2>Pick up the trail<span class="accent-dot">.</span></h2></div><button id="sources-button" class="button quiet">Sources & notes ↗</button></div>
         <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search episode number or title" aria-label="Search episode number or title" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><label class="hide-titles"><input type="checkbox" id="hide-titles">Hide titles</label></div>
         <div class="filter-row"><div class="status-tabs" role="group" aria-label="Watch status"><button type="button" data-status="all" aria-pressed="true">All files</button><button type="button" data-status="unwatched" aria-pressed="false">Unwatched</button><button type="button" data-status="watched" aria-pressed="false">Watched</button></div><div class="selects"><label><span class="sr-only">Minimum IMDb rating</span><select id="rating-filter"><option value="0">Any rating</option><option value="8">★ 8.0+</option><option value="9">★ 9.0+</option></select></label><label><span class="sr-only">Sort episodes</span><select id="sort"><option value="episode">Story order</option><option value="rating">Highest rated</option></select></label></div></div>
         <div class="results-meta"><p id="result-count" role="status" aria-live="polite">255 episodes</p><span>Original Japanese numbering</span></div>
@@ -44,7 +72,25 @@
         <noscript><p>This interactive watchlist needs JavaScript. <a href="detective_conan_main_story_watch_guide.md">Read the complete Markdown guide</a>.</p></noscript>
       </div>
     </section>
-    <footer><a class="footer-brand" href="#">CONAN CASEBOOK <span>↑</span></a><p>Fan-curated. Unofficial. Made for the story.</p><button class="text-button" id="credits-button">Artwork credits</button></footer>
+    <section id="story-map" class="graph-panel" role="tabpanel" aria-labelledby="graph-tab" hidden>
+      <div class="graph-heading"><div><h2>A constellation of clues</h2><p>Each dot is an episode. Each constellation is an arc.</p></div><label class="hide-titles"><input type="checkbox" id="graph-hide-titles">Hide titles</label></div>
+      <div class="graph-toolbar">
+        <label class="graph-arc-picker"><span class="sr-only">Focus on a story arc</span><select id="graph-arc"><option value="0">All nine arcs</option></select></label>
+        <label class="graph-search"><span class="sr-only">Find an episode in the graph</span><input id="graph-search" type="search" inputmode="numeric" placeholder="Episode #" aria-label="Find an episode in the graph"><button id="graph-find" class="text-button">Find</button></label>
+        <div class="graph-zoom" role="group" aria-label="Graph zoom"><button id="zoom-out" class="icon-button" aria-label="Zoom out">−</button><output id="zoom-label" aria-live="polite">100%</output><button id="zoom-in" class="icon-button" aria-label="Zoom in">+</button><button id="graph-fit" class="button quiet">Fit all</button></div>
+      </div>
+      <div class="graph-layout">
+        <div class="graph-stage" id="graph-stage">
+          <svg id="story-graph" viewBox="0 0 1200 1000" aria-labelledby="graph-svg-title graph-svg-description" tabindex="0"><title id="graph-svg-title">Detective Conan arc and episode map</title><desc id="graph-svg-description">Nine arc clusters with one node per selected episode. Select a node for details. Use arrow keys to move between nodes, plus and minus to zoom, and Home to fit all. Drag the empty canvas to pan. Use the episode search or arc selector as an alternative.</desc><g id="graph-world"></g></svg>
+          <p class="graph-hint">Drag to explore · + / − to zoom · Select a node</p>
+          <div class="graph-watermark" aria-hidden="true">The main story<br><span>001 → 1205</span></div>
+        </div>
+        <aside class="graph-inspector" id="graph-inspector" aria-label="Selected arc or episode"><div id="graph-card"></div></aside>
+      </div>
+      <div class="graph-legend"><span><i class="legend-node"></i>Episode</span><span><i class="legend-hub"></i>Arc</span><span><i class="legend-watched">✓</i>Watched</span><span><i class="legend-edge"></i>Arc watch order</span><span>Node size: IMDb rating</span></div>
+      <p id="graph-status" class="graph-status" role="status" aria-live="polite">255 episodes across nine arcs.</p>
+    </section>
+    <footer><a class="footer-brand" href="#">CONAN CASEBOOK <span>↑</span></a><p>Created by <a class="creator-credit" href="https://github.com/SawabS" target="_blank" rel="noopener noreferrer">SawabS ↗</a><span class="footer-separator"> / </span>Unofficial fan project.</p><button class="text-button" id="credits-button">Artwork credits</button></footer>
   </main>
   <div id="notice" class="toast" role="status" aria-live="polite" hidden></div>
   <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><p class="eyebrow" id="detail-number"></p><button class="close-button" data-close aria-label="Close episode details">×</button></div><h2 id="detail-title"></h2><div id="detail-content"></div><button class="button primary" id="detail-watch"></button></dialog>

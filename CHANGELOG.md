@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-07: Blue themes and story map
+
+- Removed the favicon's dot and changed interface accents from red to Conan blue.
+- Added complete light/dark themes, a persisted sun/moon switch, system-theme fallback, translucent navigation, and a reduced-transparency fallback.
+- Added a pointer-responsive background and subtle artwork parallax, with a motion toggle, reduced-motion support, and no continuous idle animation.
+- Added the Story map: 255 episode nodes grouped into nine arcs, category colors, rating-based node sizes, watched markers, cards, pan/zoom, arc focus, episode search, and keyboard controls.
+- Shared progress and title hiding between the watchlist and map. Added a GitHub credit for SawabS and a direct link to the live site.
+
 ## 2026-09-07
 
 - Unified the guide into one chronological table with one episode per row and a table of contents.

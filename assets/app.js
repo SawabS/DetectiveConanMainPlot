@@ -9,6 +9,8 @@
   const filters = { query: '', arc: 0, rating: 0, status: 'all', sort: 'episode', hideTitles: false };
   let watched = new Set();
   let activeEpisode = null;
+  let graph = null;
+  let activeView = 'list';
   let noticeTimer;
   let storageReady = true;
   const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -62,6 +64,7 @@
       return `<button class="arc-button" data-arc="${a.id}" aria-pressed="${filters.arc === a.id}" aria-label="${escape(name)}, ${done} of ${members.length} watched"><span class="arc-number">${String(a.id).padStart(2, '0')}</span><span>${escape(name)}</span><span class="arc-count">${done}/${members.length}</span></button>`;
     }).join('');
     $('clear-arc').hidden = !filters.arc;
+    graph?.update();
   }
   function renderList(focusEpisode) {
     const selected = selectEpisodes(episodes, watched, filters);
@@ -81,7 +84,7 @@
       </tr>`;
     }).join('');
     document.querySelectorAll('[data-status]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.status === filters.status)));
-    if (focusEpisode) {
+    if (focusEpisode && activeView === 'list' && !$('detail-dialog').open) {
       const checkbox = document.querySelector(`[data-watch="${focusEpisode}"]`);
       if (checkbox) checkbox.focus({ preventScroll: true });
       else $('result-count').focus({ preventScroll: true });
@@ -116,6 +119,7 @@
   }
   function goToEpisode(n, detail = false) {
     if (!byId.has(n)) return;
+    switchView('list', false);
     clearFilters();
     const row = $(`episode-${n}`);
     row.classList.add('target-row');
@@ -128,17 +132,27 @@
   $('episode-list').addEventListener('click', event => {
     const button = event.target.closest('[data-detail]');
     if (button) showDetails(Number(button.dataset.detail));
+    const link = event.target.closest('.ep-number');
+    if (link) {
+      event.preventDefault();
+      const n = Number(link.getAttribute('href').split('-').at(-1));
+      history.replaceState(null, '', `#episode-${n}`); goToEpisode(n, true);
+    }
   });
   $('detail-watch').addEventListener('click', () => setWatched(activeEpisode, !watched.has(activeEpisode)));
   $('search').addEventListener('input', event => { filters.query = event.target.value; renderList(); });
   $('rating-filter').addEventListener('change', event => { filters.rating = Number(event.target.value); renderList(); });
   $('sort').addEventListener('change', event => { filters.sort = event.target.value; renderList(); });
-  $('hide-titles').checked = filters.hideTitles;
-  $('hide-titles').addEventListener('change', event => {
-    filters.hideTitles = event.target.checked;
-    $('search').placeholder = filters.hideTitles ? 'Search episode number' : 'Search episode number or title';
+  function setHideTitles(hidden) {
+    filters.hideTitles = hidden;
+    $('hide-titles').checked = hidden;
+    $('graph-hide-titles').checked = hidden;
+    $('search').placeholder = hidden ? 'Search episode number' : 'Search episode number or title';
     save(); render();
-  });
+  }
+  $('hide-titles').checked = filters.hideTitles;
+  $('graph-hide-titles').checked = filters.hideTitles;
+  $('hide-titles').addEventListener('change', event => setHideTitles(event.target.checked));
   $('search').placeholder = filters.hideTitles ? 'Search episode number' : 'Search episode number or title';
   document.querySelectorAll('[data-status]').forEach(b => b.addEventListener('click', () => { filters.status = b.dataset.status; renderList(); }));
   $('arc-list').addEventListener('click', event => {
@@ -198,9 +212,39 @@
     try { watched = event.newValue ? readProgress(event.newValue, episodes) : new Set(); render(); }
     catch { notice('Another tab saved unreadable progress. This tab kept its current progress.'); }
   });
+  function switchView(view, updateHash = true) {
+    activeView = view;
+    $('watchlist').hidden = view !== 'list';
+    $('story-map').hidden = view !== 'graph';
+    document.querySelectorAll('[data-view]').forEach(button => {
+      button.setAttribute('aria-selected', String(button.dataset.view === view));
+      button.tabIndex = button.dataset.view === view ? 0 : -1;
+    });
+    document.querySelectorAll('[data-view-link]').forEach(link => link.classList.toggle('nav-active', link.dataset.viewLink === view));
+    if (view === 'graph' && !graph) {
+      graph = window.createConanGraph({ data, getWatched: () => watched, getHideTitles: () => filters.hideTitles,
+        onWatch: setWatched, onDetails: showDetails, onHideTitles: setHideTitles,
+        onViewEpisode: n => { history.replaceState(null, '', `#episode-${n}`); goToEpisode(n); } });
+    }
+    if (view === 'graph') graph.update();
+    if (updateHash) history.replaceState(null, '', view === 'graph' ? '#story-map' : '#watchlist');
+  }
+  document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => switchView(button.dataset.view)));
+  document.querySelector('.view-tabs').addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const view = event.key === 'Home' ? 'list' : event.key === 'End' ? 'graph' : activeView === 'list' ? 'graph' : 'list';
+    switchView(view); $(view === 'list' ? 'list-tab' : 'graph-tab').focus();
+  });
+  document.querySelectorAll('[data-view-link]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault(); switchView(link.dataset.viewLink);
+    document.querySelector('.view-bar').scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }));
   function handleHash() {
     const match = location.hash.match(/^#episode-(\d+)$/);
     if (match) goToEpisode(Number(match[1]), true);
+    else if (location.hash === '#story-map') switchView('graph', false);
+    else if (location.hash === '#watchlist') switchView('list', false);
   }
   window.addEventListener('hashchange', handleHash);
   $('total-count').textContent = episodes.length;
