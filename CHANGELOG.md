@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-07: Local grid deformation and aligned controls
+
+- Replaced whole-grid translation with a soft deformation confined to 140px around the pointer. The patch relaxes in place when the pointer leaves.
+- Reduced the base grid opacity by roughly half and retained the small blue hover glow.
+- Centered graph zoom icons and watched legend marks with SVG geometry. Replaced font-dependent checkbox ticks with a centered CSS shape.
+
 ## 2026-09-07: Clearer glass and interactive grid
 
 - Removed the solid theme-button background, including on hover. Lowered navigation fill to 22% with a lighter blur.
