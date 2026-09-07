@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090f20">
+  <meta name="description" content="A focused Detective Conan main-story watchlist. Track episodes, explore nine arcs, and check individually sourced IMDb ratings.">
+  <title>Conan Casebook | The Main Story</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/episodes.js" defer></script>
+  <script src="assets/core.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#watchlist">Skip to watchlist</a>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">C<span>.</span></span><span>CONAN<span class="brand-sub">CASEBOOK</span></span></a>
+    <nav aria-label="Main navigation"><a class="nav-active" href="#watchlist">The main story</a><a href="detective_conan_main_story_watch_guide.md">Markdown guide</a><a href="https://github.com/SawabS/DetectiveConanMainPlot" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  </header>
+  <main class="page">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-art" src="assets/conan-moon.jpg" alt="Conan Edogawa standing above the city under a full moon" width="704" height="396" fetchpriority="high">
+      <div class="hero-copy"><p class="eyebrow"><span class="red-line"></span>DETECTIVE CONAN / MAIN STORY</p><h1 id="hero-title">One truth.<br><span>Follow the clues.</span></h1><p class="hero-description">The essential story, one episode at a time.</p><a class="button primary" href="#watchlist">Open the casebook <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-caption" aria-hidden="true">FILE 001 / THE INVESTIGATION BEGINS</div>
+    </section>
+    <div class="overview" aria-label="Watchlist overview">
+      <div><strong id="total-count">255</strong><span>selected episodes</span></div><div><strong>09</strong><span>story arcs</span></div><div><strong id="rated-count">255</strong><span>IMDb ratings</span></div><div class="overview-date"><strong>07 SEP 2026</strong><span>ratings snapshot</span></div>
+    </div>
+    <section id="watchlist" class="workspace" aria-label="Episode watchlist">
+      <aside class="sidebar">
+        <section class="progress-card" aria-labelledby="progress-title"><div class="progress-ring" id="progress-ring"><span id="progress-percent">0%</span></div><h2 id="progress-title">Your investigation</h2><p id="progress-text">0 of 255 watched</p><progress id="progress-bar" max="255" value="0" aria-label="Episodes watched"></progress><p class="local-note" id="storage-note">Saved on this device.</p><button id="continue-button" class="button continue">Continue with #001 <span aria-hidden="true">↗</span></button></section>
+        <div class="section-label">STORY ARCS <button id="clear-arc" class="text-button" hidden>Clear</button></div><nav id="arc-list" class="arc-list" aria-label="Filter by story arc"></nav>
+        <div class="backup-controls"><button id="export-button" class="text-button">Export progress ↗</button><button id="import-button" class="text-button">Import progress ↙</button><input type="file" id="import-file" accept=".json,application/json" hidden><button id="reset-button" class="text-button muted">Reset progress</button></div>
+      </aside>
+      <div class="case-list">
+        <div class="list-heading"><div><p class="eyebrow">THE CASE FILES</p><h2>Pick up the trail<span class="red-dot">.</span></h2></div><button id="sources-button" class="button quiet">Sources & notes ↗</button></div>
+        <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search episode number or title" aria-label="Search episode number or title" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><label class="hide-titles"><input type="checkbox" id="hide-titles">Hide titles</label></div>
+        <div class="filter-row"><div class="status-tabs" role="group" aria-label="Watch status"><button type="button" data-status="all" aria-pressed="true">All files</button><button type="button" data-status="unwatched" aria-pressed="false">Unwatched</button><button type="button" data-status="watched" aria-pressed="false">Watched</button></div><div class="selects"><label><span class="sr-only">Minimum IMDb rating</span><select id="rating-filter"><option value="0">Any rating</option><option value="8">★ 8.0+</option><option value="9">★ 9.0+</option></select></label><label><span class="sr-only">Sort episodes</span><select id="sort"><option value="episode">Story order</option><option value="rating">Highest rated</option></select></label></div></div>
+        <div class="results-meta"><p id="result-count" role="status" aria-live="polite">255 episodes</p><span>Original Japanese numbering</span></div>
+        <div class="table-wrap"><table class="episode-table"><caption class="sr-only">Selected main-story episodes with individual IMDb ratings and watch status</caption><thead><tr><th scope="col"><span class="sr-only">Watched</span></th><th scope="col">EP.</th><th scope="col">CASE FILE</th><th scope="col" class="arc-column">ARC</th><th scope="col">IMDb <span>/10</span></th><th scope="col"><span class="sr-only">Sources and episode details</span></th></tr></thead><tbody id="episode-list"></tbody></table></div>
+        <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>No clues here.</h3><p>Try another title, episode number, or filter.</p><button class="button primary" id="clear-filters">Clear filters</button></div>
+        <p class="list-footnote">Ratings checked 7 September 2026. Titles and linked sources may reveal story details.</p>
+        <noscript><p>This interactive watchlist needs JavaScript. <a href="detective_conan_main_story_watch_guide.md">Read the complete Markdown guide</a>.</p></noscript>
+      </div>
+    </section>
+    <footer><a class="footer-brand" href="#">CONAN CASEBOOK <span>↑</span></a><p>Fan-curated. Unofficial. Made for the story.</p><button class="text-button" id="credits-button">Artwork credits</button></footer>
+  </main>
+  <div id="notice" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><p class="eyebrow" id="detail-number"></p><button class="close-button" data-close aria-label="Close episode details">×</button></div><h2 id="detail-title"></h2><div id="detail-content"></div><button class="button primary" id="detail-watch"></button></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-top"><p class="eyebrow">THE PAPER TRAIL</p><button class="close-button" data-close aria-label="Close sources">×</button></div><h2 id="sources-title">Every episode. A source.</h2><p>255 selections preserved from the original guide's main table. IMDb scores belong to individual episodes, with title, year, and part checked against Japanese numbering.</p><ul class="source-list"><li><a href="https://www.detectiveconanworld.com/wiki/Anime" target="_blank" rel="noopener noreferrer">Detective Conan World ↗</a><span>Episode titles, original broadcasts, and case pages.</span></li><li><a href="https://www.xerblade.com/p/detective-conan-important-episode-list.html" target="_blank" rel="noopener noreferrer">XerBlade's episode guide ↗</a><span>Background for the original guide's main-plot selection.</span></li><li><a href="https://developer.imdb.com/non-commercial-datasets/" target="_blank" rel="noopener noreferrer">IMDb non-commercial datasets ↗</a><span>Title IDs, episode metadata, weighted ratings, and votes. Snapshot: 7 September 2026.</span></li><li><a href="data/episodes.json">Full episode data ↗</a><span>Each mapping, source link, rating, vote count, and check date.</span></li></ul><p class="dialog-note">Movies are optional. Watch multipart cases in order. Streaming services may split specials and change the numbering.</p></dialog>
+  <dialog id="credits-dialog" aria-labelledby="credits-title"><div class="dialog-top"><p class="eyebrow">ARTWORK</p><button class="close-button" data-close aria-label="Close credits">×</button></div><h2 id="credits-title">Moonlight over Beika.</h2><p>Promotional key visual for <em>Detective Conan vs. Kid the Phantom Thief</em> (2024).</p><p>© 青山剛昌／小学館・読売テレビ・TMS 2024. Artwork belongs to its respective rights holders; it is not covered by a code license.</p><p><a href="https://www.animeclick.it/news/101509-anime-preview-trailer-e-novita-per-detective-conan-remonster-e-altri-anime" target="_blank" rel="noopener noreferrer">Image source: AnimeClick ↗</a></p></dialog>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">Start a new investigation?</h2><p>This clears watched episodes on this device. Export a backup first if you want to keep them.</p><div class="dialog-actions"><button class="button quiet" data-close>Keep progress</button><button class="button danger" id="confirm-reset">Reset progress</button></div></dialog>
+</body>
+</html>
