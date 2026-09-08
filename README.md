@@ -22,6 +22,18 @@ Open **Movies** in the navbar or visit the [movie library](https://sawabs.github
 
 The [movie checklist](detective_conan_movies.md) and browser catalog are generated from [data/movies.json](data/movies.json), with individual sources and artwork credits. External covers load on demand and retain a readable fallback if unavailable.
 
+## Analytics
+
+Open [Analytics](https://sawabs.github.io/DetectiveConanMainPlot/#analytics) to explore all **255 distinct main-story episodes** and **35 films**:
+
+- Select an individual rating or duration bar to inspect its sources and vote count.
+- Compare arc medians, rating distributions, and Japanese releases by year.
+- Filter by arc/category, release year, progress, rating band, and minimum votes.
+- Plan remaining viewing time with your saved progress and a daily time budget.
+- Hide titles, navigate charts with the keyboard, or export filtered rows as CSV.
+
+All 255 episodes and 33 films have IMDb scores. Two shorts have no verified IMDb match. Episode durations are **TVmaze broadcast listings**, which may include advertising. They support planning, not exact streaming-time claims. See [methodology and data coverage](data/analytics-methodology.md).
+
 ## Run
 
 Download the repository and open `index.html`. No installation or server is required. The artwork and episode data are bundled; web fonts fall back to system fonts offline. Source links require internet access.
@@ -35,6 +47,7 @@ For a stable local origin, run `python3 -m http.server 8000` and open `http://lo
 ```sh
 python3 scripts/build.py          # Generate Markdown and browser data
 python3 scripts/build.py --check  # Detect stale generated files
+node --test tests/analytics.test.js # Check analytics calculations and source coverage
 node --test tests/core.test.js    # Check filtering, progress, and data integrity
 node --test tests/graph.test.js   # Check graph coverage, camera bounds, and theme fallback
 node --test tests/grid.test.js    # Check local deformation bounds and return to rest
@@ -42,12 +55,12 @@ node --test tests/movies.test.js  # Check film coverage, filtering, and movie ba
 python3 scripts/refresh_ratings.py # Download updated scores for the same IDs
 ```
 
-Review new episode mappings by title, broadcast year, and part. Never infer IMDb IDs from Japanese numbering or reuse a rating across a case. The refresh script changes scores only. See [CHANGELOG](CHANGELOG.md) for the initial corrections.
+Review new episode mappings by title, broadcast year, and part. Never infer IMDb IDs from Japanese numbering or reuse a rating across a case. The refresh script updates episode and movie scores, votes, and check dates without changing reviewed IDs. See [CHANGELOG](CHANGELOG.md) for the initial corrections.
 
 The UI uses native HTML, CSS, SVG, and Pointer Events without a front-end framework. The shared palette covers tables, controls, dialogs, navigation, and the graph in both themes. Implementation references: [MDN theme preferences](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme), [backdrop filtering](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter), and [Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events). Visual direction was informed by the [Frontend Design skill](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md).
 
 ## Sources and credits
 
-[Detective Conan World](https://www.detectiveconanworld.com/wiki/Anime) for episode metadata. [XerBlade](https://www.xerblade.com/p/detective-conan-important-episode-list.html) for the original guide's selection background. [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/) for episode metadata and ratings; their terms apply to IMDb data. Ratings are dated snapshots, not live scores.
+[Detective Conan World](https://www.detectiveconanworld.com/wiki/Anime) for episode metadata. [XerBlade](https://www.xerblade.com/p/detective-conan-important-episode-list.html) for central-story cases and prerequisites. [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/) for episode metadata and ratings; their terms apply to IMDb data. Ratings are dated snapshots, not live scores. [TVmaze](https://www.tvmaze.com/) supplies broadcast-duration listings under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the adapted TVmaze duration fields retain that license.
 
 The [Conan rooftop key visual](https://www.animeclick.it/news/101509-anime-preview-trailer-e-novita-per-detective-conan-remonster-e-altri-anime) promotes *Detective Conan vs. Kid the Phantom Thief* (2024). © 青山剛昌／小学館・読売テレビ・TMS 2024. No open license was identified for this image. See [asset credits](assets/CREDITS.md). This is an unofficial fan project, with no affiliation or endorsement.

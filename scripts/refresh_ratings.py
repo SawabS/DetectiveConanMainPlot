@@ -14,7 +14,10 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     path = ROOT / 'data/episodes.json'
     data = json.loads(path.read_text())
-    wanted = {e['imdb']['id'] for e in data['episodes']}
+    movie_path = ROOT / 'data/movies.json'
+    movie_data = json.loads(movie_path.read_text())
+    entries = data['episodes'] + movie_data['movies']
+    wanted = {e['imdb']['id'] for e in entries if e.get('imdb', {}).get('id')}
     ratings = {}
     with urllib.request.urlopen(data['sources']['imdbRatings'], timeout=60) as response:
         stream = io.TextIOWrapper(gzip.GzipFile(fileobj=response), encoding='utf-8')
@@ -30,17 +33,21 @@ def main():
     if not ratings:
         raise ValueError('No mapped IMDb records returned. Existing data was not changed.')
     checked = datetime.now(timezone.utc).date().isoformat()
-    for episode in data['episodes']:
-        imdb = episode['imdb']
+    for entry in entries:
+        imdb = entry['imdb']
+        if not imdb['id']:
+            continue
         imdb['rating'], imdb['votes'] = ratings.get(imdb['id'], (None, None))
         imdb['checked'] = checked
     data['updated'] = checked
-    temporary = path.with_suffix('.json.tmp')
-    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
-    temporary.replace(path)
+    movie_data['ratingsUpdated'] = checked
+    for target, content in [(path, data), (movie_path, movie_data)]:
+        temporary = target.with_suffix('.json.tmp')
+        temporary.write_text(json.dumps(content, ensure_ascii=False, indent=2) + '\n')
+        temporary.replace(target)
     from build import main as build
     build()
-    print(f'Refreshed {len(ratings)} of {len(wanted)} ratings. Episode selection and IMDb mappings unchanged.')
+    print(f'Refreshed {len(ratings)} of {len(wanted)} mapped episode and movie ratings.')
 
 
 if __name__ == '__main__':

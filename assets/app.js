@@ -9,7 +9,7 @@
   const filters = { query: '', arc: 0, rating: 0, status: 'all', sort: 'episode', hideTitles: false };
   let watched = new Set();
   let activeEpisode = null;
-  let graph = null, movies = null;
+  let graph = null, movies = null, analytics = null;
   let activeView = 'list';
   let noticeTimer;
   let storageReady = true;
@@ -65,6 +65,7 @@
     }).join('');
     $('clear-arc').hidden = !filters.arc;
     graph?.update();
+    if (analytics && activeView === 'analytics') analytics.render();
   }
   function renderList(focusEpisode) {
     const selected = selectEpisodes(episodes, watched, filters);
@@ -107,8 +108,8 @@
     $('detail-number').textContent = `CASE FILE ${padded(n)} / ARC ${String(e.arc).padStart(2, '0')}`;
     $('detail-title').textContent = title(e);
     $('detail-content').innerHTML = `<div class="detail-stats"><div><strong>★ ${e.imdb.rating === null ? 'N/A' : e.imdb.rating.toFixed(1)}</strong><span>IMDb / 10</span></div><div><strong>${(e.imdb.votes ?? 0).toLocaleString()}</strong><span>votes in this snapshot</span></div></div>
-      <dl class="detail-data"><dt>Broadcast</dt><dd>${escape(e.airDate)}</dd><dt>IMDb entry</dt><dd>S${e.imdb.season} · E${e.imdb.episode} · ${e.imdb.id}</dd>${filters.hideTitles ? '' : `<dt>IMDb title</dt><dd>${escape(e.imdb.title)}</dd>`}<dt>Checked</dt><dd>${escape(e.imdb.checked)}</dd><dt>Priority</dt><dd>${e.priority === 'SETUP' ? 'Setup for later story developments' : 'Core story selection'}</dd></dl>
-      <div class="detail-links"><a href="${escape(e.source)}" ${external}>Episode source ↗</a><a href="${imdbUrl(e)}" ${external}>IMDb ↗</a><a href="${escape(e.selectionSource)}" ${external}>Selection history ↗</a></div><p class="dialog-note">Source pages may contain spoilers. This is a dated rating, not a live score.</p>`;
+      <dl class="detail-data"><dt>Broadcast</dt><dd>${escape(e.airDate)}</dd><dt>Listed duration</dt><dd><a href="${escape(e.runtimeSource)}" ${external}>${e.runtimeMinutes} min · broadcast listing ↗</a></dd><dt>IMDb entry</dt><dd>S${e.imdb.season} · E${e.imdb.episode} · ${e.imdb.id}</dd>${filters.hideTitles ? '' : `<dt>IMDb title</dt><dd>${escape(e.imdb.title)}</dd>`}<dt>Checked</dt><dd>${escape(e.imdb.checked)}</dd><dt>Priority</dt><dd>${e.priority === 'SETUP' ? 'Setup for later story developments' : 'Core story selection'}</dd></dl>
+      <div class="detail-links"><a href="${escape(e.source)}" ${external}>Episode source ↗</a><a href="${imdbUrl(e)}" ${external}>IMDb ↗</a></div><p class="dialog-note">Source pages may contain spoilers. This is a dated rating, not a live score.</p>`;
     updateDetailWatch();
     if (!$('detail-dialog').open) $('detail-dialog').showModal();
   }
@@ -204,10 +205,17 @@
     if (event.key === '/' && !event.ctrlKey && !event.metaKey && !event.altKey &&
       !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName) &&
       !document.activeElement.isContentEditable && !document.querySelector('dialog[open]')) {
-      event.preventDefault(); $(activeView === 'movies' ? 'movie-search' : activeView === 'graph' ? 'graph-search' : 'search').focus();
+      event.preventDefault(); $(activeView === 'analytics' ? 'analytics-search' : activeView === 'movies' ? 'movie-search' : activeView === 'graph' ? 'graph-search' : 'search').focus();
     }
   });
   window.addEventListener('storage', event => {
+    if (event.key === `${STORAGE_KEY}:hide-titles`) {
+      filters.hideTitles = event.newValue === 'true';
+      $('hide-titles').checked = filters.hideTitles;
+      render();
+      if (activeEpisode && $('detail-dialog').open) showDetails(activeEpisode);
+      return;
+    }
     if (event.key !== STORAGE_KEY) return;
     try { watched = event.newValue ? readProgress(event.newValue, episodes) : new Set(); render(); }
     catch { notice('Another tab saved unreadable progress. This tab kept its current progress.'); }
@@ -217,6 +225,8 @@
     $('watchlist').hidden = view !== 'list';
     $('story-map').hidden = view !== 'graph';
     $('movies').hidden = view !== 'movies';
+    $('analytics').hidden = view !== 'analytics';
+    const tooltip = $('analytics-tooltip'); if (tooltip) tooltip.hidden = true;
     document.querySelectorAll('[data-view]').forEach(button => {
       button.setAttribute('aria-selected', String(button.dataset.view === view));
       button.tabIndex = button.dataset.view === view ? 0 : -1;
@@ -229,13 +239,15 @@
     }
     if (view === 'graph') graph.update();
     if (view === 'movies' && !movies) movies = window.createConanMovies({ notice });
-    if (updateHash) history.replaceState(null, '', { list: '#watchlist', graph: '#story-map', movies: '#movies' }[view]);
+    if (view === 'analytics' && !analytics) analytics = window.createConanAnalytics({ getEpisodeWatched: () => watched, getMovieWatched: () => movies?.getWatched(), getHideTitles: () => filters.hideTitles, onHideTitles: setHideTitles, onEpisode: showDetails, notice });
+    if (view === 'analytics') analytics.render();
+    if (updateHash) history.replaceState(null, '', { list: '#watchlist', graph: '#story-map', movies: '#movies', analytics: '#analytics' }[view]);
   }
   document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => switchView(button.dataset.view)));
   document.querySelector('.view-tabs').addEventListener('keydown', event => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
     event.preventDefault();
-    const views = ['list', 'graph', 'movies'];
+    const views = ['list', 'graph', 'movies', 'analytics'];
     const index = event.key === 'Home' ? 0 : event.key === 'End' ? views.length - 1 :
       (views.indexOf(activeView) + (event.key === 'ArrowRight' ? 1 : -1) + views.length) % views.length;
     switchView(views[index]); $(`${views[index]}-tab`).focus();
@@ -250,9 +262,11 @@
     else if (location.hash === '#story-map') switchView('graph', false);
     else if (location.hash === '#watchlist') switchView('list', false);
     else if (location.hash === '#movies') switchView('movies', false);
+    else if (location.hash === '#analytics') switchView('analytics', false);
   }
   window.addEventListener('hashchange', handleHash);
   $('total-count').textContent = episodes.length;
+  document.querySelector('#sources-dialog h2 + p').textContent = `${episodes.length} main-story episodes across ${data.arcs.length} arcs, listed in Japanese broadcast order. Each IMDb score is matched to its episode by title, release year, and part number.`;
   $('rated-count').textContent = episodes.filter(e => e.imdb.rating !== null).length;
   document.querySelector('.overview-date strong').textContent = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(snapshot).toUpperCase();
   document.querySelector('.list-footnote').textContent = `Ratings checked ${snapshotDate}. Titles and linked sources may reveal story details.`;

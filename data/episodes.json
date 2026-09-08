@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "coverageThrough": 1212,
   "selectionCount": 255,
   "arcs": [
@@ -46,7 +46,10 @@
     "imdbEpisodes": "https://datasets.imdbws.com/title.episode.tsv.gz",
     "imdbTitles": "https://datasets.imdbws.com/title.basics.tsv.gz",
     "imdbRatings": "https://datasets.imdbws.com/title.ratings.tsv.gz",
-    "imdbDocumentation": "https://developer.imdb.com/non-commercial-datasets/"
+    "imdbDocumentation": "https://developer.imdb.com/non-commercial-datasets/",
+    "episodeDurations": "https://api.tvmaze.com/shows/5429/episodes",
+    "durationNote": "TVmaze listed broadcast durations, which may include advertising. Use as a planning budget, not exact streaming playback time. TVmaze data is CC BY-SA; durations are mapped to Japanese numbering and their individual sources.",
+    "durationLicense": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
   "episodes": [
     {
@@ -65,9 +68,17 @@
         "year": 1996,
         "rating": 8.1,
         "votes": 727,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329154/meitantei-conan-1996-01-08-roller-coaster-murder-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329154
     },
     {
       "episode": 2,
@@ -85,9 +96,17 @@
         "year": 1996,
         "rating": 7.5,
         "votes": 514,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329155/meitantei-conan-1996-01-15-company-presidents-daughter-kidnapping-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329155
     },
     {
       "episode": 7,
@@ -105,9 +124,17 @@
         "year": 1996,
         "rating": 7.7,
         "votes": 390,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329160/meitantei-conan-1996-02-19-once-a-month-present-threat-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329160
     },
     {
       "episode": 13,
@@ -125,9 +152,17 @@
         "year": 1996,
         "rating": 7.2,
         "votes": 332,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329166/meitantei-conan-1996-04-01-the-strange-person-hunt-murder-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and exact title; TVmaze date differs from the episode source",
+      "tvmazeId": 329166
     },
     {
       "episode": 43,
@@ -145,9 +180,17 @@
         "year": 1997,
         "rating": 8.5,
         "votes": 345,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329196/meitantei-conan-1997-01-13-conan-edogawa-kidnapping-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329196
     },
     {
       "episode": 48,
@@ -165,9 +208,17 @@
         "year": 1997,
         "rating": 8.2,
         "votes": 296,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329201/meitantei-conan-1997-02-17-diplomat-murder-case-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329201
     },
     {
       "episode": 49,
@@ -185,9 +236,17 @@
         "year": 1997,
         "rating": 8.5,
         "votes": 312,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329202/meitantei-conan-1997-02-24-diplomat-murder-case-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329202
     },
     {
       "episode": 50,
@@ -205,9 +264,17 @@
         "year": 1997,
         "rating": 8.1,
         "votes": 289,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329203/meitantei-conan-1997-03-03-library-murder-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329203
     },
     {
       "episode": 54,
@@ -225,9 +292,17 @@
         "year": 1997,
         "rating": 7.4,
         "votes": 226,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329207/meitantei-conan-1997-04-14-game-company-murder-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329207
     },
     {
       "episode": 57,
@@ -245,9 +320,17 @@
         "year": 1997,
         "rating": 8.2,
         "votes": 276,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 25,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329210/meitantei-conan-1997-05-05-holmes-freak-murder-case-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329210
     },
     {
       "episode": 58,
@@ -265,9 +348,17 @@
         "year": 1997,
         "rating": 8.4,
         "votes": 282,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": 24,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329211/meitantei-conan-1997-05-12-holmes-freak-murder-case-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329211
     },
     {
       "episode": 128,
@@ -285,9 +376,17 @@
         "year": 1998,
         "rating": 7.7,
         "votes": 192,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329281/meitantei-conan-1998-12-14-the-black-organization-one-billion-yen-robbery-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329281
     },
     {
       "episode": 129,
@@ -305,9 +404,17 @@
         "year": 1999,
         "rating": 8.8,
         "votes": 274,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 93,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329282/meitantei-conan-1999-01-04-the-girl-from-the-black-organization-and-the-university-professor-murder-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329282
     },
     {
       "episode": 170,
@@ -325,9 +432,17 @@
         "year": 1999,
         "rating": 6.8,
         "votes": 132,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329323/meitantei-conan-1999-11-29-the-blind-spot-in-the-darkness-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329323
     },
     {
       "episode": 171,
@@ -345,9 +460,17 @@
         "year": 1999,
         "rating": 6.9,
         "votes": 133,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329324/meitantei-conan-1999-12-06-the-blind-spot-in-the-darkness-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329324
     },
     {
       "episode": 176,
@@ -365,9 +488,17 @@
         "year": 2000,
         "rating": 8.1,
         "votes": 196,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329329/meitantei-conan-2000-01-17-reunion-with-the-black-organization-haibara-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329329
     },
     {
       "episode": 177,
@@ -385,9 +516,17 @@
         "year": 2000,
         "rating": 8.3,
         "votes": 199,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329330/meitantei-conan-2000-01-24-reunion-with-the-black-organization-conan-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329330
     },
     {
       "episode": 178,
@@ -405,9 +544,17 @@
         "year": 2000,
         "rating": 8.6,
         "votes": 213,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329331/meitantei-conan-2000-01-31-reunion-with-the-black-organization-resolution-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329331
     },
     {
       "episode": 188,
@@ -425,9 +572,17 @@
         "year": 2000,
         "rating": 7.7,
         "votes": 156,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329341/meitantei-conan-2000-05-01-the-desperate-revival-the-cavern-of-the-detective-boys",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329341
     },
     {
       "episode": 189,
@@ -445,9 +600,17 @@
         "year": 2000,
         "rating": 8.1,
         "votes": 158,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329342/meitantei-conan-2000-05-08-the-desperate-revival-the-wounded-great-detective",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329342
     },
     {
       "episode": 190,
@@ -465,9 +628,17 @@
         "year": 2000,
         "rating": 8.0,
         "votes": 163,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329343/meitantei-conan-2000-05-15-the-desperate-revival-the-third-choice",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329343
     },
     {
       "episode": 191,
@@ -485,9 +656,17 @@
         "year": 2000,
         "rating": 7.8,
         "votes": 166,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329344/meitantei-conan-2000-05-22-the-desperate-revival-the-black-knight",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329344
     },
     {
       "episode": 192,
@@ -505,9 +684,17 @@
         "year": 2000,
         "rating": 8.3,
         "votes": 164,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329345/meitantei-conan-2000-05-29-the-desperate-revival-shinichis-return",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329345
     },
     {
       "episode": 193,
@@ -525,9 +712,17 @@
         "year": 2000,
         "rating": 8.4,
         "votes": 165,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329346/meitantei-conan-2000-06-05-the-desperate-revival-the-promised-place",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329346
     },
     {
       "episode": 219,
@@ -545,9 +740,17 @@
         "year": 2001,
         "rating": 8.3,
         "votes": 206,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 120,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329372/meitantei-conan-2001-01-08-the-gathering-of-the-detectives-shinichi-kudo-vs-kaitou-kid",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329372
     },
     {
       "episode": 226,
@@ -565,9 +768,17 @@
         "year": 2001,
         "rating": 7.0,
         "votes": 117,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329379/meitantei-conan-2001-02-26-the-battle-game-trap-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329379
     },
     {
       "episode": 227,
@@ -585,9 +796,17 @@
         "year": 2001,
         "rating": 7.2,
         "votes": 117,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329380/meitantei-conan-2001-03-05-the-battle-game-trap-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329380
     },
     {
       "episode": 230,
@@ -605,9 +824,17 @@
         "year": 2001,
         "rating": 8.1,
         "votes": 165,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329383/meitantei-conan-2001-04-16-the-mysterious-passenger-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329383
     },
     {
       "episode": 231,
@@ -625,9 +852,17 @@
         "year": 2001,
         "rating": 8.3,
         "votes": 171,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329384/meitantei-conan-2001-04-23-the-mysterious-passenger-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329384
     },
     {
       "episode": 253,
@@ -645,9 +880,17 @@
         "year": 2001,
         "rating": 7.7,
         "votes": 103,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329406/meitantei-conan-2001-10-15-metropolitan-police-detective-love-story-4-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329406
     },
     {
       "episode": 254,
@@ -665,9 +908,17 @@
         "year": 2001,
         "rating": 7.8,
         "votes": 108,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329407/meitantei-conan-2001-10-22-metropolitan-police-detective-love-story-4-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329407
     },
     {
       "episode": 258,
@@ -685,9 +936,17 @@
         "year": 2001,
         "rating": 7.2,
         "votes": 115,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329411/meitantei-conan-2001-11-19-the-man-from-chicago-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329411
     },
     {
       "episode": 259,
@@ -705,9 +964,17 @@
         "year": 2001,
         "rating": 7.6,
         "votes": 128,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329412/meitantei-conan-2001-11-26-the-man-from-chicago-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329412
     },
     {
       "episode": 266,
@@ -725,9 +992,17 @@
         "year": 2002,
         "rating": 8.3,
         "votes": 108,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329419/meitantei-conan-2002-01-28-the-truth-behind-valentines-the-case-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329419
     },
     {
       "episode": 267,
@@ -745,9 +1020,17 @@
         "year": 2002,
         "rating": 8.4,
         "votes": 108,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329420/meitantei-conan-2002-02-04-the-truth-behind-valentines-the-deduction-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329420
     },
     {
       "episode": 268,
@@ -765,9 +1048,17 @@
         "year": 2002,
         "rating": 7.9,
         "votes": 118,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329421/meitantei-conan-2002-02-11-the-truth-behind-valentines-the-resolution-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329421
     },
     {
       "episode": 269,
@@ -785,9 +1076,17 @@
         "year": 2002,
         "rating": 7.8,
         "votes": 106,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329422/meitantei-conan-2002-02-18-the-forgotten-memento-from-the-crime-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329422
     },
     {
       "episode": 270,
@@ -805,9 +1104,17 @@
         "year": 2002,
         "rating": 8.0,
         "votes": 109,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329423/meitantei-conan-2002-03-04-the-forgotten-memento-from-the-crime-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329423
     },
     {
       "episode": 271,
@@ -825,9 +1132,17 @@
         "year": 2002,
         "rating": 7.1,
         "votes": 111,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329424/meitantei-conan-2002-03-11-the-secret-rushed-omission-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329424
     },
     {
       "episode": 272,
@@ -845,9 +1160,17 @@
         "year": 2002,
         "rating": 7.5,
         "votes": 115,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329425/meitantei-conan-2002-03-18-the-secret-rushed-omission-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329425
     },
     {
       "episode": 277,
@@ -865,9 +1188,17 @@
         "year": 2002,
         "rating": 7.8,
         "votes": 128,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329430/meitantei-conan-2002-05-13-english-teacher-vs-great-western-detective-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329430
     },
     {
       "episode": 278,
@@ -885,9 +1216,17 @@
         "year": 2002,
         "rating": 8.3,
         "votes": 130,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329431/meitantei-conan-2002-05-20-english-teacher-vs-great-western-detective-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329431
     },
     {
       "episode": 279,
@@ -905,9 +1244,17 @@
         "year": 2002,
         "rating": 8.0,
         "votes": 101,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329432/meitantei-conan-2002-05-27-hooligans-labyrinth-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329432
     },
     {
       "episode": 280,
@@ -925,9 +1272,17 @@
         "year": 2002,
         "rating": 8.0,
         "votes": 103,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329433/meitantei-conan-2002-06-03-hooligans-labyrinth-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329433
     },
     {
       "episode": 284,
@@ -945,9 +1300,17 @@
         "year": 2002,
         "rating": 7.6,
         "votes": 113,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329437/meitantei-conan-2002-07-01-chinatown-deja-vu-in-the-rain-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329437
     },
     {
       "episode": 285,
@@ -965,9 +1328,17 @@
         "year": 2002,
         "rating": 7.8,
         "votes": 120,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329438/meitantei-conan-2002-07-08-chinatown-deja-vu-in-the-rain-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329438
     },
     {
       "episode": 286,
@@ -985,9 +1356,17 @@
         "year": 2002,
         "rating": 8.1,
         "votes": 142,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329439/meitantei-conan-2002-07-15-shinichi-kudos-new-york-case-case-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329439
     },
     {
       "episode": 287,
@@ -1005,9 +1384,17 @@
         "year": 2002,
         "rating": 8.0,
         "votes": 139,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329440/meitantei-conan-2002-07-22-shinichi-kudos-new-york-case-deduction-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329440
     },
     {
       "episode": 288,
@@ -1025,9 +1412,17 @@
         "year": 2002,
         "rating": 8.4,
         "votes": 149,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329441/meitantei-conan-2002-07-29-shinichi-kudos-new-york-case-resolution-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329441
     },
     {
       "episode": 289,
@@ -1045,9 +1440,17 @@
         "year": 2002,
         "rating": 8.0,
         "votes": 102,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329442/meitantei-conan-2002-08-05-mitsuhikos-mystifying-forest-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329442
     },
     {
       "episode": 290,
@@ -1065,9 +1468,17 @@
         "year": 2002,
         "rating": 8.3,
         "votes": 108,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329443/meitantei-conan-2002-08-12-mitsuhikos-mystifying-forest-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329443
     },
     {
       "episode": 307,
@@ -1085,9 +1496,17 @@
         "year": 2003,
         "rating": 8.4,
         "votes": 110,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329460/meitantei-conan-2003-01-27-on-the-trail-of-a-silent-witness-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329460
     },
     {
       "episode": 308,
@@ -1105,9 +1524,17 @@
         "year": 2003,
         "rating": 7.9,
         "votes": 117,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329461/meitantei-conan-2003-02-03-on-the-trail-of-a-silent-witness-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329461
     },
     {
       "episode": 309,
@@ -1125,9 +1552,17 @@
         "year": 2003,
         "rating": 8.8,
         "votes": 176,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329462/meitantei-conan-2003-02-10-contact-with-the-black-organization-negotiation-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329462
     },
     {
       "episode": 310,
@@ -1145,9 +1580,17 @@
         "year": 2003,
         "rating": 8.6,
         "votes": 151,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329463/meitantei-conan-2003-02-17-contact-with-the-black-organization-pursuit-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329463
     },
     {
       "episode": 311,
@@ -1165,9 +1608,17 @@
         "year": 2003,
         "rating": 9.1,
         "votes": 202,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329464/meitantei-conan-2003-02-24-contact-with-the-black-organization-desperation-part",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329464
     },
     {
       "episode": 312,
@@ -1185,9 +1636,17 @@
         "year": 2003,
         "rating": 7.5,
         "votes": 83,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329465/meitantei-conan-2003-03-03-festival-dolls-dyed-in-the-setting-sun-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329465
     },
     {
       "episode": 313,
@@ -1205,9 +1664,17 @@
         "year": 2003,
         "rating": 7.6,
         "votes": 84,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329466/meitantei-conan-2003-03-10-festival-dolls-dyed-in-the-setting-sun-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329466
     },
     {
       "episode": 335,
@@ -1225,9 +1692,17 @@
         "year": 2003,
         "rating": 8.2,
         "votes": 101,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329488/meitantei-conan-2003-09-08-secret-of-the-tohto-film-development-studio-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329488
     },
     {
       "episode": 336,
@@ -1245,9 +1720,17 @@
         "year": 2003,
         "rating": 8.3,
         "votes": 99,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329489/meitantei-conan-2003-09-15-secret-of-the-tohto-film-development-studio-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329489
     },
     {
       "episode": 338,
@@ -1265,9 +1748,17 @@
         "year": 2003,
         "rating": 8.2,
         "votes": 112,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329491/meitantei-conan-2003-10-20-the-four-porsches-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329491
     },
     {
       "episode": 339,
@@ -1285,9 +1776,17 @@
         "year": 2003,
         "rating": 7.4,
         "votes": 114,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329492/meitantei-conan-2003-10-27-the-four-porsches-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329492
     },
     {
       "episode": 340,
@@ -1305,9 +1804,17 @@
         "year": 2003,
         "rating": 8.1,
         "votes": 106,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329493/meitantei-conan-2003-11-03-hidden-bathroom-secret-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329493
     },
     {
       "episode": 341,
@@ -1325,9 +1832,17 @@
         "year": 2003,
         "rating": 7.5,
         "votes": 115,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329494/meitantei-conan-2003-11-10-hidden-bathroom-secret-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329494
     },
     {
       "episode": 343,
@@ -1345,9 +1860,17 @@
         "year": 2003,
         "rating": 8.2,
         "votes": 104,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329496/meitantei-conan-2003-12-01-the-convenience-store-trap-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329496
     },
     {
       "episode": 344,
@@ -1365,9 +1888,17 @@
         "year": 2003,
         "rating": 8.4,
         "votes": 111,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329497/meitantei-conan-2003-12-08-the-convenience-store-trap-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329497
     },
     {
       "episode": 345,
@@ -1385,9 +1916,17 @@
         "year": 2004,
         "rating": 9.6,
         "votes": 820,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": 150,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 150,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329498/meitantei-conan-2004-01-05-showdown-with-the-black-organization-two-mysteries-on-the-night-of-the-full-moon",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329498
     },
     {
       "episode": 361,
@@ -1405,9 +1944,17 @@
         "year": 2004,
         "rating": 7.6,
         "votes": 87,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329514/meitantei-conan-2004-05-24-teitan-high-schools-ghost-story-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329514
     },
     {
       "episode": 362,
@@ -1425,9 +1972,17 @@
         "year": 2004,
         "rating": 7.7,
         "votes": 89,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329515/meitantei-conan-2004-05-31-teitan-high-schools-ghost-story-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329515
     },
     {
       "episode": 385,
@@ -1445,9 +2000,17 @@
         "year": 2005,
         "rating": 7.8,
         "votes": 90,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329538/meitantei-conan-2005-01-24-the-dissonance-of-the-stradivarius-prelude",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329538
     },
     {
       "episode": 386,
@@ -1465,9 +2028,17 @@
         "year": 2005,
         "rating": 7.9,
         "votes": 88,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329539/meitantei-conan-2005-01-31-the-dissonance-of-the-stradivarius-interlude",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329539
     },
     {
       "episode": 387,
@@ -1485,9 +2056,17 @@
         "year": 2005,
         "rating": 8.0,
         "votes": 93,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329540/meitantei-conan-2005-02-07-the-dissonance-of-the-stradivarius-postlude",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329540
     },
     {
       "episode": 400,
@@ -1505,9 +2084,17 @@
         "year": 2005,
         "rating": 8.5,
         "votes": 94,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329553/meitantei-conan-2005-05-30-rans-suspicions",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329553
     },
     {
       "episode": 425,
@@ -1524,10 +2111,18 @@
         "episode": 1,
         "year": 2006,
         "rating": 9.4,
-        "votes": 245,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "votes": 246,
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 150,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329578/meitantei-conan-2006-01-09-black-impact-the-moment-the-black-organization-reaches-out",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329578
     },
     {
       "episode": 429,
@@ -1543,11 +2138,19 @@
         "season": 17,
         "episode": 5,
         "year": 2006,
-        "rating": 7.0,
-        "votes": 58,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "rating": 6.9,
+        "votes": 59,
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329582/meitantei-conan-2006-02-06-two-people-who-cant-go-back-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329582
     },
     {
       "episode": 430,
@@ -1564,10 +2167,18 @@
         "episode": 6,
         "year": 2006,
         "rating": 7.1,
-        "votes": 60,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "votes": 61,
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329583/meitantei-conan-2006-02-13-two-people-who-cant-go-back-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329583
     },
     {
       "episode": 462,
@@ -1585,9 +2196,17 @@
         "year": 2007,
         "rating": 8.4,
         "votes": 78,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329615/meitantei-conan-2007-01-29-shadow-of-the-black-organization-the-young-witness",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329615
     },
     {
       "episode": 463,
@@ -1605,9 +2224,17 @@
         "year": 2007,
         "rating": 8.6,
         "votes": 87,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329616/meitantei-conan-2007-02-05-shadow-of-the-black-organization-the-strange-illumination",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329616
     },
     {
       "episode": 464,
@@ -1625,9 +2252,17 @@
         "year": 2007,
         "rating": 8.5,
         "votes": 84,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329617/meitantei-conan-2007-02-12-shadow-of-the-black-organization-the-mystery-of-the-big-reward",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329617
     },
     {
       "episode": 465,
@@ -1645,9 +2280,17 @@
         "year": 2007,
         "rating": 8.7,
         "votes": 90,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329618/meitantei-conan-2007-02-19-shadow-of-the-black-organization-shooting-star-of-pearls",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329618
     },
     {
       "episode": 484,
@@ -1665,9 +2308,17 @@
         "year": 2007,
         "rating": 7.2,
         "votes": 58,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329637/meitantei-conan-2007-08-20-whereabouts-of-the-dark-photograph-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329637
     },
     {
       "episode": 485,
@@ -1685,9 +2336,17 @@
         "year": 2007,
         "rating": 7.4,
         "votes": 60,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329638/meitantei-conan-2007-08-27-whereabouts-of-the-dark-photograph-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329638
     },
     {
       "episode": 491,
@@ -1705,9 +2364,17 @@
         "year": 2008,
         "rating": 7.9,
         "votes": 115,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329644/meitantei-conan-2008-01-14-clash-of-red-and-black-the-beginning",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329644
     },
     {
       "episode": 492,
@@ -1725,9 +2392,17 @@
         "year": 2008,
         "rating": 8.7,
         "votes": 104,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329645/meitantei-conan-2008-01-21-clash-of-red-and-black-blood-relative",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329645
     },
     {
       "episode": 493,
@@ -1745,9 +2420,17 @@
         "year": 2008,
         "rating": 8.5,
         "votes": 103,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329646/meitantei-conan-2008-01-28-clash-of-red-and-black-exclamation",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329646
     },
     {
       "episode": 494,
@@ -1765,9 +2448,17 @@
         "year": 2008,
         "rating": 8.4,
         "votes": 113,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329647/meitantei-conan-2008-02-04-clash-of-red-and-black-hades",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329647
     },
     {
       "episode": 495,
@@ -1785,9 +2476,17 @@
         "year": 2008,
         "rating": 8.5,
         "votes": 114,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329648/meitantei-conan-2008-02-11-clash-of-red-and-black-coma",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329648
     },
     {
       "episode": 496,
@@ -1805,9 +2504,17 @@
         "year": 2008,
         "rating": 8.9,
         "votes": 109,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329649/meitantei-conan-2008-02-18-clash-of-red-and-black-invasion",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329649
     },
     {
       "episode": 497,
@@ -1825,9 +2532,17 @@
         "year": 2008,
         "rating": 8.8,
         "votes": 120,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329650/meitantei-conan-2008-02-25-clash-of-red-and-black-awakening",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329650
     },
     {
       "episode": 498,
@@ -1845,9 +2560,17 @@
         "year": 2008,
         "rating": 8.6,
         "votes": 112,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329651/meitantei-conan-2008-03-03-clash-of-red-and-black-disturbance",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329651
     },
     {
       "episode": 499,
@@ -1865,9 +2588,17 @@
         "year": 2008,
         "rating": 8.8,
         "votes": 118,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329652/meitantei-conan-2008-03-10-clash-of-red-and-black-disguise",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329652
     },
     {
       "episode": 500,
@@ -1885,9 +2616,17 @@
         "year": 2008,
         "rating": 9.1,
         "votes": 129,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329653/meitantei-conan-2008-03-17-clash-of-red-and-black-testament",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329653
     },
     {
       "episode": 501,
@@ -1905,9 +2644,17 @@
         "year": 2008,
         "rating": 8.9,
         "votes": 107,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329654/meitantei-conan-2008-04-14-clash-of-red-and-black-suspicion",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329654
     },
     {
       "episode": 502,
@@ -1925,9 +2672,17 @@
         "year": 2008,
         "rating": 8.9,
         "votes": 103,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329655/meitantei-conan-2008-04-28-clash-of-red-and-black-innocence",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329655
     },
     {
       "episode": 503,
@@ -1945,9 +2700,17 @@
         "year": 2008,
         "rating": 8.9,
         "votes": 106,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329656/meitantei-conan-2008-05-12-clash-of-red-and-black-ready-to-die",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329656
     },
     {
       "episode": 504,
@@ -1965,9 +2728,17 @@
         "year": 2008,
         "rating": 9.2,
         "votes": 161,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329657/meitantei-conan-2008-05-19-clash-of-red-and-black-killed-in-the-line-of-duty",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329657
     },
     {
       "episode": 507,
@@ -1985,9 +2756,17 @@
         "year": 2008,
         "rating": 6.8,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329660/meitantei-conan-2008-06-30-the-blind-spot-in-the-karaoke-box-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329660
     },
     {
       "episode": 508,
@@ -2005,9 +2784,17 @@
         "year": 2008,
         "rating": 7.1,
         "votes": 52,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329661/meitantei-conan-2008-07-07-the-blind-spot-in-the-karaoke-box-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329661
     },
     {
       "episode": 509,
@@ -2025,9 +2812,17 @@
         "year": 2008,
         "rating": 7.7,
         "votes": 60,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329662/meitantei-conan-2008-07-14-red-white-yellow-and-the-detective-boys",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329662
     },
     {
       "episode": 510,
@@ -2045,9 +2840,17 @@
         "year": 2008,
         "rating": 8.1,
         "votes": 61,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329663/meitantei-conan-2008-07-28-conan-vs-double-code-mystery",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329663
     },
     {
       "episode": 511,
@@ -2065,9 +2868,17 @@
         "year": 2008,
         "rating": 8.1,
         "votes": 62,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329664/meitantei-conan-2008-08-04-deduction-showdown-shinichi-vs-subaru-okiya",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329664
     },
     {
       "episode": 521,
@@ -2085,9 +2896,17 @@
         "year": 2009,
         "rating": 8.5,
         "votes": 77,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 60,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329674/meitantei-conan-2009-01-19-murderer-shinichi-kudo",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329674
     },
     {
       "episode": 522,
@@ -2105,9 +2924,17 @@
         "year": 2009,
         "rating": 8.9,
         "votes": 91,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 60,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329675/meitantei-conan-2009-01-26-shinichis-true-face-and-rans-tears",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329675
     },
     {
       "episode": 523,
@@ -2125,9 +2952,17 @@
         "year": 2009,
         "rating": 8.5,
         "votes": 73,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329676/meitantei-conan-2009-02-02-what-she-truly-wants-to-ask",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329676
     },
     {
       "episode": 524,
@@ -2145,9 +2980,17 @@
         "year": 2009,
         "rating": 7.6,
         "votes": 52,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329677/meitantei-conan-2009-02-09-the-blue-spark-of-hate-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329677
     },
     {
       "episode": 525,
@@ -2165,9 +3008,17 @@
         "year": 2009,
         "rating": 7.7,
         "votes": 49,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329678/meitantei-conan-2009-02-16-the-blue-spark-of-hate-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329678
     },
     {
       "episode": 542,
@@ -2185,9 +3036,17 @@
         "year": 2009,
         "rating": 6.9,
         "votes": 48,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329695/meitantei-conan-2009-07-25-ikkaku-rocks-disappearing-fish-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329695
     },
     {
       "episode": 543,
@@ -2205,9 +3064,17 @@
         "year": 2009,
         "rating": 6.9,
         "votes": 47,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329696/meitantei-conan-2009-08-01-ikkaku-rocks-disappearing-fish-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329696
     },
     {
       "episode": 563,
@@ -2225,9 +3092,17 @@
         "year": 2010,
         "rating": 8.2,
         "votes": 66,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329716/meitantei-conan-2010-01-23-detective-boys-vs-robber-group-turmoil",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329716
     },
     {
       "episode": 564,
@@ -2245,9 +3120,17 @@
         "year": 2010,
         "rating": 8.2,
         "votes": 63,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329717/meitantei-conan-2010-01-30-detective-boys-vs-robber-group-silence",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329717
     },
     {
       "episode": 578,
@@ -2265,9 +3148,17 @@
         "year": 2010,
         "rating": 7.5,
         "votes": 54,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329731/meitantei-conan-2010-06-26-the-crisis-beckoned-by-the-red-omen",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329731
     },
     {
       "episode": 579,
@@ -2285,9 +3176,17 @@
         "year": 2010,
         "rating": 8.2,
         "votes": 61,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329732/meitantei-conan-2010-07-03-the-suggestion-of-black-thirteen",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329732
     },
     {
       "episode": 580,
@@ -2305,9 +3204,17 @@
         "year": 2010,
         "rating": 8.3,
         "votes": 66,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329733/meitantei-conan-2010-07-10-the-black-time-limit-drawing-near",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329733
     },
     {
       "episode": 581,
@@ -2325,9 +3232,17 @@
         "year": 2010,
         "rating": 8.7,
         "votes": 78,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329734/meitantei-conan-2010-07-17-the-red-shaking-target",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329734
     },
     {
       "episode": 616,
@@ -2345,9 +3260,17 @@
         "year": 2011,
         "rating": 8.5,
         "votes": 72,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329769/meitantei-conan-2011-05-21-holmes-revelation-holmes-apprentice",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329769
     },
     {
       "episode": 617,
@@ -2365,9 +3288,17 @@
         "year": 2011,
         "rating": 8.3,
         "votes": 68,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329770/meitantei-conan-2011-05-28-holmes-revelation-love-is-0",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329770
     },
     {
       "episode": 618,
@@ -2385,9 +3316,17 @@
         "year": 2011,
         "rating": 8.4,
         "votes": 66,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329771/meitantei-conan-2011-06-04-holmes-revelation-satan",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329771
     },
     {
       "episode": 619,
@@ -2405,9 +3344,17 @@
         "year": 2011,
         "rating": 8.4,
         "votes": 64,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329772/meitantei-conan-2011-06-11-holmes-revelation-code-break",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329772
     },
     {
       "episode": 620,
@@ -2425,9 +3372,17 @@
         "year": 2011,
         "rating": 8.4,
         "votes": 68,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329773/meitantei-conan-2011-06-18-holmes-revelation-grass-court-queen",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329773
     },
     {
       "episode": 621,
@@ -2445,9 +3400,17 @@
         "year": 2011,
         "rating": 9.1,
         "votes": 103,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329774/meitantei-conan-2011-06-25-holmes-revelation-0-is-start",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329774
     },
     {
       "episode": 622,
@@ -2465,9 +3428,17 @@
         "year": 2011,
         "rating": 6.9,
         "votes": 41,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329775/meitantei-conan-2011-07-02-emergency-situation-252-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329775
     },
     {
       "episode": 623,
@@ -2485,9 +3456,17 @@
         "year": 2011,
         "rating": 7.2,
         "votes": 42,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329776/meitantei-conan-2011-07-09-emergency-situation-252-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329776
     },
     {
       "episode": 646,
@@ -2505,9 +3484,17 @@
         "year": 2012,
         "rating": 7.8,
         "votes": 54,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329799/meitantei-conan-2012-02-18-deduction-showdown-at-the-haunted-hotel-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329799
     },
     {
       "episode": 647,
@@ -2525,9 +3512,17 @@
         "year": 2012,
         "rating": 7.6,
         "votes": 53,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329800/meitantei-conan-2012-02-25-deduction-showdown-at-the-haunted-hotel-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329800
     },
     {
       "episode": 648,
@@ -2545,9 +3540,17 @@
         "year": 2012,
         "rating": 8.0,
         "votes": 49,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329801/meitantei-conan-2012-03-03-the-case-of-the-besieged-detective-agency-outbreak",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329801
     },
     {
       "episode": 649,
@@ -2565,9 +3568,17 @@
         "year": 2012,
         "rating": 8.2,
         "votes": 49,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329802/meitantei-conan-2012-03-10-the-case-of-the-besieged-detective-agency-sniping",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329802
     },
     {
       "episode": 650,
@@ -2585,9 +3596,17 @@
         "year": 2012,
         "rating": 8.2,
         "votes": 56,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329803/meitantei-conan-2012-03-17-the-case-of-the-besieged-detective-agency-release",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329803
     },
     {
       "episode": 651,
@@ -2605,9 +3624,17 @@
         "year": 2012,
         "rating": 8.4,
         "votes": 81,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 60,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329804/meitantei-conan-2012-03-24-conan-vs-heiji-deduction-battle-between-the-detectives-of-the-east-and-west",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329804
     },
     {
       "episode": 656,
@@ -2625,9 +3652,17 @@
         "year": 2012,
         "rating": 7.1,
         "votes": 38,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329809/meitantei-conan-2012-05-19-the-professors-video-site-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329809
     },
     {
       "episode": 657,
@@ -2645,9 +3680,17 @@
         "year": 2012,
         "rating": 7.0,
         "votes": 39,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329810/meitantei-conan-2012-05-26-the-professors-video-site-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329810
     },
     {
       "episode": 667,
@@ -2665,9 +3708,17 @@
         "year": 2012,
         "rating": 8.1,
         "votes": 57,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329820/meitantei-conan-2012-09-01-wedding-eve-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329820
     },
     {
       "episode": 668,
@@ -2685,9 +3736,17 @@
         "year": 2012,
         "rating": 8.5,
         "votes": 73,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329821/meitantei-conan-2012-09-08-wedding-eve-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329821
     },
     {
       "episode": 671,
@@ -2705,9 +3764,17 @@
         "year": 2012,
         "rating": 7.9,
         "votes": 52,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329824/meitantei-conan-2012-10-06-detectives-nocturne-the-case",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329824
     },
     {
       "episode": 672,
@@ -2725,9 +3792,17 @@
         "year": 2012,
         "rating": 8.1,
         "votes": 54,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329825/meitantei-conan-2012-10-13-detectives-nocturne-kidnapping",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329825
     },
     {
       "episode": 673,
@@ -2745,9 +3820,17 @@
         "year": 2012,
         "rating": 8.1,
         "votes": 57,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329826/meitantei-conan-2012-10-20-detectives-nocturne-deduction",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329826
     },
     {
       "episode": 674,
@@ -2765,9 +3848,17 @@
         "year": 2012,
         "rating": 9.0,
         "votes": 83,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329827/meitantei-conan-2012-10-27-detectives-nocturne-bourbon",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329827
     },
     {
       "episode": 675,
@@ -2785,9 +3876,17 @@
         "year": 2012,
         "rating": 6.5,
         "votes": 43,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329828/meitantei-conan-2012-11-10-wont-forgive-even-one-millimeter-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329828
     },
     {
       "episode": 676,
@@ -2805,9 +3904,17 @@
         "year": 2012,
         "rating": 6.6,
         "votes": 48,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329829/meitantei-conan-2012-11-17-wont-forgive-even-one-millimeter-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329829
     },
     {
       "episode": 681,
@@ -2825,9 +3932,17 @@
         "year": 2013,
         "rating": 8.1,
         "votes": 66,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329834/meitantei-conan-2013-01-05-the-life-threatening-broadcast-of-love-begin-broadcasting",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329834
     },
     {
       "episode": 682,
@@ -2845,9 +3960,17 @@
         "year": 2013,
         "rating": 7.7,
         "votes": 54,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329835/meitantei-conan-2013-01-12-the-life-threatening-broadcast-of-love-desperate-situation",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329835
     },
     {
       "episode": 683,
@@ -2865,9 +3988,17 @@
         "year": 2013,
         "rating": 8.3,
         "votes": 62,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329836/meitantei-conan-2013-01-19-the-life-threatening-broadcast-of-love-enter-the-scene",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329836
     },
     {
       "episode": 684,
@@ -2885,9 +4016,17 @@
         "year": 2013,
         "rating": 6.9,
         "votes": 48,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329837/meitantei-conan-2013-01-26-froth-steam-and-smoke-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329837
     },
     {
       "episode": 685,
@@ -2905,9 +4044,17 @@
         "year": 2013,
         "rating": 7.0,
         "votes": 47,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329838/meitantei-conan-2013-02-02-froth-steam-and-smoke-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329838
     },
     {
       "episode": 690,
@@ -2925,9 +4072,17 @@
         "year": 2013,
         "rating": 7.5,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329843/meitantei-conan-2013-03-09-yusaku-kudos-cold-case-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329843
     },
     {
       "episode": 691,
@@ -2945,9 +4100,17 @@
         "year": 2013,
         "rating": 7.7,
         "votes": 58,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329844/meitantei-conan-2013-03-16-yusaku-kudos-cold-case-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329844
     },
     {
       "episode": 699,
@@ -2965,9 +4128,17 @@
         "year": 2013,
         "rating": 8.2,
         "votes": 67,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329852/meitantei-conan-2013-06-08-the-shadow-approaching-haibaras-secret-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329852
     },
     {
       "episode": 700,
@@ -2985,9 +4156,17 @@
         "year": 2013,
         "rating": 8.6,
         "votes": 79,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329853/meitantei-conan-2013-06-15-the-shadow-approaching-haibaras-secret-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329853
     },
     {
       "episode": 701,
@@ -3005,9 +4184,17 @@
         "year": 2013,
         "rating": 8.9,
         "votes": 95,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329854/meitantei-conan-2013-07-13-the-jet-black-mystery-train-departure",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329854
     },
     {
       "episode": 702,
@@ -3025,9 +4212,17 @@
         "year": 2013,
         "rating": 9.2,
         "votes": 101,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329855/meitantei-conan-2013-07-20-the-jet-black-mystery-train-tunnel",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329855
     },
     {
       "episode": 703,
@@ -3045,9 +4240,17 @@
         "year": 2013,
         "rating": 9.1,
         "votes": 111,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329856/meitantei-conan-2013-07-27-the-jet-black-mystery-train-intersection",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329856
     },
     {
       "episode": 704,
@@ -3064,10 +4267,18 @@
         "episode": 9,
         "year": 2013,
         "rating": 9.2,
-        "votes": 141,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "votes": 142,
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329857/meitantei-conan-2013-08-03-the-jet-black-mystery-train-destination",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329857
     },
     {
       "episode": 705,
@@ -3085,9 +4296,17 @@
         "year": 2013,
         "rating": 7.4,
         "votes": 51,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329858/meitantei-conan-2013-08-10-conan-in-a-locked-room",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329858
     },
     {
       "episode": 706,
@@ -3105,9 +4324,17 @@
         "year": 2013,
         "rating": 7.2,
         "votes": 49,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329859/meitantei-conan-2013-08-17-bourbon-figures-it-out",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329859
     },
     {
       "episode": 722,
@@ -3125,9 +4352,17 @@
         "year": 2013,
         "rating": 6.8,
         "votes": 43,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329875/meitantei-conan-2013-12-14-sweet-and-cold-delivery-service-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329875
     },
     {
       "episode": 723,
@@ -3145,9 +4380,17 @@
         "year": 2013,
         "rating": 6.9,
         "votes": 44,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329876/meitantei-conan-2013-12-21-sweet-and-cold-delivery-service-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329876
     },
     {
       "episode": 727,
@@ -3165,9 +4408,17 @@
         "year": 2014,
         "rating": 6.8,
         "votes": 41,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329880/meitantei-conan-2014-01-25-the-treasure-chest-filled-with-fruits-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329880
     },
     {
       "episode": 728,
@@ -3185,9 +4436,17 @@
         "year": 2014,
         "rating": 7.0,
         "votes": 41,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329881/meitantei-conan-2014-02-01-the-treasure-chest-filled-with-fruits-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329881
     },
     {
       "episode": 731,
@@ -3205,9 +4464,17 @@
         "year": 2014,
         "rating": 7.2,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329884/meitantei-conan-2014-03-01-the-ex-boyfriend-living-next-to-a-crime-scene-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329884
     },
     {
       "episode": 732,
@@ -3225,9 +4492,17 @@
         "year": 2014,
         "rating": 7.3,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329885/meitantei-conan-2014-03-08-the-ex-boyfriend-living-next-to-a-crime-scene-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329885
     },
     {
       "episode": 733,
@@ -3245,9 +4520,17 @@
         "year": 2014,
         "rating": 6.2,
         "votes": 33,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and year; excludes 2025 rerun"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and year; excludes 2025 rerun",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329886/meitantei-conan-2014-03-22-the-wedding-reception-and-the-two-gunshots",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329886
     },
     {
       "episode": 734,
@@ -3265,9 +4548,17 @@
         "year": 2014,
         "rating": 7.3,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 60,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329887/meitantei-conan-2014-03-29-jodies-memories-and-the-cherry-blossom-viewing-trap",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329887
     },
     {
       "episode": 744,
@@ -3285,9 +4576,17 @@
         "year": 2014,
         "rating": 7.0,
         "votes": 51,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329897/meitantei-conan-2014-06-28-the-suspect-is-makoto-kyogoku-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329897
     },
     {
       "episode": 745,
@@ -3305,9 +4604,17 @@
         "year": 2014,
         "rating": 7.4,
         "votes": 56,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329898/meitantei-conan-2014-07-05-the-suspect-is-makoto-kyogoku-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329898
     },
     {
       "episode": 754,
@@ -3325,9 +4632,17 @@
         "year": 2014,
         "rating": 7.4,
         "votes": 51,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329907/meitantei-conan-2014-10-11-the-tragedy-of-the-red-woman-steam",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329907
     },
     {
       "episode": 755,
@@ -3345,9 +4660,17 @@
         "year": 2014,
         "rating": 7.7,
         "votes": 55,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329908/meitantei-conan-2014-10-18-the-tragedy-of-the-red-woman-evil-spirit",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329908
     },
     {
       "episode": 756,
@@ -3365,9 +4688,17 @@
         "year": 2014,
         "rating": 7.6,
         "votes": 56,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329909/meitantei-conan-2014-10-25-the-tragedy-of-the-red-woman-revenge",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329909
     },
     {
       "episode": 759,
@@ -3385,9 +4716,17 @@
         "year": 2014,
         "rating": 7.4,
         "votes": 55,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329912/meitantei-conan-2014-11-22-the-romance-novel-with-the-unexpected-conclusion-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329912
     },
     {
       "episode": 760,
@@ -3405,9 +4744,17 @@
         "year": 2014,
         "rating": 7.7,
         "votes": 58,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329913/meitantei-conan-2014-11-29-the-romance-novel-with-the-unexpected-conclusion-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329913
     },
     {
       "episode": 770,
@@ -3425,9 +4772,17 @@
         "year": 2015,
         "rating": 6.9,
         "votes": 49,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329923/meitantei-conan-2015-03-07-the-tense-tea-party-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329923
     },
     {
       "episode": 771,
@@ -3445,9 +4800,17 @@
         "year": 2015,
         "rating": 7.3,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329924/meitantei-conan-2015-03-14-the-tense-tea-party-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329924
     },
     {
       "episode": 779,
@@ -3465,9 +4828,17 @@
         "year": 2015,
         "rating": 8.6,
         "votes": 97,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329932/meitantei-conan-2015-05-30-the-scarlet-prologue",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329932
     },
     {
       "episode": 780,
@@ -3485,9 +4856,17 @@
         "year": 2015,
         "rating": 9.1,
         "votes": 108,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329933/meitantei-conan-2015-06-06-the-scarlet-pursuit",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329933
     },
     {
       "episode": 781,
@@ -3505,9 +4884,17 @@
         "year": 2015,
         "rating": 8.9,
         "votes": 128,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329934/meitantei-conan-2015-06-13-the-scarlet-intersection",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329934
     },
     {
       "episode": 782,
@@ -3525,9 +4912,17 @@
         "year": 2015,
         "rating": 9.2,
         "votes": 168,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329935/meitantei-conan-2015-06-20-the-scarlet-return",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329935
     },
     {
       "episode": 783,
@@ -3545,9 +4940,17 @@
         "year": 2015,
         "rating": 9.2,
         "votes": 167,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329936/meitantei-conan-2015-06-27-the-scarlet-truth",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329936
     },
     {
       "episode": 785,
@@ -3565,9 +4968,17 @@
         "year": 2015,
         "rating": 6.6,
         "votes": 45,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329938/meitantei-conan-2015-07-18-taiko-meijins-match-of-love-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329938
     },
     {
       "episode": 786,
@@ -3585,9 +4996,17 @@
         "year": 2015,
         "rating": 7.2,
         "votes": 47,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329939/meitantei-conan-2015-07-25-taiko-meijins-match-of-love-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329939
     },
     {
       "episode": 787,
@@ -3605,9 +5024,17 @@
         "year": 2015,
         "rating": 6.9,
         "votes": 42,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329940/meitantei-conan-2015-08-01-the-mystery-sinking-in-the-midsummer-pool-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329940
     },
     {
       "episode": 788,
@@ -3625,9 +5052,17 @@
         "year": 2015,
         "rating": 7.2,
         "votes": 44,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329941/meitantei-conan-2015-08-08-the-mystery-sinking-in-the-midsummer-pool-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329941
     },
     {
       "episode": 792,
@@ -3645,9 +5080,17 @@
         "year": 2015,
         "rating": 7.6,
         "votes": 47,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329945/meitantei-conan-2015-09-19-three-first-discoverers-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329945
     },
     {
       "episode": 793,
@@ -3665,9 +5108,17 @@
         "year": 2015,
         "rating": 7.6,
         "votes": 51,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/329946/meitantei-conan-2015-09-26-three-first-discoverers-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 329946
     },
     {
       "episode": 810,
@@ -3685,9 +5136,17 @@
         "year": 2016,
         "rating": 8.4,
         "votes": 57,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/581599/meitantei-conan-2016-02-27-the-darkness-of-the-prefectural-police-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 581599
     },
     {
       "episode": 811,
@@ -3705,9 +5164,17 @@
         "year": 2016,
         "rating": 8.3,
         "votes": 55,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/581600/meitantei-conan-2016-03-05-the-darkness-of-the-prefectural-police-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 581600
     },
     {
       "episode": 812,
@@ -3725,9 +5192,17 @@
         "year": 2016,
         "rating": 8.6,
         "votes": 60,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/654943/meitantei-conan-2016-03-12-the-darkness-of-the-prefectural-police-part-3",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 654943
     },
     {
       "episode": 827,
@@ -3745,9 +5220,17 @@
         "year": 2016,
         "rating": 7.4,
         "votes": 43,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/846507/meitantei-conan-2016-07-30-ramen-so-good-its-to-die-for-2-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 846507
     },
     {
       "episode": 828,
@@ -3765,9 +5248,17 @@
         "year": 2016,
         "rating": 7.5,
         "votes": 42,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/846508/meitantei-conan-2016-08-06-ramen-so-good-its-to-die-for-2-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 846508
     },
     {
       "episode": 836,
@@ -3785,9 +5276,17 @@
         "year": 2016,
         "rating": 7.6,
         "votes": 44,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/941209/meitantei-conan-2016-10-15-the-unfriendly-girls-band-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 941209
     },
     {
       "episode": 837,
@@ -3805,9 +5304,17 @@
         "year": 2016,
         "rating": 7.8,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/941210/meitantei-conan-2016-10-22-the-unfriendly-girls-band-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 941210
     },
     {
       "episode": 849,
@@ -3825,9 +5332,17 @@
         "year": 2017,
         "rating": 7.6,
         "votes": 42,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1070546/meitantei-conan-2017-02-11-the-marriage-registrations-password-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1070546
     },
     {
       "episode": 850,
@@ -3845,9 +5360,17 @@
         "year": 2017,
         "rating": 7.9,
         "votes": 47,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1070547/meitantei-conan-2017-02-18-the-marriage-registrations-password-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1070547
     },
     {
       "episode": 861,
@@ -3865,9 +5388,17 @@
         "year": 2017,
         "rating": 8.2,
         "votes": 51,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1205491/meitantei-conan-2017-06-03-just-like-a-17-years-old-crime-scene-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1205491
     },
     {
       "episode": 862,
@@ -3885,9 +5416,17 @@
         "year": 2017,
         "rating": 8.5,
         "votes": 56,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1205492/meitantei-conan-2017-06-10-just-like-a-17-years-old-crime-scene-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1205492
     },
     {
       "episode": 863,
@@ -3905,9 +5444,17 @@
         "year": 2017,
         "rating": 8.5,
         "votes": 55,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1205493/meitantei-conan-2017-06-17-the-spirit-detectives-murder-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1205493
     },
     {
       "episode": 864,
@@ -3925,9 +5472,17 @@
         "year": 2017,
         "rating": 8.8,
         "votes": 61,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1205494/meitantei-conan-2017-06-24-the-spirit-detectives-murder-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1205494
     },
     {
       "episode": 866,
@@ -3945,9 +5500,17 @@
         "year": 2017,
         "rating": 8.6,
         "votes": 59,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1225732/meitantei-conan-2017-07-15-the-betrayals-stage-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1225732
     },
     {
       "episode": 867,
@@ -3965,9 +5528,17 @@
         "year": 2017,
         "rating": 8.8,
         "votes": 59,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1225733/meitantei-conan-2017-07-22-the-betrayals-stage-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1225733
     },
     {
       "episode": 878,
@@ -3985,9 +5556,17 @@
         "year": 2017,
         "rating": 7.5,
         "votes": 35,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1315348/meitantei-conan-2017-10-28-the-blind-spot-in-the-dressing-room-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1315348
     },
     {
       "episode": 879,
@@ -4005,9 +5584,17 @@
         "year": 2017,
         "rating": 7.5,
         "votes": 36,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1315349/meitantei-conan-2017-11-04-the-blind-spot-in-the-dressing-room-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1315349
     },
     {
       "episode": 880,
@@ -4025,9 +5612,17 @@
         "year": 2017,
         "rating": 7.3,
         "votes": 27,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1339695/meitantei-conan-2017-11-11-the-detective-boys-and-the-ghost-mansion",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1339695
     },
     {
       "episode": 881,
@@ -4045,9 +5640,17 @@
         "year": 2017,
         "rating": 9.3,
         "votes": 83,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1339696/meitantei-conan-2017-11-18-the-wizard-of-the-ripples-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1339696
     },
     {
       "episode": 882,
@@ -4065,9 +5668,17 @@
         "year": 2017,
         "rating": 9.3,
         "votes": 86,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1339697/meitantei-conan-2017-11-25-the-wizard-of-the-ripples-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1339697
     },
     {
       "episode": 889,
@@ -4085,9 +5696,17 @@
         "year": 2018,
         "rating": 8.0,
         "votes": 46,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1373016/meitantei-conan-2018-01-20-the-new-teachers-skeleton-case-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1373016
     },
     {
       "episode": 890,
@@ -4105,9 +5724,17 @@
         "year": 2018,
         "rating": 8.2,
         "votes": 50,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1373017/meitantei-conan-2018-01-27-the-new-teachers-skeleton-case-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1373017
     },
     {
       "episode": 894,
@@ -4125,9 +5752,17 @@
         "year": 2018,
         "rating": 7.6,
         "votes": 39,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1416127/meitantei-conan-2018-03-03-the-tokyo-style-detective-show-next-door-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1416127
     },
     {
       "episode": 895,
@@ -4145,9 +5780,17 @@
         "year": 2018,
         "rating": 7.9,
         "votes": 43,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1416128/meitantei-conan-2018-03-10-the-tokyo-style-detective-show-next-door-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1416128
     },
     {
       "episode": 896,
@@ -4165,9 +5808,17 @@
         "year": 2018,
         "rating": 8.1,
         "votes": 44,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1416129/meitantei-conan-2018-03-17-the-woman-with-white-hands-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1416129
     },
     {
       "episode": 897,
@@ -4185,9 +5836,17 @@
         "year": 2018,
         "rating": 8.3,
         "votes": 46,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1416130/meitantei-conan-2018-03-24-the-woman-with-white-hands-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1416130
     },
     {
       "episode": 909,
@@ -4205,9 +5864,17 @@
         "year": 2018,
         "rating": 8.8,
         "votes": 58,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1483372/meitantei-conan-2018-07-28-mystery-of-the-burning-tent-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1483372
     },
     {
       "episode": 910,
@@ -4225,9 +5892,17 @@
         "year": 2018,
         "rating": 9.0,
         "votes": 66,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1483373/meitantei-conan-2018-08-04-mystery-of-the-burning-tent-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1483373
     },
     {
       "episode": 927,
@@ -4245,9 +5920,17 @@
         "year": 2019,
         "rating": 8.9,
         "votes": 139,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 60,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1533951/meitantei-conan-2019-01-05-the-scarlet-school-trip-bright-red-arc",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1533951
     },
     {
       "episode": 928,
@@ -4265,9 +5948,17 @@
         "year": 2019,
         "rating": 8.8,
         "votes": 144,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 60,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1533952/meitantei-conan-2019-01-12-the-scarlet-school-trip-red-love-arc",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1533952
     },
     {
       "episode": 941,
@@ -4285,9 +5976,17 @@
         "year": 2019,
         "rating": 8.6,
         "votes": 61,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1646978/meitantei-conan-2019-06-01-search-for-maria-chan-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1646978
     },
     {
       "episode": 942,
@@ -4305,9 +6004,17 @@
         "year": 2019,
         "rating": 9.0,
         "votes": 98,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1646979/meitantei-conan-2019-06-08-search-for-maria-chan-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1646979
     },
     {
       "episode": 952,
@@ -4325,9 +6032,17 @@
         "year": 2019,
         "rating": 9.2,
         "votes": 86,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1687952/meitantei-conan-2019-08-31-the-unsolved-cocktail-case-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1687952
     },
     {
       "episode": 953,
@@ -4345,9 +6060,17 @@
         "year": 2019,
         "rating": 9.2,
         "votes": 89,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1688923/meitantei-conan-2019-09-07-the-unsolved-cocktail-case-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1688923
     },
     {
       "episode": 954,
@@ -4365,9 +6088,17 @@
         "year": 2019,
         "rating": 8.9,
         "votes": 109,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1704304/meitantei-conan-2019-09-14-the-unsolved-cocktail-case-part-3",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1704304
     },
     {
       "episode": 971,
@@ -4385,9 +6116,17 @@
         "year": 2020,
         "rating": 8.7,
         "votes": 60,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1806739/meitantei-conan-2020-03-07-the-target-is-the-metropolitan-police-traffic-department-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1806739
     },
     {
       "episode": 972,
@@ -4405,9 +6144,17 @@
         "year": 2020,
         "rating": 8.8,
         "votes": 59,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1806740/meitantei-conan-2020-03-14-the-target-is-the-metropolitan-police-traffic-department-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1806740
     },
     {
       "episode": 973,
@@ -4425,9 +6172,17 @@
         "year": 2020,
         "rating": 9.2,
         "votes": 77,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1806741/meitantei-conan-2020-03-21-the-target-is-the-metropolitan-police-traffic-department-3",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1806741
     },
     {
       "episode": 974,
@@ -4445,9 +6200,17 @@
         "year": 2020,
         "rating": 9.3,
         "votes": 89,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1806742/meitantei-conan-2020-03-28-the-target-is-the-metropolitan-police-traffic-department-4",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1806742
     },
     {
       "episode": 983,
@@ -4465,9 +6228,17 @@
         "year": 2020,
         "rating": 8.8,
         "votes": 108,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1938861/meitantei-conan-2020-10-03-kid-vs-komei-the-targeted-lips-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1938861
     },
     {
       "episode": 984,
@@ -4485,9 +6256,17 @@
         "year": 2020,
         "rating": 9.0,
         "votes": 123,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1938862/meitantei-conan-2020-10-10-kid-vs-komei-the-targeted-lips-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1938862
     },
     {
       "episode": 993,
@@ -4505,9 +6284,17 @@
         "year": 2021,
         "rating": 9.1,
         "votes": 74,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/1995910/meitantei-conan-2021-01-09-makoto-kyogoku-the-understudy-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 1995910
     },
     {
       "episode": 994,
@@ -4525,9 +6312,17 @@
         "year": 2021,
         "rating": 9.0,
         "votes": 77,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2000194/meitantei-conan-2021-01-16-makoto-kyogoku-the-understudy-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2000194
     },
     {
       "episode": 995,
@@ -4545,9 +6340,17 @@
         "year": 2021,
         "rating": 9.1,
         "votes": 86,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2000195/meitantei-conan-2021-01-23-makoto-kyogoku-the-understudy-part-3",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2000195
     },
     {
       "episode": 1011,
@@ -4565,9 +6368,17 @@
         "year": 2021,
         "rating": 8.2,
         "votes": 48,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2121073/meitantei-conan-2021-07-10-picking-wild-plants-and-clovers-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2121073
     },
     {
       "episode": 1012,
@@ -4585,9 +6396,17 @@
         "year": 2021,
         "rating": 8.7,
         "votes": 52,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2124627/meitantei-conan-2021-07-17-picking-wild-plants-and-clovers-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2124627
     },
     {
       "episode": 1018,
@@ -4605,9 +6424,17 @@
         "year": 2021,
         "rating": 8.9,
         "votes": 74,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2163733/meitantei-conan-2021-09-11-the-antique-tray-cant-be-hidden-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2163733
     },
     {
       "episode": 1019,
@@ -4625,9 +6452,17 @@
         "year": 2021,
         "rating": 8.9,
         "votes": 79,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2163734/meitantei-conan-2021-09-18-the-antique-tray-cant-be-hidden-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2163734
     },
     {
       "episode": 1020,
@@ -4645,9 +6480,17 @@
         "year": 2021,
         "rating": 8.9,
         "votes": 80,
-        "checked": "2026-09-07",
-        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches"
-      }
+        "checked": "2026-09-08",
+        "mapping": "reviewed title variant and part, corroborated by year and neighboring title matches",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2175527/meitantei-conan-2021-09-25-the-antique-tray-cant-be-hidden-part-3",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2175527
     },
     {
       "episode": 1024,
@@ -4665,9 +6508,17 @@
         "year": 2021,
         "rating": 8.7,
         "votes": 70,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2205819/meitantei-conan-2021-10-30-momiji-ookas-challenge-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2205819
     },
     {
       "episode": 1025,
@@ -4685,9 +6536,17 @@
         "year": 2021,
         "rating": 8.7,
         "votes": 69,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2205820/meitantei-conan-2021-11-06-momiji-ookas-challenge-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2205820
     },
     {
       "episode": 1045,
@@ -4705,9 +6564,17 @@
         "year": 2022,
         "rating": 9.3,
         "votes": 93,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870806/meitantei-conan-2022-06-04-the-birthday-party-of-divine-punishment-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870806
     },
     {
       "episode": 1046,
@@ -4725,9 +6592,17 @@
         "year": 2022,
         "rating": 9.2,
         "votes": 115,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870814/meitantei-conan-2022-06-11-the-birthday-party-of-divine-punishment-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870814
     },
     {
       "episode": 1053,
@@ -4745,9 +6620,17 @@
         "year": 2022,
         "rating": 9.3,
         "votes": 51,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870836/meitantei-conan-2022-08-06-the-spark-that-fell-on-the-ranch-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870836
     },
     {
       "episode": 1054,
@@ -4765,9 +6648,17 @@
         "year": 2022,
         "rating": 9.3,
         "votes": 69,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870837/meitantei-conan-2022-08-13-the-spark-that-fell-on-the-ranch-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870837
     },
     {
       "episode": 1059,
@@ -4785,9 +6676,17 @@
         "year": 2022,
         "rating": 9.1,
         "votes": 26,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870846/meitantei-conan-2022-10-08-yoko-okino-and-the-locked-attic-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870846
     },
     {
       "episode": 1060,
@@ -4805,9 +6704,17 @@
         "year": 2022,
         "rating": 8.5,
         "votes": 24,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870847/meitantei-conan-2022-10-15-yoko-okino-and-the-locked-attic-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870847
     },
     {
       "episode": 1071,
@@ -4825,9 +6732,17 @@
         "year": 2023,
         "rating": 9.0,
         "votes": 105,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870858/meitantei-conan-2023-01-28-yusaku-kudos-detective-show-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870858
     },
     {
       "episode": 1072,
@@ -4845,9 +6760,17 @@
         "year": 2023,
         "rating": 9.5,
         "votes": 102,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870859/meitantei-conan-2023-02-04-yusaku-kudos-detective-show-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870859
     },
     {
       "episode": 1077,
@@ -4865,9 +6788,17 @@
         "year": 2023,
         "rating": 9.5,
         "votes": 149,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870865/meitantei-conan-2023-03-25-the-black-organizations-scheme-hunt",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870865
     },
     {
       "episode": 1078,
@@ -4885,9 +6816,17 @@
         "year": 2023,
         "rating": 9.5,
         "votes": 182,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870866/meitantei-conan-2023-04-01-the-black-organizations-scheme-landing",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870866
     },
     {
       "episode": 1079,
@@ -4905,9 +6844,17 @@
         "year": 2023,
         "rating": 9.6,
         "votes": 176,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870867/meitantei-conan-2023-04-08-the-black-organizations-scheme-identity",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870867
     },
     {
       "episode": 1093,
@@ -4925,9 +6872,17 @@
         "year": 2023,
         "rating": 8.1,
         "votes": 26,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870881/meitantei-conan-2023-08-05-akemi-miyanos-time-capsule-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870881
     },
     {
       "episode": 1094,
@@ -4945,9 +6900,17 @@
         "year": 2023,
         "rating": 8.5,
         "votes": 37,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/2870882/meitantei-conan-2023-08-12-akemi-miyanos-time-capsule-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 2870882
     },
     {
       "episode": 1135,
@@ -4965,9 +6928,17 @@
         "year": 2024,
         "rating": 9.2,
         "votes": 21,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3013305/meitantei-conan-2024-09-21-momiji-ookas-sweet-trap-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3013305
     },
     {
       "episode": 1136,
@@ -4985,9 +6956,17 @@
         "year": 2024,
         "rating": 8.7,
         "votes": 20,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3015740/meitantei-conan-2024-09-28-momiji-ookas-sweet-trap-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3015740
     },
     {
       "episode": 1144,
@@ -5005,9 +6984,17 @@
         "year": 2024,
         "rating": 8.9,
         "votes": 14,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3079623/meitantei-conan-2024-12-07-the-hotel-serial-bombing-case-part-1",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3079623
     },
     {
       "episode": 1145,
@@ -5025,9 +7012,17 @@
         "year": 2024,
         "rating": 9.2,
         "votes": 15,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3083307/meitantei-conan-2024-12-14-the-hotel-serial-bombing-case-part-2",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3083307
     },
     {
       "episode": 1164,
@@ -5045,9 +7040,17 @@
         "year": 2025,
         "rating": 9.3,
         "votes": 48,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3271649/meitantei-conan-2025-06-07-the-17-year-old-truth-the-bloody-knight",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3271649
     },
     {
       "episode": 1165,
@@ -5065,9 +7068,17 @@
         "year": 2025,
         "rating": 9.1,
         "votes": 45,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3275684/meitantei-conan-2025-06-14-the-17-year-old-truth-the-perceptive-devil",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3275684
     },
     {
       "episode": 1166,
@@ -5085,9 +7096,17 @@
         "year": 2025,
         "rating": 9.2,
         "votes": 49,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3283777/meitantei-conan-2025-06-21-the-17-year-old-truth-the-far-sighted-bishop",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3283777
     },
     {
       "episode": 1167,
@@ -5105,9 +7124,17 @@
         "year": 2025,
         "rating": 9.1,
         "votes": 52,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3289221/meitantei-conan-2025-06-28-the-17-year-old-truth-the-queens-gambit",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3289221
     },
     {
       "episode": 1204,
@@ -5125,9 +7152,17 @@
         "year": 2026,
         "rating": 7.3,
         "votes": 10,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3650260/meitantei-conan-2026-06-20-who-kidnapped-conan-and-azusa-part-one",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3650260
     },
     {
       "episode": 1205,
@@ -5145,9 +7180,17 @@
         "year": 2026,
         "rating": 7.6,
         "votes": 10,
-        "checked": "2026-09-07",
-        "mapping": "normalized title match"
-      }
+        "checked": "2026-09-08",
+        "mapping": "normalized title match",
+        "runtimeMinutes": null,
+        "runtimeChecked": "2026-09-08"
+      },
+      "runtimeMinutes": 30,
+      "runtimeSource": "https://www.tvmaze.com/episodes/3656314/meitantei-conan-2026-06-27-who-kidnapped-conan-and-azusa-part-two",
+      "runtimeChecked": "2026-09-08",
+      "runtimeBasis": "broadcast listing",
+      "runtimeMapping": "Japanese episode order and air date",
+      "tvmazeId": 3656314
     }
   ]
 }

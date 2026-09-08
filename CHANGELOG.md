@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-08: Fan analytics and duration sources
+
+- Verified 255 distinct main-story episodes across nine arcs and replaced unexplained selection-history wording in the interface and guide.
+- Added Analytics navigation, individual rating/duration bars, arc/category medians, rating bands, annual releases, saved-progress planning, title hiding, and sourced CSV exports.
+- Refreshed all 255 episode IMDb scores and added 33 verified movie scores; two shorts remain explicitly unrated.
+- Added sourced duration listings for all 255 episodes and 35 films. Episode broadcast listings are labeled as planning figures and attributed to TVmaze under CC BY-SA 4.0.
+- Added rating and duration columns to the generated checklists, with calculation definitions and mapping notes in the analytics methodology.
+
 ## 2026-09-08: Automatic motion and themed scrollbars
 
 - Removed the eye-shaped motion control. The local grid effect now activates automatically for mouse and pen input while respecting reduced-motion preferences.

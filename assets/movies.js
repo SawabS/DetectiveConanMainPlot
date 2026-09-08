@@ -31,7 +31,7 @@
         return `<article class="movie-card${checked ? ' is-watched' : ''}">
           <div class="movie-poster"><div class="movie-poster-fallback" aria-hidden="true"><span>C</span><small>${number}</small></div>${movie.poster ? `<img src="${escape(movie.poster)}" alt="Artwork for ${escape(movie.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : ''}<span class="movie-number">${movie.number ? `FILM ${number}` : labels[movie.category].toUpperCase()}</span></div>
           <div class="movie-card-body"><p class="movie-meta">${labels[movie.category]} · ${movie.releaseDate.slice(0, 4)}${movie.runtimeMinutes ? ` · ${movie.runtimeMinutes} min` : ''}</p><h3>${escape(movie.title)}</h3><p class="movie-release">Japan · <time datetime="${movie.releaseDate}">${date(movie.releaseDate)}</time></p>
-          <div class="movie-card-links"><a href="${escape(movie.source)}" ${external} aria-label="Sources for ${escape(movie.title)}">Details & sources ↗</a>${movie.officialUrl ? `<a href="${escape(movie.officialUrl)}" ${external} aria-label="Official page for ${escape(movie.title)}">Official ↗</a>` : ''}</div>
+          <p class="movie-meta">${movie.imdb?.rating !== null && movie.imdb?.rating !== undefined ? `<a href="https://www.imdb.com/title/${movie.imdb.id}/" ${external}>★ ${movie.imdb.rating.toFixed(1)} IMDb · ${movie.imdb.votes.toLocaleString()} votes ↗</a>` : 'IMDb rating unavailable'}</p><div class="movie-card-links"><a href="${escape(movie.source)}" ${external} aria-label="Sources for ${escape(movie.title)}">Details & sources ↗</a>${movie.officialUrl ? `<a href="${escape(movie.officialUrl)}" ${external} aria-label="Official page for ${escape(movie.title)}">Official ↗</a>` : ''}</div>
           <label class="movie-watch"><input type="checkbox" id="watch-${movie.id}" data-movie-watch="${movie.id}" ${checked ? 'checked' : ''} aria-label="Watched: ${escape(movie.title)}"><span>${checked ? 'Watched' : 'Mark watched'}</span></label></div></article>`;
       }).join('');
       // Keep a readable cover when an external image cannot load.
@@ -76,6 +76,6 @@
     });
     $('movie-reviewed').textContent = `Catalog checked ${date(updated)}. Japanese release dates. TV specials, OVAs, and unreleased films are excluded.`;
     render();
-    return { render };
+    return { render, getWatched: () => new Set(watched) };
   };
 })();
