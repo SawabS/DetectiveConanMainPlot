@@ -2,15 +2,13 @@
   'use strict';
   const root = document.documentElement;
   const themeButton = document.getElementById('theme-toggle');
-  const motionButton = document.getElementById('motion-toggle');
   const systemTheme = matchMedia('(prefers-color-scheme: light)');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const finePointer = matchMedia('(pointer: fine)');
-  let themeChoice = null, motionChoice = true;
+  let themeChoice = null;
   try {
     const saved = localStorage.getItem('conan-casebook:theme');
     themeChoice = ['light', 'dark'].includes(saved) ? saved : null;
-    motionChoice = localStorage.getItem('conan-casebook:motion') !== 'off';
   } catch { /* Preferences work for this session when storage is unavailable. */ }
   const canvas = document.getElementById('ambient-canvas');
   const context = canvas.getContext('2d');
@@ -20,7 +18,7 @@
   if (context) root.dataset.gridCanvas = 'true';
   let width = window.innerWidth, height = window.innerHeight, frame = 0;
   let current = { x: width / 2, y: height / 2 }, target = { ...current };
-  const motionEnabled = () => motionChoice && !reducedMotion.matches && finePointer.matches;
+  const motionEnabled = () => !reducedMotion.matches && finePointer.matches;
   function applyTheme(theme) {
     root.dataset.theme = theme;
     themeButton.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
@@ -35,22 +33,11 @@
     applyTheme(themeChoice);
   });
   systemTheme.addEventListener('change', () => { if (!themeChoice) applyTheme(systemTheme.matches ? 'light' : 'dark'); });
-  function applyMotion() {
-    root.dataset.motion = motionEnabled() ? 'on' : 'off';
-    motionButton.setAttribute('aria-pressed', String(motionEnabled()));
-    motionButton.disabled = reducedMotion.matches || !finePointer.matches;
-    const reason = reducedMotion.matches ? 'Motion reduced by system preference' : !finePointer.matches ? 'Background motion requires a mouse or pen' : motionChoice ? 'Turn off background motion' : 'Turn on background motion';
-    motionButton.setAttribute('aria-label', reason); motionButton.title = reason;
-    if (!motionEnabled()) {
-      resetMotion();
-    }
+  function applyMotionPreference() {
+    if (!motionEnabled()) resetMotion();
   }
-  motionButton.addEventListener('click', () => {
-    motionChoice = !motionChoice;
-    try { localStorage.setItem('conan-casebook:motion', motionChoice ? 'on' : 'off'); } catch { /* Session preference. */ }
-    applyMotion();
-  });
-  reducedMotion.addEventListener('change', applyMotion); finePointer.addEventListener('change', applyMotion);
+  reducedMotion.addEventListener('change', applyMotionPreference);
+  finePointer.addEventListener('change', applyMotionPreference);
   function drawGrid() {
     if (!context) return;
     context.clearRect(0, 0, width, height);
@@ -136,7 +123,6 @@
       themeChoice = ['light', 'dark'].includes(event.newValue) ? event.newValue : null;
       applyTheme(themeChoice ?? (systemTheme.matches ? 'light' : 'dark'));
     }
-    if (event.key === 'conan-casebook:motion') { motionChoice = event.newValue !== 'off'; applyMotion(); }
   });
-  applyTheme(root.dataset.theme); applyMotion(); resize();
+  applyTheme(root.dataset.theme); resize();
 })();

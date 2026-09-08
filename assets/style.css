@@ -9,6 +9,7 @@
   --glass: rgb(9 26 48 / .22); --glass-solid: #10223b; --shadow: 0 20px 70px #0003;
   --graph-bg: #08172c; --graph-grid: #244568; --node-outline: #0a1930;
   --ambient-rgb: 82, 159, 239; --hero-edge: #193151;
+  --scroll-track: #09182b; --scroll-thumb: #315f91; --scroll-hover: #4b83bd;
   --font: 'DM Sans', system-ui, sans-serif; --display: 'Space Grotesk', system-ui, sans-serif;
 }
 :root[data-theme='light'] {
@@ -20,8 +21,14 @@
   --glass: rgb(247 251 255 / .22); --glass-solid: #f7fbff; --shadow: 0 18px 65px #285ca31a;
   --graph-bg: #f9fcff; --graph-grid: #aac5e4; --node-outline: #f9fcff;
   --ambient-rgb: 37, 113, 201; --hero-edge: #bed6ef;
+  --scroll-track: #e2edf9; --scroll-thumb: #6999c8; --scroll-hover: #367dbf;
 }
-* { box-sizing: border-box; }
+* { box-sizing: border-box; scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) var(--scroll-track); }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: var(--scroll-track); }
+*::-webkit-scrollbar-thumb { min-height: 42px; border: 2px solid var(--scroll-track); border-radius: 999px; background: var(--scroll-thumb); }
+*::-webkit-scrollbar-thumb:hover { background: var(--scroll-hover); }
+*::-webkit-scrollbar-corner { background: var(--scroll-track); }
 html { scroll-behavior: smooth; scroll-padding-top: 110px; }
 body { margin: 0; isolation: isolate; background: var(--bg); color: var(--ink); font: 16px/1.55 var(--font); }
 button, input, select { font: inherit; }
@@ -63,10 +70,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .nav-tools .icon-button svg { transition: transform .2s ease; }
 .nav-tools .icon-button:hover:not(:disabled) svg { transform: rotate(-10deg) scale(1.08); }
 .theme-toggle { color: var(--accent); }
-.moon-icon, .motion-slash { display: none; }
+.moon-icon { display: none; }
 [data-theme='light'] .moon-icon { display: block; }
 [data-theme='light'] .sun-icon { display: none; }
-[data-motion='off'] .motion-slash { display: block; }
 .page { max-width: 1360px; margin: auto; padding: 28px 40px 0; }
 .hero { min-height: 310px; position: relative; isolation: isolate; overflow: hidden; border: 1px solid var(--hero-edge); border-radius: 18px; background: #102039; box-shadow: var(--shadow); color: #eff6ff; }
 .hero-art { position: absolute; right: -8px; top: -8px; height: calc(100% + 16px); width: 66%; object-fit: cover; object-position: center 46%; z-index: -2; }

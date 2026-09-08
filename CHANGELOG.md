@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-08: Automatic motion and themed scrollbars
+
+- Removed the eye-shaped motion control. The local grid effect now activates automatically for mouse and pen input while respecting reduced-motion preferences.
+- Added slim blue scrollbars for the page, graph inspector, dialogs, and other scrollable panels in both themes.
+
 ## 2026-09-07: Complete movie library
 
 - Added Movies to desktop/mobile navigation and the keyboard-accessible view tabs. Direct links to `#movies` open the library.
