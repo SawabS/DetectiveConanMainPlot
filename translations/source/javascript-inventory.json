@@ -6123,59 +6123,101 @@
     "file": "assets/navigation.js",
     "line": 5,
     "kind": "literal",
-    "text": "glass-navigation"
+    "text": "(max-width: 800px)"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 5,
+    "kind": "literal",
+    "text": "(prefers-reduced-motion: reduce)"
   },
   {
     "file": "assets/navigation.js",
     "line": 6,
     "kind": "literal",
-    "text": "span"
+    "text": ":scope > a"
   },
   {
     "file": "assets/navigation.js",
-    "line": 7,
+    "line": 10,
     "kind": "literal",
-    "text": "nav-glass-pill"
+    "text": "nav-clone"
   },
   {
     "file": "assets/navigation.js",
-    "line": 7,
+    "line": 10,
     "kind": "literal",
     "text": "aria-hidden"
   },
   {
     "file": "assets/navigation.js",
-    "line": 7,
+    "line": 10,
     "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/navigation.js",
-    "line": 9,
+    "line": 11,
     "kind": "literal",
-    "text": ":scope > a, :scope > button"
+    "text": "click"
   },
   {
     "file": "assets/navigation.js",
-    "line": 11,
+    "line": 15,
+    "kind": "literal",
+    "text": "glass-navigation"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 16,
+    "kind": "literal",
+    "text": "span"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "nav-glass-pill"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "aria-hidden"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "true"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 19,
+    "kind": "literal",
+    "text": ":scope > a"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 21,
+    "kind": "literal",
+    "text": "is-tape"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 29,
     "kind": "literal",
     "text": "nav-active"
   },
   {
     "file": "assets/navigation.js",
-    "line": 11,
+    "line": 35,
     "kind": "literal",
-    "text": "aria-selected"
+    "text": "none"
   },
   {
     "file": "assets/navigation.js",
-    "line": 11,
-    "kind": "literal",
-    "text": "true"
-  },
-  {
-    "file": "assets/navigation.js",
-    "line": 16,
+    "line": 36,
     "kind": "template",
     "text": "{0}px",
     "variables": [
@@ -6184,7 +6226,7 @@
   },
   {
     "file": "assets/navigation.js",
-    "line": 16,
+    "line": 36,
     "kind": "template",
     "text": "{0}px",
     "variables": [
@@ -6193,7 +6235,7 @@
   },
   {
     "file": "assets/navigation.js",
-    "line": 17,
+    "line": 37,
     "kind": "template",
     "text": "translate3d({0}px,{1}px,0)",
     "variables": [
@@ -6203,49 +6245,79 @@
   },
   {
     "file": "assets/navigation.js",
-    "line": 20,
+    "line": 38,
+    "kind": "literal",
+    "text": "transition"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 59,
+    "kind": "literal",
+    "text": "auto"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 59,
+    "kind": "literal",
+    "text": "smooth"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 66,
+    "kind": "literal",
+    "text": "is-tape"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 67,
+    "kind": "literal",
+    "text": "nav-active"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 71,
+    "kind": "literal",
+    "text": "scroll"
+  },
+  {
+    "file": "assets/navigation.js",
+    "line": 79,
     "kind": "literal",
     "text": "pointerenter"
   },
   {
     "file": "assets/navigation.js",
-    "line": 21,
+    "line": 80,
     "kind": "literal",
     "text": "focus"
   },
   {
     "file": "assets/navigation.js",
-    "line": 22,
+    "line": 81,
     "kind": "literal",
     "text": "blur"
   },
   {
     "file": "assets/navigation.js",
-    "line": 24,
+    "line": 83,
     "kind": "literal",
     "text": "pointerleave"
   },
   {
     "file": "assets/navigation.js",
-    "line": 25,
-    "kind": "literal",
-    "text": "aria-selected"
-  },
-  {
-    "file": "assets/navigation.js",
-    "line": 25,
+    "line": 84,
     "kind": "literal",
     "text": "class"
   },
   {
     "file": "assets/navigation.js",
-    "line": 27,
+    "line": 86,
     "kind": "literal",
     "text": "resize"
   },
   {
     "file": "assets/navigation.js",
-    "line": 28,
+    "line": 87,
     "kind": "literal",
     "text": "conan:language"
   },

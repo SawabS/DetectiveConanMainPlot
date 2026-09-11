@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-11: Looping navigation tape on phones
+
+- Phones keep the header on one row. When the sections do not fit, they become a horizontal tape you swipe with your thumb: links fade out at both edges and the strip loops endlessly in both directions. Tapping a section glides it to the center, and the glass highlight follows the visible copy.
+- Below 480px the brand shows only its C mark; the name remains available to screen readers.
+
 ## 2026-09-11: Analytics redesign, story-map energy, and Markdown-only guides
 
 - Rebuilt Analytics around four questions: how ratings move across the story (one dot per entry on a focused axis, arc bands, a rolling-median trend, and labeled peaks), which arcs score highest (median, middle half, and range on the same scale), what to watch first (a top ten with a median-vote floor), and when you will finish (daily budget, projected date, and the next unwatched entry). One highlight hue plus gray replaces nine arc colors; the data table and CSV export remain.

@@ -6133,6 +6133,14 @@
       "assets/analytics.js:57"
     ]
   },
+  "text_9452b24b179f": {
+    "source": ":scope > a",
+    "kind": "literal",
+    "references": [
+      "assets/navigation.js:6",
+      "assets/navigation.js:19"
+    ]
+  },
   "text_945645725112": {
     "source": "The Mysterious Passenger: Part 2",
     "kind": "catalog content",
@@ -7867,6 +7875,13 @@
       "episodes.episodes[103].imdb.title"
     ]
   },
+  "text_c00babce4dac": {
+    "source": "(max-width: 800px)",
+    "kind": "literal",
+    "references": [
+      "assets/navigation.js:5"
+    ]
+  },
   "text_c04e4483299d": {
     "source": "June 13, 2015",
     "kind": "catalog content",
@@ -8577,13 +8592,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_cf69b85e3373": {
-    "source": ":scope > a, :scope > button",
-    "kind": "literal",
-    "references": [
-      "assets/navigation.js:9"
     ]
   },
   "text_cf6f8715fad9": {
@@ -10977,7 +10985,8 @@
       "assets/app.js:127",
       "assets/app.js:258",
       "assets/analytics.js:101",
-      "assets/presentation.js:6"
+      "assets/presentation.js:6",
+      "assets/navigation.js:5"
     ]
   },
   "text_fd661fa1bb65": {
