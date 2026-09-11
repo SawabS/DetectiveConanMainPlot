@@ -13,6 +13,61 @@
   const canvas = document.getElementById('ambient-canvas');
   const context = canvas.getContext('2d');
   const { RADIUS, warpPoint } = window.ConanGridCore;
+  // A small foreground patch carries the same field across opaque cards and tables.
+  const surfaceCanvas = document.createElement('canvas');
+  surfaceCanvas.className = 'surface-liquid';
+  surfaceCanvas.setAttribute('aria-hidden', 'true');
+  document.body.append(surfaceCanvas);
+  const surfaceContext = surfaceCanvas.getContext('2d');
+  const patchSize = (RADIUS + 12) * 2;
+  let activeSurface = null;
+  const surfaces = 'tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2';
+  function selectSurface(target, pressed = false) {
+    const next = !pressed && target instanceof Element ? target.closest(surfaces) || target.closest('button, a, input, select, summary') : null;
+    if (next === activeSurface) return;
+    activeSurface?.style.removeProperty('--liquid-scale');
+    activeSurface = next;
+    if (activeSurface) {
+      activeSurface.classList.add('liquid-surface');
+      activeSurface.style.setProperty('--liquid-scale', '.992');
+    }
+  }
+  function positionSurfaceLayer() {
+    // Native dialogs occupy the browser's top layer, above ordinary z-index values.
+    const host = [...document.querySelectorAll('dialog[open]')].at(-1) || document.body;
+    if (surfaceCanvas.parentElement !== host) host.append(surfaceCanvas);
+  }
+  new MutationObserver(positionSurfaceLayer).observe(document.body, {subtree:true, attributes:true, attributeFilter:['open']});
+  function drawSurface() {
+    if (!surfaceContext) return;
+    const ctx = surfaceContext, half = patchSize / 2;
+    ctx.clearRect(0, 0, patchSize, patchSize);
+    surfaceCanvas.hidden = !motionEnabled() || field.strength < .001;
+    if (surfaceCanvas.hidden) return;
+    surfaceCanvas.style.transform = `translate3d(${field.x-half}px,${field.y-half}px,0)`;
+    const glow = ctx.createRadialGradient(half,half,0,half,half,RADIUS);
+    glow.addColorStop(0, `rgba(${color},${.035*field.strength})`);
+    glow.addColorStop(1, `rgba(${color},0)`);
+    ctx.fillStyle = glow; ctx.fillRect(0,0,patchSize,patchSize);
+    const stroke = ctx.createRadialGradient(half,half,0,half,half,RADIUS);
+    stroke.addColorStop(0, `rgba(${color},${.22*field.strength})`);
+    stroke.addColorStop(.65, `rgba(${color},${.065*field.strength})`);
+    stroke.addColorStop(1, `rgba(${color},0)`);
+    ctx.strokeStyle = stroke; ctx.lineWidth = 1;
+    for (const vertical of [true,false]) {
+      const origin = (vertical ? field.x : field.y)-half;
+      const start = Math.floor(origin/48)*48;
+      for (let fixed=start; fixed<=origin+patchSize; fixed+=48) {
+        ctx.beginPath();
+        for (let along=0; along<=patchSize; along+=8) {
+          const point=warpPoint(vertical?fixed:field.x-half+along, vertical?field.y-half+along:fixed,field);
+          const x=point.x-field.x+half, y=point.y-field.y+half;
+          if (!along) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+        }
+        ctx.stroke();
+      }
+    }
+  }
   let color = '', previousTime = 0;
   const field = { x: 0, y: 0, strength: 0, pullX: 0, pullY: 0 };
   if (context) root.dataset.gridCanvas = 'true';
@@ -25,7 +80,7 @@
     themeButton.title = `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`;
     document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#071225' : '#eef5fd';
     color = getComputedStyle(root).getPropertyValue('--ambient-rgb').trim();
-    drawGrid();
+    drawGrid(); drawSurface();
   }
   themeButton.addEventListener('click', () => {
     themeChoice = root.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -64,6 +119,8 @@
     root.dataset.pointerActive = 'false';
     current = { x: width / 2, y: height / 2 }; target = { ...current };
     field.strength = 0; field.pullX = 0; field.pullY = 0;
+    selectSurface(null);
+    drawSurface();
     ['--pointer-x', '--pointer-y'].forEach(key => root.style.removeProperty(key));
     drawGrid();
   }
@@ -72,6 +129,9 @@
     const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
     canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
     context?.setTransform(dpr, 0, 0, dpr, 0, 0);
+    surfaceCanvas.width = Math.round(patchSize*dpr); surfaceCanvas.height = Math.round(patchSize*dpr);
+    surfaceCanvas.style.width = `${patchSize}px`; surfaceCanvas.style.height = `${patchSize}px`;
+    surfaceContext?.setTransform(dpr,0,0,dpr,0,0);
     resetMotion();
   }
   function tick(time) {
@@ -97,24 +157,29 @@
       field.strength = desiredStrength; field.pullX = 0; field.pullY = 0;
     }
     root.style.setProperty('--pointer-x', `${current.x}px`); root.style.setProperty('--pointer-y', `${current.y}px`);
-    drawGrid();
+    drawGrid(); drawSurface();
     if (!settled) frame = requestAnimationFrame(tick);
     else previousTime = 0;
   }
   window.addEventListener('pointermove', event => {
     if (!motionEnabled() || event.pointerType === 'touch') return;
+    selectSurface(event.target, Boolean(event.buttons));
     target = { x: event.clientX, y: event.clientY };
     if (root.dataset.pointerActive !== 'true') current = { ...target };
     root.dataset.pointerActive = 'true';
     if (!frame) frame = requestAnimationFrame(tick);
   }, { passive: true });
   function returnToRest() {
+    selectSurface(null);
     root.dataset.pointerActive = 'false';
     // Relax the local patch in place rather than sweeping it across the page.
     target = { ...current };
     if (motionEnabled() && !frame) frame = requestAnimationFrame(tick);
   }
   root.addEventListener('pointerleave', returnToRest);
+  window.addEventListener('pointerdown', () => selectSurface(null), {passive:true});
+  window.addEventListener('scroll', returnToRest, {passive:true, capture:true});
+  window.addEventListener('hashchange', returnToRest);
   window.addEventListener('blur', returnToRest);
   document.addEventListener('visibilitychange', () => { if (document.hidden) resetMotion(); });
   window.addEventListener('resize', resize, { passive: true });

@@ -8,7 +8,7 @@
   <title>Conan Casebook | The Main Story</title>
   <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
   <script src="assets/theme.js"></script>
-  <link rel="stylesheet" href="assets/style.css?v=7">
+  <link rel="stylesheet" href="assets/style.css?v=8">
   <script src="assets/episodes.js?v=7" defer></script>
   <script src="assets/core.js" defer></script>
   <script src="assets/graph-core.js" defer></script>
@@ -18,9 +18,9 @@
   <script src="assets/movies.js?v=7" defer></script>
   <script src="assets/analytics-core.js" defer></script>
   <script src="assets/analytics.js" defer></script>
-  <script src="assets/app.js?v=7" defer></script>
+  <script src="assets/app.js?v=8" defer></script>
   <script src="assets/grid-core.js" defer></script>
-  <script src="assets/presentation.js?v=6" defer></script>
+  <script src="assets/presentation.js?v=8" defer></script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><div class="ambient-grid"></div><canvas id="ambient-canvas"></canvas><div class="pointer-light"></div></div>
@@ -32,7 +32,7 @@
       <a href="#story-map" data-view-link="graph">Story map</a>
       <a href="#movies" data-view-link="movies">Movies</a>
       <a href="#analytics" data-view-link="analytics">Analytics</a>
-      <a class="nav-guide" href="detective_conan_main_story_watch_guide.md">Guide</a>
+      <a class="nav-guide" href="guide.html">Guide</a>
     </nav>
     <div class="nav-tools">
       <button id="theme-toggle" class="icon-button theme-toggle" aria-label="Switch to light theme" title="Switch theme">
@@ -76,7 +76,7 @@
         <div class="table-wrap"><table class="episode-table"><caption class="sr-only">Selected main-story episodes with individual IMDb ratings and watch status</caption><thead><tr><th scope="col"><span class="sr-only">Watched</span></th><th scope="col">EP.</th><th scope="col">CASE FILE</th><th scope="col" class="arc-column">ARC</th><th scope="col">IMDb <span>/10</span></th><th scope="col"><span class="sr-only">Sources and episode details</span></th></tr></thead><tbody id="episode-list"></tbody></table></div>
         <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>No clues here.</h3><p>Try another title, episode number, or filter.</p><button class="button primary" id="clear-filters">Clear filters</button></div>
         <p class="list-footnote">Ratings checked 7 September 2026. Titles and linked sources may reveal story details.</p>
-        <noscript><p>This interactive watchlist needs JavaScript. <a href="detective_conan_main_story_watch_guide.md">Read the complete Markdown guide</a>.</p></noscript>
+        <noscript><p>This interactive watchlist needs JavaScript. <a href="guide.html">Read the complete Markdown guide</a>.</p></noscript>
       </div>
     </section>
     <section id="story-map" class="graph-panel" role="tabpanel" aria-labelledby="graph-tab" hidden>
@@ -108,14 +108,14 @@
         <label><span class="sr-only">Movie watch status</span><select id="movie-status"><option value="all">Any status</option><option value="unwatched">Unwatched</option><option value="watched">Watched</option></select></label>
         <label><span class="sr-only">Sort movies</span><select id="movie-sort"><option value="release">Release order</option><option value="newest">Newest first</option></select></label>
       </div>
-      <div class="results-meta"><p id="movie-result-count" role="status" aria-live="polite" tabindex="-1">35 films</p><a href="detective_conan_movies.md">Full movie checklist ↗</a></div>
+      <div class="results-meta"><p id="movie-result-count" role="status" aria-live="polite" tabindex="-1">35 films</p><a href="movie-guide.html">Full movie checklist ↗</a></div>
       <div id="movie-grid" class="movie-grid"></div>
       <div id="movie-empty" class="empty-state" hidden><h3>No matching films.</h3><p>Try another title, year, or category.</p><button id="movie-clear" class="button quiet">Clear filters</button></div>
       <div class="movie-sources"><p id="movie-reviewed">Catalog checked 7 September 2026. Japanese release dates. TV specials, OVAs, and unreleased films are excluded.</p><p><a href="https://www.detectiveconanworld.com/wiki/Movies" target="_blank" rel="noopener noreferrer">Detective Conan World ↗</a> · <a href="https://www.tms-e.co.jp/global/alltitles/conan/" target="_blank" rel="noopener noreferrer">TMS official catalog ↗</a> · <a href="data/movies.json">Movie data ↗</a></p><p>Artwork belongs to its respective rights holders. Image sources are recorded in the movie data.</p></div>
-      <noscript><p><a href="detective_conan_movies.md">Read the complete movie checklist</a>.</p></noscript>
+      <noscript><p><a href="movie-guide.html">Read the complete movie checklist</a>.</p></noscript>
     </section>
     <section id="analytics" class="analytics-panel" role="tabpanel" aria-labelledby="analytics-tab" hidden>
-      <div class="analytics-heading"><div><p class="eyebrow">THE EVIDENCE ROOM</p><h2>Follow the numbers.</h2><p>Find the peaks. Trace the years. Plan your next watch.</p></div><a class="button quiet" href="data/analytics-methodology.md">How we count ↗</a></div>
+      <div class="analytics-heading"><div><p class="eyebrow">THE EVIDENCE ROOM</p><h2>Follow the numbers.</h2><p>Find the peaks. Trace the years. Plan your next watch.</p></div><a class="button quiet" href="methodology.html">How we count ↗</a></div>
       <div class="analytics-controls">
         <div class="analytics-scope" role="group" aria-label="Analytics dataset"><button data-analytics-scope="episodes" aria-pressed="true">Main episodes <span>255</span></button><button data-analytics-scope="movies" aria-pressed="false">Movies <span>35</span></button></div>
         <label class="hide-titles"><input id="analytics-hide-titles" type="checkbox">Hide titles</label><button id="analytics-export" class="button quiet">Export filtered CSV ↗</button>
@@ -147,7 +147,7 @@
         <section class="analytics-planner" aria-labelledby="analytics-planner-title"><div><p class="eyebrow">MAKE TIME FOR THE NEXT CLUE</p><h3 id="analytics-planner-title">Your viewing budget</h3><p id="analytics-planner-description"></p></div><div class="analytics-planner-controls"><label for="analytics-daily-minutes">Daily budget <output id="analytics-daily-label" for="analytics-daily-minutes">60 min</output></label><input id="analytics-daily-minutes" type="range" min="15" max="180" step="15" value="60"><p id="analytics-days"></p></div></section>
       </div>
       <details class="analytics-table-details"><summary>View the filtered data table</summary><div class="analytics-chart-scroll"><table class="analytics-table"><caption class="sr-only">Filtered entries with IMDb scores, vote counts, release dates, and listed durations</caption><thead><tr><th scope="col">Entry</th><th scope="col">Title</th><th scope="col">Released</th><th scope="col">IMDb /10</th><th scope="col">Votes</th><th scope="col">Listed min</th><th scope="col">Watched</th></tr></thead><tbody id="analytics-table-body"></tbody></table></div></details>
-      <div class="analytics-methodology"><p id="analytics-source-note"></p><p>Episode durations use <a href="https://www.tvmaze.com/shows/5429/meitantei-conan" target="_blank" rel="noopener noreferrer">TVmaze broadcast listings</a> and may include advertising. Movie durations use film listings; editions differ. Time totals are planning figures, not exact streaming playback times.</p><p>IMDb ratings are dated user-score snapshots. A higher vote count indicates more ratings, not a guarantee of quality. Charts describe this curated selection, not every Detective Conan episode. <a href="data/analytics-methodology.md">Definitions & sources ↗</a></p></div>
+      <div class="analytics-methodology"><p id="analytics-source-note"></p><p>Episode durations use <a href="https://www.tvmaze.com/shows/5429/meitantei-conan" target="_blank" rel="noopener noreferrer">TVmaze broadcast listings</a> and may include advertising. Movie durations use film listings; editions differ. Time totals are planning figures, not exact streaming playback times.</p><p>IMDb ratings are dated user-score snapshots. A higher vote count indicates more ratings, not a guarantee of quality. Charts describe this curated selection, not every Detective Conan episode. <a href="methodology.html">Definitions & sources ↗</a></p></div>
       <div id="analytics-tooltip" class="analytics-tooltip" role="tooltip" hidden></div>
     </section>
     <footer><a class="footer-brand" href="#">CONAN CASEBOOK <span>↑</span></a><p>Created by <a class="creator-credit" href="https://github.com/SawabS" target="_blank" rel="noopener noreferrer">SawabS ↗</a><span class="footer-separator"> / </span>Unofficial fan project.</p><button class="text-button" id="credits-button">Artwork credits</button></footer>

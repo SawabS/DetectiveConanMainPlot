@@ -81,7 +81,7 @@
         <td><a class="episode-title" href="${escape(e.source)}" ${external}>${escape(title(e))}</a><span class="episode-meta">${escape(e.airDate)}${e.priority === 'SETUP' ? '<span class="setup-tag">SETUP</span>' : ''}</span></td>
         <td class="arc-column"><span class="arc-tag">${escape(filters.hideTitles ? `Arc ${e.arc}` : arcs.get(e.arc))}</span></td>
         <td><a class="rating-link" href="${imdbUrl(e)}" ${external} aria-label="Episode ${e.episode}: ${rating} out of 10 on IMDb"><span class="star" aria-hidden="true">★</span>${rating}</a><span class="rating-votes">${(e.imdb.votes ?? 0).toLocaleString()} votes</span></td>
-        <td><button class="detail-button" data-detail="${e.episode}" aria-label="Sources and details for episode ${e.episode}">↗</button></td>
+        <td><button class="detail-button" data-detail="${e.episode}" aria-label="Sources and details for episode ${e.episode}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></button></td>
       </tr>`;
     }).join('');
     document.querySelectorAll('[data-status]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.status === filters.status)));

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-11: Reading pages and surface motion
+
+- Removed hover borders from the navigation theme and GitHub controls while preserving keyboard focus indicators.
+- Replaced the table detail arrow with a geometrically centered SVG for consistent mobile alignment.
+- Rendered the episode guide, movie guide, and analytics methodology as styled, offline HTML with working contents links and scrollable tables.
+- Extended the compact liquid grid patch above cards, tables, navigation, and dialogs. Hovered rows and cards compress subtly, then relax; reduced motion, touch input, dragging, and idle suspension remain supported.
+
 ## 2026-09-08: Fan analytics and duration sources
 
 - Verified 255 distinct main-story episodes across nine arcs and replaced unexplained selection-history wording in the interface and guide.
