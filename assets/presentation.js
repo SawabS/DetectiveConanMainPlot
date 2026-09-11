@@ -13,17 +13,13 @@
   const canvas = document.getElementById('ambient-canvas');
   const context = canvas.getContext('2d');
   const { RADIUS, warpPoint } = window.ConanGridCore;
-  // A small foreground patch carries the same field across opaque cards and tables.
-  const surfaceCanvas = document.createElement('canvas');
-  surfaceCanvas.className = 'surface-liquid';
-  surfaceCanvas.setAttribute('aria-hidden', 'true');
-  document.body.append(surfaceCanvas);
-  const surfaceContext = surfaceCanvas.getContext('2d');
-  const patchSize = (RADIUS + 12) * 2;
+  // One canvas, one geometry pass: no independently sampled foreground duplicate.
+  canvas.classList.add('site-grid');
+  document.body.append(canvas);
   let activeSurface = null;
   const surfaces = 'tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2';
   function selectSurface(target, pressed = false) {
-    const next = !pressed && target instanceof Element ? target.closest(surfaces) || target.closest('button, a, input, select, summary') : null;
+    const next = !pressed && target instanceof Element && !target.closest('.topbar, .view-tabs, .language-card') ? target.closest(surfaces) || target.closest('button, a, input, select, summary') : null;
     if (next === activeSurface) return;
     activeSurface?.style.removeProperty('--liquid-scale');
     activeSurface = next;
@@ -35,39 +31,9 @@
   function positionSurfaceLayer() {
     // Native dialogs occupy the browser's top layer, above ordinary z-index values.
     const host = [...document.querySelectorAll('dialog[open]')].at(-1) || document.body;
-    if (surfaceCanvas.parentElement !== host) host.append(surfaceCanvas);
+    if (canvas.parentElement !== host) host.append(canvas);
   }
   new MutationObserver(positionSurfaceLayer).observe(document.body, {subtree:true, attributes:true, attributeFilter:['open']});
-  function drawSurface() {
-    if (!surfaceContext) return;
-    const ctx = surfaceContext, half = patchSize / 2;
-    ctx.clearRect(0, 0, patchSize, patchSize);
-    surfaceCanvas.hidden = !motionEnabled() || field.strength < .001;
-    if (surfaceCanvas.hidden) return;
-    surfaceCanvas.style.transform = `translate3d(${field.x-half}px,${field.y-half}px,0)`;
-    const glow = ctx.createRadialGradient(half,half,0,half,half,RADIUS);
-    glow.addColorStop(0, `rgba(${color},${.035*field.strength})`);
-    glow.addColorStop(1, `rgba(${color},0)`);
-    ctx.fillStyle = glow; ctx.fillRect(0,0,patchSize,patchSize);
-    const stroke = ctx.createRadialGradient(half,half,0,half,half,RADIUS);
-    stroke.addColorStop(0, `rgba(${color},${.22*field.strength})`);
-    stroke.addColorStop(.65, `rgba(${color},${.065*field.strength})`);
-    stroke.addColorStop(1, `rgba(${color},0)`);
-    ctx.strokeStyle = stroke; ctx.lineWidth = 1;
-    for (const vertical of [true,false]) {
-      const origin = (vertical ? field.x : field.y)-half;
-      const start = Math.floor(origin/48)*48;
-      for (let fixed=start; fixed<=origin+patchSize; fixed+=48) {
-        ctx.beginPath();
-        for (let along=0; along<=patchSize; along+=8) {
-          const point=warpPoint(vertical?fixed:field.x-half+along, vertical?field.y-half+along:fixed,field);
-          const x=point.x-field.x+half, y=point.y-field.y+half;
-          if (!along) ctx.moveTo(x,y); else ctx.lineTo(x,y);
-        }
-        ctx.stroke();
-      }
-    }
-  }
   let color = '', previousTime = 0;
   const field = { x: 0, y: 0, strength: 0, pullX: 0, pullY: 0 };
   if (context) root.dataset.gridCanvas = 'true';
@@ -79,8 +45,10 @@
     themeButton.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
     themeButton.title = `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`;
     document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#071225' : '#eef5fd';
+    const cover = document.querySelector('.hero-art');
+    if (cover) { cover.src = theme === 'light' ? 'assets/conan-daylight.jpg' : 'assets/conan-moon.jpg'; cover.alt = theme === 'light' ? 'Conan Edogawa above a coastal city under a bright blue sky' : 'Conan Edogawa standing above the city under a full moon'; }
     color = getComputedStyle(root).getPropertyValue('--ambient-rgb').trim();
-    drawGrid(); drawSurface();
+    drawGrid();
   }
   themeButton.addEventListener('click', () => {
     themeChoice = root.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -120,7 +88,7 @@
     current = { x: width / 2, y: height / 2 }; target = { ...current };
     field.strength = 0; field.pullX = 0; field.pullY = 0;
     selectSurface(null);
-    drawSurface();
+
     ['--pointer-x', '--pointer-y'].forEach(key => root.style.removeProperty(key));
     drawGrid();
   }
@@ -129,9 +97,6 @@
     const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
     canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
     context?.setTransform(dpr, 0, 0, dpr, 0, 0);
-    surfaceCanvas.width = Math.round(patchSize*dpr); surfaceCanvas.height = Math.round(patchSize*dpr);
-    surfaceCanvas.style.width = `${patchSize}px`; surfaceCanvas.style.height = `${patchSize}px`;
-    surfaceContext?.setTransform(dpr,0,0,dpr,0,0);
     resetMotion();
   }
   function tick(time) {
@@ -157,7 +122,7 @@
       field.strength = desiredStrength; field.pullX = 0; field.pullY = 0;
     }
     root.style.setProperty('--pointer-x', `${current.x}px`); root.style.setProperty('--pointer-y', `${current.y}px`);
-    drawGrid(); drawSurface();
+    drawGrid();
     if (!settled) frame = requestAnimationFrame(tick);
     else previousTime = 0;
   }

@@ -8,7 +8,7 @@
   <title>Conan Casebook | The Main Story</title>
   <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
   <script src="assets/theme.js"></script>
-  <link rel="stylesheet" href="assets/style.css?v=8">
+  <link rel="stylesheet" href="assets/style.css?v=9">
   <script src="assets/episodes.js?v=7" defer></script>
   <script src="assets/core.js" defer></script>
   <script src="assets/graph-core.js" defer></script>
@@ -19,8 +19,11 @@
   <script src="assets/analytics-core.js" defer></script>
   <script src="assets/analytics.js" defer></script>
   <script src="assets/app.js?v=8" defer></script>
+  <script src="assets/locales.js?v=9" defer></script>
+  <script src="assets/language.js?v=9" defer></script>
+  <script src="assets/navigation.js?v=9" defer></script>
   <script src="assets/grid-core.js" defer></script>
-  <script src="assets/presentation.js?v=8" defer></script>
+  <script src="assets/presentation.js?v=9" defer></script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><div class="ambient-grid"></div><canvas id="ambient-canvas"></canvas><div class="pointer-light"></div></div>
@@ -35,6 +38,17 @@
       <a class="nav-guide" href="guide.html">Guide</a>
     </nav>
     <div class="nav-tools">
+      <div class="language-control">
+        <button id="language-toggle" class="icon-button" aria-label="Choose language" aria-expanded="false" aria-controls="language-card" aria-haspopup="menu" title="Choose language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18Z"/></svg></button>
+        <div id="language-card" class="language-card" role="menu" aria-label="Website language" hidden>
+          <p class="eyebrow">LANGUAGE</p>
+          <button role="menuitemradio" aria-checked="true" data-language="en"><span lang="en">English</span><small>EN</small></button>
+          <button role="menuitemradio" aria-checked="false" data-language="ckb"><span lang="ckb" dir="rtl">کوردیی ناوەندی</span><small>CKB</small></button>
+          <button role="menuitemradio" aria-checked="false" data-language="ar"><span lang="ar" dir="rtl">العربية</span><small>AR</small></button>
+          <button role="menuitemradio" aria-checked="false" data-language="ja"><span lang="ja">日本語</span><small>JA</small></button>
+          <p id="language-status" class="language-status" role="status">English is available. Kurdish, Arabic, and Japanese are being prepared.</p>
+        </div>
+      </div>
       <button id="theme-toggle" class="icon-button theme-toggle" aria-label="Switch to light theme" title="Switch theme">
         <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
         <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></svg>

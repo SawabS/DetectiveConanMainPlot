@@ -57,3 +57,11 @@
 - Added the responsive Conan Casebook interface, persistent checkoffs, arc/status/rating filters, title hiding, deep links, backup import/export, and source details.
 - Added a single data source, deterministic guide generation, a rating refresh script, and integrity checks.
 - Removed em dashes and repetitive guide sections.
+
+## 2026-09-11: Single grid, glass navigation, and translation handoff
+
+- Replaced separately sampled background and foreground grid layers with a single canvas, eliminating doubled grid strokes.
+- Added a sliding glass highlight and subtle lift to navigation and view tabs, with keyboard and reduced-motion support.
+- Added an accessible language popover for English, Sorani, Arabic, and Japanese. Draft locales explicitly use English fallback; saved preferences, RTL, and IBM Plex typography are wired in.
+- Added complete text inventories, editable locale catalogs, source documents, and a translation-agent prompt under `translations/`.
+- Added a credited daylight Conan cover for light mode while retaining the moonlight cover in dark mode.

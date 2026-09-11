@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+JP:wght@400;500;600&display=swap');
 
 :root {
   color-scheme: dark;
@@ -659,3 +659,48 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
 .guide-article td { color: var(--muted); }
 @media (max-width: 800px) { .topbar .nav-guide { display: inline; } }
 @media (max-width: 580px) { .topbar nav { gap: 11px; } .topbar nav a { font-size: 11px; } }
+
+/* A single viewport canvas prevents doubled lines at the liquid patch boundary. */
+.site-grid { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 40; pointer-events: none; }
+.glass-navigation { position: relative; isolation: isolate; }
+.topbar > nav { gap: 8px; }
+.glass-navigation > a, .glass-navigation > button { position: relative; z-index: 1; border-radius: 10px; transition: transform .28s cubic-bezier(.2,.8,.2,1),color .2s; }
+.topbar > nav > a { padding: 9px 12px; white-space: nowrap; }
+.glass-navigation > a:hover, .glass-navigation > button:hover { transform: translateY(-2px) scale(1.035); }
+.nav-glass-pill { position: absolute; left: 0; top: 0; z-index: 0; pointer-events: none; border-radius: 11px; border: 1px solid rgba(var(--ambient-rgb),.2); background: linear-gradient(135deg,rgba(var(--ambient-rgb),.14),rgba(var(--ambient-rgb),.025)); box-shadow: inset 0 1px 0 #ffffff30,0 4px 18px #0712250c; backdrop-filter: blur(12px) saturate(150%); -webkit-backdrop-filter: blur(12px) saturate(150%); transition: transform .4s cubic-bezier(.22,.8,.2,1),width .4s cubic-bezier(.22,.8,.2,1),height .25s; }
+.view-tabs button[aria-selected='true'] { border-color: transparent; }
+.topbar > nav { max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 4px 0; }
+.topbar > nav::-webkit-scrollbar { display: none; }
+.language-control { position: relative; }
+.language-card { position: absolute; inset-inline-end: 0; top: calc(100% + 13px); width: 245px; max-width: calc(100vw - 32px); padding: 15px; border: 1px solid rgba(var(--ambient-rgb),.25); border-radius: 17px; background: color-mix(in srgb,var(--glass-solid) 76%,transparent); box-shadow: 0 15px 45px #05152724,inset 0 1px 0 #ffffff25; backdrop-filter: blur(25px) saturate(150%); -webkit-backdrop-filter: blur(25px) saturate(150%); transform-origin: top right; animation: language-reveal .24s cubic-bezier(.2,.8,.2,1); }
+.language-card:before { content: ''; position: absolute; inset-inline: 0; top: -15px; height: 15px; }
+.language-card .eyebrow { font-size: 10px; margin: 0 8px 10px; }
+.language-card button { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; padding: 11px 12px; border: 1px solid transparent; background: transparent; border-radius: 10px; text-align: start; transition: transform .24s,background .24s,box-shadow .24s; }
+.language-card button:hover, .language-card button:focus-visible { transform: translateY(-1px) scale(1.035); background: rgba(var(--ambient-rgb),.11); box-shadow: inset 0 1px 0 #ffffff22; }
+.language-card button[aria-checked='true'] { background: rgba(var(--ambient-rgb),.12); color: var(--accent); }
+.language-card button small { font-size: 10px; opacity: .7; }
+.language-status { font-size: 11px; line-height: 1.65; color: var(--muted); margin: 12px 8px 3px; }
+@keyframes language-reveal { from { opacity: 0; transform: translateY(-7px) scale(.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
+[data-theme='light'] .hero { background: #e3f2ff; color: #123653; }
+[data-theme='light'] .hero:after { background: linear-gradient(90deg,#e3f2ff 0%,#e3f2ff 28%,#e3f2ffce 47%,#e3f2ff10 78%); }
+[data-theme='light'] .hero-description, [data-theme='light'] .hero .eyebrow { color: #426783; }
+[data-theme='light'] .hero-caption { color: #163e62; background: #eff8ffbf; padding: 5px 9px; border-radius: 5px; }
+@media (max-width: 1100px) { .topbar { gap: 12px; } .topbar > nav { gap: 2px; } .topbar > nav > a { padding: 9px 8px; } }
+@media (max-width: 800px) { .topbar > nav { gap: 4px; } .topbar > nav > a { padding: 8px 9px; } }
+@media (max-width: 420px) { .topbar > nav { gap: 0; } .topbar > nav > a { padding: 8px 7px; } .language-card { position: fixed; top: 65px; inset-inline-end: 20px; } }
+@media (prefers-reduced-motion: reduce) { .nav-glass-pill, .glass-navigation > a, .glass-navigation > button, .language-card, .language-card button { transition: none; animation: none; } .glass-navigation > a:hover, .glass-navigation > button:hover, .language-card button:hover { transform: none; } }
+
+@font-face { font-family: 'IBM Plex Sans Arabic'; font-weight: 400; font-style: normal; font-display: swap; src: url('fonts/IBMPlexSansArabic-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'IBM Plex Sans Arabic'; font-weight: 500 700; font-style: normal; font-display: swap; src: url('fonts/IBMPlexSansArabic-Medium.ttf') format('truetype'); }
+:root:lang(ckb), :root:lang(ar) { --font: 'IBM Plex Sans Arabic',Tahoma,sans-serif; --display: 'IBM Plex Sans Arabic',Tahoma,sans-serif; }
+:root:lang(ja) { --font: 'IBM Plex Sans JP','Hiragino Kaku Gothic ProN',sans-serif; --display: 'IBM Plex Sans JP','Hiragino Kaku Gothic ProN',sans-serif; }
+.language-card [lang='ckb'], .language-card [lang='ar'] { font-family: 'IBM Plex Sans Arabic',Tahoma,sans-serif; }
+.language-card [lang='ja'] { font-family: 'IBM Plex Sans JP',sans-serif; }
+[dir='rtl'] .eyebrow, [dir='rtl'] h1, [dir='rtl'] h2, [dir='rtl'] .brand, [dir='rtl'] .brand-sub { letter-spacing: normal; }
+[dir='rtl'] .episode-table th, [dir='rtl'] .episode-table td, [dir='rtl'] .guide-article th, [dir='rtl'] .guide-article td, [dir='rtl'] .arc-button, [dir='rtl'] .analytics-group-row, [dir='rtl'] .analytics-highlights>button { text-align: right; }
+[dir='rtl'] .episode-table td:last-child { text-align: center; }
+[dir='rtl'] .hero-art { right: auto; left: -8px; }
+[dir='rtl'] .hero:after { transform: scaleX(-1); }
+[dir='rtl'] .language-card { transform-origin: top left; }
+[dir='rtl'] .analytics-chart-scroll svg, [dir='rtl'] #story-graph { direction: ltr; }
+[dir='rtl'] .ep-number, [dir='rtl'] .rating-link { unicode-bidi: isolate; direction: ltr; display: inline-block; }

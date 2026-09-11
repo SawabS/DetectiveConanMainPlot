@@ -17,7 +17,7 @@ PAGES = {
 def render_pages(generated):
     template = (ROOT / 'index.html').read_text()
     head = template.split('<head>', 1)[1].split('</head>', 1)[0]
-    head = re.sub(r'\s*<script src="assets/(?!theme\.js|grid-core\.js|presentation\.js)[^"]+"[^>]*></script>', '', head)
+    head = re.sub(r'\s*<script src="assets/(?!theme\.js|grid-core\.js|presentation\.js|locales\.js|language\.js|navigation\.js)[^"]+"[^>]*></script>', '', head)
     header = template.split('<header class="topbar">', 1)[1].split('</header>', 1)[0]
     header = re.sub(r' data-view-link="[^"]+"', '', header).replace('class="nav-active" ', '')
     header = header.replace('class="nav-guide"', 'class="nav-guide nav-active" aria-current="page"')
