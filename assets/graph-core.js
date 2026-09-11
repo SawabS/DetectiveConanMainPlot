@@ -23,6 +23,17 @@
     for (let i = 1; i < hubs.length; i++) edges.push({ source: hubs[i - 1], target: hubs[i] });
     return { nodes, hubs, edges, width: WIDTH, height: HEIGHT };
   }
+  // Episodes link to their arc hub and their neighbors in watch order; hubs link to their episodes and adjacent hubs.
+  function connections(model, key) {
+    const node = model.nodes.find(n => n.key === key);
+    if (!node) return [];
+    if (node.kind === 'arc') {
+      const hubs = model.edges.filter(e => e.source === node || e.target === node).map(e => e.source === node ? e.target : e.source);
+      return [...hubs, ...model.nodes.filter(n => n.kind === 'episode' && n.arc === node.arc)];
+    }
+    const episodes = model.nodes.filter(n => n.kind === 'episode'), i = episodes.indexOf(node);
+    return [model.hubs.find(h => h.arc === node.arc), episodes[i - 1], episodes[i + 1]].filter(Boolean);
+  }
   function zoomView(view, factor, anchor = { x: view.x + view.w / 2, y: view.y + view.h / 2 }) {
     const w = Math.min(WIDTH / .7, Math.max(WIDTH / 5, view.w / factor));
     const ratio = w / view.w;
@@ -32,7 +43,7 @@
     return { ...view, x: Math.max(-view.w * .5, Math.min(WIDTH - view.w * .5, view.x)),
       y: Math.max(-view.h * .5, Math.min(HEIGHT - view.h * .5, view.y)) };
   }
-  const api = { layout, zoomView, clampView, WIDTH, HEIGHT };
+  const api = { layout, connections, zoomView, clampView, WIDTH, HEIGHT };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.ConanGraphCore = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

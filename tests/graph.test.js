@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const data = require('../data/episodes.json');
-const { layout, zoomView, clampView, WIDTH, HEIGHT } = require('../assets/graph-core.js');
+const { layout, connections, zoomView, clampView, WIDTH, HEIGHT } = require('../assets/graph-core.js');
 
 test('map covers all 255 episodes once, with nine hubs and eight ordered arc edges', () => {
   const map = layout(data.episodes, data.arcs);
@@ -34,6 +34,18 @@ test('nodes remain inside the canvas, in their own arc, without visible overlap'
       assert(Math.hypot(a.x - b.x, a.y - b.y) > a.radius + b.radius + 2, `${a.key} overlaps ${b.key}`);
     }
   }
+});
+
+test('selection energy reaches the arc hub, watch-order neighbors, and every arc member', () => {
+  const map = layout(data.episodes, data.arcs), [first, second] = data.episodes;
+  assert.deepEqual(connections(map, `node-${first.episode}`).map(n => n.key), [`arc-${first.arc}`, `node-${second.episode}`]);
+  const [before, middle, after] = data.episodes.slice(99, 102);
+  assert.deepEqual(connections(map, `node-${middle.episode}`).map(n => n.key), [`arc-${middle.arc}`, `node-${before.episode}`, `node-${after.episode}`]);
+  const hub = connections(map, 'arc-3');
+  assert.deepEqual(hub.filter(n => n.kind === 'arc').map(n => n.key), ['arc-2', 'arc-4']);
+  assert.equal(hub.filter(n => n.kind === 'episode').length, data.episodes.filter(e => e.arc === 3).length);
+  assert.deepEqual(connections(map, 'arc-1').filter(n => n.kind === 'arc').map(n => n.key), ['arc-2']);
+  assert.deepEqual(connections(map, 'missing'), []);
 });
 
 test('zoom is bounded and keeps its anchor stable unless clamped to the canvas', () => {

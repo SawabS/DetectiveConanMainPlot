@@ -2,14 +2,14 @@
   'use strict';
   window.createConanGraph = ({ data, getWatched, getHideTitles, onWatch, onDetails, onViewEpisode, onHideTitles }) => {
     const $ = id => document.getElementById(id);
-    const { layout, zoomView, clampView, WIDTH, HEIGHT } = window.ConanGraphCore;
+    const { layout, connections, zoomView, clampView, WIDTH, HEIGHT } = window.ConanGraphCore;
     const model = layout(data.episodes, data.arcs);
     const episodes = new Map(data.episodes.map(e => [e.episode, e]));
     const arcs = new Map(data.arcs.map(a => [a.id, a]));
     const nodeMap = new Map(model.nodes.map(n => [n.key, n]));
     const svg = $('story-graph'), world = $('graph-world');
     let view = { x: 0, y: 0, w: WIDTH, h: HEIGHT }, selected = null, focusKey = model.nodes[0].key;
-    let drag = null, moved = false;
+    let drag = null, moved = false, energyKey = null;
     const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
     const pad = n => String(n).padStart(3, '0');
     const arcName = n => getHideTitles() ? `Arc ${String(n).padStart(2, '0')}` : arcs.get(n).name;
@@ -17,8 +17,8 @@
     const status = message => { $('graph-status').textContent = message; };
     const external = 'target="_blank" rel="noopener noreferrer"';
 
-    // SVG contains only data geometry. The eight dashed edges show arc order.
-    world.innerHTML = model.edges.map(({ source: s, target: t }) => `<path class="arc-edge" d="M${s.x},${s.y} L${t.x},${t.y}"/>`).join('') + data.arcs.map(a => {
+    // SVG contains only data geometry. The eight dashed edges show arc order; the energy layer sits beneath the nodes.
+    world.innerHTML = model.edges.map(({ source: s, target: t }) => `<path class="arc-edge" d="M${s.x},${s.y} L${t.x},${t.y}"/>`).join('') + '<g id="graph-energy" class="graph-energy"></g>' + data.arcs.map(a => {
       const hub = model.hubs.find(h => h.arc === a.id);
       const orbits = [70, 101, 132].map(r => `<circle class="arc-orbit" cx="${hub.x}" cy="${hub.y}" r="${r}"/>`).join('');
       const nodes = model.nodes.filter(n => n.arc === a.id).map(n => n.kind === 'arc'
@@ -71,6 +71,17 @@
         $('graph-card').innerHTML = `<div class="graph-card" data-arc-color="${e.arc}"><p class="graph-card-kicker">Episode ${pad(e.episode)} / ${esc(arcName(e.arc))}</p><h3>${esc(episodeTitle(e))}</h3><p class="card-subtitle">${esc(e.airDate)}</p><div class="card-stats"><div><strong>★ ${e.imdb.rating === null ? 'N/A' : e.imdb.rating.toFixed(1)}</strong><span>IMDb / 10</span></div><div><strong>${(e.imdb.votes ?? 0).toLocaleString()}</strong><span>votes</span></div></div><p class="card-note">${watched.has(e.episode) ? 'Watched. Another clue connected.' : 'Unwatched. Your next clue awaits.'}</p><button class="button primary" data-card-watch="${e.episode}">${watched.has(e.episode) ? 'Mark as unwatched' : 'Mark as watched ✓'}</button><button class="button quiet" data-card-detail="${e.episode}">Sources & episode details</button><a class="card-link" href="https://www.imdb.com/title/${e.imdb.id}/" ${external}>IMDb entry ↗</a><button class="text-button card-link" data-card-list="${e.episode}">Show in watchlist ↗</button><div class="card-navigation"><button class="button quiet" data-card-episode="${prev?.episode ?? e.episode}" ${prev ? '' : 'disabled'}>← Previous</button><button class="button quiet" data-card-episode="${next?.episode ?? e.episode}" ${next ? '' : 'disabled'}>Next →</button></div></div>`;
       }
     }
+    // Pulses leave the selected node along each connection and ripple where they arrive.
+    function renderEnergy() {
+      const key = selected?.key ?? null;
+      if (key === energyKey) return;
+      energyKey = key;
+      if (!selected) { $('graph-energy').innerHTML = ''; return; }
+      const targets = connections(model, key), s = selected;
+      const links = targets.map(t => { const d = `M${s.x},${s.y} L${t.x},${t.y}`; return `<path class="energy-link" d="${d}"/><path class="energy-pulse" pathLength="100" d="${d}"/>`; }).join('');
+      $('graph-energy').innerHTML = `<g data-arc-color="${s.arc}">${links}<circle class="energy-source" cx="${s.x}" cy="${s.y}" r="${s.radius + 4}"/></g>` +
+        targets.map(t => `<circle class="energy-ripple" data-arc-color="${t.arc}" cx="${t.x}" cy="${t.y}" r="${t.radius + 3}"/>`).join('');
+    }
     function update() {
       const focused = document.activeElement;
       const cardAction = focused?.closest('#graph-card button');
@@ -89,6 +100,7 @@
         if (n.kind === 'arc') el.querySelector('.hub-label').textContent = arcName(n.arc);
       });
       renderCard();
+      renderEnergy();
       if (cardKey) {
         const replacement = [...$('graph-card').querySelectorAll('button')].find(b => b.dataset[cardKey[0]] === cardKey[1]);
         replacement?.focus({ preventScroll: true });

@@ -1138,31 +1138,7 @@
     "file": "assets/app.js",
     "line": 208,
     "kind": "literal",
-    "text": "analytics"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 208,
-    "kind": "literal",
-    "text": "analytics-search"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 208,
-    "kind": "literal",
-    "text": "movies"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 208,
-    "kind": "literal",
-    "text": "movie-search"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 208,
-    "kind": "literal",
-    "text": "graph"
+    "text": "search"
   },
   {
     "file": "assets/app.js",
@@ -1174,17 +1150,17 @@
     "file": "assets/app.js",
     "line": 208,
     "kind": "literal",
-    "text": "search"
+    "text": "movie-search"
   },
   {
     "file": "assets/app.js",
-    "line": 211,
+    "line": 212,
     "kind": "literal",
     "text": "storage"
   },
   {
     "file": "assets/app.js",
-    "line": 212,
+    "line": 213,
     "kind": "template",
     "text": "{0}:hide-titles",
     "variables": [
@@ -1193,61 +1169,55 @@
   },
   {
     "file": "assets/app.js",
-    "line": 213,
+    "line": 214,
     "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/app.js",
-    "line": 214,
+    "line": 215,
     "kind": "literal",
     "text": "hide-titles"
   },
   {
     "file": "assets/app.js",
-    "line": 216,
+    "line": 217,
     "kind": "literal",
     "text": "detail-dialog"
   },
   {
     "file": "assets/app.js",
-    "line": 221,
+    "line": 222,
     "kind": "literal",
     "text": "Another tab saved unreadable progress. This tab kept its current progress."
   },
   {
     "file": "assets/app.js",
-    "line": 225,
+    "line": 226,
     "kind": "literal",
     "text": "watchlist"
   },
   {
     "file": "assets/app.js",
-    "line": 225,
+    "line": 226,
     "kind": "literal",
     "text": "list"
   },
   {
     "file": "assets/app.js",
-    "line": 226,
+    "line": 227,
     "kind": "literal",
     "text": "story-map"
   },
   {
     "file": "assets/app.js",
-    "line": 226,
+    "line": 227,
     "kind": "literal",
     "text": "graph"
   },
   {
     "file": "assets/app.js",
-    "line": 227,
-    "kind": "literal",
-    "text": "movies"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 227,
+    "line": 228,
     "kind": "literal",
     "text": "movies"
   },
@@ -1255,11 +1225,11 @@
     "file": "assets/app.js",
     "line": 228,
     "kind": "literal",
-    "text": "analytics"
+    "text": "movies"
   },
   {
     "file": "assets/app.js",
-    "line": 228,
+    "line": 229,
     "kind": "literal",
     "text": "analytics"
   },
@@ -1267,41 +1237,47 @@
     "file": "assets/app.js",
     "line": 229,
     "kind": "literal",
-    "text": "analytics-tooltip"
+    "text": "analytics"
   },
   {
     "file": "assets/app.js",
     "line": 230,
     "kind": "literal",
-    "text": "[data-view]"
+    "text": "analytics-tooltip"
   },
   {
     "file": "assets/app.js",
     "line": 231,
     "kind": "literal",
+    "text": "[data-view]"
+  },
+  {
+    "file": "assets/app.js",
+    "line": 232,
+    "kind": "literal",
     "text": "aria-selected"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 234,
-    "kind": "literal",
-    "text": "[data-view-link]"
-  },
-  {
-    "file": "assets/app.js",
-    "line": 234,
-    "kind": "literal",
-    "text": "nav-active"
   },
   {
     "file": "assets/app.js",
     "line": 235,
     "kind": "literal",
+    "text": "[data-view-link]"
+  },
+  {
+    "file": "assets/app.js",
+    "line": 235,
+    "kind": "literal",
+    "text": "nav-active"
+  },
+  {
+    "file": "assets/app.js",
+    "line": 236,
+    "kind": "literal",
     "text": "graph"
   },
   {
     "file": "assets/app.js",
-    "line": 238,
+    "line": 239,
     "kind": "template",
     "text": "#episode-{0}",
     "variables": [
@@ -1310,21 +1286,15 @@
   },
   {
     "file": "assets/app.js",
-    "line": 240,
+    "line": 241,
     "kind": "literal",
     "text": "graph"
   },
   {
     "file": "assets/app.js",
-    "line": 241,
-    "kind": "literal",
-    "text": "movies"
-  },
-  {
-    "file": "assets/app.js",
     "line": 242,
     "kind": "literal",
-    "text": "analytics"
+    "text": "movies"
   },
   {
     "file": "assets/app.js",
@@ -1336,119 +1306,125 @@
     "file": "assets/app.js",
     "line": 244,
     "kind": "literal",
+    "text": "analytics"
+  },
+  {
+    "file": "assets/app.js",
+    "line": 245,
+    "kind": "literal",
     "text": "#watchlist"
   },
   {
     "file": "assets/app.js",
-    "line": 244,
+    "line": 245,
     "kind": "literal",
     "text": "#story-map"
   },
   {
     "file": "assets/app.js",
-    "line": 244,
+    "line": 245,
     "kind": "literal",
     "text": "#movies"
   },
   {
     "file": "assets/app.js",
-    "line": 244,
+    "line": 245,
     "kind": "literal",
     "text": "#analytics"
   },
   {
     "file": "assets/app.js",
-    "line": 246,
+    "line": 247,
     "kind": "literal",
     "text": "[data-view]"
   },
   {
     "file": "assets/app.js",
-    "line": 246,
+    "line": 247,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/app.js",
-    "line": 247,
+    "line": 248,
     "kind": "literal",
     "text": ".view-tabs"
   },
   {
     "file": "assets/app.js",
-    "line": 247,
+    "line": 248,
     "kind": "literal",
     "text": "keydown"
   },
   {
     "file": "assets/app.js",
-    "line": 248,
+    "line": 249,
     "kind": "literal",
     "text": "ArrowLeft"
   },
   {
     "file": "assets/app.js",
-    "line": 248,
+    "line": 249,
     "kind": "literal",
     "text": "ArrowRight"
   },
   {
     "file": "assets/app.js",
-    "line": 248,
+    "line": 249,
     "kind": "literal",
     "text": "Home"
   },
   {
     "file": "assets/app.js",
-    "line": 248,
+    "line": 249,
     "kind": "literal",
     "text": "End"
   },
   {
     "file": "assets/app.js",
-    "line": 250,
+    "line": 251,
     "kind": "literal",
     "text": "list"
   },
   {
     "file": "assets/app.js",
-    "line": 250,
+    "line": 251,
     "kind": "literal",
     "text": "graph"
   },
   {
     "file": "assets/app.js",
-    "line": 250,
+    "line": 251,
     "kind": "literal",
     "text": "movies"
   },
   {
     "file": "assets/app.js",
-    "line": 250,
+    "line": 251,
     "kind": "literal",
     "text": "analytics"
   },
   {
     "file": "assets/app.js",
-    "line": 251,
+    "line": 252,
     "kind": "literal",
     "text": "Home"
   },
   {
     "file": "assets/app.js",
-    "line": 251,
+    "line": 252,
     "kind": "literal",
     "text": "End"
   },
   {
     "file": "assets/app.js",
-    "line": 252,
+    "line": 253,
     "kind": "literal",
     "text": "ArrowRight"
   },
   {
     "file": "assets/app.js",
-    "line": 253,
+    "line": 254,
     "kind": "template",
     "text": "{0}-tab",
     "variables": [
@@ -1457,115 +1433,115 @@
   },
   {
     "file": "assets/app.js",
-    "line": 255,
+    "line": 256,
     "kind": "literal",
     "text": "[data-view-link]"
   },
   {
     "file": "assets/app.js",
-    "line": 255,
+    "line": 256,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/app.js",
-    "line": 257,
+    "line": 258,
     "kind": "literal",
     "text": ".view-bar"
   },
   {
     "file": "assets/app.js",
-    "line": 257,
+    "line": 258,
     "kind": "literal",
     "text": "start"
   },
   {
     "file": "assets/app.js",
-    "line": 257,
+    "line": 258,
     "kind": "literal",
     "text": "(prefers-reduced-motion: reduce)"
   },
   {
     "file": "assets/app.js",
-    "line": 257,
+    "line": 258,
     "kind": "literal",
     "text": "instant"
   },
   {
     "file": "assets/app.js",
-    "line": 257,
+    "line": 258,
     "kind": "literal",
     "text": "smooth"
   },
   {
     "file": "assets/app.js",
-    "line": 262,
+    "line": 263,
     "kind": "literal",
     "text": "#story-map"
   },
   {
     "file": "assets/app.js",
-    "line": 262,
+    "line": 263,
     "kind": "literal",
     "text": "graph"
   },
   {
     "file": "assets/app.js",
-    "line": 263,
+    "line": 264,
     "kind": "literal",
     "text": "#watchlist"
   },
   {
     "file": "assets/app.js",
-    "line": 263,
+    "line": 264,
     "kind": "literal",
     "text": "list"
   },
   {
     "file": "assets/app.js",
-    "line": 264,
+    "line": 265,
     "kind": "literal",
     "text": "#movies"
   },
   {
     "file": "assets/app.js",
-    "line": 264,
+    "line": 265,
     "kind": "literal",
     "text": "movies"
   },
   {
     "file": "assets/app.js",
-    "line": 265,
+    "line": 266,
     "kind": "literal",
     "text": "#analytics"
   },
   {
     "file": "assets/app.js",
-    "line": 265,
+    "line": 266,
     "kind": "literal",
     "text": "analytics"
   },
   {
     "file": "assets/app.js",
-    "line": 267,
+    "line": 268,
     "kind": "literal",
     "text": "hashchange"
   },
   {
     "file": "assets/app.js",
-    "line": 268,
+    "line": 269,
     "kind": "literal",
     "text": "total-count"
   },
   {
     "file": "assets/app.js",
-    "line": 269,
+    "line": 270,
     "kind": "literal",
     "text": "#sources-dialog h2 + p"
   },
   {
     "file": "assets/app.js",
-    "line": 269,
+    "line": 270,
     "kind": "template",
     "text": "{0} main-story episodes across {1} arcs, listed in Japanese broadcast order. Each IMDb score is matched to its episode by title, release year, and part number.",
     "variables": [
@@ -1575,55 +1551,55 @@
   },
   {
     "file": "assets/app.js",
-    "line": 270,
+    "line": 271,
     "kind": "literal",
     "text": "rated-count"
   },
   {
     "file": "assets/app.js",
-    "line": 271,
+    "line": 272,
     "kind": "literal",
     "text": ".overview-date strong"
   },
   {
     "file": "assets/app.js",
-    "line": 271,
+    "line": 272,
     "kind": "literal",
     "text": "en-GB"
   },
   {
     "file": "assets/app.js",
-    "line": 271,
+    "line": 272,
     "kind": "literal",
     "text": "2-digit"
   },
   {
     "file": "assets/app.js",
-    "line": 271,
+    "line": 272,
     "kind": "literal",
     "text": "short"
   },
   {
     "file": "assets/app.js",
-    "line": 271,
+    "line": 272,
     "kind": "literal",
     "text": "numeric"
   },
   {
     "file": "assets/app.js",
-    "line": 271,
+    "line": 272,
     "kind": "literal",
     "text": "UTC"
   },
   {
     "file": "assets/app.js",
-    "line": 272,
+    "line": 273,
     "kind": "literal",
     "text": ".list-footnote"
   },
   {
     "file": "assets/app.js",
-    "line": 272,
+    "line": 273,
     "kind": "template",
     "text": "Ratings checked {0}. Titles and linked sources may reveal story details.",
     "variables": [
@@ -1632,13 +1608,13 @@
   },
   {
     "file": "assets/app.js",
-    "line": 273,
+    "line": 274,
     "kind": "literal",
     "text": "#sources-dialog .source-list li:nth-child(3) span"
   },
   {
     "file": "assets/app.js",
-    "line": 273,
+    "line": 274,
     "kind": "template",
     "text": "Title IDs, episode metadata, weighted ratings, and votes. Snapshot: {0}.",
     "variables": [
@@ -1647,7 +1623,7 @@
   },
   {
     "file": "assets/app.js",
-    "line": 274,
+    "line": 275,
     "kind": "literal",
     "text": "result-count"
   },
@@ -1734,6 +1710,12 @@
       "t.x",
       "t.y"
     ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 21,
+    "kind": "literal",
+    "text": "<g id=\"graph-energy\" class=\"graph-energy\"></g>"
   },
   {
     "file": "assets/graph.js",
@@ -2031,37 +2013,96 @@
   },
   {
     "file": "assets/graph.js",
-    "line": 76,
+    "line": 79,
+    "kind": "literal",
+    "text": "graph-energy"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 81,
+    "kind": "template",
+    "text": "M{0},{1} L{2},{3}",
+    "variables": [
+      "s.x",
+      "s.y",
+      "t.x",
+      "t.y"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 81,
+    "kind": "template",
+    "text": "<path class=\"energy-link\" d=\"{0}\"/><path class=\"energy-pulse\" pathLength=\"100\" d=\"{1}\"/>",
+    "variables": [
+      "d",
+      "d"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 82,
+    "kind": "literal",
+    "text": "graph-energy"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 82,
+    "kind": "template",
+    "text": "<g data-arc-color=\"{0}\">{1}<circle class=\"energy-source\" cx=\"{2}\" cy=\"{3}\" r=\"{4}\"/></g>",
+    "variables": [
+      "s.arc",
+      "links",
+      "s.x",
+      "s.y",
+      "s.radius + 4"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 83,
+    "kind": "template",
+    "text": "<circle class=\"energy-ripple\" data-arc-color=\"{0}\" cx=\"{1}\" cy=\"{2}\" r=\"{3}\"/>",
+    "variables": [
+      "t.arc",
+      "t.x",
+      "t.y",
+      "t.radius + 3"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 87,
     "kind": "literal",
     "text": "#graph-card button"
   },
   {
     "file": "assets/graph.js",
-    "line": 78,
+    "line": 89,
     "kind": "literal",
     "text": "graph-hide-titles"
   },
   {
     "file": "assets/graph.js",
-    "line": 79,
+    "line": 90,
     "kind": "literal",
     "text": "graph-arc"
   },
   {
     "file": "assets/graph.js",
-    "line": 80,
+    "line": 91,
     "kind": "literal",
     "text": "graph-arc"
   },
   {
     "file": "assets/graph.js",
-    "line": 80,
+    "line": 91,
     "kind": "literal",
     "text": "<option value=\"0\">All nine arcs</option>"
   },
   {
     "file": "assets/graph.js",
-    "line": 80,
+    "line": 91,
     "kind": "template",
     "text": "<option value=\"{0}\">{1} / {2}</option>",
     "variables": [
@@ -2072,55 +2113,55 @@
   },
   {
     "file": "assets/graph.js",
-    "line": 81,
+    "line": 92,
     "kind": "literal",
     "text": "graph-arc"
   },
   {
     "file": "assets/graph.js",
-    "line": 83,
+    "line": 94,
     "kind": "literal",
     "text": "episode"
   },
   {
     "file": "assets/graph.js",
-    "line": 84,
+    "line": 95,
     "kind": "literal",
     "text": "is-watched"
   },
   {
     "file": "assets/graph.js",
-    "line": 85,
+    "line": 96,
     "kind": "literal",
     "text": "is-selected"
   },
   {
     "file": "assets/graph.js",
-    "line": 86,
+    "line": 97,
     "kind": "literal",
     "text": "tabindex"
   },
   {
     "file": "assets/graph.js",
-    "line": 87,
+    "line": 98,
     "kind": "literal",
     "text": "aria-pressed"
   },
   {
     "file": "assets/graph.js",
-    "line": 88,
+    "line": 99,
     "kind": "literal",
     "text": "aria-label"
   },
   {
     "file": "assets/graph.js",
-    "line": 88,
+    "line": 99,
     "kind": "literal",
     "text": "arc"
   },
   {
     "file": "assets/graph.js",
-    "line": 88,
+    "line": 99,
     "kind": "template",
     "text": "Arc {0}: {1}",
     "variables": [
@@ -2130,19 +2171,19 @@
   },
   {
     "file": "assets/graph.js",
-    "line": 88,
+    "line": 99,
     "kind": "literal",
     "text": "watched"
   },
   {
     "file": "assets/graph.js",
-    "line": 88,
+    "line": 99,
     "kind": "literal",
     "text": "unwatched"
   },
   {
     "file": "assets/graph.js",
-    "line": 88,
+    "line": 99,
     "kind": "template",
     "text": "Episode {0}: {1}, {2}",
     "variables": [
@@ -2153,330 +2194,201 @@
   },
   {
     "file": "assets/graph.js",
-    "line": 89,
+    "line": 100,
     "kind": "literal",
     "text": "arc"
   },
   {
     "file": "assets/graph.js",
-    "line": 89,
+    "line": 100,
     "kind": "literal",
     "text": ".hub-label"
   },
   {
     "file": "assets/graph.js",
-    "line": 93,
+    "line": 105,
     "kind": "literal",
     "text": "graph-card"
   },
   {
     "file": "assets/graph.js",
-    "line": 93,
+    "line": 105,
     "kind": "literal",
     "text": "button"
   },
   {
     "file": "assets/graph.js",
-    "line": 101,
+    "line": 113,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/graph.js",
-    "line": 103,
+    "line": 115,
     "kind": "literal",
     "text": "[data-key]"
   },
   {
     "file": "assets/graph.js",
-    "line": 104,
+    "line": 116,
     "kind": "literal",
     "text": "arc"
   },
   {
     "file": "assets/graph.js",
-    "line": 106,
+    "line": 118,
     "kind": "literal",
     "text": "focusin"
   },
   {
     "file": "assets/graph.js",
-    "line": 107,
+    "line": 119,
     "kind": "literal",
     "text": "[data-key]"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 110,
-    "kind": "literal",
-    "text": "keydown"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 111,
-    "kind": "literal",
-    "text": "[data-key]"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 112,
-    "kind": "literal",
-    "text": "Enter"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 113,
-    "kind": "literal",
-    "text": "arc"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 114,
-    "kind": "literal",
-    "text": "ArrowRight"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 114,
-    "kind": "literal",
-    "text": "ArrowDown"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 114,
-    "kind": "literal",
-    "text": "ArrowLeft"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 114,
-    "kind": "literal",
-    "text": "ArrowUp"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 116,
-    "kind": "literal",
-    "text": "ArrowRight"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 116,
-    "kind": "literal",
-    "text": "ArrowDown"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "Home"
   },
   {
     "file": "assets/graph.js",
     "line": 122,
     "kind": "literal",
-    "text": "Home"
+    "text": "keydown"
   },
   {
     "file": "assets/graph.js",
-    "line": 125,
-    "kind": "literal",
-    "text": "pointerdown"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 128,
-    "kind": "literal",
-    "text": "touch"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 128,
+    "line": 123,
     "kind": "literal",
     "text": "[data-key]"
   },
   {
     "file": "assets/graph.js",
-    "line": 130,
-    "kind": "literal",
-    "text": "is-dragging"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 132,
-    "kind": "literal",
-    "text": "pointermove"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 141,
-    "kind": "literal",
-    "text": "is-dragging"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 144,
-    "kind": "literal",
-    "text": "pointerup"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 144,
-    "kind": "literal",
-    "text": "pointercancel"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 145,
-    "kind": "literal",
-    "text": "lostpointercapture"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 145,
-    "kind": "literal",
-    "text": "is-dragging"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 147,
-    "kind": "literal",
-    "text": "wheel"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 151,
-    "kind": "literal",
-    "text": "zoom-in"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 151,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 152,
-    "kind": "literal",
-    "text": "zoom-out"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 152,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 153,
-    "kind": "literal",
-    "text": "graph-fit"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 153,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 154,
-    "kind": "literal",
-    "text": "graph-arc"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 154,
-    "kind": "literal",
-    "text": "change"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 154,
-    "kind": "template",
-    "text": "arc-{0}",
-    "variables": [
-      "event.target.value"
-    ]
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 155,
-    "kind": "literal",
-    "text": "graph-hide-titles"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 155,
-    "kind": "literal",
-    "text": "change"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 157,
-    "kind": "literal",
-    "text": "graph-search"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 158,
-    "kind": "literal",
-    "text": "Enter a selected Japanese episode number, such as 1, 129, or 345."
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 159,
-    "kind": "template",
-    "text": "node-{0}",
-    "variables": [
-      "n"
-    ]
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 159,
-    "kind": "template",
-    "text": "node-{0}",
-    "variables": [
-      "n"
-    ]
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 161,
-    "kind": "literal",
-    "text": "graph-find"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 161,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 162,
-    "kind": "literal",
-    "text": "graph-search"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 162,
-    "kind": "literal",
-    "text": "keydown"
-  },
-  {
-    "file": "assets/graph.js",
-    "line": 162,
+    "line": 124,
     "kind": "literal",
     "text": "Enter"
   },
   {
     "file": "assets/graph.js",
+    "line": 125,
+    "kind": "literal",
+    "text": "arc"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 126,
+    "kind": "literal",
+    "text": "ArrowRight"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 126,
+    "kind": "literal",
+    "text": "ArrowDown"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 126,
+    "kind": "literal",
+    "text": "ArrowLeft"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 126,
+    "kind": "literal",
+    "text": "ArrowUp"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 128,
+    "kind": "literal",
+    "text": "ArrowRight"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 128,
+    "kind": "literal",
+    "text": "ArrowDown"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 132,
+    "kind": "literal",
+    "text": "Home"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 134,
+    "kind": "literal",
+    "text": "Home"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 137,
+    "kind": "literal",
+    "text": "pointerdown"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 140,
+    "kind": "literal",
+    "text": "touch"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 140,
+    "kind": "literal",
+    "text": "[data-key]"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 142,
+    "kind": "literal",
+    "text": "is-dragging"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 144,
+    "kind": "literal",
+    "text": "pointermove"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 153,
+    "kind": "literal",
+    "text": "is-dragging"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 156,
+    "kind": "literal",
+    "text": "pointerup"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 156,
+    "kind": "literal",
+    "text": "pointercancel"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 157,
+    "kind": "literal",
+    "text": "lostpointercapture"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 157,
+    "kind": "literal",
+    "text": "is-dragging"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 159,
+    "kind": "literal",
+    "text": "wheel"
+  },
+  {
+    "file": "assets/graph.js",
     "line": 163,
     "kind": "literal",
-    "text": "graph-card"
+    "text": "zoom-in"
   },
   {
     "file": "assets/graph.js",
@@ -2488,11 +2400,140 @@
     "file": "assets/graph.js",
     "line": 164,
     "kind": "literal",
-    "text": "button"
+    "text": "zoom-out"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 164,
+    "kind": "literal",
+    "text": "click"
   },
   {
     "file": "assets/graph.js",
     "line": 165,
+    "kind": "literal",
+    "text": "graph-fit"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 165,
+    "kind": "literal",
+    "text": "click"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 166,
+    "kind": "literal",
+    "text": "graph-arc"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 166,
+    "kind": "literal",
+    "text": "change"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 166,
+    "kind": "template",
+    "text": "arc-{0}",
+    "variables": [
+      "event.target.value"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 167,
+    "kind": "literal",
+    "text": "graph-hide-titles"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 167,
+    "kind": "literal",
+    "text": "change"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 169,
+    "kind": "literal",
+    "text": "graph-search"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 170,
+    "kind": "literal",
+    "text": "Enter a selected Japanese episode number, such as 1, 129, or 345."
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 171,
+    "kind": "template",
+    "text": "node-{0}",
+    "variables": [
+      "n"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 171,
+    "kind": "template",
+    "text": "node-{0}",
+    "variables": [
+      "n"
+    ]
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 173,
+    "kind": "literal",
+    "text": "graph-find"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 173,
+    "kind": "literal",
+    "text": "click"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 174,
+    "kind": "literal",
+    "text": "graph-search"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 174,
+    "kind": "literal",
+    "text": "keydown"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 174,
+    "kind": "literal",
+    "text": "Enter"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 175,
+    "kind": "literal",
+    "text": "graph-card"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 175,
+    "kind": "literal",
+    "text": "click"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 176,
+    "kind": "literal",
+    "text": "button"
+  },
+  {
+    "file": "assets/graph.js",
+    "line": 177,
     "kind": "template",
     "text": "arc-{0}",
     "variables": [
@@ -2501,7 +2542,7 @@
   },
   {
     "file": "assets/graph.js",
-    "line": 167,
+    "line": 179,
     "kind": "template",
     "text": "node-{0}",
     "variables": [
@@ -2510,7 +2551,7 @@
   },
   {
     "file": "assets/graph.js",
-    "line": 173,
+    "line": 185,
     "kind": "template",
     "text": "node-{0}",
     "variables": [
@@ -2555,13 +2596,31 @@
   },
   {
     "file": "assets/graph-core.js",
-    "line": 36,
+    "line": 30,
+    "kind": "literal",
+    "text": "arc"
+  },
+  {
+    "file": "assets/graph-core.js",
+    "line": 32,
+    "kind": "literal",
+    "text": "episode"
+  },
+  {
+    "file": "assets/graph-core.js",
+    "line": 34,
+    "kind": "literal",
+    "text": "episode"
+  },
+  {
+    "file": "assets/graph-core.js",
+    "line": 47,
     "kind": "literal",
     "text": "undefined"
   },
   {
     "file": "assets/graph-core.js",
-    "line": 38,
+    "line": 49,
     "kind": "literal",
     "text": "undefined"
   },
@@ -3341,13 +3400,13 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 9,
+    "line": 10,
     "kind": "literal",
     "text": "N/A"
   },
   {
     "file": "assets/analytics.js",
-    "line": 10,
+    "line": 11,
     "kind": "template",
     "text": "{0}h {1}m",
     "variables": [
@@ -3357,118 +3416,136 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 11,
+    "line": 13,
     "kind": "literal",
-    "text": "all"
+    "text": "en"
   },
   {
     "file": "assets/analytics.js",
-    "line": 11,
+    "line": 13,
     "kind": "literal",
-    "text": "all"
+    "text": "numeric"
   },
   {
     "file": "assets/analytics.js",
-    "line": 11,
+    "line": 13,
     "kind": "literal",
-    "text": "all"
+    "text": "long"
   },
   {
     "file": "assets/analytics.js",
-    "line": 11,
+    "line": 13,
     "kind": "literal",
-    "text": "all"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 11,
-    "kind": "literal",
-    "text": "order"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 12,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 12,
-    "kind": "literal",
-    "text": "rating"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 12,
-    "kind": "literal",
-    "text": "median"
+    "text": "numeric"
   },
   {
     "file": "assets/analytics.js",
     "line": 14,
     "kind": "literal",
+    "text": "analytics-timeline-chart"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 15,
+    "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 14,
+    "line": 15,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "episode"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "arc"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "arcs"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "film"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "films"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "category"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 17,
+    "kind": "literal",
+    "text": "categories"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 19,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 19,
     "kind": "template",
     "text": "Arc {0}",
     "variables": [
-      "r.id ?? r.group"
+      "pad(id,2)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 15,
+    "line": 20,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 15,
-    "kind": "literal",
-    "text": "crossover"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 15,
-    "kind": "literal",
-    "text": "X"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 15,
-    "kind": "literal",
-    "text": "compilation"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 15,
-    "kind": "literal",
-    "text": "C"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 15,
-    "kind": "literal",
-    "text": "short"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 15,
-    "kind": "literal",
-    "text": "S"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 17,
+    "line": 21,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 17,
+    "line": 23,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 23,
     "kind": "template",
     "text": "episode-{0}",
     "variables": [
@@ -3477,237 +3554,559 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
-    "kind": "literal",
-    "text": "analytics-group"
+    "line": 44,
+    "kind": "template",
+    "text": "<line class=\"analytics-grid\" x1=\"{0}\" x2=\"{1}\" y1=\"{2}\" y2=\"{3}\"/><text class=\"analytics-axis\" x=\"{4}\" y=\"{5}\" text-anchor=\"end\">{6}</text>",
+    "variables": [
+      "m.left",
+      "width-m.right",
+      "y(v)",
+      "y(v)",
+      "m.left-8",
+      "y(v)+3.5",
+      "v"
+    ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
-    "kind": "literal",
-    "text": "<option value=\"all\">All "
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 26,
+    "line": 46,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
+    "line": 51,
     "kind": "literal",
-    "text": "arcs"
+    "text": " is-alt"
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
+    "line": 51,
     "kind": "literal",
-    "text": "categories"
+    "text": " is-focus"
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
-    "kind": "literal",
-    "text": "</option>"
+    "line": 51,
+    "kind": "template",
+    "text": "<text class=\"analytics-axis\" x=\"{0}\" y=\"{1}\" text-anchor=\"middle\">{2}</text>",
+    "variables": [
+      "left+span/2",
+      "bottom+16",
+      "pad(run.group,2)"
+    ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
+    "line": 51,
+    "kind": "template",
+    "text": "<rect class=\"analytics-band{0}{1}\" x=\"{2}\" y=\"{3}\" width=\"{4}\" height=\"{5}\"/>{6}",
+    "variables": [
+      "k%2?' is-alt':''",
+      "focus===run.group?' is-focus':''",
+      "left",
+      "m.top",
+      "span",
+      "bottom-m.top",
+      "span >= 16 ? `<text class=\"analytics-axis\" x=\"${left+span/2}\" y=\"${bottom+16}\" text-anchor=\"middle\">${pad(run.group,2)}</text>` : ''"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 54,
+    "kind": "template",
+    "text": "<text class=\"analytics-axis\" x=\"{0}\" y=\"{1}\" text-anchor=\"middle\">{2}</text>",
+    "variables": [
+      "x(i)",
+      "bottom+16",
+      "r.year"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 57,
+    "kind": "literal",
+    "text": " is-watched"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 57,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 57,
+    "kind": "literal",
+    "text": " is-muted"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 57,
+    "kind": "template",
+    "text": "<circle class=\"analytics-dot{0}{1}\" cx=\"{2}\" cy=\"{3}\" r=\"4\"/>",
+    "variables": [
+      "watched.has(r.id)?' is-watched':''",
+      "focus!=='all'&&r.group!==focus?' is-muted':''",
+      "x(i).toFixed(1)",
+      "y(r.rating).toFixed(1)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 59,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 59,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 61,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 64,
+    "kind": "template",
+    "text": "<text class=\"analytics-peak\" x=\"{0}\" y=\"{1}\">{2}</text>",
+    "variables": [
+      "x(i)",
+      "y(r.rating)-10",
+      "esc(shortLabel(r))"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
+    "line": 65,
+    "kind": "literal",
+    "text": "story"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
+    "kind": "literal",
+    "text": "release"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
     "kind": "template",
-    "text": "Arc {0}",
+    "text": "{0} {1} in {2} order, IMDb scores from {3} to {4}. Use the left and right arrow keys to move between {5} and Enter to open one.",
     "variables": [
-      "r.group"
+      "plotted.length",
+      "w.many",
+      "scope==='episodes'?'story':'release'",
+      "lo",
+      "hi",
+      "w.many"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 26,
+    "line": 65,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
+    "kind": "literal",
+    "text": "Arc, in story order"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
+    "kind": "literal",
+    "text": "Japanese release year"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
+    "kind": "literal",
+    "text": " L"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 65,
     "kind": "template",
-    "text": "<option value=\"{0}\">{1}</option>",
+    "text": "<path class=\"analytics-trend\" d=\"M{0}\"/>",
     "variables": [
-      "r.group",
-      "esc(filters.hideTitles && scope==='episodes'?`Arc ${r.group}`:r.groupName)"
+      "trend.join(' L')"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 27,
-    "kind": "literal",
-    "text": "analytics-year"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 27,
-    "kind": "literal",
-    "text": "<option value=\"all\">All years</option>"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 27,
+    "line": 65,
     "kind": "template",
-    "text": "<option value=\"{0}\">{1}</option>",
+    "text": "<svg viewBox=\"0 0 {0} {1}\" width=\"{2}\" height=\"{3}\" tabindex=\"0\" role=\"group\" aria-label=\"{4}\"><text class=\"analytics-axis\" x=\"{5}\" y=\"12\">IMDb / 10</text><text class=\"analytics-axis\" x=\"{6}\" y=\"{7}\" text-anchor=\"end\">{8}</text>{9}{10}{11}<line id=\"analytics-crosshair\" class=\"analytics-crosshair\" y1=\"{12}\" y2=\"{13}\" visibility=\"hidden\"/>{14}{15}<circle id=\"analytics-hover\" class=\"analytics-hover-ring\" r=\"7\" visibility=\"hidden\"/><circle id=\"analytics-select-ring\" class=\"analytics-select-ring\" r=\"8\" visibility=\"hidden\"/></svg>",
     "variables": [
-      "year",
-      "year"
+      "width",
+      "height",
+      "width",
+      "height",
+      "esc(`${plotted.length} ${w.many} in ${scope==='episodes'?'story':'release'} order, IMDb scores from ${lo} to ${hi}. Use the left and right arrow keys to move between ${w.many} and Enter to open one.`)",
+      "m.left",
+      "width-m.right",
+      "height-4",
+      "scope==='episodes'?'Arc, in story order':'Japanese release year'",
+      "bands",
+      "grid",
+      "trend.length > 1 ? `<path class=\"analytics-trend\" d=\"M${trend.join(' L')}\"/>` : ''",
+      "m.top",
+      "bottom",
+      "dots",
+      "labels"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 28,
+    "line": 69,
     "kind": "literal",
-    "text": "analytics-group"
+    "text": "analytics-select-ring"
   },
   {
     "file": "assets/analytics.js",
-    "line": 28,
+    "line": 71,
     "kind": "literal",
-    "text": "analytics-year"
+    "text": "visibility"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 71,
     "kind": "literal",
-    "text": "analytics-search"
+    "text": "hidden"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 72,
     "kind": "literal",
-    "text": "analytics-status"
+    "text": "cx"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 72,
     "kind": "literal",
-    "text": "all"
+    "text": "cy"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 72,
     "kind": "literal",
-    "text": "analytics-votes"
+    "text": "visibility"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 72,
     "kind": "literal",
-    "text": "analytics-band"
+    "text": "visible"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 76,
     "kind": "literal",
-    "text": "all"
+    "text": "svg"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 82,
     "kind": "literal",
-    "text": "analytics-sort"
+    "text": "svg"
   },
   {
     "file": "assets/analytics.js",
-    "line": 32,
+    "line": 84,
     "kind": "literal",
-    "text": "order"
+    "text": "analytics-crosshair"
   },
   {
     "file": "assets/analytics.js",
-    "line": 38,
+    "line": 84,
     "kind": "literal",
-    "text": "analytics-entry-chart"
+    "text": "analytics-hover"
   },
   {
     "file": "assets/analytics.js",
-    "line": 38,
+    "line": 85,
     "kind": "literal",
-    "text": "[data-entry]"
+    "text": "x1"
   },
   {
     "file": "assets/analytics.js",
-    "line": 38,
+    "line": 85,
+    "kind": "literal",
+    "text": "x2"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 85,
+    "kind": "literal",
+    "text": "visibility"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 85,
+    "kind": "literal",
+    "text": "visible"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 86,
+    "kind": "literal",
+    "text": "cx"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 86,
+    "kind": "literal",
+    "text": "cy"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 86,
+    "kind": "literal",
+    "text": "visibility"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 86,
+    "kind": "literal",
+    "text": "hidden"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 86,
+    "kind": "literal",
+    "text": "visible"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "analytics-tooltip"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 89,
+    "kind": "literal",
+    "text": "No IMDb score"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 89,
+    "kind": "literal",
+    "text": " · Watched"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 89,
+    "kind": "template",
+    "text": "{0} · {1} votes\n{2} · {3}\n{4} · {5}{6}",
+    "variables": [
+      "r.rating === null ? 'No IMDb score' : `${score(r.rating)} / 10`",
+      "fmt(r.votes)",
+      "r.label",
+      "title(r)",
+      "groupName(r.group)",
+      "r.release",
+      "watched.has(r.id) ? ' · Watched' : ''"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 91,
+    "kind": "template",
+    "text": "{0}px",
+    "variables": [
+      "Math.max(8, Math.min(clientX+14, innerWidth-tip.offsetWidth-12))"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 92,
+    "kind": "template",
+    "text": "{0}px",
+    "variables": [
+      "Math.max(8, Math.min(clientY+14, innerHeight-tip.offsetHeight-12))"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 95,
+    "kind": "literal",
+    "text": "analytics-tooltip"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 96,
+    "kind": "literal",
+    "text": "analytics-crosshair"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 96,
+    "kind": "literal",
+    "text": "analytics-hover"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 96,
+    "kind": "literal",
+    "text": "visibility"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 96,
+    "kind": "literal",
+    "text": "hidden"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 100,
+    "kind": "literal",
+    "text": "analytics-top"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 100,
+    "kind": "literal",
+    "text": "[data-select]"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 100,
     "kind": "literal",
     "text": "aria-pressed"
   },
   {
     "file": "assets/analytics.js",
-    "line": 38,
+    "line": 101,
     "kind": "literal",
-    "text": "tabindex"
+    "text": "analytics-timeline-card"
   },
   {
     "file": "assets/analytics.js",
-    "line": 42,
+    "line": 101,
+    "kind": "literal",
+    "text": "nearest"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 101,
+    "kind": "literal",
+    "text": "(prefers-reduced-motion: reduce)"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 101,
+    "kind": "literal",
+    "text": "auto"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 101,
+    "kind": "literal",
+    "text": "smooth"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 105,
     "kind": "literal",
     "text": "analytics-inspector"
   },
   {
     "file": "assets/analytics.js",
-    "line": 42,
-    "kind": "literal",
-    "text": "<p>Select an entry to inspect its sources.</p>"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "literal",
-    "text": "analytics-inspector"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
+    "line": 105,
     "kind": "template",
-    "text": "Arc {0}",
+    "text": "<p class=\"eyebrow\">CASE FILE</p><h4>Pick a dot</h4><p class=\"chart-note\">Hover to preview any {0}. Select one, or focus the chart and use the arrow keys, to see its score, votes, and sources here.</p>",
     "variables": [
-      "r.group"
+      "w.one"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
+    "kind": "literal",
+    "text": "analytics-inspector"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 107,
     "kind": "literal",
     "text": "Watched"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "literal",
     "text": "Unwatched"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
+    "kind": "template",
+    "text": "The highest score among rated {0}.",
+    "variables": [
+      "w.many"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 107,
+    "kind": "template",
+    "text": "The lowest score among rated {0}.",
+    "variables": [
+      "w.many"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 107,
+    "kind": "template",
+    "text": "Scores higher than {0}% of the other rated {1}.",
+    "variables": [
+      "Math.round(share*100)",
+      "w.many"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 107,
+    "kind": "template",
+    "text": "<p class=\"chart-note\">{0}</p>",
+    "variables": [
+      "share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 107,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "literal",
-    "text": "May include advertising."
+    "line": 107,
+    "kind": "template",
+    "text": "<button class=\"button quiet\" data-analytics-open=\"{0}\">Open episode details</button>",
+    "variables": [
+      "r.number"
+    ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "literal",
-    "text": "Runtime varies by edition."
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "template",
     "text": "<a href=\"{0}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>",
     "variables": [
@@ -3716,816 +4115,863 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "literal",
     "text": "<span>No verified IMDb entry</span>"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "literal",
     "text": "Episode"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "literal",
-    "text": "Movie"
+    "text": "Film"
   },
   {
     "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
+    "line": 107,
     "kind": "template",
-    "text": "<button class=\"text-button\" data-analytics-open=\"{0}\">Open episode details ↗</button>",
-    "variables": [
-      "r.number"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "literal",
-    "text": "not available"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 43,
-    "kind": "template",
-    "text": "<p class=\"eyebrow\">{0}</p><h4>{1}</h4><p class=\"analytics-entry-group\">{2} · {3}</p><dl><div><dt>IMDb / 10</dt><dd>{4}</dd></div><div><dt>Votes</dt><dd>{5}</dd></div><div><dt>Listed minutes</dt><dd>{6}</dd></div><div><dt>Progress</dt><dd>{7}</dd></div></dl><p class=\"chart-note\">{8}. {9}</p><div class=\"analytics-entry-links\">{10}<a href=\"{11}\" target=\"_blank\" rel=\"noopener noreferrer\">Duration source ↗</a><a href=\"{12}\" target=\"_blank\" rel=\"noopener noreferrer\">{13} source ↗</a>{14}</div><p class=\"chart-note\">Rating checked {15}.</p>",
+    "text": "<p class=\"eyebrow\">{0}</p><h4>{1}</h4><p class=\"analytics-entry-group\">{2} · {3}</p><dl><div><dt>IMDb / 10</dt><dd>{4}</dd></div><div><dt>Votes</dt><dd>{5}</dd></div><div><dt>Listed minutes</dt><dd>{6}</dd></div><div><dt>Progress</dt><dd>{7}</dd></div></dl>{8}<div class=\"analytics-entry-links\">{9}{10}<a href=\"{11}\" target=\"_blank\" rel=\"noopener noreferrer\">{12} source ↗</a></div>",
     "variables": [
       "esc(r.label)",
       "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
+      "esc(groupName(r.group))",
       "r.release",
       "score(r.rating)",
       "fmt(r.votes)",
       "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
+      "watched.has(r.id) ? 'Watched' : 'Unwatched'",
+      "share === null ? '' : `<p class=\"chart-note\">${share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`}</p>`",
+      "scope === 'episodes' ? `<button class=\"button quiet\" data-analytics-open=\"${r.number}\">Open episode details</button>` : ''",
+      "r.imdbUrl ? `<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>` : '<span>No verified IMDb entry</span>'",
       "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
+      "scope === 'episodes' ? 'Episode' : 'Film'"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 47,
+    "line": 111,
     "kind": "literal",
-    "text": "analytics-tooltip"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 47,
+    "line": 112,
+    "kind": "literal",
+    "text": "analytics-timeline-title"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 112,
     "kind": "template",
-    "text": "{0} · {1}\nIMDb {2} / 10 · {3} votes\n{4} listed min · {5}",
+    "text": "{0} has a median of {1}, ranging from {2} to {3}.",
     "variables": [
-      "r.label",
-      "title(r)",
-      "score(r.rating)",
-      "fmt(r.votes)",
-      "fmt(r.runtime)",
-      "r.release"
+      "groupName(focus)",
+      "score(focused.median)",
+      "score(focused.min)",
+      "score(focused.max)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 49,
+    "line": 112,
     "kind": "template",
-    "text": "{0}px",
+    "text": "{0} has no ratings yet.",
     "variables": [
-      "Math.max(8,Math.min(x+14,window.innerWidth-tip.offsetWidth-12))"
+      "groupName(focus)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 50,
+    "line": 113,
     "kind": "template",
-    "text": "{0}px",
+    "text": "{0} is the high point, with a median of {1}.",
     "variables": [
-      "Math.max(8,Math.min(y+14,window.innerHeight-tip.offsetHeight-12))"
+      "groupName(best.id)",
+      "score(best.median)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 54,
+    "line": 113,
     "kind": "literal",
-    "text": "rating"
+    "text": "Ratings across the story."
   },
   {
     "file": "assets/analytics.js",
-    "line": 55,
-    "kind": "template",
-    "text": "<line x1=\"{0}\" y1=\"{1}\" x2=\"{2}\" y2=\"{3}\" class=\"analytics-gridline\"/><text x=\"{4}\" y=\"{5}\" text-anchor=\"end\" class=\"analytics-axis\">{6}</text>",
-    "variables": [
-      "left",
-      "y",
-      "width-8",
-      "y",
-      "left-9",
-      "y+4",
-      "Number(value.toFixed(1))"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
+    "line": 114,
     "kind": "literal",
-    "text": "rating"
+    "text": "analytics-timeline-subtitle"
   },
   {
     "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "literal",
-    "text": "value unavailable"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "literal",
-    "text": "rating"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "literal",
-    "text": " out of 10"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "literal",
-    "text": " listed minutes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "literal",
-    "text": " is-missing"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "template",
-    "text": "<circle cx=\"{0}\" cy=\"{1}\" r=\"2.5\" class=\"analytics-watched-dot\"/>",
-    "variables": [
-      "x+(slot-6)/2",
-      "Math.max(y-6,22)"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 56,
-    "kind": "template",
-    "text": "<g data-entry=\"{0}\" data-arc-color=\"{1}\" tabindex=\"{2}\" role=\"button\" aria-pressed=\"{3}\" aria-label=\"{4}\"><title>{5} | IMDb {6} | {7} listed min | {8} votes</title><rect class=\"analytics-bar-hit\" x=\"{9}\" y=\"30\" width=\"{10}\" height=\"{11}\"/><rect class=\"analytics-entry-bar{12}\" x=\"{13}\" y=\"{14}\" width=\"{15}\" height=\"{16}\" rx=\"3\"/>{17}<text x=\"{18}\" y=\"{19}\" text-anchor=\"middle\" class=\"analytics-axis\">{20}</text></g>",
-    "variables": [
-      "r.id",
-      "r.color",
-      "r.id===selectedId?0:-1",
-      "r.id===selectedId",
-      "esc(r.label+': '+title(r)+', '+(value===null?'value unavailable':value+(metric==='rating'?' out of 10':' listed minutes')))",
-      "esc(r.label+': '+title(r))",
-      "score(r.rating)",
-      "fmt(r.runtime)",
-      "fmt(r.votes)",
-      "x-3",
-      "slot",
-      "base-25",
-      "value===null?' is-missing':''",
-      "x",
-      "y",
-      "Math.max(8,slot-6)",
-      "h",
-      "watched.has(r.id)?`<circle cx=\"${x+(slot-6)/2}\" cy=\"${Math.max(y-6,22)}\" r=\"2.5\" class=\"analytics-watched-dot\"/>`:''",
-      "x+(slot-6)/2",
-      "base+19",
-      "esc(shortLabel(r))"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "analytics-entry-chart"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "rating"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "IMDb ratings from 0 to 10"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "listed durations in minutes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "rating"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "IMDb / 10"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "Listed minutes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 57,
-    "kind": "template",
-    "text": "<svg viewBox=\"0 0 {0} {1}\" style=\"width:{2}px;min-width:100%\" aria-label=\"{3} entries, {4}\"><text x=\"{5}\" y=\"19\" class=\"analytics-axis\">{6}</text>{7}{8}</svg>",
-    "variables": [
-      "width",
-      "height",
-      "width",
-      "entries.length",
-      "metric==='rating'?'IMDb ratings from 0 to 10':'listed durations in minutes'",
-      "left",
-      "metric==='rating'?'IMDb / 10':'Listed minutes'",
-      "grid",
-      "bars"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "analytics-explorer-note"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "rating"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "Rating axis starts at zero. Outlined bars indicate missing scores."
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "Durations are source listings, not exact streaming playback times."
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 58,
+    "line": 114,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 58,
+    "line": 114,
     "kind": "literal",
-    "text": "arc"
+    "text": "story"
   },
   {
     "file": "assets/analytics.js",
-    "line": 58,
+    "line": 114,
     "kind": "literal",
-    "text": "category"
+    "text": "release"
   },
   {
     "file": "assets/analytics.js",
-    "line": 58,
+    "line": 114,
     "kind": "template",
-    "text": "{0} Color identifies {1}; dots above bars mark watched entries. Equal spacing represents entry order, not elapsed time.",
+    "text": "Each dot is one {0}, in {1} order. The line is the rolling median of {2} {3}. The axis starts at {4}, so small differences stay visible.",
     "variables": [
-      "metric==='rating'?'Rating axis starts at zero. Outlined bars indicate missing scores.':'Durations are source listings, not exact streaming playback times.'",
-      "scope==='episodes'?'arc':'category'"
+      "w.one",
+      "scope === 'episodes' ? 'story' : 'release'",
+      "trendWindow()",
+      "w.many",
+      "lo"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 62,
+    "line": 116,
+    "kind": "literal",
+    "text": "analytics-legend"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 116,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 116,
+    "kind": "template",
+    "text": "<span><i class=\"key-muted\"></i>Other {0}</span>",
+    "variables": [
+      "w.groups"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 116,
+    "kind": "template",
+    "text": "<span>{0} without a score, not plotted</span>",
+    "variables": [
+      "missing"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 116,
+    "kind": "template",
+    "text": "<span><i class=\"key-dot\"></i>IMDb score, one {0}</span><span><i class=\"key-ring\"></i>Watched</span><span><i class=\"key-line\"></i>Rolling median</span>{1}{2}",
+    "variables": [
+      "w.one",
+      "focus !== 'all' ? `<span><i class=\"key-muted\"></i>Other ${w.groups}</span>` : ''",
+      "missing ? `<span>${missing} without a score, not plotted</span>` : ''"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 121,
     "kind": "literal",
     "text": "analytics-group-title"
   },
   {
     "file": "assets/analytics.js",
-    "line": 62,
-    "kind": "literal",
-    "text": "episodes"
+    "line": 121,
+    "kind": "template",
+    "text": "Which {0} score highest",
+    "variables": [
+      "w.groups"
+    ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 62,
-    "kind": "literal",
-    "text": "Compare the arcs"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 62,
-    "kind": "literal",
-    "text": "Compare film categories"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 63,
-    "kind": "literal",
-    "text": "median"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 64,
+    "line": 122,
     "kind": "literal",
     "text": "analytics-group-chart"
   },
   {
     "file": "assets/analytics.js",
-    "line": 64,
+    "line": 123,
     "kind": "literal",
-    "text": "median"
+    "text": "has-focus"
   },
   {
     "file": "assets/analytics.js",
-    "line": 64,
+    "line": 123,
     "kind": "literal",
-    "text": "median"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 64,
+    "line": 124,
     "kind": "literal",
-    "text": "h"
+    "text": "--overall"
   },
   {
     "file": "assets/analytics.js",
-    "line": 64,
+    "line": 125,
     "kind": "template",
-    "text": "<button class=\"analytics-group-row\" data-group=\"{0}\" data-arc-color=\"{1}\" aria-pressed=\"{2}\"><span>{3}<small>{4} entries · {5} rated</small></span><span class=\"analytics-track\"><i style=\"width:{6}%\"></i></span><strong>{7}</strong></button>",
+    "text": "{0}: median {1}, middle half {2} to {3}, {4} rated.",
     "variables": [
-      "g.id",
-      "g.color",
-      "filters.group===g.id",
-      "esc(groupName(g))",
-      "g.count",
+      "groupName(g.id)",
+      "score(g.median)",
+      "score(g.q1)",
+      "score(g.q3)",
+      "g.rated"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 125,
+    "kind": "template",
+    "text": "{0}: no ratings.",
+    "variables": [
+      "groupName(g.id)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 125,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 125,
+    "kind": "template",
+    "text": "<b>{0}</b>",
+    "variables": [
+      "pad(g.id,2)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 125,
+    "kind": "template",
+    "text": "<i class=\"arc-row-range\" style=\"left:{0};width:calc({1} - {2})\"></i><i class=\"arc-row-iqr\" style=\"left:{3};width:calc({4} - {5})\"></i><i class=\"arc-row-median\" style=\"left:{6}\"></i>",
+    "variables": [
+      "pos(g.min)",
+      "pos(g.max)",
+      "pos(g.min)",
+      "pos(g.q1)",
+      "pos(g.q3)",
+      "pos(g.q1)",
+      "pos(g.median)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 125,
+    "kind": "template",
+    "text": "<button class=\"analytics-arc-row\" data-group=\"{0}\" aria-pressed=\"{1}\" aria-label=\"{2}\"><span class=\"arc-row-name\">{3}{4}<small>{5} rated</small></span><span class=\"arc-row-track\" aria-hidden=\"true\">{6}</span><strong>{7}</strong></button>",
+    "variables": [
+      "esc(g.id)",
+      "focus === g.id",
+      "esc(g.rated ? `${groupName(g.id)}: median ${score(g.median)}, middle half ${score(g.q1)} to ${score(g.q3)}, ${g.rated} rated.` : `${groupName(g.id)}: no ratings.`)",
+      "scope === 'episodes' && !getHideTitles() ? `<b>${pad(g.id,2)}</b>` : ''",
+      "esc(groupName(g.id))",
       "g.rated",
-      "value===null?0:value/groupMax*100",
-      "groupMetric==='median'?score(value):value.toFixed(1)+'h'"
+      "g.rated ? `<i class=\"arc-row-range\" style=\"left:${pos(g.min)};width:calc(${pos(g.max)} - ${pos(g.min)})\"></i><i class=\"arc-row-iqr\" style=\"left:${pos(g.q1)};width:calc(${pos(g.q3)} - ${pos(g.q1)})\"></i><i class=\"arc-row-median\" style=\"left:${pos(g.median)}\"></i>` : ''",
+      "score(g.median)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 66,
+    "line": 126,
+    "kind": "template",
+    "text": "<i style=\"left:{0}\">{1}</i>",
+    "variables": [
+      "pos(v)",
+      "v"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 126,
+    "kind": "template",
+    "text": "<div class=\"analytics-arc-axis\" aria-hidden=\"true\"><span></span><span class=\"arc-axis-ticks\">{0}</span><span></span></div>",
+    "variables": [
+      "ticks(scale).filter(v => Number.isInteger(v)).map(v => `<i style=\"left:${pos(v)}\">${v}</i>`).join('')"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 127,
     "kind": "literal",
-    "text": "analytics-distribution-chart"
+    "text": "analytics-group-note"
   },
   {
     "file": "assets/analytics.js",
-    "line": 66,
+    "line": 127,
     "kind": "template",
-    "text": "<button data-band=\"{0}\" class=\"analytics-bin\" aria-pressed=\"{1}\" aria-label=\"{2}: {3} entries. Filter this rating band.\"><strong>{4}</strong><span class=\"analytics-bin-track\"><i style=\"height:{5}%\"></i></span><span>{6}</span></button>",
+    "text": "Dot: median score. Bar: the middle half of {0} (25th to 75th percentile). Thin line: lowest to highest. The vertical rule is the overall median, {1}. Select a row to focus it everywhere.",
     "variables": [
-      "b.id",
-      "filters.band===b.id",
-      "b.label",
-      "b.count",
-      "b.count",
-      "b.count/highest*100",
-      "b.label"
+      "w.many",
+      "score(overall)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 67,
+    "line": 131,
     "kind": "literal",
-    "text": "analytics-distribution-note"
+    "text": "analytics-top-title"
   },
   {
     "file": "assets/analytics.js",
-    "line": 67,
-    "kind": "template",
-    "text": "{0} rated entries; {1} missing scores excluded. Select a band to filter; select it again to clear.",
-    "variables": [
-      "summary.rated",
-      "summary.count-summary.rated"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 69,
-    "kind": "template",
-    "text": "<line x1=\"35\" y1=\"{0}\" x2=\"{1}\" y2=\"{2}\" class=\"analytics-gridline\"/><text x=\"27\" y=\"{3}\" text-anchor=\"end\" class=\"analytics-axis\">{4}</text>",
-    "variables": [
-      "y",
-      "width-8",
-      "y",
-      "y+4",
-      "n"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 70,
+    "line": 131,
     "kind": "literal",
-    "text": "analytics-year-chart"
+    "text": "Best unwatched"
   },
   {
     "file": "assets/analytics.js",
-    "line": 70,
+    "line": 131,
+    "kind": "literal",
+    "text": "Top rated"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 131,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 131,
     "kind": "template",
-    "text": "<g role=\"button\" tabindex=\"0\" data-year=\"{0}\" aria-pressed=\"{1}\" aria-label=\"{2}: {3} selected releases. Filter this year.\"><title>{4}: {5} selected releases</title><rect class=\"analytics-bar-hit\" x=\"{6}\" y=\"40\" width=\"{7}\" height=\"175\"/><rect class=\"analytics-year-bar\" x=\"{8}\" y=\"{9}\" width=\"{10}\" height=\"{11}\" rx=\"3\"/><text class=\"analytics-axis\" x=\"{12}\" y=\"{13}\" text-anchor=\"middle\" transform=\"rotate(-45 {14} {15})\">{16}</text></g>",
+    "text": " in {0}",
     "variables": [
-      "v.year",
-      "filters.year===String(v.year)",
-      "v.year",
-      "v.count",
-      "v.year",
-      "v.count",
-      "x-2",
-      "step",
-      "x",
-      "base-h",
-      "step-5",
-      "h",
-      "x+(step-5)/2",
-      "base+20",
-      "x+(step-5)/2",
-      "base+20",
-      "v.year"
+      "groupName(focus)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 70,
+    "line": 132,
+    "kind": "literal",
+    "text": "analytics-top"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 132,
     "kind": "template",
-    "text": "<svg viewBox=\"0 0 {0} 250\" style=\"width:{1}px;min-width:100%\" aria-label=\"Selected releases per year\">{2}{3}</svg>",
+    "text": "<li><button data-select=\"{0}\" aria-pressed=\"{1}\"><span class=\"top-rank\">{2}</span><span class=\"top-title\">{3}<small>{4} · {5} votes</small></span><strong>{6}</strong></button></li>",
     "variables": [
-      "width",
-      "width",
-      "grid",
-      "years.map((v,i)=>{const h=v.count/(Math.ceil(max/4)*4)*plot,x=40+i*step;return `<g role=\"button\" tabindex=\"0\" data-year=\"${v.year}\" aria-pressed=\"${filters.year===String(v.year)}\" aria-label=\"${v.year}: ${v.count} selected releases. Filter this year.\"><title>${v.year}: ${v.count} selected releases</title><rect class=\"analytics-bar-hit\" x=\"${x-2}\" y=\"40\" width=\"${step}\" height=\"175\"/><rect class=\"analytics-year-bar\" x=\"${x}\" y=\"${base-h}\" width=\"${step-5}\" height=\"${h}\" rx=\"3\"/><text class=\"analytics-axis\" x=\"${x+(step-5)/2}\" y=\"${base+20}\" text-anchor=\"middle\" transform=\"rotate(-45 ${x+(step-5)/2} ${base+20})\">${v.year}</text></g>`;}).join('')"
+      "r.id",
+      "r.id === selectedId",
+      "i+1",
+      "esc(title(r))",
+      "esc(r.label)",
+      "fmt(r.votes)",
+      "score(r.rating)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 73,
+    "line": 133,
+    "kind": "template",
+    "text": "<li class=\"chart-note\">No {0} in this view have {1} or more votes yet.</li>",
+    "variables": [
+      "w.many",
+      "fmt(minVotes)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 134,
+    "kind": "literal",
+    "text": "analytics-top-note"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 134,
+    "kind": "template",
+    "text": "Ranked by IMDb score among {0} with at least {1} votes, the median for all {2}, so a handful of voters cannot top the list. Ties go to more votes. Select one to find it on the chart.",
+    "variables": [
+      "w.many",
+      "fmt(minVotes)",
+      "w.many"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 137,
     "kind": "literal",
     "text": "analytics-daily-minutes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 74,
+    "line": 138,
+    "kind": "literal",
+    "text": "analytics-progress-text"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 138,
+    "kind": "template",
+    "text": "{0} of {1} {2} watched",
+    "variables": [
+      "s.watched",
+      "s.count",
+      "w.many"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 139,
+    "kind": "literal",
+    "text": "analytics-progress-bar"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 140,
     "kind": "literal",
     "text": "analytics-daily-label"
   },
   {
     "file": "assets/analytics.js",
-    "line": 74,
+    "line": 140,
     "kind": "template",
-    "text": "{0} min",
+    "text": "{0} min a day",
     "variables": [
-      "minutes"
+      "daily"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 75,
+    "line": 141,
     "kind": "literal",
     "text": "analytics-days"
   },
   {
     "file": "assets/analytics.js",
-    "line": 75,
-    "kind": "literal",
-    "text": "At least "
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 75,
+    "line": 141,
     "kind": "literal",
     "text": "day"
   },
   {
     "file": "assets/analytics.js",
-    "line": 75,
+    "line": 141,
     "kind": "literal",
     "text": "days"
   },
   {
     "file": "assets/analytics.js",
-    "line": 76,
+    "line": 141,
+    "kind": "literal",
+    "text": "All caught up"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 142,
+    "kind": "literal",
+    "text": "analytics-finish"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 142,
+    "kind": "template",
+    "text": "Finish around {0} at this pace.",
+    "variables": [
+      "dateLabel(plan.date)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 142,
+    "kind": "template",
+    "text": "Every {0} in this view is watched.",
+    "variables": [
+      "w.one"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 143,
     "kind": "literal",
     "text": "analytics-planner-description"
   },
   {
     "file": "assets/analytics.js",
-    "line": 76,
+    "line": 143,
     "kind": "literal",
-    "text": "episodes"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 76,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 76,
-    "kind": "literal",
-    "text": "films"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 76,
+    "line": 143,
     "kind": "template",
-    "text": " · {0} missing durations",
+    "text": " in {0}",
+    "variables": [
+      "groupName(focus)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 143,
+    "kind": "template",
+    "text": " · {0} without a duration",
     "variables": [
       "s.missingRemaining"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 76,
+    "line": 143,
     "kind": "template",
-    "text": "{0} unwatched {1} in your filters · {2} listed time{3}. A planning estimate; actual viewing time varies by edition and skipped material.",
+    "text": "{0} unwatched {1}{2} · {3} of listed time{4}. Listings may include ads, so treat this as a budget.",
     "variables": [
       "s.remainingCount",
-      "scope==='episodes'?'episodes':'films'",
+      "w.many",
+      "focus !== 'all' ? ` in ${groupName(focus)}` : ''",
       "hours(s.remainingMinutes)",
-      "s.missingRemaining?` · ${s.missingRemaining} missing durations`:''"
+      "s.missingRemaining ? ` · ${s.missingRemaining} without a duration` : ''"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 79,
+    "line": 145,
+    "kind": "literal",
+    "text": "analytics-next"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 145,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 145,
+    "kind": "template",
+    "text": "data-analytics-open=\"{0}\"",
+    "variables": [
+      "next.number"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 145,
+    "kind": "template",
+    "text": "data-select=\"{0}\"",
+    "variables": [
+      "next.id"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 145,
+    "kind": "template",
+    "text": "<button class=\"button primary\" {0}>Next up: {1}</button>",
+    "variables": [
+      "scope === 'episodes' ? `data-analytics-open=\"${next.number}\"` : `data-select=\"${next.id}\"`",
+      "esc(getHideTitles() ? next.label : `${shortLabel(next)} ${next.title}`)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 148,
     "kind": "literal",
     "text": "analytics-hide-titles"
   },
   {
     "file": "assets/analytics.js",
-    "line": 80,
+    "line": 148,
     "kind": "literal",
-    "text": "analytics-search"
+    "text": "analytics-unwatched"
   },
   {
     "file": "assets/analytics.js",
-    "line": 80,
+    "line": 150,
     "kind": "literal",
-    "text": "Episode / film number or year"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 80,
+    "line": 150,
     "kind": "literal",
-    "text": "Title, episode / film number, or year"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 84,
+    "line": 151,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 155,
+    "kind": "literal",
+    "text": "analytics-focus"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 155,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 156,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 156,
+    "kind": "template",
+    "text": "Focused on {0} <span aria-hidden=\"true\">×</span>",
+    "variables": [
+      "esc(groupName(focus))"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 156,
+    "kind": "literal",
+    "text": "aria-label"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 156,
+    "kind": "template",
+    "text": "Clear focus on {0}",
+    "variables": [
+      "groupName(focus)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 157,
     "kind": "literal",
     "text": "analytics-status-text"
   },
   {
     "file": "assets/analytics.js",
-    "line": 84,
+    "line": 157,
     "kind": "literal",
-    "text": "episodes"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 84,
-    "kind": "literal",
-    "text": "main-story episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 84,
-    "kind": "literal",
-    "text": "films"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 84,
+    "line": 157,
     "kind": "template",
-    "text": "{0} of {1} {2} in this view · {3} watched. Every chart follows these filters.",
+    "text": " in {0}",
+    "variables": [
+      "groupName(focus)"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 157,
+    "kind": "literal",
+    "text": ", unwatched only"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 157,
+    "kind": "template",
+    "text": "{0} of {1} {2}{3}{4} · {5} watched. Every total, list, and table below follows this view.",
     "variables": [
       "s.count",
-      "full",
-      "scope==='episodes'?'main-story episodes':'films'",
+      "all.length",
+      "w.many",
+      "focus !== 'all' ? ` in ${groupName(focus)}` : ''",
+      "unwatchedOnly ? ', unwatched only' : ''",
       "s.watched"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 159,
     "kind": "literal",
     "text": "analytics-kpis"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 159,
     "kind": "literal",
-    "text": "In this view"
+    "text": "Median IMDb score"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 85,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 85,
-    "kind": "literal",
-    "text": "films"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 85,
+    "line": 159,
     "kind": "template",
-    "text": "{0} total {1}",
-    "variables": [
-      "full",
-      "scope==='episodes'?'episodes':'films'"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 85,
-    "kind": "literal",
-    "text": "Median IMDb"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 85,
-    "kind": "template",
-    "text": "{0} / {1} rated · equal entry weight",
+    "text": "{0} of {1} {2} rated",
     "variables": [
       "s.rated",
-      "s.count"
+      "s.count",
+      "w.many"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 160,
+    "kind": "template",
+    "text": "Strongest {0}",
+    "variables": [
+      "w.group"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 160,
+    "kind": "literal",
+    "text": "N/A"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 160,
+    "kind": "template",
+    "text": "Median {0} across {1} rated",
+    "variables": [
+      "score(best.median)",
+      "best.rated"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 160,
+    "kind": "template",
+    "text": "Needs 3 rated {0}",
+    "variables": [
+      "w.many"
+    ]
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 161,
     "kind": "literal",
     "text": "Listed time"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 161,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 161,
     "kind": "literal",
-    "text": "broadcast listings"
+    "text": "broadcast"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 161,
     "kind": "literal",
-    "text": "film listings"
+    "text": "film"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 161,
     "kind": "template",
-    "text": "{0} / {1} durations · {2}",
+    "text": "{0} {1} listings",
     "variables": [
       "s.runtimeCount",
-      "s.count",
-      "scope==='episodes'?'broadcast listings':'film listings'"
+      "scope === 'episodes' ? 'broadcast' : 'film'"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 162,
     "kind": "literal",
     "text": "Still to watch"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 162,
     "kind": "literal",
-    "text": " · durations incomplete"
+    "text": " · some durations missing"
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 162,
     "kind": "template",
     "text": "{0} unwatched{1}",
     "variables": [
       "s.remainingCount",
-      "s.missingRemaining?' · durations incomplete':''"
+      "s.missingRemaining ? ' · some durations missing' : ''"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 85,
+    "line": 163,
+    "kind": "literal",
+    "text": " class=\"is-text\""
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 163,
     "kind": "template",
-    "text": "<div><span>{0}</span><strong>{1}</strong><small>{2}</small></div>",
+    "text": "<div><span>{0}</span><strong{1}>{2}</strong><small>{3}</small></div>",
     "variables": [
       "label",
+      "text ? ' class=\"is-text\"' : ''",
       "value",
       "note"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 86,
+    "line": 164,
     "kind": "literal",
     "text": "analytics-empty"
   },
   {
     "file": "assets/analytics.js",
-    "line": 86,
+    "line": 164,
     "kind": "literal",
     "text": "analytics-content"
   },
   {
     "file": "assets/analytics.js",
-    "line": 88,
+    "line": 167,
     "kind": "literal",
-    "text": "analytics-highlights"
+    "text": "analytics-group-heading"
   },
   {
     "file": "assets/analytics.js",
-    "line": 88,
-    "kind": "template",
-    "text": "<button data-highlight=\"{0}\"><span>Highest IMDb score</span><strong>{1} <small>/ 10</small></strong><p>{2} · {3} votes</p></button>",
-    "variables": [
-      "s.highest.id",
-      "score(s.highest.rating)",
-      "esc(title(s.highest))",
-      "fmt(s.highest.votes)"
-    ]
+    "line": 167,
+    "kind": "literal",
+    "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 88,
-    "kind": "template",
-    "text": "<button data-highlight=\"{0}\"><span>Longest listed duration</span><strong>{1} <small>min</small></strong><p>{2}</p></button>",
-    "variables": [
-      "s.longest.id",
-      "s.longest.runtime",
-      "esc(title(s.longest))"
-    ]
+    "line": 167,
+    "kind": "literal",
+    "text": "Arc"
   },
   {
     "file": "assets/analytics.js",
-    "line": 88,
-    "kind": "template",
-    "text": "<button data-year=\"{0}\"><span>Busiest release year</span><strong>{1}</strong><p>{2} selected releases</p></button>",
-    "variables": [
-      "busiest.year",
-      "busiest.year",
-      "busiest.count"
-    ]
+    "line": 167,
+    "kind": "literal",
+    "text": "Category"
   },
   {
     "file": "assets/analytics.js",
-    "line": 89,
+    "line": 168,
     "kind": "literal",
     "text": "analytics-table-body"
   },
   {
     "file": "assets/analytics.js",
-    "line": 89,
+    "line": 168,
     "kind": "template",
     "text": "<a href=\"{0}\" target=\"_blank\" rel=\"noopener noreferrer\">{1}</a>",
     "variables": [
@@ -4535,536 +4981,296 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 89,
+    "line": 168,
     "kind": "literal",
     "text": "N/A"
   },
   {
     "file": "assets/analytics.js",
-    "line": 89,
+    "line": 168,
     "kind": "literal",
     "text": "Yes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 89,
+    "line": 168,
     "kind": "literal",
     "text": "No"
   },
   {
     "file": "assets/analytics.js",
-    "line": 89,
+    "line": 168,
     "kind": "template",
-    "text": "<tr><td><button class=\"text-button\" data-highlight=\"{0}\">{1}</button></td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td><a href=\"{6}\" target=\"_blank\" rel=\"noopener noreferrer\">{7}</a></td><td>{8}</td></tr>",
+    "text": "<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td><a href=\"{6}\" target=\"_blank\" rel=\"noopener noreferrer\">{7}</a></td><td>{8}</td></tr>",
     "variables": [
-      "r.id",
       "esc(r.label)",
       "esc(title(r))",
+      "esc(groupName(r.group))",
       "r.release",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">${score(r.rating)}</a>`:'N/A'",
+      "r.imdbUrl ? `<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">${score(r.rating)}</a>` : 'N/A'",
       "fmt(r.votes)",
-      "esc(r.runtimeSource||r.source)",
+      "esc(r.runtimeSource || r.source)",
       "fmt(r.runtime)",
-      "watched.has(r.id)?'Yes':'No'"
+      "watched.has(r.id) ? 'Yes' : 'No'"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 90,
+    "line": 169,
     "kind": "literal",
     "text": "analytics-source-note"
   },
   {
     "file": "assets/analytics.js",
-    "line": 90,
+    "line": 169,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 90,
+    "line": 169,
     "kind": "template",
-    "text": "Ratings checked {0}. {1} scores and {2} duration listings available in this filtered view. Missing values are never treated as zero ratings.",
+    "text": "Ratings checked {0}. {1} scores and {2} duration listings in this view. Missing values are never treated as zero.",
     "variables": [
-      "scope==='episodes'?window.CONAN_DATA.updated:window.CONAN_MOVIES.ratingsUpdated",
+      "scope === 'episodes' ? window.CONAN_DATA.updated : window.CONAN_MOVIES.ratingsUpdated",
       "s.rated",
       "s.runtimeCount"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 91,
-    "kind": "literal",
-    "text": "analytics-tooltip"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 93,
+    "line": 170,
     "kind": "literal",
     "text": "analytics-export"
   },
   {
     "file": "assets/analytics.js",
-    "line": 95,
+    "line": 172,
     "kind": "literal",
     "text": "analytics"
   },
   {
     "file": "assets/analytics.js",
-    "line": 95,
+    "line": 172,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/analytics.js",
-    "line": 96,
+    "line": 173,
     "kind": "literal",
-    "text": "[data-analytics-scope],[data-entry],[data-highlight],[data-group],[data-year],[data-band],[data-analytics-open]"
+    "text": "[data-analytics-scope],[data-group],[data-select],[data-analytics-open],[data-clear-focus]"
   },
   {
     "file": "assets/analytics.js",
-    "line": 97,
-    "kind": "literal",
-    "text": "[data-analytics-scope]"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 97,
-    "kind": "literal",
-    "text": "aria-pressed"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 99,
-    "kind": "literal",
-    "text": "analytics-inspector"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 99,
-    "kind": "literal",
-    "text": "nearest"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 101,
-    "kind": "literal",
-    "text": "group"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 101,
-    "kind": "literal",
-    "text": "year"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 101,
-    "kind": "literal",
-    "text": "band"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 101,
+    "line": 175,
     "kind": "literal",
     "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 101,
+    "line": 176,
+    "kind": "literal",
+    "text": "[data-analytics-scope]"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 176,
+    "kind": "literal",
+    "text": "aria-pressed"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 179,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 180,
+    "kind": "literal",
+    "text": "analytics-group-chart"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 180,
     "kind": "template",
-    "text": "analytics-{0}",
+    "text": "[data-group=\"{0}\"]",
     "variables": [
-      "key"
+      "CSS.escape(id)"
     ]
   },
   {
     "file": "assets/analytics.js",
-    "line": 101,
-    "kind": "template",
-    "text": "analytics-{0}",
-    "variables": [
-      "key"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 103,
+    "line": 183,
     "kind": "literal",
-    "text": "analytics"
+    "text": "all"
   },
   {
     "file": "assets/analytics.js",
-    "line": 103,
-    "kind": "literal",
-    "text": "keydown"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 104,
-    "kind": "literal",
-    "text": "Escape"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 104,
-    "kind": "literal",
-    "text": "analytics-tooltip"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 105,
-    "kind": "literal",
-    "text": "[data-entry],[data-year]"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 106,
-    "kind": "literal",
-    "text": "Enter"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 106,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 107,
-    "kind": "literal",
-    "text": "ArrowLeft"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 107,
-    "kind": "literal",
-    "text": "ArrowRight"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 107,
-    "kind": "literal",
-    "text": "Home"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 107,
-    "kind": "literal",
-    "text": "End"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 108,
-    "kind": "literal",
-    "text": "Home"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 108,
-    "kind": "literal",
-    "text": "End"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 108,
-    "kind": "literal",
-    "text": "ArrowRight"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 109,
-    "kind": "literal",
-    "text": "analytics-entry-chart"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 109,
-    "kind": "template",
-    "text": "[data-entry=\"{0}\"]",
-    "variables": [
-      "selectedId"
-    ]
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 109,
-    "kind": "literal",
-    "text": "nearest"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 109,
-    "kind": "literal",
-    "text": "nearest"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 112,
-    "kind": "literal",
-    "text": "analytics-entry-chart"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 113,
+    "line": 185,
     "kind": "literal",
     "text": "pointermove"
   },
   {
     "file": "assets/analytics.js",
-    "line": 113,
-    "kind": "literal",
-    "text": "[data-entry]"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 113,
-    "kind": "literal",
-    "text": "analytics-tooltip"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 114,
+    "line": 186,
     "kind": "literal",
     "text": "pointerleave"
   },
   {
     "file": "assets/analytics.js",
-    "line": 114,
+    "line": 187,
     "kind": "literal",
-    "text": "analytics-tooltip"
+    "text": "click"
   },
   {
     "file": "assets/analytics.js",
-    "line": 115,
+    "line": 188,
     "kind": "literal",
-    "text": "focusin"
+    "text": "keydown"
   },
   {
     "file": "assets/analytics.js",
-    "line": 115,
+    "line": 189,
     "kind": "literal",
-    "text": "[data-entry]"
+    "text": "ArrowLeft"
   },
   {
     "file": "assets/analytics.js",
-    "line": 116,
+    "line": 189,
+    "kind": "literal",
+    "text": "ArrowRight"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 189,
+    "kind": "literal",
+    "text": "Home"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 189,
+    "kind": "literal",
+    "text": "End"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 189,
+    "kind": "literal",
+    "text": "Enter"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 192,
+    "kind": "literal",
+    "text": "Enter"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 192,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 193,
+    "kind": "literal",
+    "text": "Home"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 193,
+    "kind": "literal",
+    "text": "End"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 193,
+    "kind": "literal",
+    "text": "ArrowRight"
+  },
+  {
+    "file": "assets/analytics.js",
+    "line": 196,
     "kind": "literal",
     "text": "focusout"
   },
   {
     "file": "assets/analytics.js",
-    "line": 116,
+    "line": 197,
     "kind": "literal",
-    "text": "analytics-tooltip"
+    "text": "analytics"
   },
   {
     "file": "assets/analytics.js",
-    "line": 117,
-    "kind": "literal",
-    "text": "scroll"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 117,
-    "kind": "literal",
-    "text": "analytics-tooltip"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 118,
-    "kind": "literal",
-    "text": "analytics-entry-scroll"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 118,
+    "line": 198,
     "kind": "literal",
     "text": "scroll"
   },
   {
     "file": "assets/analytics.js",
-    "line": 118,
+    "line": 199,
     "kind": "literal",
-    "text": "analytics-tooltip"
+    "text": "analytics-unwatched"
   },
   {
     "file": "assets/analytics.js",
-    "line": 119,
-    "kind": "literal",
-    "text": "analytics-search"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 119,
-    "kind": "literal",
-    "text": "input"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "analytics-group"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "group"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "analytics-year"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "year"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "analytics-status"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "status"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "analytics-votes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "minVotes"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "analytics-band"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "band"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "analytics-sort"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
-    "kind": "literal",
-    "text": "sort"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 120,
+    "line": 199,
     "kind": "literal",
     "text": "change"
   },
   {
     "file": "assets/analytics.js",
-    "line": 121,
-    "kind": "literal",
-    "text": "analytics-metric"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 121,
-    "kind": "literal",
-    "text": "change"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 122,
-    "kind": "literal",
-    "text": "analytics-group-metric"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 122,
-    "kind": "literal",
-    "text": "change"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 123,
+    "line": 200,
     "kind": "literal",
     "text": "analytics-hide-titles"
   },
   {
     "file": "assets/analytics.js",
-    "line": 123,
+    "line": 200,
     "kind": "literal",
     "text": "change"
   },
   {
     "file": "assets/analytics.js",
-    "line": 124,
-    "kind": "literal",
-    "text": "analytics-reset"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 124,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/analytics.js",
-    "line": 125,
+    "line": 201,
     "kind": "literal",
     "text": "analytics-daily-minutes"
   },
   {
     "file": "assets/analytics.js",
-    "line": 125,
+    "line": 201,
     "kind": "literal",
     "text": "input"
   },
   {
     "file": "assets/analytics.js",
-    "line": 126,
+    "line": 202,
     "kind": "literal",
     "text": "analytics-export"
   },
   {
     "file": "assets/analytics.js",
-    "line": 126,
+    "line": 202,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/analytics.js",
-    "line": 126,
+    "line": 202,
     "kind": "literal",
     "text": "text/csv;charset=utf-8"
   },
   {
     "file": "assets/analytics.js",
-    "line": 126,
+    "line": 202,
     "kind": "literal",
     "text": "a"
   },
   {
     "file": "assets/analytics.js",
-    "line": 126,
+    "line": 202,
     "kind": "template",
     "text": "conan-{0}-analytics.csv",
     "variables": [
@@ -5073,19 +5279,19 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 126,
+    "line": 202,
     "kind": "literal",
-    "text": "Filtered analytics exported with source links."
+    "text": "Analytics exported with source links."
   },
   {
     "file": "assets/analytics.js",
-    "line": 127,
+    "line": 203,
     "kind": "literal",
     "text": "storage"
   },
   {
     "file": "assets/analytics.js",
-    "line": 127,
+    "line": 203,
     "kind": "template",
     "text": "{0}:hide-titles",
     "variables": [
@@ -5094,7 +5300,7 @@
   },
   {
     "file": "assets/analytics.js",
-    "line": 127,
+    "line": 203,
     "kind": "literal",
     "text": "analytics"
   },
@@ -5144,111 +5350,83 @@
     "file": "assets/analytics-core.js",
     "line": 7,
     "kind": "literal",
-    "text": "low"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 7,
-    "kind": "literal",
-    "text": "Below 6"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 7,
-    "kind": "literal",
-    "text": "9 to 10"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 7,
-    "kind": "template",
-    "text": "{0} to <{1}",
-    "variables": [
-      "n",
-      "n + 1"
-    ]
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 8,
-    "kind": "literal",
     "text": "number"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "January"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "February"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "March"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "April"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "May"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "June"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "July"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "August"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "September"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "October"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "November"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 16,
+    "line": 19,
     "kind": "literal",
     "text": "December"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 17,
+    "line": 20,
     "kind": "template",
     "text": "Unrecognized release date: {0}",
     "variables": [
@@ -5257,13 +5435,13 @@
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 23,
+    "line": 26,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 25,
+    "line": 28,
     "kind": "template",
     "text": "episode-{0}",
     "variables": [
@@ -5272,7 +5450,7 @@
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 26,
+    "line": 29,
     "kind": "template",
     "text": "Episode {0}",
     "variables": [
@@ -5281,7 +5459,7 @@
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 26,
+    "line": 29,
     "kind": "template",
     "text": "Film {0}",
     "variables": [
@@ -5290,13 +5468,13 @@
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 26,
+    "line": 29,
     "kind": "literal",
     "text": "short"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 26,
+    "line": 29,
     "kind": "template",
     "text": "3D short {0}",
     "variables": [
@@ -5305,19 +5483,19 @@
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 32,
+    "line": 35,
     "kind": "literal",
     "text": "Broadcast listing"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 32,
+    "line": 35,
     "kind": "literal",
     "text": "Film listing"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 33,
+    "line": 36,
     "kind": "template",
     "text": "https://www.imdb.com/title/{0}/",
     "variables": [
@@ -5326,139 +5504,109 @@
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 35,
-    "kind": "literal",
-    "text": "episodes"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 35,
+    "line": 39,
     "kind": "literal",
     "text": "movies"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 41,
-    "kind": "literal",
-    "text": "all"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 41,
-    "kind": "literal",
-    "text": "all"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 42,
-    "kind": "literal",
-    "text": "all"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 42,
-    "kind": "literal",
-    "text": "watched"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 46,
-    "kind": "literal",
-    "text": "rating"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 47,
-    "kind": "literal",
-    "text": "runtime"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Entry"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Title"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Group"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Japanese release"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "IMDb rating"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "IMDb votes"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Listed minutes"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Duration basis"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Watched"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "IMDb source"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Duration source"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Metadata source"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 74,
-    "kind": "literal",
-    "text": "Rating checked"
-  },
-  {
-    "file": "assets/analytics-core.js",
-    "line": 75,
+    "line": 40,
     "kind": "literal",
     "text": "episodes"
   },
   {
     "file": "assets/analytics-core.js",
-    "line": 75,
+    "line": 43,
+    "kind": "literal",
+    "text": "all"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Entry"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Title"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Group"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Japanese release"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "IMDb rating"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "IMDb votes"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Listed minutes"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Duration basis"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Watched"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "IMDb source"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Duration source"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Metadata source"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 88,
+    "kind": "literal",
+    "text": "Rating checked"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 89,
+    "kind": "literal",
+    "text": "episodes"
+  },
+  {
+    "file": "assets/analytics-core.js",
+    "line": 89,
     "kind": "template",
     "text": "Arc {0}",
     "variables": [
@@ -5527,105 +5675,78 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 18,
+    "line": 19,
     "kind": "literal",
-    "text": "tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2"
+    "text": "tbody tr, .movie-card, .progress-card, .analytics-inspector, .analytics-kpis > div, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div"
   },
   {
     "file": "assets/presentation.js",
-    "line": 22,
+    "line": 23,
     "kind": "literal",
     "text": ".topbar, .view-tabs, .language-card"
   },
   {
     "file": "assets/presentation.js",
-    "line": 24,
+    "line": 25,
     "kind": "literal",
     "text": "is-stretched"
   },
   {
     "file": "assets/presentation.js",
-    "line": 27,
+    "line": 28,
     "kind": "literal",
     "text": "liquid-surface"
   },
   {
     "file": "assets/presentation.js",
-    "line": 27,
+    "line": 28,
     "kind": "literal",
     "text": "is-stretched"
   },
   {
     "file": "assets/presentation.js",
-    "line": 29,
+    "line": 30,
     "kind": "literal",
     "text": "tr"
   },
   {
     "file": "assets/presentation.js",
-    "line": 30,
+    "line": 31,
     "kind": "literal",
     "text": "--liquid-sx"
   },
   {
     "file": "assets/presentation.js",
-    "line": 31,
+    "line": 32,
     "kind": "literal",
     "text": "--liquid-sy"
   },
   {
     "file": "assets/presentation.js",
-    "line": 38,
+    "line": 39,
     "kind": "literal",
     "text": "--liquid-ox"
   },
   {
     "file": "assets/presentation.js",
-    "line": 39,
+    "line": 40,
     "kind": "literal",
     "text": "--liquid-oy"
   },
   {
     "file": "assets/presentation.js",
-    "line": 43,
+    "line": 44,
     "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/presentation.js",
-    "line": 49,
+    "line": 50,
     "kind": "literal",
     "text": "aria-label"
   },
   {
     "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "dark"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "dark"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "template",
-    "text": "Switch to {0} theme",
-    "variables": [
-      "theme === 'dark' ? 'light' : 'dark'"
-    ]
-  },
-  {
-    "file": "assets/presentation.js",
     "line": 50,
     "kind": "literal",
     "text": "dark"
@@ -5655,7 +5776,13 @@
     "file": "assets/presentation.js",
     "line": 51,
     "kind": "literal",
-    "text": "meta[name=\"theme-color\"]"
+    "text": "dark"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 51,
+    "kind": "literal",
+    "text": "light"
   },
   {
     "file": "assets/presentation.js",
@@ -5666,78 +5793,87 @@
   {
     "file": "assets/presentation.js",
     "line": 51,
-    "kind": "literal",
-    "text": "#eef5fd"
+    "kind": "template",
+    "text": "Switch to {0} theme",
+    "variables": [
+      "theme === 'dark' ? 'light' : 'dark'"
+    ]
   },
   {
     "file": "assets/presentation.js",
     "line": 52,
     "kind": "literal",
-    "text": ".hero-art"
+    "text": "meta[name=\"theme-color\"]"
   },
   {
     "file": "assets/presentation.js",
-    "line": 53,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 53,
-    "kind": "literal",
-    "text": "assets/conan-daylight.jpg"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 53,
-    "kind": "literal",
-    "text": "assets/conan-moon.jpg"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 53,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 53,
-    "kind": "literal",
-    "text": "Conan Edogawa above a coastal city under a bright blue sky"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 53,
-    "kind": "literal",
-    "text": "Conan Edogawa standing above the city under a full moon"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 54,
-    "kind": "literal",
-    "text": "--ambient-rgb"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 57,
-    "kind": "literal",
-    "text": "click"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 58,
+    "line": 52,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 58,
+    "line": 52,
+    "kind": "literal",
+    "text": "#eef5fd"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 53,
+    "kind": "literal",
+    "text": ".hero-art"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 54,
     "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
+    "line": 54,
+    "kind": "literal",
+    "text": "assets/conan-daylight.jpg"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 54,
+    "kind": "literal",
+    "text": "assets/conan-moon.jpg"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 54,
+    "kind": "literal",
+    "text": "light"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 54,
+    "kind": "literal",
+    "text": "Conan Edogawa above a coastal city under a bright blue sky"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 54,
+    "kind": "literal",
+    "text": "Conan Edogawa standing above the city under a full moon"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 55,
+    "kind": "literal",
+    "text": "--ambient-rgb"
+  },
+  {
+    "file": "assets/presentation.js",
     "line": 58,
+    "kind": "literal",
+    "text": "click"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 59,
     "kind": "literal",
     "text": "dark"
   },
@@ -5745,31 +5881,37 @@
     "file": "assets/presentation.js",
     "line": 59,
     "kind": "literal",
-    "text": "conan-casebook:theme"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 62,
-    "kind": "literal",
-    "text": "change"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 62,
-    "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 62,
+    "line": 59,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 66,
+    "line": 60,
+    "kind": "literal",
+    "text": "conan-casebook:theme"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 63,
     "kind": "literal",
     "text": "change"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 63,
+    "kind": "literal",
+    "text": "light"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 63,
+    "kind": "literal",
+    "text": "dark"
   },
   {
     "file": "assets/presentation.js",
@@ -5779,7 +5921,13 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 76,
+    "line": 68,
+    "kind": "literal",
+    "text": "change"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 77,
     "kind": "template",
     "text": "rgba({0},{1})",
     "variables": [
@@ -5789,7 +5937,7 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 77,
+    "line": 78,
     "kind": "template",
     "text": "rgba({0},{1})",
     "variables": [
@@ -5799,37 +5947,37 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 91,
+    "line": 92,
     "kind": "literal",
     "text": "false"
   },
   {
     "file": "assets/presentation.js",
-    "line": 96,
+    "line": 97,
     "kind": "literal",
     "text": "--pointer-x"
   },
   {
     "file": "assets/presentation.js",
-    "line": 96,
+    "line": 97,
     "kind": "literal",
     "text": "--pointer-y"
   },
   {
     "file": "assets/presentation.js",
-    "line": 113,
+    "line": 114,
     "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/presentation.js",
-    "line": 129,
+    "line": 130,
     "kind": "literal",
     "text": "--pointer-x"
   },
   {
     "file": "assets/presentation.js",
-    "line": 129,
+    "line": 130,
     "kind": "template",
     "text": "{0}px",
     "variables": [
@@ -5838,13 +5986,13 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 129,
+    "line": 130,
     "kind": "literal",
     "text": "--pointer-y"
   },
   {
     "file": "assets/presentation.js",
-    "line": 129,
+    "line": 130,
     "kind": "template",
     "text": "{0}px",
     "variables": [
@@ -5853,21 +6001,15 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 134,
+    "line": 135,
     "kind": "literal",
     "text": "pointermove"
   },
   {
     "file": "assets/presentation.js",
-    "line": 135,
+    "line": 136,
     "kind": "literal",
     "text": "touch"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 139,
-    "kind": "literal",
-    "text": "true"
   },
   {
     "file": "assets/presentation.js",
@@ -5877,85 +6019,91 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 145,
+    "line": 141,
+    "kind": "literal",
+    "text": "true"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 146,
     "kind": "literal",
     "text": "false"
   },
   {
     "file": "assets/presentation.js",
-    "line": 150,
+    "line": 151,
     "kind": "literal",
     "text": "pointerleave"
   },
   {
     "file": "assets/presentation.js",
-    "line": 151,
+    "line": 152,
     "kind": "literal",
     "text": "pointerdown"
   },
   {
     "file": "assets/presentation.js",
-    "line": 152,
+    "line": 153,
     "kind": "literal",
     "text": "scroll"
   },
   {
     "file": "assets/presentation.js",
-    "line": 153,
+    "line": 154,
     "kind": "literal",
     "text": "hashchange"
   },
   {
     "file": "assets/presentation.js",
-    "line": 154,
+    "line": 155,
     "kind": "literal",
     "text": "blur"
   },
   {
     "file": "assets/presentation.js",
-    "line": 155,
+    "line": 156,
     "kind": "literal",
     "text": "visibilitychange"
   },
   {
     "file": "assets/presentation.js",
-    "line": 156,
+    "line": 157,
     "kind": "literal",
     "text": "resize"
   },
   {
     "file": "assets/presentation.js",
-    "line": 157,
+    "line": 158,
     "kind": "literal",
     "text": "storage"
   },
   {
     "file": "assets/presentation.js",
-    "line": 158,
+    "line": 159,
     "kind": "literal",
     "text": "conan-casebook:theme"
   },
   {
     "file": "assets/presentation.js",
-    "line": 159,
+    "line": 160,
     "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 159,
+    "line": 160,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 160,
+    "line": 161,
     "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 160,
+    "line": 161,
     "kind": "literal",
     "text": "dark"
   },

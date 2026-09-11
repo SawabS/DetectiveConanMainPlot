@@ -15,7 +15,8 @@
   const { RADIUS, warpPoint } = window.ConanGridCore;
   // One canvas, one geometry pass, kept behind the page so cards and tables always cover it.
   let activeSurface = null;
-  const surfaces = 'tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2';
+  // Chart cards are left out so points stay exactly under the pointer while you read them.
+  const surfaces = 'tbody tr, .movie-card, .progress-card, .analytics-inspector, .analytics-kpis > div, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div';
   // A hovered surface grows by about this many pixels per axis, whatever its size.
   const STRETCH = 10;
   function selectSurface(target, pressed = false) {

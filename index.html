@@ -8,22 +8,22 @@
   <title>Conan Casebook | The Main Story</title>
   <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
   <script src="assets/theme.js"></script>
-  <link rel="stylesheet" href="assets/style.css?v=10">
+  <link rel="stylesheet" href="assets/style.css?v=11">
   <script src="assets/episodes.js?v=7" defer></script>
   <script src="assets/core.js" defer></script>
-  <script src="assets/graph-core.js" defer></script>
-  <script src="assets/graph.js" defer></script>
+  <script src="assets/graph-core.js?v=11" defer></script>
+  <script src="assets/graph.js?v=11" defer></script>
   <script src="assets/movies-data.js?v=7" defer></script>
   <script src="assets/movies-core.js" defer></script>
   <script src="assets/movies.js?v=7" defer></script>
-  <script src="assets/analytics-core.js" defer></script>
-  <script src="assets/analytics.js" defer></script>
-  <script src="assets/app.js?v=8" defer></script>
-  <script src="assets/locales.js?v=10" defer></script>
-  <script src="assets/language.js?v=10" defer></script>
-  <script src="assets/navigation.js?v=10" defer></script>
+  <script src="assets/analytics-core.js?v=11" defer></script>
+  <script src="assets/analytics.js?v=11" defer></script>
+  <script src="assets/app.js?v=11" defer></script>
+  <script src="assets/locales.js?v=11" defer></script>
+  <script src="assets/language.js?v=11" defer></script>
+  <script src="assets/navigation.js?v=11" defer></script>
   <script src="assets/grid-core.js" defer></script>
-  <script src="assets/presentation.js?v=10" defer></script>
+  <script src="assets/presentation.js?v=11" defer></script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><div class="ambient-grid"></div><canvas id="ambient-canvas"></canvas><div class="pointer-light"></div></div>
@@ -35,17 +35,15 @@
       <a href="#story-map" data-view-link="graph">Story map</a>
       <a href="#movies" data-view-link="movies">Movies</a>
       <a href="#analytics" data-view-link="analytics">Analytics</a>
-      <a class="nav-guide" href="guide.html">Guide</a>
     </nav>
     <div class="nav-tools">
       <div class="language-control">
         <button id="language-toggle" class="icon-button" aria-label="Choose language" aria-expanded="false" aria-controls="language-card" aria-haspopup="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.5h10M7.5 3v2.5M10 5.5c-.7 3.2-2.8 5.8-6.5 7.5M5 8.6c1.2 1.9 3 3.4 5.4 4.4M12.5 21l4.25-10L21 21M14.1 17.4h5.3"/></svg></button>
         <div id="language-card" class="language-card" role="menu" aria-label="Website language" hidden>
-          <p class="eyebrow">LANGUAGE</p>
-          <button role="menuitemradio" aria-checked="true" data-language="en"><span lang="en">English</span><small>EN</small></button>
-          <button role="menuitemradio" aria-checked="false" data-language="ckb"><span lang="ckb" dir="rtl">کوردیی ناوەندی</span><small>CKB</small></button>
-          <button role="menuitemradio" aria-checked="false" data-language="ar"><span lang="ar" dir="rtl">العربية</span><small>AR</small></button>
-          <button role="menuitemradio" aria-checked="false" data-language="ja"><span lang="ja">日本語</span><small>JA</small></button>
+          <button role="menuitemradio" aria-checked="true" data-language="en"><span lang="en">English</span></button>
+          <button role="menuitemradio" aria-checked="false" data-language="ckb"><span lang="ckb" dir="rtl">کوردیی ناوەندی</span></button>
+          <button role="menuitemradio" aria-checked="false" data-language="ar"><span lang="ar" dir="rtl">العربية</span></button>
+          <button role="menuitemradio" aria-checked="false" data-language="ja"><span lang="ja">日本語</span></button>
         </div>
       </div>
       <button id="theme-toggle" class="icon-button theme-toggle" aria-label="Switch to light theme" title="Switch theme">
@@ -89,7 +87,7 @@
         <div class="table-wrap"><table class="episode-table"><caption class="sr-only">Selected main-story episodes with individual IMDb ratings and watch status</caption><thead><tr><th scope="col"><span class="sr-only">Watched</span></th><th scope="col">EP.</th><th scope="col">CASE FILE</th><th scope="col" class="arc-column">ARC</th><th scope="col">IMDb <span>/10</span></th><th scope="col"><span class="sr-only">Sources and episode details</span></th></tr></thead><tbody id="episode-list"></tbody></table></div>
         <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>No clues here.</h3><p>Try another title, episode number, or filter.</p><button class="button primary" id="clear-filters">Clear filters</button></div>
         <p class="list-footnote">Ratings checked 7 September 2026. Titles and linked sources may reveal story details.</p>
-        <noscript><p>This interactive watchlist needs JavaScript. <a href="guide.html">Read the complete Markdown guide</a>.</p></noscript>
+        <noscript><p>This interactive watchlist needs JavaScript. <a href="https://github.com/SawabS/DetectiveConanMainPlot/blob/main/detective_conan_main_story_watch_guide.md">Read the complete Markdown guide</a>.</p></noscript>
       </div>
     </section>
     <section id="story-map" class="graph-panel" role="tabpanel" aria-labelledby="graph-tab" hidden>
@@ -102,12 +100,12 @@
       <div class="graph-layout">
         <div class="graph-stage" id="graph-stage">
           <svg id="story-graph" viewBox="0 0 1200 1000" aria-labelledby="graph-svg-title graph-svg-description" tabindex="0"><title id="graph-svg-title">Detective Conan arc and episode map</title><desc id="graph-svg-description">Nine arc clusters with one node per selected episode. Select a node for details. Use arrow keys to move between nodes, plus and minus to zoom, and Home to fit all. Drag the empty canvas to pan. Use the episode search or arc selector as an alternative.</desc><g id="graph-world"></g></svg>
-          <p class="graph-hint">Drag to explore · + / − to zoom · Select a node</p>
+          <p class="graph-hint">Drag to explore · + / − to zoom · Select a node to see its links</p>
           <div class="graph-watermark" aria-hidden="true">The main story<br><span>001 → 1205</span></div>
         </div>
         <aside class="graph-inspector" id="graph-inspector" aria-label="Selected arc or episode"><div id="graph-card"></div></aside>
       </div>
-      <div class="graph-legend"><span><i class="legend-node"></i>Episode</span><span><i class="legend-hub"></i>Arc</span><span><i class="legend-watched" aria-hidden="true"><svg viewBox="-7 -7 14 14"><path d="M-3.5 0-1.3 2.5 3.5-2.5"/></svg></i>Watched</span><span><i class="legend-edge"></i>Arc watch order</span><span>Node size: IMDb rating</span></div>
+      <div class="graph-legend"><span><i class="legend-node"></i>Episode</span><span><i class="legend-hub"></i>Arc</span><span><i class="legend-watched" aria-hidden="true"><svg viewBox="-7 -7 14 14"><path d="M-3.5 0-1.3 2.5 3.5-2.5"/></svg></i>Watched</span><span><i class="legend-edge"></i>Arc watch order</span><span><i class="legend-energy"></i>Energy: links from the selection</span><span>Node size: IMDb rating</span></div>
       <p id="graph-status" class="graph-status" role="status" aria-live="polite">255 episodes across nine arcs.</p>
     </section>
     <section id="movies" class="movies-panel" role="tabpanel" aria-labelledby="movies-tab" hidden>
@@ -121,46 +119,37 @@
         <label><span class="sr-only">Movie watch status</span><select id="movie-status"><option value="all">Any status</option><option value="unwatched">Unwatched</option><option value="watched">Watched</option></select></label>
         <label><span class="sr-only">Sort movies</span><select id="movie-sort"><option value="release">Release order</option><option value="newest">Newest first</option></select></label>
       </div>
-      <div class="results-meta"><p id="movie-result-count" role="status" aria-live="polite" tabindex="-1">35 films</p><a href="movie-guide.html">Full movie checklist ↗</a></div>
+      <div class="results-meta"><p id="movie-result-count" role="status" aria-live="polite" tabindex="-1">35 films</p><a href="https://github.com/SawabS/DetectiveConanMainPlot/blob/main/detective_conan_movies.md" target="_blank" rel="noopener noreferrer">Full movie checklist ↗</a></div>
       <div id="movie-grid" class="movie-grid"></div>
       <div id="movie-empty" class="empty-state" hidden><h3>No matching films.</h3><p>Try another title, year, or category.</p><button id="movie-clear" class="button quiet">Clear filters</button></div>
       <div class="movie-sources"><p id="movie-reviewed">Catalog checked 7 September 2026. Japanese release dates. TV specials, OVAs, and unreleased films are excluded.</p><p><a href="https://www.detectiveconanworld.com/wiki/Movies" target="_blank" rel="noopener noreferrer">Detective Conan World ↗</a> · <a href="https://www.tms-e.co.jp/global/alltitles/conan/" target="_blank" rel="noopener noreferrer">TMS official catalog ↗</a> · <a href="data/movies.json">Movie data ↗</a></p><p>Artwork belongs to its respective rights holders. Image sources are recorded in the movie data.</p></div>
-      <noscript><p><a href="movie-guide.html">Read the complete movie checklist</a>.</p></noscript>
+      <noscript><p><a href="https://github.com/SawabS/DetectiveConanMainPlot/blob/main/detective_conan_movies.md">Read the complete movie checklist</a>.</p></noscript>
     </section>
     <section id="analytics" class="analytics-panel" role="tabpanel" aria-labelledby="analytics-tab" hidden>
-      <div class="analytics-heading"><div><p class="eyebrow">THE EVIDENCE ROOM</p><h2>Follow the numbers.</h2><p>Find the peaks. Trace the years. Plan your next watch.</p></div><a class="button quiet" href="methodology.html">How we count ↗</a></div>
+      <div class="analytics-heading"><div><p class="eyebrow">THE EVIDENCE ROOM</p><h2>Follow the numbers.</h2><p>Where the story peaks, which arcs fans rate highest, and how long you have left.</p></div><a class="button quiet" href="https://github.com/SawabS/DetectiveConanMainPlot/blob/main/data/analytics-methodology.md" target="_blank" rel="noopener noreferrer">How we count ↗</a></div>
       <div class="analytics-controls">
         <div class="analytics-scope" role="group" aria-label="Analytics dataset"><button data-analytics-scope="episodes" aria-pressed="true">Main episodes <span>255</span></button><button data-analytics-scope="movies" aria-pressed="false">Movies <span>35</span></button></div>
-        <label class="hide-titles"><input id="analytics-hide-titles" type="checkbox">Hide titles</label><button id="analytics-export" class="button quiet">Export filtered CSV ↗</button>
-      </div>
-      <div class="analytics-filters">
-        <label class="search-box"><span aria-hidden="true">⌕</span><input id="analytics-search" type="search" placeholder="Title, episode number, or year" aria-label="Search analytics by title, number, or year"></label>
-        <label>Arc / category<select id="analytics-group"><option value="all">All arcs</option></select></label>
-        <label>Release year<select id="analytics-year"><option value="all">All years</option></select></label>
-        <label>Watch status<select id="analytics-status"><option value="all">All entries</option><option value="unwatched">Unwatched</option><option value="watched">Watched</option></select></label>
-        <label>Minimum votes<select id="analytics-votes"><option value="0">Any vote count</option><option value="100">100+ votes</option><option value="500">500+ votes</option><option value="1000">1,000+ votes</option></select></label>
-        <label>IMDb band<select id="analytics-band"><option value="all">All ratings</option><option value="low">Below 6</option><option value="6">6 to &lt;7</option><option value="7">7 to &lt;8</option><option value="8">8 to &lt;9</option><option value="9">9 to 10</option></select></label>
-        <button id="analytics-reset" class="text-button">Reset filters</button>
+        <button id="analytics-focus" class="analytics-focus" data-clear-focus hidden></button>
+        <label class="hide-titles"><input id="analytics-unwatched" type="checkbox">Unwatched only</label>
+        <label class="hide-titles"><input id="analytics-hide-titles" type="checkbox">Hide titles</label>
+        <button id="analytics-export" class="button quiet">Export CSV ↗</button>
       </div>
       <p id="analytics-status-text" class="analytics-status" role="status" aria-live="polite"></p>
       <div id="analytics-kpis" class="analytics-kpis"></div>
-      <div id="analytics-empty" class="empty-state" hidden><h3>No matching entries.</h3><p>Try another filter or reset to the full selection.</p></div>
+      <div id="analytics-empty" class="empty-state" hidden><h3>Case closed.</h3><p>Every entry in this view is watched. Turn off Unwatched only to see the full picture.</p></div>
       <div id="analytics-content">
-        <div id="analytics-highlights" class="analytics-highlights"></div>
-        <section class="analytics-card analytics-explorer" aria-labelledby="analytics-explorer-title">
-          <div class="analytics-card-heading"><div><p class="eyebrow">EVERY ENTRY</p><h3 id="analytics-explorer-title">One bar. One case.</h3></div><div class="analytics-chart-controls"><label>Measure<select id="analytics-metric"><option value="rating">IMDb / 10</option><option value="runtime">Listed duration (min)</option></select></label><label>Order<select id="analytics-sort"><option value="order">Release order</option><option value="rating">Highest rated</option><option value="runtime">Longest duration</option></select></label></div></div>
-          <p id="analytics-explorer-note" class="chart-note"></p>
-          <div class="analytics-explorer-layout"><div><div id="analytics-entry-scroll" class="analytics-chart-scroll" tabindex="0" aria-label="Scrollable entry chart"><div id="analytics-entry-chart"></div></div><p class="chart-note">Select a bar for its card. Use arrow keys between bars. Scroll sideways for every entry.</p></div><aside id="analytics-inspector" class="analytics-inspector" aria-label="Selected analytics entry"></aside></div>
+        <section id="analytics-timeline-card" class="analytics-card" aria-labelledby="analytics-timeline-title">
+          <div class="analytics-card-heading"><div><p class="eyebrow">RATINGS ACROSS THE STORY</p><h3 id="analytics-timeline-title">Ratings across the story.</h3><p id="analytics-timeline-subtitle" class="chart-note"></p></div></div>
+          <div class="analytics-explorer-layout"><div><div class="analytics-chart-scroll"><div id="analytics-timeline-chart" class="analytics-timeline-chart"></div></div><div id="analytics-legend" class="analytics-legend"></div></div><aside id="analytics-inspector" class="analytics-inspector" aria-label="Selected entry" aria-live="polite"></aside></div>
         </section>
         <div class="analytics-charts">
-          <section class="analytics-card" aria-labelledby="analytics-group-title"><div class="analytics-card-heading"><div><p class="eyebrow">THE BIG PICTURE</p><h3 id="analytics-group-title">Compare the arcs</h3></div><label class="analytics-compact-label">Measure<select id="analytics-group-metric"><option value="median">Median IMDb</option><option value="time">Listed hours</option></select></label></div><div id="analytics-group-chart" class="analytics-group-bars"></div><p class="chart-note">Select a group to filter. Medians exclude missing ratings; every rated entry has equal weight.</p></section>
-          <section class="analytics-card" aria-labelledby="analytics-distribution-title"><div class="analytics-card-heading"><div><p class="eyebrow">FAN RATINGS</p><h3 id="analytics-distribution-title">Where scores land</h3></div></div><div id="analytics-distribution-chart" class="analytics-small-chart"></div><p id="analytics-distribution-note" class="chart-note"></p></section>
-          <section class="analytics-card analytics-timeline" aria-labelledby="analytics-timeline-title"><div class="analytics-card-heading"><div><p class="eyebrow">THROUGH THE YEARS</p><h3 id="analytics-timeline-title">The release trail</h3></div></div><div class="analytics-chart-scroll" tabindex="0" aria-label="Scrollable annual release chart"><div id="analytics-year-chart"></div></div><p class="chart-note">Selected entries by original Japanese release year, including zero-release years. Select a year to filter. This is not the complete TV series.</p></section>
+          <section class="analytics-card" aria-labelledby="analytics-group-title"><div class="analytics-card-heading"><div><p class="eyebrow">ARC BY ARC</p><h3 id="analytics-group-title">Which arcs score highest</h3></div></div><div id="analytics-group-chart" class="analytics-arc-rows"></div><p id="analytics-group-note" class="chart-note"></p></section>
+          <section class="analytics-card" aria-labelledby="analytics-top-title"><div class="analytics-card-heading"><div><p class="eyebrow">MUST-WATCH</p><h3 id="analytics-top-title">Top rated</h3></div></div><ol id="analytics-top" class="analytics-top"></ol><p id="analytics-top-note" class="chart-note"></p></section>
         </div>
-        <section class="analytics-planner" aria-labelledby="analytics-planner-title"><div><p class="eyebrow">MAKE TIME FOR THE NEXT CLUE</p><h3 id="analytics-planner-title">Your viewing budget</h3><p id="analytics-planner-description"></p></div><div class="analytics-planner-controls"><label for="analytics-daily-minutes">Daily budget <output id="analytics-daily-label" for="analytics-daily-minutes">60 min</output></label><input id="analytics-daily-minutes" type="range" min="15" max="180" step="15" value="60"><p id="analytics-days"></p></div></section>
+        <section class="analytics-planner" aria-labelledby="analytics-planner-title"><div><p class="eyebrow">MAKE TIME FOR THE NEXT CLUE</p><h3 id="analytics-planner-title">When will you finish?</h3><div class="analytics-progress"><span id="analytics-progress-text"></span><span class="analytics-meter" aria-hidden="true"><i id="analytics-progress-bar"></i></span></div><p id="analytics-planner-description"></p><div id="analytics-next"></div></div><div class="analytics-planner-controls"><label for="analytics-daily-minutes">Daily budget <output id="analytics-daily-label" for="analytics-daily-minutes">60 min a day</output></label><input id="analytics-daily-minutes" type="range" min="15" max="180" step="15" value="60"><p id="analytics-days"></p><p id="analytics-finish" class="analytics-finish"></p></div></section>
       </div>
-      <details class="analytics-table-details"><summary>View the filtered data table</summary><div class="analytics-chart-scroll"><table class="analytics-table"><caption class="sr-only">Filtered entries with IMDb scores, vote counts, release dates, and listed durations</caption><thead><tr><th scope="col">Entry</th><th scope="col">Title</th><th scope="col">Released</th><th scope="col">IMDb /10</th><th scope="col">Votes</th><th scope="col">Listed min</th><th scope="col">Watched</th></tr></thead><tbody id="analytics-table-body"></tbody></table></div></details>
-      <div class="analytics-methodology"><p id="analytics-source-note"></p><p>Episode durations use <a href="https://www.tvmaze.com/shows/5429/meitantei-conan" target="_blank" rel="noopener noreferrer">TVmaze broadcast listings</a> and may include advertising. Movie durations use film listings; editions differ. Time totals are planning figures, not exact streaming playback times.</p><p>IMDb ratings are dated user-score snapshots. A higher vote count indicates more ratings, not a guarantee of quality. Charts describe this curated selection, not every Detective Conan episode. <a href="methodology.html">Definitions & sources ↗</a></p></div>
+      <details class="analytics-table-details"><summary>View the data table</summary><div class="analytics-chart-scroll"><table class="analytics-table"><caption class="sr-only">Entries in this view with IMDb scores, vote counts, release dates, and listed durations</caption><thead><tr><th scope="col">Entry</th><th scope="col">Title</th><th scope="col" id="analytics-group-heading">Arc</th><th scope="col">Released</th><th scope="col">IMDb /10</th><th scope="col">Votes</th><th scope="col">Listed min</th><th scope="col">Watched</th></tr></thead><tbody id="analytics-table-body"></tbody></table></div></details>
+      <div class="analytics-methodology"><p id="analytics-source-note"></p><p>Episode durations use <a href="https://www.tvmaze.com/shows/5429/meitantei-conan" target="_blank" rel="noopener noreferrer">TVmaze broadcast listings</a> and may include advertising. Movie durations use film listings; editions differ. Time totals are planning figures, not exact streaming playback times.</p><p>IMDb ratings are dated user-score snapshots. A higher vote count indicates more ratings, not a guarantee of quality. Charts describe this curated selection, not every Detective Conan episode. <a href="https://github.com/SawabS/DetectiveConanMainPlot/blob/main/data/analytics-methodology.md" target="_blank" rel="noopener noreferrer">Definitions & sources ↗</a></p></div>
       <div id="analytics-tooltip" class="analytics-tooltip" role="tooltip" hidden></div>
     </section>
     <footer><a class="footer-brand" href="#">CONAN CASEBOOK <span>↑</span></a><p>Created by <a class="creator-credit" href="https://github.com/SawabS" target="_blank" rel="noopener noreferrer">SawabS ↗</a><span class="footer-separator"> / </span>Unofficial fan project.</p><button class="text-button" id="credits-button">Artwork credits</button></footer>

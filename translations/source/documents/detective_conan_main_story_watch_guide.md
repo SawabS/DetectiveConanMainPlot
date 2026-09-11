@@ -2,7 +2,7 @@
 
 **255 episodes · 9 arcs · 255 individual IMDb ratings · Updated 2026-09-08**
 
-[Interactive watchlist](index.html) · [Episode data](data/episodes.json)
+[Interactive watchlist](https://sawabs.github.io/DetectiveConanMainPlot/) · [Episode data](data/episodes.json)
 
 ## Contents
 

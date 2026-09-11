@@ -1,6 +1,6 @@
 # Analytics: how we count
 
-[Open Analytics](../index.html#analytics) · [Episode data](episodes.json) · [Movie data](movies.json)
+[Open Analytics](https://sawabs.github.io/DetectiveConanMainPlot/#analytics) · [Episode data](episodes.json) · [Movie data](movies.json)
 
 ## Coverage
 
@@ -15,14 +15,13 @@ Films comprise 29 numbered releases, one crossover, three compilations, and two 
 
 ## Reading the charts
 
-- **Individual bars:** IMDb score on a 0 to 10 axis, or listed duration in minutes. Each bar has equal horizontal spacing. Release order does not represent elapsed time. Select a bar to see its title, date, votes, progress, and sources.
-- **Group comparisons:** the median of available entry scores, or the sum of listed minutes converted to hours. Each rated entry has equal weight in the median. This is not an IMDb score for the whole arc or a vote-weighted aggregate.
-- **Rating distribution:** counts below 6, from 6 to below 7, from 7 to below 8, from 8 to below 9, and from 9 through 10. Missing ratings are excluded and reported separately.
-- **Release timeline:** counts of selected entries by original Japanese release year. Years with zero releases remain visible. It does not measure the full show's production output.
-- **Highlights:** highest available score, longest listed duration, and busiest release year within the filters. Score ties use vote count; release-year ties use the earliest year. These are descriptive findings, not quality rankings independent of IMDb voters.
-- **Viewing budget:** sum the listed minutes for unwatched entries in the filters, divide by daily minutes, and round up. This assumes the budget can be split across entries. Unknown durations are omitted and explicitly flagged. Film and episode progress are separate and saved on your device.
+- **Ratings across the story:** one dot per entry, in story order for episodes and release order for films, with the IMDb score on the vertical axis. The axis starts at the whole number just below the lowest score rather than zero; dots mark position, not length, so the shorter axis does not exaggerate differences. Shaded bands mark the arcs. The line is a centered rolling median of 9 episodes or 5 films, which follows the trend without being pulled by single outliers. Hollow dots are watched entries. Entries without a score are not plotted; the legend counts them.
+- **Arc comparison:** for each arc or film category, the dot is the median score, the bar spans the middle half of scores (25th to 75th percentile, linear interpolation), and the thin line runs from the lowest to the highest score. The vertical rule marks the median of every plotted entry. Each rated entry has equal weight; this is not a vote-weighted aggregate. The chart headline names the highest median among groups with at least three ratings.
+- **Top rated:** entries ranked by IMDb score among those with at least the median vote count for their dataset (78 votes for episodes and about 2,500 for films in this snapshot). Ties go to the higher vote count. The floor keeps a handful of voters from topping the list; it does not mean lower-vote entries are worse.
+- **Entry card:** the share of the other rated entries in the dataset that score strictly lower.
+- **Finish estimate:** the sum of listed minutes for unwatched entries in the view, divided by the daily budget and rounded up to whole days, counted from today. It assumes the budget can be split across entries. Unknown durations are omitted and flagged. Film and episode progress are separate and saved on your device.
 
-All charts, totals, insights, the data table, and CSV exports follow the same filters. A minimum-vote filter removes unrated entries. Higher vote counts indicate more submissions, not guaranteed quality. Filtering on watched status changes the population being described.
+Focusing an arc highlights it on the rating chart and narrows the totals, top list, finish estimate, data table, and CSV export to that arc. **Unwatched only** removes watched entries from every view, which changes the population being described. Higher vote counts indicate more submissions, not guaranteed quality.
 
 ## Ratings and releases
 

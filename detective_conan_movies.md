@@ -2,7 +2,7 @@
 
 **29 main films + 6 extras · Catalog checked 2026-09-07**
 
-[Interactive movie library](index.html#movies) · [Main-story episodes](detective_conan_main_story_watch_guide.md) · [Movie data](data/movies.json)
+[Interactive movie library](https://sawabs.github.io/DetectiveConanMainPlot/#movies) · [Main-story episodes](detective_conan_main_story_watch_guide.md) · [Movie data](data/movies.json)
 
 ## Contents
 

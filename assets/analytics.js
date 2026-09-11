@@ -6,125 +6,201 @@
     const $ = id => document.getElementById(id);
     const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     const fmt = n => n === null ? 'N/A' : n.toLocaleString();
-    const score = n => n === null ? 'N/A' : n.toFixed(2);
+    // Scores keep one decimal; medians that fall between two scores keep two.
+    const score = n => n === null ? 'N/A' : n.toFixed(Math.abs(n*10-Math.round(n*10)) < 1e-9 ? 1 : 2);
     const hours = n => `${Math.floor(n/60)}h ${n%60}m`;
-    const defaults = () => ({query:'',group:'all',year:'all',status:'all',minVotes:0,band:'all',sort:'order',hideTitles:getHideTitles()});
-    let scope='episodes', filters=defaults(), entries=[], watched=new Set(), selectedId=null, metric='rating', groupMetric='median';
-    const title = r => filters.hideTitles ? r.label : r.title;
-    const groupName = r => filters.hideTitles && scope==='episodes' ? `Arc ${r.id ?? r.group}` : (r.name ?? r.groupName);
-    const shortLabel = r => r.number ? String(r.number).padStart(scope==='episodes'?3:2,'0') : r.id.replace('crossover','X').replace('compilation','C').replace('short','S');
+    const pad = (n, width) => String(n).padStart(width,'0');
+    const dateLabel = date => new Intl.DateTimeFormat(document.documentElement.lang || 'en', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+    const chartBox = $('analytics-timeline-chart');
+    let scope = 'episodes', focus = 'all', unwatchedOnly = false, selectedId = null, watched = new Set();
+    let all = [], plotted = [], entries = [], geometry = null, chartWidth = 0;
+    const words = () => scope === 'episodes' ? { one: 'episode', many: 'episodes', group: 'arc', groups: 'arcs' } : { one: 'film', many: 'films', group: 'category', groups: 'categories' };
+    const title = r => getHideTitles() ? r.label : r.title;
+    const groupName = id => scope === 'episodes' && getHideTitles() ? `Arc ${pad(id,2)}` : all.find(r => r.group === id)?.groupName ?? '';
+    const shortLabel = r => r.number ? `#${pad(r.number, scope === 'episodes' ? 3 : 2)}` : r.label;
+    const trendWindow = () => scope === 'episodes' ? 9 : 5;
     function readWatched() {
-      if (scope==='episodes') return new Set([...getEpisodeWatched()].map(n=>`episode-${n}`));
+      if (scope === 'episodes') return new Set([...getEpisodeWatched()].map(n => `episode-${n}`));
       const session = getMovieWatched?.(); if (session) return session;
       try {
-        const raw=localStorage.getItem(window.ConanMoviesCore.STORAGE_KEY);
-        return raw ? window.ConanMoviesCore.readProgress(raw,window.CONAN_MOVIES.movies) : new Set();
+        const raw = localStorage.getItem(window.ConanMoviesCore.STORAGE_KEY);
+        return raw ? window.ConanMoviesCore.readProgress(raw, window.CONAN_MOVIES.movies) : new Set();
       } catch { return new Set(); }
     }
-    function options() {
-      const all=datasets[scope], groups=[...new Map(all.map(r=>[r.group,r])).values()];
-      $('analytics-group').innerHTML='<option value="all">All '+(scope==='episodes'?'arcs':'categories')+'</option>'+groups.map(r=>`<option value="${r.group}">${esc(filters.hideTitles && scope==='episodes'?`Arc ${r.group}`:r.groupName)}</option>`).join('');
-      $('analytics-year').innerHTML='<option value="all">All years</option>'+core.timeline(all,all).map(({year})=>`<option value="${year}">${year}</option>`).join('');
-      $('analytics-group').value=filters.group; $('analytics-year').value=filters.year;
+    // Dots encode position, not length, so the axis can start just below the lowest score.
+    function domain() {
+      const ratings = plotted.map(r => r.rating).filter(n => n !== null);
+      if (!ratings.length) return { lo: 0, hi: 10, step: 2 };
+      const lo = Math.floor(Math.min(...ratings)), hi = Math.max(lo + 1, Math.ceil(Math.max(...ratings)));
+      return { lo, hi, step: hi - lo <= 2 ? .5 : 1 };
     }
-    function reset() {
-      filters=defaults(); selectedId=null;
-      for (const [id,value] of [['analytics-search',''],['analytics-status','all'],['analytics-votes','0'],['analytics-band','all'],['analytics-sort','order']]) $(id).value=value;
-      options(); render();
+    function ticks({ lo, hi, step }) { const list = []; for (let v = lo; v <= hi + 1e-9; v += step) list.push(Math.round(v*10)/10); return list; }
+    function renderTimeline() {
+      const w = words(), width = chartWidth = Math.max(640, Math.round(chartBox.clientWidth) || 900), height = 300;
+      const m = { top: 28, right: 14, bottom: 42, left: 38 }, scale = domain(), { lo, hi } = scale;
+      const band = (width-m.left-m.right)/Math.max(plotted.length,1), bottom = height-m.bottom;
+      const x = i => m.left+band*(i+.5), y = v => m.top+(hi-v)/(hi-lo)*(bottom-m.top);
+      geometry = { x, y, band, m, height };
+      const grid = ticks(scale).map(v => `<line class="analytics-grid" x1="${m.left}" x2="${width-m.right}" y1="${y(v)}" y2="${y(v)}"/><text class="analytics-axis" x="${m.left-8}" y="${y(v)+3.5}" text-anchor="end">${v}</text>`).join('');
+      let bands = '';
+      if (scope === 'episodes') {
+        // One band per run of consecutive entries from the same arc.
+        const runs = [];
+        plotted.forEach((r,i) => { const last = runs.at(-1); if (last?.group === r.group) last.end = i; else runs.push({ group: r.group, start: i, end: i }); });
+        bands = runs.map((run,k) => { const left = x(run.start)-band/2, span = (run.end-run.start+1)*band;
+          return `<rect class="analytics-band${k%2?' is-alt':''}${focus===run.group?' is-focus':''}" x="${left}" y="${m.top}" width="${span}" height="${bottom-m.top}"/>${span >= 16 ? `<text class="analytics-axis" x="${left+span/2}" y="${bottom+16}" text-anchor="middle">${pad(run.group,2)}</text>` : ''}`; }).join('');
+      } else {
+        let lastYear = -Infinity;
+        bands = plotted.map((r,i) => { if (r.year-lastYear < 3) return ''; lastYear = r.year; return `<text class="analytics-axis" x="${x(i)}" y="${bottom+16}" text-anchor="middle">${r.year}</text>`; }).join('');
+      }
+      const trend = core.rollingMedian(plotted.map(r => r.rating), trendWindow()).map((v,i) => v === null ? null : `${x(i).toFixed(1)},${y(v).toFixed(1)}`).filter(Boolean);
+      const dot = (r,i) => r.rating === null ? '' : `<circle class="analytics-dot${watched.has(r.id)?' is-watched':''}${focus!=='all'&&r.group!==focus?' is-muted':''}" cx="${x(i).toFixed(1)}" cy="${y(r.rating).toFixed(1)}" r="4"/>`;
+      // Muted dots go first so the focused arc stays on top.
+      const dots = plotted.map((r,i) => focus !== 'all' && r.group !== focus ? dot(r,i) : '').join('') + plotted.map((r,i) => focus === 'all' || r.group === focus ? dot(r,i) : '').join('');
+      // Label only the three highest peaks, spaced so their labels never collide.
+      const pool = plotted.map((r,i) => ({ r, i })).filter(({ r }) => r.rating !== null && (focus === 'all' || r.group === focus)).sort((a,b) => b.r.rating-a.r.rating || (b.r.votes ?? 0)-(a.r.votes ?? 0));
+      const peaks = [], gap = Math.max(3, Math.ceil(46/band));
+      for (const p of pool) { if (peaks.length === 3) break; if (peaks.every(q => Math.abs(q.i-p.i) >= gap)) peaks.push(p); }
+      const labels = peaks.map(({ r, i }) => `<text class="analytics-peak" x="${x(i)}" y="${y(r.rating)-10}">${esc(shortLabel(r))}</text>`).join('');
+      chartBox.innerHTML = `<svg viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" tabindex="0" role="group" aria-label="${esc(`${plotted.length} ${w.many} in ${scope==='episodes'?'story':'release'} order, IMDb scores from ${lo} to ${hi}. Use the left and right arrow keys to move between ${w.many} and Enter to open one.`)}"><text class="analytics-axis" x="${m.left}" y="12">IMDb / 10</text><text class="analytics-axis" x="${width-m.right}" y="${height-4}" text-anchor="end">${scope==='episodes'?'Arc, in story order':'Japanese release year'}</text>${bands}${grid}${trend.length > 1 ? `<path class="analytics-trend" d="M${trend.join(' L')}"/>` : ''}<line id="analytics-crosshair" class="analytics-crosshair" y1="${m.top}" y2="${bottom}" visibility="hidden"/>${dots}${labels}<circle id="analytics-hover" class="analytics-hover-ring" r="7" visibility="hidden"/><circle id="analytics-select-ring" class="analytics-select-ring" r="8" visibility="hidden"/></svg>`;
+      placeSelection();
     }
-    function selectEntry(id) {
-      if (!entries.some(r=>r.id===id)) return;
-      selectedId=id; inspector();
-      $('analytics-entry-chart').querySelectorAll('[data-entry]').forEach(el=>{el.setAttribute('aria-pressed',String(el.dataset.entry===id));el.setAttribute('tabindex',el.dataset.entry===id?'0':'-1');});
+    function placeSelection() {
+      const ring = $('analytics-select-ring'); if (!ring || !geometry) return;
+      const i = plotted.findIndex(r => r.id === selectedId), r = plotted[i];
+      if (!r || r.rating === null) { ring.setAttribute('visibility','hidden'); return; }
+      ring.setAttribute('cx', geometry.x(i)); ring.setAttribute('cy', geometry.y(r.rating)); ring.setAttribute('visibility','visible');
     }
-    function inspector() {
-      const r=entries.find(r=>r.id===selectedId);
-      if(!r){$('analytics-inspector').innerHTML='<p>Select an entry to inspect its sources.</p>';return;}
-      $('analytics-inspector').innerHTML=`<p class="eyebrow">${esc(r.label)}</p><h4>${esc(title(r))}</h4><p class="analytics-entry-group">${esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)} · ${r.release}</p><dl><div><dt>IMDb / 10</dt><dd>${score(r.rating)}</dd></div><div><dt>Votes</dt><dd>${fmt(r.votes)}</dd></div><div><dt>Listed minutes</dt><dd>${fmt(r.runtime)}</dd></div><div><dt>Progress</dt><dd>${watched.has(r.id)?'Watched':'Unwatched'}</dd></div></dl><p class="chart-note">${r.runtimeBasis}. ${scope==='episodes'?'May include advertising.':'Runtime varies by edition.'}</p><div class="analytics-entry-links">${r.imdbUrl?`<a href="${esc(r.imdbUrl)}" target="_blank" rel="noopener noreferrer">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'}<a href="${esc(r.runtimeSource || r.source)}" target="_blank" rel="noopener noreferrer">Duration source ↗</a><a href="${esc(r.source)}" target="_blank" rel="noopener noreferrer">${scope==='episodes'?'Episode':'Movie'} source ↗</a>${scope==='episodes'?`<button class="text-button" data-analytics-open="${r.number}">Open episode details ↗</button>`:''}</div><p class="chart-note">Rating checked ${r.checked || 'not available'}.</p>`;
+    // The crosshair snaps to the nearest entry, so readers aim at a position rather than a 4px dot.
+    function indexAt(event) {
+      const svg = chartBox.querySelector('svg'); if (!svg || !geometry || !plotted.length) return -1;
+      const p = svg.createSVGPoint(); p.x = event.clientX; p.y = event.clientY;
+      const local = p.matrixTransform(svg.getScreenCTM().inverse());
+      return Math.max(0, Math.min(plotted.length-1, Math.floor((local.x-geometry.m.left)/geometry.band)));
     }
-    function tooltip(el,event) {
-      const r=entries.find(item=>item.id===el.dataset.entry); if(!r)return;
-      const tip=$('analytics-tooltip');tip.textContent=`${r.label} · ${title(r)}\nIMDb ${score(r.rating)} / 10 · ${fmt(r.votes)} votes\n${fmt(r.runtime)} listed min · ${r.release}`;tip.hidden=false;
-      const rect=el.getBoundingClientRect(), x=event?.clientX ?? rect.left+rect.width/2, y=event?.clientY ?? rect.top;
-      tip.style.left=`${Math.max(8,Math.min(x+14,window.innerWidth-tip.offsetWidth-12))}px`;
-      tip.style.top=`${Math.max(8,Math.min(y+14,window.innerHeight-tip.offsetHeight-12))}px`;
+    function showHover(i, clientX, clientY) {
+      const svg = chartBox.querySelector('svg'), r = plotted[i]; if (!svg || !r) return;
+      const cx = geometry.x(i), cy = r.rating === null ? geometry.height-geometry.m.bottom : geometry.y(r.rating);
+      const cross = $('analytics-crosshair'), ring = $('analytics-hover');
+      cross.setAttribute('x1', cx); cross.setAttribute('x2', cx); cross.setAttribute('visibility','visible');
+      ring.setAttribute('cx', cx); ring.setAttribute('cy', cy); ring.setAttribute('visibility', r.rating === null ? 'hidden' : 'visible');
+      if (clientX === undefined) { const p = svg.createSVGPoint(); p.x = cx; p.y = cy; ({ x: clientX, y: clientY } = p.matrixTransform(svg.getScreenCTM())); }
+      const tip = $('analytics-tooltip');
+      tip.textContent = `${r.rating === null ? 'No IMDb score' : `${score(r.rating)} / 10`} · ${fmt(r.votes)} votes\n${r.label} · ${title(r)}\n${groupName(r.group)} · ${r.release}${watched.has(r.id) ? ' · Watched' : ''}`;
+      tip.hidden = false;
+      tip.style.left = `${Math.max(8, Math.min(clientX+14, innerWidth-tip.offsetWidth-12))}px`;
+      tip.style.top = `${Math.max(8, Math.min(clientY+14, innerHeight-tip.offsetHeight-12))}px`;
     }
-    function entryChart() {
-      const width=Math.max(680,entries.length*24+60), base=238, height=280, left=44, plot=190, slot=(width-left-12)/Math.max(entries.length,1);
-      const max=metric==='rating'?10:Math.max(30,Math.ceil(Math.max(0,...entries.map(r=>r.runtime||0))/30)*30);
-      const grid=Array.from({length:6},(_,i)=>{const value=max*i/5,y=base-plot*i/5;return `<line x1="${left}" y1="${y}" x2="${width-8}" y2="${y}" class="analytics-gridline"/><text x="${left-9}" y="${y+4}" text-anchor="end" class="analytics-axis">${Number(value.toFixed(1))}</text>`;}).join('');
-      const bars=entries.map((r,i)=>{const value=metric==='rating'?r.rating:r.runtime, h=value===null?7:value/max*plot,x=left+i*slot+3,y=base-h;return `<g data-entry="${r.id}" data-arc-color="${r.color}" tabindex="${r.id===selectedId?0:-1}" role="button" aria-pressed="${r.id===selectedId}" aria-label="${esc(r.label+': '+title(r)+', '+(value===null?'value unavailable':value+(metric==='rating'?' out of 10':' listed minutes')))}"><title>${esc(r.label+': '+title(r))} | IMDb ${score(r.rating)} | ${fmt(r.runtime)} listed min | ${fmt(r.votes)} votes</title><rect class="analytics-bar-hit" x="${x-3}" y="30" width="${slot}" height="${base-25}"/><rect class="analytics-entry-bar${value===null?' is-missing':''}" x="${x}" y="${y}" width="${Math.max(8,slot-6)}" height="${h}" rx="3"/>${watched.has(r.id)?`<circle cx="${x+(slot-6)/2}" cy="${Math.max(y-6,22)}" r="2.5" class="analytics-watched-dot"/>`:''}<text x="${x+(slot-6)/2}" y="${base+19}" text-anchor="middle" class="analytics-axis">${esc(shortLabel(r))}</text></g>`;}).join('');
-      $('analytics-entry-chart').innerHTML=`<svg viewBox="0 0 ${width} ${height}" style="width:${width}px;min-width:100%" aria-label="${entries.length} entries, ${metric==='rating'?'IMDb ratings from 0 to 10':'listed durations in minutes'}"><text x="${left}" y="19" class="analytics-axis">${metric==='rating'?'IMDb / 10':'Listed minutes'}</text>${grid}${bars}</svg>`;
-      $('analytics-explorer-note').textContent=`${metric==='rating'?'Rating axis starts at zero. Outlined bars indicate missing scores.':'Durations are source listings, not exact streaming playback times.'} Color identifies ${scope==='episodes'?'arc':'category'}; dots above bars mark watched entries. Equal spacing represents entry order, not elapsed time.`;
+    function hideHover() {
+      $('analytics-tooltip').hidden = true;
+      for (const id of ['analytics-crosshair','analytics-hover']) $(id)?.setAttribute('visibility','hidden');
     }
-    function smallCharts(summary) {
-      const groups=core.groupSummary(entries,watched);
-      $('analytics-group-title').textContent=scope==='episodes'?'Compare the arcs':'Compare film categories';
-      const groupMax=groupMetric==='median'?10:Math.max(1,...groups.map(g=>g.totalMinutes/60));
-      $('analytics-group-chart').innerHTML=groups.map(g=>{const value=groupMetric==='median'?g.median:g.totalMinutes/60;return `<button class="analytics-group-row" data-group="${g.id}" data-arc-color="${g.color}" aria-pressed="${filters.group===g.id}"><span>${esc(groupName(g))}<small>${g.count} entries · ${g.rated} rated</small></span><span class="analytics-track"><i style="width:${value===null?0:value/groupMax*100}%"></i></span><strong>${groupMetric==='median'?score(value):value.toFixed(1)+'h'}</strong></button>`;}).join('');
-      const hist=core.distribution(entries), highest=Math.max(1,...hist.map(b=>b.count));
-      $('analytics-distribution-chart').innerHTML=hist.map(b=>`<button data-band="${b.id}" class="analytics-bin" aria-pressed="${filters.band===b.id}" aria-label="${b.label}: ${b.count} entries. Filter this rating band."><strong>${b.count}</strong><span class="analytics-bin-track"><i style="height:${b.count/highest*100}%"></i></span><span>${b.label}</span></button>`).join('');
-      $('analytics-distribution-note').textContent=`${summary.rated} rated entries; ${summary.count-summary.rated} missing scores excluded. Select a band to filter; select it again to clear.`;
-      const years=core.timeline(entries,datasets[scope]), max=Math.max(1,...years.map(y=>y.count)), width=Math.max(720,years.length*29+50), base=200, plot=145, step=(width-50)/years.length;
-      const grid=Array.from({length:5},(_,i)=>{const n=Math.ceil(max/4)*i,y=base-(n/(Math.ceil(max/4)*4))*plot;return `<line x1="35" y1="${y}" x2="${width-8}" y2="${y}" class="analytics-gridline"/><text x="27" y="${y+4}" text-anchor="end" class="analytics-axis">${n}</text>`;}).join('');
-      $('analytics-year-chart').innerHTML=`<svg viewBox="0 0 ${width} 250" style="width:${width}px;min-width:100%" aria-label="Selected releases per year">${grid}${years.map((v,i)=>{const h=v.count/(Math.ceil(max/4)*4)*plot,x=40+i*step;return `<g role="button" tabindex="0" data-year="${v.year}" aria-pressed="${filters.year===String(v.year)}" aria-label="${v.year}: ${v.count} selected releases. Filter this year."><title>${v.year}: ${v.count} selected releases</title><rect class="analytics-bar-hit" x="${x-2}" y="40" width="${step}" height="175"/><rect class="analytics-year-bar" x="${x}" y="${base-h}" width="${step-5}" height="${h}" rx="3"/><text class="analytics-axis" x="${x+(step-5)/2}" y="${base+20}" text-anchor="middle" transform="rotate(-45 ${x+(step-5)/2} ${base+20})">${v.year}</text></g>`;}).join('')}</svg>`;
+    function selectEntry(id, reveal = false) {
+      selectedId = id; placeSelection(); renderInspector();
+      $('analytics-top').querySelectorAll('[data-select]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.select === id)));
+      if (reveal) $('analytics-timeline-card').scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
-    function planner() {
-      const s=core.summarize(entries,watched), minutes=Number($('analytics-daily-minutes').value), days=Math.ceil(s.remainingMinutes/minutes);
-      $('analytics-daily-label').textContent=`${minutes} min`;
-      $('analytics-days').textContent=`${s.missingRemaining?'At least ':''}${days} ${days===1?'day':'days'}`;
-      $('analytics-planner-description').textContent=`${s.remainingCount} unwatched ${scope==='episodes'?'episodes':'films'} in your filters · ${hours(s.remainingMinutes)} listed time${s.missingRemaining?` · ${s.missingRemaining} missing durations`:''}. A planning estimate; actual viewing time varies by edition and skipped material.`;
+    function renderInspector() {
+      const r = plotted.find(item => item.id === selectedId), w = words();
+      if (!r) { $('analytics-inspector').innerHTML = `<p class="eyebrow">CASE FILE</p><h4>Pick a dot</h4><p class="chart-note">Hover to preview any ${w.one}. Select one, or focus the chart and use the arrow keys, to see its score, votes, and sources here.</p>`; return; }
+      const share = core.percentile(all, r.rating);
+      $('analytics-inspector').innerHTML = `<p class="eyebrow">${esc(r.label)}</p><h4>${esc(title(r))}</h4><p class="analytics-entry-group">${esc(groupName(r.group))} · ${r.release}</p><dl><div><dt>IMDb / 10</dt><dd>${score(r.rating)}</dd></div><div><dt>Votes</dt><dd>${fmt(r.votes)}</dd></div><div><dt>Listed minutes</dt><dd>${fmt(r.runtime)}</dd></div><div><dt>Progress</dt><dd>${watched.has(r.id) ? 'Watched' : 'Unwatched'}</dd></div></dl>${share === null ? '' : `<p class="chart-note">${share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`}</p>`}<div class="analytics-entry-links">${scope === 'episodes' ? `<button class="button quiet" data-analytics-open="${r.number}">Open episode details</button>` : ''}${r.imdbUrl ? `<a href="${esc(r.imdbUrl)}" target="_blank" rel="noopener noreferrer">IMDb entry ↗</a>` : '<span>No verified IMDb entry</span>'}<a href="${esc(r.source)}" target="_blank" rel="noopener noreferrer">${scope === 'episodes' ? 'Episode' : 'Film'} source ↗</a></div>`;
+    }
+    function renderHeadline() {
+      const w = words(), { lo } = domain(), best = core.strongest(core.groupSummary(plotted, watched));
+      const focused = focus === 'all' ? null : core.groupSummary(plotted.filter(r => r.group === focus), watched)[0];
+      $('analytics-timeline-title').textContent = focused ? (focused.rated ? `${groupName(focus)} has a median of ${score(focused.median)}, ranging from ${score(focused.min)} to ${score(focused.max)}.` : `${groupName(focus)} has no ratings yet.`)
+        : best ? `${groupName(best.id)} is the high point, with a median of ${score(best.median)}.` : 'Ratings across the story.';
+      $('analytics-timeline-subtitle').textContent = `Each dot is one ${w.one}, in ${scope === 'episodes' ? 'story' : 'release'} order. The line is the rolling median of ${trendWindow()} ${w.many}. The axis starts at ${lo}, so small differences stay visible.`;
+      const missing = plotted.filter(r => r.rating === null).length;
+      $('analytics-legend').innerHTML = `<span><i class="key-dot"></i>IMDb score, one ${w.one}</span><span><i class="key-ring"></i>Watched</span><span><i class="key-line"></i>Rolling median</span>${focus !== 'all' ? `<span><i class="key-muted"></i>Other ${w.groups}</span>` : ''}${missing ? `<span>${missing} without a score, not plotted</span>` : ''}`;
+    }
+    function renderGroups() {
+      const w = words(), scale = domain(), { lo, hi } = scale, groups = core.groupSummary(plotted, watched), overall = core.median(plotted.map(r => r.rating));
+      const pos = v => `${((v-lo)/(hi-lo)*100).toFixed(2)}%`;
+      $('analytics-group-title').textContent = `Which ${w.groups} score highest`;
+      const chart = $('analytics-group-chart');
+      chart.classList.toggle('has-focus', focus !== 'all');
+      chart.style.setProperty('--overall', overall === null ? '-10%' : pos(overall));
+      chart.innerHTML = groups.map(g => `<button class="analytics-arc-row" data-group="${esc(g.id)}" aria-pressed="${focus === g.id}" aria-label="${esc(g.rated ? `${groupName(g.id)}: median ${score(g.median)}, middle half ${score(g.q1)} to ${score(g.q3)}, ${g.rated} rated.` : `${groupName(g.id)}: no ratings.`)}"><span class="arc-row-name">${scope === 'episodes' && !getHideTitles() ? `<b>${pad(g.id,2)}</b>` : ''}${esc(groupName(g.id))}<small>${g.rated} rated</small></span><span class="arc-row-track" aria-hidden="true">${g.rated ? `<i class="arc-row-range" style="left:${pos(g.min)};width:calc(${pos(g.max)} - ${pos(g.min)})"></i><i class="arc-row-iqr" style="left:${pos(g.q1)};width:calc(${pos(g.q3)} - ${pos(g.q1)})"></i><i class="arc-row-median" style="left:${pos(g.median)}"></i>` : ''}</span><strong>${score(g.median)}</strong></button>`).join('') +
+        `<div class="analytics-arc-axis" aria-hidden="true"><span></span><span class="arc-axis-ticks">${ticks(scale).filter(v => Number.isInteger(v)).map(v => `<i style="left:${pos(v)}">${v}</i>`).join('')}</span><span></span></div>`;
+      $('analytics-group-note').textContent = `Dot: median score. Bar: the middle half of ${w.many} (25th to 75th percentile). Thin line: lowest to highest. The vertical rule is the overall median, ${score(overall)}. Select a row to focus it everywhere.`;
+    }
+    function renderTop() {
+      const w = words(), minVotes = Math.round(core.median(all.map(r => r.votes)) ?? 0), top = core.topRated(entries, minVotes, 10);
+      $('analytics-top-title').textContent = `${unwatchedOnly ? 'Best unwatched' : 'Top rated'}${focus !== 'all' ? ` in ${groupName(focus)}` : ''}`;
+      $('analytics-top').innerHTML = top.length ? top.map((r,i) => `<li><button data-select="${r.id}" aria-pressed="${r.id === selectedId}"><span class="top-rank">${i+1}</span><span class="top-title">${esc(title(r))}<small>${esc(r.label)} · ${fmt(r.votes)} votes</small></span><strong>${score(r.rating)}</strong></button></li>`).join('')
+        : `<li class="chart-note">No ${w.many} in this view have ${fmt(minVotes)} or more votes yet.</li>`;
+      $('analytics-top-note').textContent = `Ranked by IMDb score among ${w.many} with at least ${fmt(minVotes)} votes, the median for all ${w.many}, so a handful of voters cannot top the list. Ties go to more votes. Select one to find it on the chart.`;
+    }
+    function renderPlanner(s) {
+      const w = words(), daily = Number($('analytics-daily-minutes').value), plan = core.planFinish(s.remainingMinutes, daily);
+      $('analytics-progress-text').textContent = `${s.watched} of ${s.count} ${w.many} watched`;
+      $('analytics-progress-bar').style.width = `${s.count ? s.watched/s.count*100 : 0}%`;
+      $('analytics-daily-label').textContent = `${daily} min a day`;
+      $('analytics-days').textContent = s.remainingMinutes ? `${plan.days} ${plan.days === 1 ? 'day' : 'days'}` : 'All caught up';
+      $('analytics-finish').textContent = s.remainingMinutes ? `Finish around ${dateLabel(plan.date)} at this pace.` : `Every ${w.one} in this view is watched.`;
+      $('analytics-planner-description').textContent = `${s.remainingCount} unwatched ${w.many}${focus !== 'all' ? ` in ${groupName(focus)}` : ''} · ${hours(s.remainingMinutes)} of listed time${s.missingRemaining ? ` · ${s.missingRemaining} without a duration` : ''}. Listings may include ads, so treat this as a budget.`;
+      const next = entries.find(r => !watched.has(r.id));
+      $('analytics-next').innerHTML = next ? `<button class="button primary" ${scope === 'episodes' ? `data-analytics-open="${next.number}"` : `data-select="${next.id}"`}>Next up: ${esc(getHideTitles() ? next.label : `${shortLabel(next)} ${next.title}`)}</button>` : '';
     }
     function render() {
-      filters.hideTitles=getHideTitles(); $('analytics-hide-titles').checked=filters.hideTitles;
-      $('analytics-search').placeholder=filters.hideTitles?'Episode / film number or year':'Title, episode / film number, or year';
-      options(); watched=readWatched(); entries=core.select(datasets[scope],watched,filters);
-      if(!entries.some(r=>r.id===selectedId)) selectedId=entries[0]?.id || null;
-      const s=core.summarize(entries,watched), full=datasets[scope].length;
-      $('analytics-status-text').textContent=`${s.count} of ${full} ${scope==='episodes'?'main-story episodes':'films'} in this view · ${s.watched} watched. Every chart follows these filters.`;
-      $('analytics-kpis').innerHTML=[['In this view',fmt(s.count),`${full} total ${scope==='episodes'?'episodes':'films'}`],['Median IMDb',score(s.median),`${s.rated} / ${s.count} rated · equal entry weight`],['Listed time',hours(s.totalMinutes),`${s.runtimeCount} / ${s.count} durations · ${scope==='episodes'?'broadcast listings':'film listings'}`],['Still to watch',hours(s.remainingMinutes),`${s.remainingCount} unwatched${s.missingRemaining?' · durations incomplete':''}`]].map(([label,value,note])=>`<div><span>${label}</span><strong>${value}</strong><small>${note}</small></div>`).join('');
-      $('analytics-empty').hidden=entries.length>0; $('analytics-content').hidden=!entries.length;
-      const busiest=core.timeline(entries,datasets[scope]).sort((a,b)=>b.count-a.count || a.year-b.year)[0];
-      $('analytics-highlights').innerHTML=`${s.highest?`<button data-highlight="${s.highest.id}"><span>Highest IMDb score</span><strong>${score(s.highest.rating)} <small>/ 10</small></strong><p>${esc(title(s.highest))} · ${fmt(s.highest.votes)} votes</p></button>`:''}${s.longest?`<button data-highlight="${s.longest.id}"><span>Longest listed duration</span><strong>${s.longest.runtime} <small>min</small></strong><p>${esc(title(s.longest))}</p></button>`:''}${busiest&&busiest.count?`<button data-year="${busiest.year}"><span>Busiest release year</span><strong>${busiest.year}</strong><p>${busiest.count} selected releases</p></button>`:''}`;
-      $('analytics-table-body').innerHTML=entries.map(r=>`<tr><td><button class="text-button" data-highlight="${r.id}">${esc(r.label)}</button></td><td>${esc(title(r))}</td><td>${r.release}</td><td>${r.imdbUrl?`<a href="${esc(r.imdbUrl)}" target="_blank" rel="noopener noreferrer">${score(r.rating)}</a>`:'N/A'}</td><td>${fmt(r.votes)}</td><td><a href="${esc(r.runtimeSource||r.source)}" target="_blank" rel="noopener noreferrer">${fmt(r.runtime)}</a></td><td>${watched.has(r.id)?'Yes':'No'}</td></tr>`).join('');
-      $('analytics-source-note').textContent=`Ratings checked ${scope==='episodes'?window.CONAN_DATA.updated:window.CONAN_MOVIES.ratingsUpdated}. ${s.rated} scores and ${s.runtimeCount} duration listings available in this filtered view. Missing values are never treated as zero ratings.`;
-      $('analytics-tooltip').hidden=true;
-      if(entries.length){entryChart();smallCharts(s);inspector();planner();}
-      $('analytics-export').disabled=!entries.length;
+      $('analytics-hide-titles').checked = getHideTitles(); $('analytics-unwatched').checked = unwatchedOnly;
+      watched = readWatched(); all = datasets[scope];
+      if (focus !== 'all' && !all.some(r => r.group === focus)) focus = 'all';
+      plotted = core.select(all, watched, { group: 'all', unwatched: unwatchedOnly });
+      entries = core.select(all, watched, { group: focus, unwatched: unwatchedOnly });
+      if (!plotted.some(r => r.id === selectedId)) selectedId = null;
+      const s = core.summarize(entries, watched), w = words();
+      const chip = $('analytics-focus'); chip.hidden = focus === 'all';
+      if (focus !== 'all') { chip.innerHTML = `Focused on ${esc(groupName(focus))} <span aria-hidden="true">×</span>`; chip.setAttribute('aria-label', `Clear focus on ${groupName(focus)}`); }
+      $('analytics-status-text').textContent = `${s.count} of ${all.length} ${w.many}${focus !== 'all' ? ` in ${groupName(focus)}` : ''}${unwatchedOnly ? ', unwatched only' : ''} · ${s.watched} watched. Every total, list, and table below follows this view.`;
+      const best = core.strongest(core.groupSummary(plotted, watched));
+      $('analytics-kpis').innerHTML = [['Median IMDb score', score(s.median), `${s.rated} of ${s.count} ${w.many} rated`],
+        [`Strongest ${w.group}`, best ? esc(groupName(best.id)) : 'N/A', best ? `Median ${score(best.median)} across ${best.rated} rated` : `Needs 3 rated ${w.many}`, true],
+        ['Listed time', hours(s.totalMinutes), `${s.runtimeCount} ${scope === 'episodes' ? 'broadcast' : 'film'} listings`],
+        ['Still to watch', hours(s.remainingMinutes), `${s.remainingCount} unwatched${s.missingRemaining ? ' · some durations missing' : ''}`]]
+        .map(([label, value, note, text]) => `<div><span>${label}</span><strong${text ? ' class="is-text"' : ''}>${value}</strong><small>${note}</small></div>`).join('');
+      $('analytics-empty').hidden = plotted.length > 0; $('analytics-content').hidden = !plotted.length;
+      hideHover();
+      if (plotted.length) { renderHeadline(); renderTimeline(); renderInspector(); renderGroups(); renderTop(); renderPlanner(s); }
+      $('analytics-group-heading').textContent = scope === 'episodes' ? 'Arc' : 'Category';
+      $('analytics-table-body').innerHTML = entries.map(r => `<tr><td>${esc(r.label)}</td><td>${esc(title(r))}</td><td>${esc(groupName(r.group))}</td><td>${r.release}</td><td>${r.imdbUrl ? `<a href="${esc(r.imdbUrl)}" target="_blank" rel="noopener noreferrer">${score(r.rating)}</a>` : 'N/A'}</td><td>${fmt(r.votes)}</td><td><a href="${esc(r.runtimeSource || r.source)}" target="_blank" rel="noopener noreferrer">${fmt(r.runtime)}</a></td><td>${watched.has(r.id) ? 'Yes' : 'No'}</td></tr>`).join('');
+      $('analytics-source-note').textContent = `Ratings checked ${scope === 'episodes' ? window.CONAN_DATA.updated : window.CONAN_MOVIES.ratingsUpdated}. ${s.rated} scores and ${s.runtimeCount} duration listings in this view. Missing values are never treated as zero.`;
+      $('analytics-export').disabled = !entries.length;
     }
-    $('analytics').addEventListener('click',event=>{
-      const target=event.target.closest('[data-analytics-scope],[data-entry],[data-highlight],[data-group],[data-year],[data-band],[data-analytics-open]'); if(!target)return;
-      if(target.dataset.analyticsScope){scope=target.dataset.analyticsScope;document.querySelectorAll('[data-analytics-scope]').forEach(b=>b.setAttribute('aria-pressed',String(b===target)));reset();}
-      else if(target.dataset.entry) selectEntry(target.dataset.entry);
-      else if(target.dataset.highlight){selectEntry(target.dataset.highlight);$('analytics-inspector').scrollIntoView({block:'nearest'});}
-      else if(target.dataset.analyticsOpen) onEpisode(Number(target.dataset.analyticsOpen));
-      else { const key=target.dataset.group?'group':target.dataset.year?'year':'band', value=target.dataset[key];filters[key]=filters[key]===value?'all':value; render(); $(`analytics-${key}`).value=filters[key];$(`analytics-${key}`).focus({preventScroll:true}); }
+    $('analytics').addEventListener('click', event => {
+      const target = event.target.closest('[data-analytics-scope],[data-group],[data-select],[data-analytics-open],[data-clear-focus]'); if (!target) return;
+      if (target.dataset.analyticsScope) {
+        scope = target.dataset.analyticsScope; focus = 'all'; selectedId = null;
+        document.querySelectorAll('[data-analytics-scope]').forEach(b => b.setAttribute('aria-pressed', String(b === target)));
+        render();
+      } else if (target.dataset.group) {
+        const id = target.dataset.group; focus = focus === id ? 'all' : id; render();
+        $('analytics-group-chart').querySelector(`[data-group="${CSS.escape(id)}"]`)?.focus({ preventScroll: true });
+      } else if (target.dataset.select) selectEntry(target.dataset.select, true);
+      else if (target.dataset.analyticsOpen) onEpisode(Number(target.dataset.analyticsOpen));
+      else { focus = 'all'; render(); }
     });
-    $('analytics').addEventListener('keydown',event=>{
-      if(event.key==='Escape') $('analytics-tooltip').hidden=true;
-      const item=event.target.closest('[data-entry],[data-year]');if(!item)return;
-      if(event.key==='Enter'||event.key===' '){event.preventDefault();item.dispatchEvent(new MouseEvent('click',{bubbles:true}));}
-      if(item.dataset.entry && ['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){
-        event.preventDefault();const i=entries.findIndex(r=>r.id===item.dataset.entry), index=event.key==='Home'?0:event.key==='End'?entries.length-1:(i+(event.key==='ArrowRight'?1:-1)+entries.length)%entries.length;
-        selectEntry(entries[index].id);const next=$('analytics-entry-chart').querySelector(`[data-entry="${selectedId}"]`);next.focus({preventScroll:true});next.scrollIntoView({block:'nearest',inline:'nearest'});
-      }
+    chartBox.addEventListener('pointermove', event => { const i = indexAt(event); if (i >= 0) showHover(i, event.clientX, event.clientY); });
+    chartBox.addEventListener('pointerleave', hideHover);
+    chartBox.addEventListener('click', event => { const i = indexAt(event); if (i >= 0) selectEntry(plotted[i].id); });
+    chartBox.addEventListener('keydown', event => {
+      if (!['ArrowLeft','ArrowRight','Home','End','Enter',' '].includes(event.key) || !plotted.length) return;
+      event.preventDefault();
+      let i = plotted.findIndex(r => r.id === selectedId);
+      if (event.key === 'Enter' || event.key === ' ') { if (i >= 0 && scope === 'episodes') onEpisode(plotted[i].number); return; }
+      i = event.key === 'Home' ? 0 : event.key === 'End' ? plotted.length-1 : i < 0 ? 0 : Math.max(0, Math.min(plotted.length-1, i+(event.key === 'ArrowRight' ? 1 : -1)));
+      selectEntry(plotted[i].id); showHover(i);
     });
-    const chart=$('analytics-entry-chart');
-    chart.addEventListener('pointermove',e=>{const item=e.target.closest('[data-entry]');if(item)tooltip(item,e);else $('analytics-tooltip').hidden=true;});
-    chart.addEventListener('pointerleave',()=>$('analytics-tooltip').hidden=true);
-    chart.addEventListener('focusin',e=>{const item=e.target.closest('[data-entry]');if(item)tooltip(item);});
-    chart.addEventListener('focusout',()=>$('analytics-tooltip').hidden=true);
-    window.addEventListener('scroll',()=>$('analytics-tooltip').hidden=true,{passive:true});
-    $('analytics-entry-scroll').addEventListener('scroll',()=>$('analytics-tooltip').hidden=true,{passive:true});
-    $('analytics-search').addEventListener('input',e=>{filters.query=e.target.value;render();});
-    for(const [id,key] of [['analytics-group','group'],['analytics-year','year'],['analytics-status','status'],['analytics-votes','minVotes'],['analytics-band','band'],['analytics-sort','sort']]) $(id).addEventListener('change',e=>{filters[key]=e.target.value;render();});
-    $('analytics-metric').addEventListener('change',e=>{metric=e.target.value;render();});
-    $('analytics-group-metric').addEventListener('change',e=>{groupMetric=e.target.value;render();});
-    $('analytics-hide-titles').addEventListener('change',e=>{onHideTitles(e.target.checked);render();});
-    $('analytics-reset').addEventListener('click',reset);
-    $('analytics-daily-minutes').addEventListener('input',planner);
-    $('analytics-export').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([core.csv(entries,watched,filters.hideTitles)],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=`conan-${scope}-analytics.csv`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);notice('Filtered analytics exported with source links.');});
-    window.addEventListener('storage',event=>{if([window.ConanCore.STORAGE_KEY,window.ConanMoviesCore.STORAGE_KEY,`${window.ConanCore.STORAGE_KEY}:hide-titles`].includes(event.key) && !$('analytics').hidden) queueMicrotask(render);});
+    chartBox.addEventListener('focusout', hideHover);
+    if (window.ResizeObserver) new ResizeObserver(() => { if (!$('analytics').hidden && plotted.length && Math.round(chartBox.clientWidth) !== chartWidth) renderTimeline(); }).observe(chartBox);
+    window.addEventListener('scroll', hideHover, { passive: true });
+    $('analytics-unwatched').addEventListener('change', event => { unwatchedOnly = event.target.checked; render(); });
+    $('analytics-hide-titles').addEventListener('change', event => { onHideTitles(event.target.checked); render(); });
+    $('analytics-daily-minutes').addEventListener('input', () => renderPlanner(core.summarize(entries, watched)));
+    $('analytics-export').addEventListener('click', () => { const url = URL.createObjectURL(new Blob([core.csv(entries, watched, getHideTitles())], { type: 'text/csv;charset=utf-8' })), a = document.createElement('a'); a.href = url; a.download = `conan-${scope}-analytics.csv`; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000); notice('Analytics exported with source links.'); });
+    window.addEventListener('storage', event => { if ([window.ConanCore.STORAGE_KEY, window.ConanMoviesCore.STORAGE_KEY, `${window.ConanCore.STORAGE_KEY}:hide-titles`].includes(event.key) && !$('analytics').hidden) queueMicrotask(render); });
     return { render };
   };
 })();

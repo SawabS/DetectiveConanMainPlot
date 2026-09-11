@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 TRANSLATIONS=ROOT/'translations'
 LANGUAGES={'ckb':('کوردیی ناوەندی','rtl'),'ar':('العربية','rtl'),'ja':('日本語','ltr')}
-PAGES=['index.html','guide.html','movie-guide.html','methodology.html']
+PAGES=['index.html']
 
 
 def read(path):

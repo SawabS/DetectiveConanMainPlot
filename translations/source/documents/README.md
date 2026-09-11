@@ -4,7 +4,7 @@ A focused Detective Conan watchlist: **255 episodes, nine arcs, individually sou
 
 [Open Conan Casebook](https://sawabs.github.io/DetectiveConanMainPlot/)
 
-Open [index.html](index.html) in a browser, or read the [formatted guide](https://sawabs.github.io/DetectiveConanMainPlot/guide.html). Markdown downloads remain available.
+Open [index.html](index.html) in a browser, or use the [live site](https://sawabs.github.io/DetectiveConanMainPlot/). The complete checklists are Markdown: the [episode guide](detective_conan_main_story_watch_guide.md) and the [movie checklist](detective_conan_movies.md).
 
 - Search by title or exact Japanese episode number.
 - Filter by arc, watched status, or rating; sort by story order or score.
@@ -45,10 +45,8 @@ For a stable local origin, run `python3 -m http.server 8000` and open `http://lo
 `data/episodes.json` is the source of truth. It contains the reviewed selections, Japanese titles, original dates, source URLs, IMDb IDs, translated titles, mapping notes, scores, votes, and check dates.
 
 ```sh
-python3 -m pip install -r scripts/requirements-build.txt # Build-time Markdown renderer
 python3 scripts/build.py          # Generate Markdown and browser data
 python3 scripts/build.py --check  # Detect stale generated files
-python3 -m unittest discover -s tests -p 'test_*.py' # Check rendered guides and links
 node --test tests/analytics.test.js # Check analytics calculations and source coverage
 node --test tests/core.test.js    # Check filtering, progress, and data integrity
 node --test tests/graph.test.js   # Check graph coverage, camera bounds, and theme fallback

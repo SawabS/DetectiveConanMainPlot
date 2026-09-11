@@ -205,7 +205,8 @@
     if (event.key === '/' && !event.ctrlKey && !event.metaKey && !event.altKey &&
       !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName) &&
       !document.activeElement.isContentEditable && !document.querySelector('dialog[open]')) {
-      event.preventDefault(); $(activeView === 'analytics' ? 'analytics-search' : activeView === 'movies' ? 'movie-search' : activeView === 'graph' ? 'graph-search' : 'search').focus();
+      const field = $({ list: 'search', graph: 'graph-search', movies: 'movie-search' }[activeView]);
+      if (field) { event.preventDefault(); field.focus(); }
     }
   });
   window.addEventListener('storage', event => {

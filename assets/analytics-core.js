@@ -4,12 +4,15 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, () => {
   'use strict';
   const categories = { main: 'Main films', crossover: 'Crossover', compilation: 'Compilations', short: '3D shorts' };
-  const bands = [{ id: 'low', label: 'Below 6', min: 1, max: 6 }, ...[6,7,8,9].map(n => ({ id: String(n), label: n === 9 ? '9 to 10' : `${n} to <${n + 1}`, min: n, max: n === 9 ? 11 : n + 1 }))];
   const valid = n => typeof n === 'number' && Number.isFinite(n);
-  const median = values => {
-    const sorted = values.filter(valid).sort((a,b) => a-b), n = sorted.length;
-    return n ? n % 2 ? sorted[(n-1)/2] : (sorted[n/2-1]+sorted[n/2])/2 : null;
-  };
+  // Linear interpolation between order statistics. Missing values are ignored, never read as zero.
+  function quantile(values, p) {
+    const sorted = values.filter(valid).sort((a,b) => a-b);
+    if (!sorted.length) return null;
+    const i = (sorted.length-1)*p, lo = Math.floor(i), hi = Math.ceil(i);
+    return sorted[lo]+(sorted[hi]-sorted[lo])*(i-lo);
+  }
+  const median = values => quantile(values, .5);
   function isoDate(value) {
     if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
     const match = value.match(/^(\w+) (\d+), (\d{4})$/);
@@ -32,47 +35,58 @@
         runtimeSource: item.runtimeSource, runtimeBasis: episode ? 'Broadcast listing' : 'Film listing',
         source: item.source, imdbUrl: item.imdb?.id ? `https://www.imdb.com/title/${item.imdb.id}/` : null };
     };
-    return { episodes: episodes.episodes.map(e => record(e,'episodes')), movies: movies.movies.map(m => record(m,'movies')) };
+    // Story order: episodes by Japanese number, films by release date.
+    const films = movies.movies.map(m => record(m,'movies')).sort((a,b) => a.release.localeCompare(b.release) || (a.number ?? 0)-(b.number ?? 0));
+    return { episodes: episodes.episodes.map(e => record(e,'episodes')), movies: films };
   }
   function select(records, watched, filters) {
-    const q = (filters.query || '').trim().toLowerCase(), numeric = /^#?\d+$/.test(q) ? Number(q.replace('#','')) : null;
-    const band = bands.find(b => b.id === filters.band);
-    const selected = records.filter(r => (!q || (numeric !== null ? r.number === numeric || r.year === numeric : !filters.hideTitles && r.title.toLowerCase().includes(q))) &&
-      (filters.group === 'all' || r.group === filters.group) && (filters.year === 'all' || r.year === Number(filters.year)) &&
-      (filters.status === 'all' || watched.has(r.id) === (filters.status === 'watched')) &&
-      (!Number(filters.minVotes) || (r.votes !== null && r.votes >= Number(filters.minVotes))) &&
-      (!band || (r.rating !== null && r.rating >= band.min && r.rating < band.max)));
-    return selected.sort((a,b) => {
-      if (filters.sort === 'rating') return (b.rating ?? -1)-(a.rating ?? -1) || (b.votes ?? 0)-(a.votes ?? 0) || a.release.localeCompare(b.release);
-      if (filters.sort === 'runtime') return (b.runtime ?? -1)-(a.runtime ?? -1) || a.release.localeCompare(b.release);
-      return a.release.localeCompare(b.release) || (a.number ?? 0)-(b.number ?? 0);
-    });
+    return records.filter(r => (filters.group === 'all' || r.group === filters.group) && (!filters.unwatched || !watched.has(r.id)));
   }
   function summarize(records, watched) {
     const rated = records.filter(r => r.rating !== null), timed = records.filter(r => r.runtime !== null);
     const remaining = records.filter(r => !watched.has(r.id));
     return { count: records.length, rated: rated.length, median: median(rated.map(r=>r.rating)),
       runtimeCount: timed.length, totalMinutes: timed.reduce((sum,r)=>sum+r.runtime,0),
-      watched: records.filter(r=>watched.has(r.id)).length, remainingCount: remaining.length,
-      remainingMinutes: remaining.reduce((sum,r)=>sum+(r.runtime ?? 0),0), missingRemaining: remaining.filter(r=>r.runtime===null).length,
-      highest: [...rated].sort((a,b)=>b.rating-a.rating || (b.votes??0)-(a.votes??0))[0] || null,
-      longest: [...timed].sort((a,b)=>b.runtime-a.runtime)[0] || null };
+      watched: records.length-remaining.length, remainingCount: remaining.length,
+      remainingMinutes: remaining.reduce((sum,r)=>sum+(r.runtime ?? 0),0), missingRemaining: remaining.filter(r=>r.runtime===null).length };
   }
   function groupSummary(records, watched) {
     const groups = new Map();
     records.forEach(r => { if (!groups.has(r.group)) groups.set(r.group,[]); groups.get(r.group).push(r); });
-    return [...groups].map(([id,items]) => ({ id, name: items[0].groupName, color: items[0].color, ...summarize(items,watched) })).sort((a,b)=>a.color-b.color);
+    return [...groups].map(([id,items]) => {
+      const ratings = items.map(r=>r.rating).filter(valid);
+      return { id, name: items[0].groupName, color: items[0].color, ...summarize(items,watched),
+        q1: quantile(ratings,.25), q3: quantile(ratings,.75), min: ratings.length ? Math.min(...ratings) : null, max: ratings.length ? Math.max(...ratings) : null };
+    }).sort((a,b)=>a.color-b.color);
   }
-  function timeline(records, allRecords) {
-    if (!allRecords.length) return [];
-    const years = allRecords.map(r=>r.year), start = Math.min(...years), end = Math.max(...years);
-    return Array.from({length:end-start+1},(_,i)=>({year:start+i,count:records.filter(r=>r.year===start+i).length}));
+  // A group needs a few ratings before its median can headline the page.
+  function strongest(groups, minRated = 3) {
+    return groups.filter(g => g.rated >= minRated).sort((a,b) => b.median-a.median || b.rated-a.rated)[0] || null;
   }
-  function distribution(records) { return bands.map(b=>({...b,count:records.filter(r=>r.rating!==null && r.rating>=b.min && r.rating<b.max).length})); }
+  // Centered window: each point's trend is the median of the scored entries around it.
+  function rollingMedian(values, window) {
+    const half = Math.floor(window/2);
+    return values.map((_,i) => median(values.slice(Math.max(0,i-half), i+half+1)));
+  }
+  // Share of the other rated entries that score strictly lower.
+  function percentile(records, rating) {
+    const rated = records.filter(r => r.rating !== null);
+    return rating === null || rated.length < 2 ? null : rated.filter(r => r.rating < rating).length/(rated.length-1);
+  }
+  // A vote floor keeps a handful of enthusiastic voters from topping the list.
+  function topRated(records, minVotes, limit = 10) {
+    return records.filter(r => r.rating !== null && r.votes !== null && r.votes >= minVotes)
+      .sort((a,b) => b.rating-a.rating || b.votes-a.votes).slice(0,limit);
+  }
+  function planFinish(minutes, dailyMinutes, from = new Date()) {
+    const days = minutes > 0 ? Math.ceil(minutes/dailyMinutes) : 0, date = new Date(from);
+    date.setDate(date.getDate()+days);
+    return { days, date };
+  }
   function csv(records, watched, hideTitles) {
     const escape = value => { const raw=String(value ?? '');return '"'+(/^[=+@\-]/.test(raw)?"'"+raw:raw).replace(/"/g,'""')+'"'; };
     const header = ['Entry','Title','Group','Japanese release','IMDb rating','IMDb votes','Listed minutes','Duration basis','Watched','IMDb source','Duration source','Metadata source','Rating checked'];
     return [header,...records.map(r=>[r.label,hideTitles?r.label:r.title,hideTitles && r.dataset==='episodes'?`Arc ${r.group}`:r.groupName,r.release,r.rating,r.votes,r.runtime,r.runtimeBasis,watched.has(r.id),r.imdbUrl,r.runtimeSource,r.source,r.checked])].map(row=>row.map(escape).join(',')).join('\r\n')+'\r\n';
   }
-  return { normalize, select, summarize, groupSummary, timeline, distribution, csv, median, bands, categories };
+  return { normalize, select, summarize, groupSummary, strongest, rollingMedian, percentile, topRated, planFinish, csv, median, quantile, categories };
 });

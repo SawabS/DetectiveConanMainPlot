@@ -1,9 +1,8 @@
 {
   "text_0000b37005c2": {
     "source": "Reunion with the Black Organization (The Resolution)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[17].title"
     ]
   },
@@ -38,17 +37,9 @@
   },
   "text_00703582d8cf": {
     "source": "Emergency Situation 252 (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[121].title"
-    ]
-  },
-  "text_00d60e31a4e6": {
-    "source": "Run",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_00e1c0fdf6c1": {
@@ -74,9 +65,8 @@
   },
   "text_01e496fc3330": {
     "source": "Contact with the Black Organization (The Pursuit)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[54].title"
     ]
   },
@@ -120,17 +110,13 @@
     "source": "CONAN",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_037c968467aa": {
     "source": "Escape",
     "kind": "literal",
     "references": [
-      "assets/analytics.js:104",
       "assets/language.js:62"
     ]
   },
@@ -143,9 +129,8 @@
   },
   "text_03a094b5a612": {
     "source": "Ramen So Good, It's to Die For 2 (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[185].title"
     ]
   },
@@ -156,41 +141,35 @@
       "episodes.episodes[134].imdb.title"
     ]
   },
-  "text_03e8daafa6f8": {
-    "source": "FAN RATINGS",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_03f7a49c1734": {
     "source": "The Target is the Metropolitan Police Traffic Department (2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[217].title"
-    ]
-  },
-  "text_040240f7703f": {
-    "source": "Detective Conan World movie catalog",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
     ]
   },
   "text_0456ead404bd": {
     "source": "Murderer, Shinichi Kudo (1 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[101].title"
+    ]
+  },
+  "text_046812ddbac3": {
+    "source": "Which {0} score highest",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:121"
+    ],
+    "variables": [
+      "w.groups"
     ]
   },
   "text_04cc53401d93": {
     "source": "{0} main-story episodes across {1} arcs, listed in Japanese broadcast order. Each IMDb score is matched to its episode by title, release year, and part number.",
     "kind": "template",
     "references": [
-      "assets/app.js:269"
+      "assets/app.js:270"
     ],
     "variables": [
       "episodes.length",
@@ -227,9 +206,8 @@
   },
   "text_057985b1724f": {
     "source": "Clash of Red and Black (Killed in the Line of Duty)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[95].title"
     ]
   },
@@ -254,13 +232,6 @@
       "episodes.episodes[30].airDate"
     ]
   },
-  "text_0646bce7ea13": {
-    "source": "Drag to explore · + / − to zoom · Select a node",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_0654c1a704d8": {
     "source": "T12:00:00Z",
     "kind": "literal",
@@ -270,32 +241,16 @@
   },
   "text_06776393ffd2": {
     "source": "The Marriage Registration's Password (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[189].title"
     ]
   },
   "text_069cd84dbb67": {
     "source": "The Man from Chicago (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[31].title"
-    ]
-  },
-  "text_06c235ccff00": {
-    "source": "TVmaze-derived duration fields, their mapping adaptations, and derived duration summaries are attributed to",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_06f52a540984": {
-    "source": "central-story selection.",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_072f165c8b2d": {
@@ -316,25 +271,11 @@
       "episodes.episodes[211].imdb.title"
     ]
   },
-  "text_0873a19595c2": {
-    "source": "Runtime varies by edition.",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:43"
-    ]
-  },
-  "text_08882e13fb8e": {
-    "source": "This fan-curated route follows the central story and its prerequisites, not every manga-canon case. Selection reviewed through episode 1212; the final included episode is 1205. Titles and source pages can contain spoilers.",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_08cb5c417bf9": {
     "source": "Duration source",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_08e2c0f95323": {
@@ -365,16 +306,6 @@
       "episodes.episodes[91].imdb.title"
     ]
   },
-  "text_0a56564c269b": {
-    "source": "· {0} missing durations",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:76"
-    ],
-    "variables": [
-      "s.missingRemaining"
-    ]
-  },
   "text_0a57dd60f9c1": {
     "source": "· Arc {0}",
     "kind": "template",
@@ -387,9 +318,8 @@
   },
   "text_0a6873b94a80": {
     "source": "The Blind Spot in the Darkness (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[14].title"
     ]
   },
@@ -407,13 +337,6 @@
       "episodes.episodes[229].imdb.title"
     ]
   },
-  "text_0ac589ee914c": {
-    "source": "runtimeChecked",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_0b026c02baf8": {
     "source": "Reset progress",
     "kind": "text",
@@ -423,9 +346,8 @@
   },
   "text_0b1f326bd2ab": {
     "source": "Holmes Freak Murder Case (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[9].title"
     ]
   },
@@ -443,6 +365,16 @@
       "index.html"
     ]
   },
+  "text_0bb0da0bca1a": {
+    "source": "{0} min a day",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:140"
+    ],
+    "variables": [
+      "daily"
+    ]
+  },
   "text_0c16c2d99505": {
     "source": "Artwork credits",
     "kind": "text",
@@ -452,36 +384,16 @@
   },
   "text_0c50b25744c2": {
     "source": "The Dissonance of the Stradivarius (Postlude)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[71].title"
     ]
   },
-  "text_0c784fe2f818": {
-    "source": "{4}: {5} selected releases",
+  "text_0c9367c731ca": {
+    "source": "Entries in this view with IMDb scores, vote counts, release dates, and listed durations",
     "kind": "text",
     "references": [
-      "assets/analytics.js:70"
-    ],
-    "variables": [
-      "v.year",
-      "filters.year===String(v.year)",
-      "v.year",
-      "v.count",
-      "v.year",
-      "v.count",
-      "x-2",
-      "step",
-      "x",
-      "base-h",
-      "step-5",
-      "h",
-      "x+(step-5)/2",
-      "base+20",
-      "x+(step-5)/2",
-      "base+20",
-      "v.year"
+      "index.html"
     ]
   },
   "text_0c9e52278a01": {
@@ -500,9 +412,8 @@
   },
   "text_0cf831e6774b": {
     "source": "English Teacher vs. Great Western Detective (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[41].title"
     ]
   },
@@ -515,17 +426,9 @@
   },
   "text_0d79f6a51f49": {
     "source": "The Mysterious Passenger (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[28].title"
-    ]
-  },
-  "text_0dc68a4bf07e": {
-    "source": "Interactive watchlist",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_0e47f09a748f": {
@@ -616,20 +519,6 @@
       "episodes.episodes[170].imdb.title"
     ]
   },
-  "text_101a95f1f07f": {
-    "source": ", consistent with its",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_1029e3eebc05": {
-    "source": "python3 scripts/build.py",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_103cd89f5fed": {
     "source": "The Unsolved Cocktail Case: Part 2",
     "kind": "catalog content",
@@ -644,34 +533,35 @@
       "index.html"
     ]
   },
-  "text_10afa98480f2": {
-    "source": "Reset filters",
+  "text_10e449f02a30": {
+    "source": "Focused on {0}",
     "kind": "text",
     "references": [
-      "index.html"
+      "assets/analytics.js:156"
+    ],
+    "variables": [
+      "esc(groupName(focus))"
     ]
   },
   "text_10ee18d9dd90": {
     "source": "Diplomat Murder Case (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[6].title"
     ]
   },
   "text_110444eeb181": {
     "source": "Detective Boys vs. Robber Group (Silence)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[109].title"
     ]
   },
   "text_113af97940c3": {
     "source": "Film",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "movie-guide.html"
+      "assets/analytics.js:107"
     ]
   },
   "text_11d3153b83a2": {
@@ -685,15 +575,14 @@
     "source": "ArrowUp",
     "kind": "literal",
     "references": [
-      "assets/graph.js:114",
+      "assets/graph.js:126",
       "assets/language.js:61"
     ]
   },
   "text_122dd52da198": {
     "source": "Clash of Red and Black (Ready to Die)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[94].title"
     ]
   },
@@ -704,43 +593,17 @@
       "episodes.episodes[229].airDate"
     ]
   },
-  "text_12662fa81953": {
-    "source": "Movie checklist",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
-  "text_1287750a09b1": {
-    "source": "LANGUAGE",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_129a703f5dcd": {
-    "source": "Released numbered theatrical films, the theatrical crossover, compilation films, and 3D shorts. TV specials, OVAs, and unreleased films are excluded. Dates are original Japanese releases; international titles and release dates may differ.",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_12b0e66ef848": {
     "source": "Head-to-Head Match with the Black Organization: A Dual Mystery on a Full Moon Night (2.5 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[66].title"
     ]
   },
   "text_12b96b21e3e7": {
     "source": "Sweet and Cold Delivery Service (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[153].title"
     ]
   },
@@ -753,17 +616,25 @@
   },
   "text_1354c290806d": {
     "source": "Secret of the Tohto Film Development Studio (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[59].title"
+    ]
+  },
+  "text_135c86a598e4": {
+    "source": "{0}: no ratings.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:125"
+    ],
+    "variables": [
+      "groupName(g.id)"
     ]
   },
   "text_138ca9262203": {
     "source": "Reunion with the Black Organization (Conan)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[16].title"
     ]
   },
@@ -781,18 +652,10 @@
       "episodes.episodes[37].airDate"
     ]
   },
-  "text_141fdb03893d": {
-    "source": "Try another filter or reset to the full selection.",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_14210ccfcb1d": {
     "source": "The New Teacher's Skeleton Case (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[201].title"
     ]
   },
@@ -801,6 +664,20 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[24].airDate"
+    ]
+  },
+  "text_14240a4b43de": {
+    "source": "{0} unwatched {1}{2} · {3} of listed time{4}. Listings may include ads, so treat this as a budget.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:143"
+    ],
+    "variables": [
+      "s.remainingCount",
+      "w.many",
+      "focus !== 'all' ? ` in ${groupName(focus)}` : ''",
+      "hours(s.remainingMinutes)",
+      "s.missingRemaining ? ` · ${s.missingRemaining} without a duration` : ''"
     ]
   },
   "text_146926d7b3ca": {
@@ -812,42 +689,16 @@
   },
   "text_14c10be5759a": {
     "source": "The 17-Year-Old Truth (The Perceptive Devil)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[250].title"
-    ]
-  },
-  "text_14c92f199c35": {
-    "source": "{4} entries · {5} rated",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:64"
-    ],
-    "variables": [
-      "g.id",
-      "g.color",
-      "filters.group===g.id",
-      "esc(groupName(g))",
-      "g.count",
-      "g.rated",
-      "value===null?0:value/groupMax*100",
-      "groupMetric==='median'?score(value):value.toFixed(1)+'h'"
     ]
   },
   "text_14f7485b7fdc": {
     "source": "On the Trail of a Silent Witness (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[52].title"
-    ]
-  },
-  "text_15563502e8c9": {
-    "source": "Main-story episodes",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
     ]
   },
   "text_15583cc12986": {
@@ -885,13 +736,6 @@
       "episodes.episodes[38].airDate"
     ]
   },
-  "text_15de58759db7": {
-    "source": "29 main films + 6 extras · Catalog checked 2026-09-07",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_15f5f74960f3": {
     "source": "Japan ·",
     "kind": "text",
@@ -923,9 +767,8 @@
   },
   "text_161bd5030f1f": {
     "source": "The Professor's Video Site (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[128].title"
     ]
   },
@@ -945,9 +788,8 @@
   },
   "text_168cbc26ecff": {
     "source": "The Convenience Store Trap (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[65].title"
     ]
   },
@@ -960,9 +802,8 @@
   },
   "text_170ded50ec1b": {
     "source": "The Tragedy of the Red Woman (Evil Spirit)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[164].title"
     ]
   },
@@ -970,17 +811,13 @@
     "source": "Created by SawabS",
     "kind": "title",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_1736e4dd627d": {
     "source": "The Jet-Black Mystery Train (Intersection)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[149].title"
     ]
   },
@@ -996,13 +833,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[182].imdb.title"
-    ]
-  },
-  "text_17ae4fab049f": {
-    "source": "Search analytics by title, number, or year",
-    "kind": "aria-label",
-    "references": [
-      "index.html"
     ]
   },
   "text_17b64fe8caf4": {
@@ -1053,40 +883,22 @@
   },
   "text_18c4e3408936": {
     "source": "Just Like a 17 Years Old Crime Scene (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[190].title"
-    ]
-  },
-  "text_18e72fa1d8a2": {
-    "source": "Compare film categories",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:62"
     ]
   },
   "text_190c40e072bb": {
     "source": "The Scarlet Truth",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[174].title"
-    ]
-  },
-  "text_19770ad7fd20": {
-    "source": "IMDb non-commercial datasets",
-    "kind": "text",
-    "references": [
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_199519fea99c": {
     "source": "The Forgotten Memento from the Crime (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[37].title"
     ]
   },
@@ -1106,9 +918,8 @@
   },
   "text_19d590408c68": {
     "source": "The 17-Year-Old Truth (The Queen's Gambit)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[252].title"
     ]
   },
@@ -1121,17 +932,9 @@
   },
   "text_1ad5e56a835e": {
     "source": "The Blind Spot in the Karaoke Box (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[96].title"
-    ]
-  },
-  "text_1ad9186431b8": {
-    "source": "All charts, totals, insights, the data table, and CSV exports follow the same filters. A minimum-vote filter removes unrated entries. Higher vote counts indicate more submissions, not guaranteed quality. Filtering on watched status changes the population being described.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_1b1ae917aa78": {
@@ -1143,24 +946,15 @@
   },
   "text_1b9ffe45004f": {
     "source": "The Woman with White Hands (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[205].title"
-    ]
-  },
-  "text_1bad06310f49": {
-    "source": "tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2",
-    "kind": "literal",
-    "references": [
-      "assets/presentation.js:18"
     ]
   },
   "text_1bb0bfaa9d73": {
     "source": "The Hotel Serial Bombing Case (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[247].title"
     ]
   },
@@ -1171,29 +965,17 @@
       "episodes.episodes[236].airDate"
     ]
   },
-  "text_1c1120ad9244": {
-    "source": "Open episode details ↗",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:43"
-    ],
-    "variables": [
-      "r.number"
-    ]
-  },
   "text_1c1afc4e6c0e": {
     "source": "The Suspect is Makoto Kyogoku (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[161].title"
     ]
   },
   "text_1c374d919562": {
     "source": "Deduction Showdown at the Haunted Hotel (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[123].title"
     ]
   },
@@ -1213,9 +995,8 @@
   },
   "text_1ca5958f6c2b": {
     "source": "Black Impact! The Moment the Black Organization Reaches Out (2.5 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[73].title"
     ]
   },
@@ -1225,24 +1006,43 @@
     "references": [
       "index.html",
       "assets/movies.js:35",
-      "assets/analytics.js:43",
-      "assets/analytics-core.js:74"
-    ]
-  },
-  "text_1d1d1cc8f5e3": {
-    "source": "9 to 10",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "assets/analytics-core.js:7"
+      "assets/analytics.js:107",
+      "assets/analytics.js:116",
+      "assets/analytics-core.js:88"
+    ],
+    "variables": [
+      "w.one",
+      "focus !== 'all' ? `<span><i class=\"key-muted\"></i>Other ${w.groups}</span>` : ''",
+      "missing ? `<span>${missing} without a score, not plotted</span>` : ''"
     ]
   },
   "text_1d489680f8f3": {
     "source": "The Target is the Metropolitan Police Traffic Department (4)",
+    "kind": "catalog content",
+    "references": [
+      "episodes.episodes[219].title"
+    ]
+  },
+  "text_1d6bfb1467cb": {
+    "source": "{12} source ↗",
     "kind": "text",
     "references": [
-      "guide.html",
-      "episodes.episodes[219].title"
+      "assets/analytics.js:107"
+    ],
+    "variables": [
+      "esc(r.label)",
+      "esc(title(r))",
+      "esc(groupName(r.group))",
+      "r.release",
+      "score(r.rating)",
+      "fmt(r.votes)",
+      "fmt(r.runtime)",
+      "watched.has(r.id) ? 'Watched' : 'Unwatched'",
+      "share === null ? '' : `<p class=\"chart-note\">${share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`}</p>`",
+      "scope === 'episodes' ? `<button class=\"button quiet\" data-analytics-open=\"${r.number}\">Open episode details</button>` : ''",
+      "r.imdbUrl ? `<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>` : '<span>No verified IMDb entry</span>'",
+      "esc(r.source)",
+      "scope === 'episodes' ? 'Episode' : 'Film'"
     ]
   },
   "text_1dc8fb7bf52f": {
@@ -1266,35 +1066,6 @@
       "episodes.episodes[15].airDate"
     ]
   },
-  "text_1e056e0cf062": {
-    "source": "Films comprise 29 numbered releases, one crossover, three compilations, and two 3D shorts. The two shorts have no verified IMDb match. The episode selection is a curated central-story route, not the complete series. Compilations repeat existing material; totals count each catalog entry independently.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_1e2dd414ae2f": {
-    "source": "explains coverage and calculations.",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
-  "text_1e58bdc16e96": {
-    "source": "TVmaze",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_1e7b9f8be9d7": {
-    "source": "EVERY ENTRY",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_1e856b2ef070": {
     "source": "Four Porsches: Part 1",
     "kind": "catalog content",
@@ -1304,9 +1075,8 @@
   },
   "text_1e90e9030633": {
     "source": "Yusaku Kudo's Cold Case (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[144].title"
     ]
   },
@@ -1321,7 +1091,7 @@
     "source": "No",
     "kind": "literal",
     "references": [
-      "assets/analytics.js:89"
+      "assets/analytics.js:168"
     ]
   },
   "text_1ed360ae6b10": {
@@ -1345,25 +1115,6 @@
       "episodes.episodes[73].imdb.title"
     ]
   },
-  "text_1f6fa6f69d18": {
-    "source": "min",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:88"
-    ],
-    "variables": [
-      "s.longest.id",
-      "s.longest.runtime",
-      "esc(title(s.longest))"
-    ]
-  },
-  "text_1fb1e8729ca7": {
-    "source": "original Japanese episode numbers",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_1fb8d53370c9": {
     "source": "Yoko Okino and the Locked Attic: Part 1",
     "kind": "catalog content",
@@ -1371,17 +1122,20 @@
       "episodes.episodes[236].imdb.title"
     ]
   },
-  "text_2019d6423e6c": {
-    "source": "{0} unwatched {1} in your filters · {2} listed time{3}. A planning estimate; actual viewing time varies by edition and skipped material.",
+  "text_202ffa10a6c3": {
+    "source": "{0} · {1} votes {2} · {3} {4} · {5}{6}",
     "kind": "template",
     "references": [
-      "assets/analytics.js:76"
+      "assets/analytics.js:89"
     ],
     "variables": [
-      "s.remainingCount",
-      "scope==='episodes'?'episodes':'films'",
-      "hours(s.remainingMinutes)",
-      "s.missingRemaining?` · ${s.missingRemaining} missing durations`:''"
+      "r.rating === null ? 'No IMDb score' : `${score(r.rating)} / 10`",
+      "fmt(r.votes)",
+      "r.label",
+      "title(r)",
+      "groupName(r.group)",
+      "r.release",
+      "watched.has(r.id) ? ' · Watched' : ''"
     ]
   },
   "text_204bc8443aa8": {
@@ -1428,25 +1182,22 @@
   },
   "text_2126a1b3b121": {
     "source": "Picking Wild Plants and Clovers (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[225].title"
     ]
   },
   "text_213ade67b4c0": {
     "source": "Clash of Red and Black (Suspicion)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[92].title"
     ]
   },
   "text_216e07f2b9c5": {
     "source": "The Antique Tray Can't Be Hidden (Part 3)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[229].title"
     ]
   },
@@ -1454,25 +1205,14 @@
     "source": "A focused Detective Conan main-story watchlist. Track episodes and movies, explore nine arcs, and check individually sourced episode IMDb ratings.",
     "kind": "description",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_21c5e44aee7d": {
     "source": "Momiji Ooka's Sweet Trap (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[245].title"
-    ]
-  },
-  "text_220e6e074b61": {
-    "source": "value unavailable",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:56"
     ]
   },
   "text_2211be4ca9ed": {
@@ -1516,13 +1256,6 @@
       "episodes.episodes[252].imdb.title"
     ]
   },
-  "text_224b6cd43133": {
-    "source": "255 episodes · 9 arcs · 255 individual IMDb ratings · Updated 2026-09-08",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_22989ac53990": {
     "source": "Rum: clues",
     "kind": "catalog content",
@@ -1539,9 +1272,8 @@
   },
   "text_22e1a0268c63": {
     "source": "The Scarlet Alibi",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[30].title"
     ]
   },
@@ -1564,22 +1296,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[77].imdb.title"
-    ]
-  },
-  "text_237851c5bd43": {
-    "source": "How we count",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_23eaea49e054": {
-    "source": "movie catalog",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_240928756c65": {
@@ -1616,9 +1332,8 @@
   },
   "text_24531dbe8ce6": {
     "source": "Froth, Steam, and Smoke (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[142].title"
     ]
   },
@@ -1636,20 +1351,6 @@
       "movies.movies[14].imdb.title"
     ]
   },
-  "text_246cf6cc92c5": {
-    "source": "Any vote count",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_24840dbd743b": {
-    "source": "Movie guide | Conan Casebook",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_249bcb5841ff": {
     "source": "TVmaze broadcast listings",
     "kind": "text",
@@ -1659,9 +1360,8 @@
   },
   "text_24b19a727dcb": {
     "source": "Detective Boys vs. Robber Group (Turmoil)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[108].title"
     ]
   },
@@ -1697,7 +1397,7 @@
     "source": "Still to watch",
     "kind": "literal",
     "references": [
-      "assets/analytics.js:85"
+      "assets/analytics.js:162"
     ]
   },
   "text_2556a453731d": {
@@ -1705,13 +1405,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[24].imdb.title"
-    ]
-  },
-  "text_259cc852736e": {
-    "source": "Japan release",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
     ]
   },
   "text_25a228bdd792": {
@@ -1739,8 +1432,8 @@
     "source": "Switch to {0} theme",
     "kind": "template",
     "references": [
-      "assets/presentation.js:49",
-      "assets/presentation.js:50"
+      "assets/presentation.js:50",
+      "assets/presentation.js:51"
     ],
     "variables": [
       "theme === 'dark' ? 'light' : 'dark'"
@@ -1773,26 +1466,18 @@
       "next ? '' : 'disabled'"
     ]
   },
-  "text_2646201c8db2": {
-    "source": "Release order. Mark ☐ as ☑ in your copy, or save progress in the interactive library. Listed runtime is in minutes. IMDb scores were checked",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_2649e082d9a2": {
     "source": "Entry",
     "kind": "text",
     "references": [
       "index.html",
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_26a7cf3b8919": {
     "source": "Full Score of Fear",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[11].title"
     ]
   },
@@ -1840,25 +1525,16 @@
   },
   "text_2838c7978363": {
     "source": "Holmes' Revelation (Love is 0)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[115].title"
     ]
   },
   "text_2881ad527adb": {
     "source": "The Darkest Nightmare",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[19].title"
-    ]
-  },
-  "text_288509260b4d": {
-    "source": "7 to <8",
-    "kind": "text",
-    "references": [
-      "index.html"
     ]
   },
   "text_2913bd91413f": {
@@ -1870,24 +1546,16 @@
   },
   "text_292c06f0045a": {
     "source": "Category",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "movie-guide.html"
+      "assets/analytics.js:167"
     ]
   },
   "text_2959353b132f": {
     "source": "The 17-Year-Old Truth (The Bloody Knight)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[249].title"
-    ]
-  },
-  "text_298f34b465e2": {
-    "source": "Ratings and votes come from",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_29a51a9524f0": {
@@ -1897,26 +1565,17 @@
       "episodes.episodes[19].imdb.title"
     ]
   },
-  "text_29a8856b9640": {
-    "source": "Where scores land",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_29b6870df914": {
     "source": "The Darkness of the Prefectural Police (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[181].title"
     ]
   },
   "text_29dfce90150b": {
     "source": "The Spark That Fell on the Ranch (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[234].title"
     ]
   },
@@ -1927,19 +1586,24 @@
       "episodes.episodes[85].airDate"
     ]
   },
+  "text_2a3005a109d7": {
+    "source": "Best unwatched",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:131"
+    ]
+  },
   "text_2a324acfd70d": {
     "source": "Holmes' Revelation (Satan)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[116].title"
     ]
   },
   "text_2a43621b53fe": {
     "source": "3D short",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "movie-guide.html",
       "assets/movies.js:7"
     ]
   },
@@ -2031,9 +1695,8 @@
   },
   "text_2b944e082436": {
     "source": "Detectives' Nocturne (The Case)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[132].title"
     ]
   },
@@ -2042,16 +1705,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[175].imdb.title"
-    ]
-  },
-  "text_2c24576872f7": {
-    "source": "JA",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_2c2dd21d8abf": {
@@ -2125,13 +1778,6 @@
       "episodes.episodes[221].imdb.title"
     ]
   },
-  "text_2d75f6b7fcdb": {
-    "source": "Refresh and audit",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_2d90be3a9be5": {
     "source": "Foam, Steam and Smoke: Part 1",
     "kind": "catalog content",
@@ -2153,18 +1799,10 @@
       "movies.movies[17].imdb.title"
     ]
   },
-  "text_2da6c54040f9": {
-    "source": "Title, episode number, or year",
-    "kind": "placeholder",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_2dda30fe2e84": {
     "source": "The Tense Tea Party (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[168].title"
     ]
   },
@@ -2180,13 +1818,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[219].airDate"
-    ]
-  },
-  "text_2e4aaf05df1c": {
-    "source": "Extra",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
     ]
   },
   "text_2e55410aa7ee": {
@@ -2212,9 +1843,8 @@
   },
   "text_2ea2b27eb842": {
     "source": "Red, White, Yellow, and the Detective Boys",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[98].title"
     ]
   },
@@ -2225,18 +1855,10 @@
       "episodes.episodes[141].airDate"
     ]
   },
-  "text_2f0c9be1d0e8": {
-    "source": "counts below 6, from 6 to below 7, from 7 to below 8, from 8 to below 9, and from 9 through 10. Missing ratings are excluded and reported separately.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_2f2730424f25": {
     "source": "The Time-Bombed Skyscraper",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[0].title"
     ]
   },
@@ -2244,17 +1866,13 @@
     "source": "Switch to light theme",
     "kind": "aria-label",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_2f9fbb46d049": {
     "source": "The Raven Chaser",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[12].title"
     ]
   },
@@ -2276,7 +1894,7 @@
     "source": "Title IDs, episode metadata, weighted ratings, and votes. Snapshot: {0}.",
     "kind": "template",
     "references": [
-      "assets/app.js:273"
+      "assets/app.js:274"
     ],
     "variables": [
       "snapshotDate"
@@ -2284,17 +1902,9 @@
   },
   "text_301ae0b56ab1": {
     "source": "Contact with the Black Organization (The Negotiation)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[53].title"
-    ]
-  },
-  "text_302452fd5a11": {
-    "source": "7. Rum: clues",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_3044a9b5e571": {
@@ -2320,9 +1930,8 @@
   },
   "text_318a43af11c2": {
     "source": "The Blind Spot in the Dressing Room (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[196].title"
     ]
   },
@@ -2333,32 +1942,11 @@
       "episodes.episodes[111].airDate"
     ]
   },
-  "text_3251982cbfa9": {
-    "source": "At least",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:75"
-    ]
-  },
   "text_32e40a1364c7": {
     "source": "Yusaku Kudo's Detective Show: Part 2",
     "kind": "catalog content",
     "references": [
       "episodes.episodes[239].imdb.title"
-    ]
-  },
-  "text_33365b51c129": {
-    "source": "One row per episode. Titles link to Detective Conan World; ratings link to the exact IMDb entry. Scores are out of 10, checked",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_336920d516c5": {
-    "source": "IMDb score on a 0 to 10 axis, or listed duration in minutes. Each bar has equal horizontal spacing. Release order does not represent elapsed time. Select a bar to see its title, date, votes, progress, and sources.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_33d959547e7a": {
@@ -2370,9 +1958,8 @@
   },
   "text_342ee466660b": {
     "source": "Won't Forgive Even One Millimeter (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[136].title"
     ]
   },
@@ -2409,13 +1996,6 @@
       "episodes.episodes[185].imdb.title"
     ]
   },
-  "text_34a5d1623d55": {
-    "source": "TVmaze's episode listings",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_34ae748cd5e6": {
     "source": "The Tragedy of the Red Woman: Steam",
     "kind": "catalog content",
@@ -2427,14 +2007,14 @@
     "source": "Group",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
-  "text_34e3791e42c4": {
-    "source": "Movie duration links point to individual Detective Conan World film pages, except film 29, whose 109-minute value comes from its IMDb title metadata. Editions may differ. Episode and movie totals are shown separately because their listing conventions differ.",
-    "kind": "text",
+  "text_34f0c3ea9e18": {
+    "source": "Analytics exported with source links.",
+    "kind": "literal",
     "references": [
-      "methodology.html"
+      "assets/analytics.js:202"
     ]
   },
   "text_352baa1ac4d4": {
@@ -2564,9 +2144,8 @@
   },
   "text_35557ed3e5b4": {
     "source": "The Forgotten Memento from the Crime (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[36].title"
     ]
   },
@@ -2575,6 +2154,17 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[202].airDate"
+    ]
+  },
+  "text_3560d6fb748c": {
+    "source": "Next up: {1}",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:145"
+    ],
+    "variables": [
+      "scope === 'episodes' ? `data-analytics-open=\"${next.number}\"` : `data-select=\"${next.id}\"`",
+      "esc(getHideTitles() ? next.label : `${shortLabel(next)} ${next.title}`)"
     ]
   },
   "text_35ac125a8192": {
@@ -2589,6 +2179,13 @@
     "kind": "text",
     "references": [
       "index.html"
+    ]
+  },
+  "text_361f03ed0d6b": {
+    "source": "tbody tr, .movie-card, .progress-card, .analytics-inspector, .analytics-kpis > div, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div",
+    "kind": "literal",
+    "references": [
+      "assets/presentation.js:19"
     ]
   },
   "text_36350880d4b4": {
@@ -2609,31 +2206,14 @@
     "source": "January",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
-    ]
-  },
-  "text_371dd62574ef": {
-    "source": ", under",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_3731e899ecc5": {
-    "source": "episode mappings",
-    "kind": "text",
-    "references": [
-      "methodology.html"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_374cd9d220fb": {
     "source": "Created by",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_3781afe511de": {
@@ -2645,9 +2225,8 @@
   },
   "text_3792b079e780": {
     "source": "The Lost Ship in the Sky",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[13].title"
     ]
   },
@@ -2693,16 +2272,14 @@
       "episodes.episodes[192].imdb.title"
     ]
   },
-  "text_389bf0222448": {
-    "source": "{0} / {1} durations · {2}",
+  "text_38bdaed82ee4": {
+    "source": "The lowest score among rated {0}.",
     "kind": "template",
     "references": [
-      "assets/analytics.js:85"
+      "assets/analytics.js:107"
     ],
     "variables": [
-      "s.runtimeCount",
-      "s.count",
-      "scope==='episodes'?'broadcast listings':'film listings'"
+      "w.many"
     ]
   },
   "text_38e837184e22": {
@@ -2714,17 +2291,15 @@
   },
   "text_39128f4f7a2b": {
     "source": "Two People Who Can't Return (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[74].title"
     ]
   },
   "text_394242af38bf": {
     "source": "Compilation",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "movie-guide.html",
       "assets/movies.js:7"
     ]
   },
@@ -2746,28 +2321,26 @@
     "source": "Home",
     "kind": "literal",
     "references": [
-      "assets/app.js:248",
-      "assets/app.js:251",
-      "assets/graph.js:120",
-      "assets/graph.js:122",
-      "assets/analytics.js:107",
-      "assets/analytics.js:108",
+      "assets/app.js:249",
+      "assets/app.js:252",
+      "assets/graph.js:132",
+      "assets/graph.js:134",
+      "assets/analytics.js:189",
+      "assets/analytics.js:193",
       "assets/language.js:61"
     ]
   },
   "text_3a83781832db": {
     "source": "The Shadow of the Black Organization (The Mystery of the Big Reward)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[78].title"
     ]
   },
   "text_3afbcd900f60": {
     "source": "The Red Shaking Target",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[113].title"
     ]
   },
@@ -2776,13 +2349,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[180].imdb.title"
-    ]
-  },
-  "text_3b47114b0387": {
-    "source": "main-story episodes",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:84"
     ]
   },
   "text_3b4ba1705df5": {
@@ -2820,13 +2386,6 @@
       "index.html"
     ]
   },
-  "text_3cc92ab68f61": {
-    "source": "Listed hours",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_3ce074a9f6b2": {
     "source": "Arc {0}",
     "kind": "template",
@@ -2834,10 +2393,8 @@
       "assets/app.js:63",
       "assets/app.js:82",
       "assets/graph.js:15",
-      "assets/analytics.js:14",
-      "assets/analytics.js:26",
-      "assets/analytics.js:43",
-      "assets/analytics-core.js:75"
+      "assets/analytics.js:19",
+      "assets/analytics-core.js:89"
     ],
     "variables": [
       "padded(a.id)"
@@ -2845,17 +2402,15 @@
   },
   "text_3cf1eb6aecee": {
     "source": "Hidden Bathroom Secret (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[63].title"
     ]
   },
   "text_3cfd6d8e81ef": {
     "source": "The Marriage Registration's Password (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[188].title"
     ]
   },
@@ -2875,9 +2430,8 @@
   },
   "text_3dded5ef2808": {
     "source": "The Private Eyes' Requiem",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[9].title"
     ]
   },
@@ -2890,25 +2444,29 @@
   },
   "text_3e32eeb5c8c9": {
     "source": "The Treasure Chest Filled with Fruits (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[156].title"
     ]
   },
   "text_3e3c6c1c298c": {
     "source": "Clash of Red and Black (Disturbance)",
+    "kind": "catalog content",
+    "references": [
+      "episodes.episodes[89].title"
+    ]
+  },
+  "text_3e85b4a858cc": {
+    "source": "When will you finish?",
     "kind": "text",
     "references": [
-      "guide.html",
-      "episodes.episodes[89].title"
+      "index.html"
     ]
   },
   "text_3f130db796c9": {
     "source": "Clash of Red and Black (Testament)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[91].title"
     ]
   },
@@ -2919,11 +2477,21 @@
       "index.html"
     ]
   },
+  "text_3f245a124e1a": {
+    "source": "Scores higher than {0}% of the other rated {1}.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:107"
+    ],
+    "variables": [
+      "Math.round(share*100)",
+      "w.many"
+    ]
+  },
   "text_3f80ee48429a": {
     "source": "The Tense Tea Party (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[169].title"
     ]
   },
@@ -2936,35 +2504,17 @@
   },
   "text_3f9b6c7f20c0": {
     "source": "Chinatown Deja Vu in the Rain (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[44].title"
     ]
   },
   "text_3fbf1d723802": {
     "source": "Momiji Ooka's Challenge (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[231].title",
       "episodes.episodes[231].imdb.title"
-    ]
-  },
-  "text_3ff02e454d10": {
-    "source": "{2}: {3} entries. Filter this rating band.",
-    "kind": "aria-label",
-    "references": [
-      "assets/analytics.js:66"
-    ],
-    "variables": [
-      "b.id",
-      "filters.band===b.id",
-      "b.label",
-      "b.count",
-      "b.count",
-      "b.count/highest*100",
-      "b.label"
     ]
   },
   "text_40366a74837a": {
@@ -2976,10 +2526,16 @@
   },
   "text_40384bdfd065": {
     "source": "The Jet-Black Mystery Train (Destination)",
+    "kind": "catalog content",
+    "references": [
+      "episodes.episodes[150].title"
+    ]
+  },
+  "text_403d51df4ba2": {
+    "source": "Energy: links from the selection",
     "kind": "text",
     "references": [
-      "guide.html",
-      "episodes.episodes[150].title"
+      "index.html"
     ]
   },
   "text_404b98252684": {
@@ -2998,9 +2554,8 @@
   },
   "text_40844b02e43f": {
     "source": "Ikkaku Rock's Disappearing Fish (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[107].title"
     ]
   },
@@ -3013,9 +2568,8 @@
   },
   "text_40a35285bf5e": {
     "source": "The Crisis Beckoned by the Red Omen",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[110].title"
     ]
   },
@@ -3044,11 +2598,10 @@
     "source": "IMDb / 10",
     "kind": "text",
     "references": [
-      "index.html",
       "assets/app.js:110",
       "assets/graph.js:71",
-      "assets/analytics.js:43",
-      "assets/analytics.js:57"
+      "assets/analytics.js:65",
+      "assets/analytics.js:107"
     ],
     "variables": [
       "e.imdb.rating === null ? 'N/A' : e.imdb.rating.toFixed(1)",
@@ -3078,17 +2631,15 @@
   },
   "text_4151998b9f6b": {
     "source": "Shinichi Kudo's New York Case (The Resolution)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[48].title"
     ]
   },
   "text_41826e50f6aa": {
     "source": "Conan vs. Double Code Mystery",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[99].title"
     ]
   },
@@ -3099,25 +2650,11 @@
       "episodes.episodes[99].imdb.title"
     ]
   },
-  "text_4224274403c0": {
-    "source": ": selecting 255 entries, linking Japanese numbering, retaining a date-conflict note, and calculating duration summaries. This license statement applies to the TVmaze-derived material, not third-party artwork or IMDb data.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_427482d08c50": {
     "source": "Setup for later story developments",
     "kind": "literal",
     "references": [
       "assets/app.js:111"
-    ]
-  },
-  "text_42f45f9ed3c9": {
-    "source": "Select an entry to inspect its sources.",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:42"
     ]
   },
   "text_4302635c3297": {
@@ -3152,14 +2689,6 @@
       "prev ? '' : 'disabled'",
       "next?.episode ?? e.episode",
       "next ? '' : 'disabled'"
-    ]
-  },
-  "text_437aea62a5bd": {
-    "source": "Contents",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html"
     ]
   },
   "text_43ae8b4416af": {
@@ -3197,32 +2726,22 @@
   },
   "text_4402db548255": {
     "source": "Festival Dolls Dyed in the Setting Sun (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[56].title"
-    ]
-  },
-  "text_4411e525721e": {
-    "source": "Dataset",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_441a275665c6": {
     "source": "The Detective Boys and the Ghost Mansion",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[198].title"
     ]
   },
   "text_444b82f679ab": {
     "source": "The Spirit Detective's Murder (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[192].title"
     ]
   },
@@ -3272,18 +2791,11 @@
       "episodes.episodes[65].imdb.title"
     ]
   },
-  "text_453bd7e4055b": {
-    "source": "Rating axis starts at zero. Outlined bars indicate missing scores.",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:58"
-    ]
-  },
-  "text_455fd8b55226": {
-    "source": "supply the displayed durations. They may include advertising, and streaming versions may split specials or skip opening/ending material. Standard entries are listed as 30 minutes; long specials retain their individual listings.",
+  "text_458c389d6192": {
+    "source": "ARC BY ARC",
     "kind": "text",
     "references": [
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_45a72c6c1eae": {
@@ -3307,29 +2819,37 @@
       "episodes.episodes[88].imdb.title"
     ]
   },
+  "text_46482f3413a5": {
+    "source": "{0} {1} listings",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:161"
+    ],
+    "variables": [
+      "s.runtimeCount",
+      "scope === 'episodes' ? 'broadcast' : 'film'"
+    ]
+  },
   "text_4664827f8e89": {
     "source": "Progress",
     "kind": "text",
     "references": [
-      "assets/analytics.js:43"
+      "assets/analytics.js:107"
     ],
     "variables": [
       "esc(r.label)",
       "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
+      "esc(groupName(r.group))",
       "r.release",
       "score(r.rating)",
       "fmt(r.votes)",
       "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
+      "watched.has(r.id) ? 'Watched' : 'Unwatched'",
+      "share === null ? '' : `<p class=\"chart-note\">${share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`}</p>`",
+      "scope === 'episodes' ? `<button class=\"button quiet\" data-analytics-open=\"${r.number}\">Open episode details</button>` : ''",
+      "r.imdbUrl ? `<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>` : '<span>No verified IMDb entry</span>'",
       "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
+      "scope === 'episodes' ? 'Episode' : 'Film'"
     ]
   },
   "text_4698e0680130": {
@@ -3358,7 +2878,7 @@
     "kind": "text",
     "references": [
       "assets/graph.js:71",
-      "assets/analytics.js:43"
+      "assets/analytics.js:107"
     ],
     "variables": [
       "e.arc",
@@ -3383,9 +2903,8 @@
   },
   "text_46e8af4e57b3": {
     "source": "The Darkness of the Prefectural Police (Part 3)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[183].title"
     ]
   },
@@ -3525,9 +3044,8 @@
   },
   "text_48ad93a7678d": {
     "source": "The Convenience Store Trap (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[64].title"
     ]
   },
@@ -3549,9 +3067,9 @@
     "source": "ArrowLeft",
     "kind": "literal",
     "references": [
-      "assets/app.js:248",
-      "assets/graph.js:114",
-      "assets/analytics.js:107"
+      "assets/app.js:249",
+      "assets/graph.js:126",
+      "assets/analytics.js:189"
     ]
   },
   "text_494052b3e9b8": {
@@ -3570,9 +3088,8 @@
   },
   "text_49f5e5c4eed9": {
     "source": "Mystery of the Burning Tent (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[208].title"
     ]
   },
@@ -3594,24 +3111,15 @@
     "source": "Film listing",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:32"
+      "assets/analytics-core.js:35"
     ]
   },
   "text_4aa8be035fae": {
     "source": "The Black Organization's Scheme (Landing)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[241].title",
       "episodes.episodes[241].imdb.title"
-    ]
-  },
-  "text_4aa9bfd2f175": {
-    "source": ", and",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "methodology.html"
     ]
   },
   "text_4aed4c007ec9": {
@@ -3623,9 +3131,8 @@
   },
   "text_4aef400d2dd2": {
     "source": "The Birthday Party of Divine Punishment (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[232].title"
     ]
   },
@@ -3633,7 +3140,7 @@
     "source": "April",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_4b0b98114eea": {
@@ -3645,33 +3152,23 @@
   },
   "text_4b100518a77b": {
     "source": "Once-A-Month Present Threat Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[2].title"
     ]
   },
   "text_4b5653bb05f6": {
     "source": "Taiko Meijin's Match of Love (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[176].title"
     ]
   },
   "text_4b5ac3b81c56": {
     "source": "Private Eye in the Distant Sea",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[16].title"
-    ]
-  },
-  "text_4b68ab3847fe": {
-    "source": "X",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:15"
     ]
   },
   "text_4b7ab16b3e7b": {
@@ -3732,9 +3229,8 @@
   },
   "text_4c88eac9da21": {
     "source": "The Tokyo-Style Detective Show Next Door (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[203].title"
     ]
   },
@@ -3757,13 +3253,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[112].airDate"
-    ]
-  },
-  "text_4d9d082e1478": {
-    "source": "Quick notes",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_4db91b9918c5": {
@@ -3804,17 +3293,15 @@
   },
   "text_4de275f71a17": {
     "source": "The Black Time Limit Drawing Near",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[112].title"
     ]
   },
   "text_4e439a763b13": {
     "source": "The Gathering of the Detectives! Shinichi Kudo vs. Kaitou Kid (2 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[24].title"
     ]
   },
@@ -3827,31 +3314,9 @@
   },
   "text_4eb41fadf756": {
     "source": "Reunion with the Black Organization (Haibara)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[15].title"
-    ]
-  },
-  "text_4ec5c21f5476": {
-    "source": "4. Kir",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_4f52c8eee845": {
-    "source": "No matching entries.",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_4f846a84e7fc": {
-    "source": "Minutes",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
     ]
   },
   "text_4fa102e38529": {
@@ -3863,17 +3328,15 @@
   },
   "text_4fb8e726cd2c": {
     "source": "The Target is the Metropolitan Police Traffic Department (1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[216].title"
     ]
   },
   "text_4fd3aafd4e6b": {
     "source": "The Shadow of the Black Organization (The Strange Illumination)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[77].title"
     ]
   },
@@ -3914,14 +3377,13 @@
     "source": "Enter a selected Japanese episode number, such as 1, 129, or 345.",
     "kind": "literal",
     "references": [
-      "assets/graph.js:158"
+      "assets/graph.js:170"
     ]
   },
   "text_51057c5748b4": {
     "source": "The Case of the Besieged Detective Agency (Outbreak)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[124].title"
     ]
   },
@@ -3934,9 +3396,8 @@
   },
   "text_5157a81c7893": {
     "source": "The Desperate Revival - The Black Knight",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[21].title"
     ]
   },
@@ -3961,13 +3422,6 @@
       "episodes.episodes[87].imdb.title"
     ]
   },
-  "text_523487a5de21": {
-    "source": "Coverage",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_523772fe6a1a": {
     "source": "The Magician of the Wave: Part 1",
     "kind": "catalog content",
@@ -3977,9 +3431,8 @@
   },
   "text_524449d1fa53": {
     "source": "Three First Discoverers (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[180].title"
     ]
   },
@@ -4030,9 +3483,8 @@
   },
   "text_5325b4bb43ec": {
     "source": "Ikkaku Rock's Disappearing Fish (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[106].title"
     ]
   },
@@ -4050,13 +3502,6 @@
       "index.html"
     ]
   },
-  "text_539a1d703abd": {
-    "source": "Rating distribution:",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_539c7575ee1f": {
     "source": "Detectives' Nocturne: Bourbon",
     "kind": "catalog content",
@@ -4066,6 +3511,13 @@
   },
   "text_53f86c9a23fc": {
     "source": "Sort episodes",
+    "kind": "text",
+    "references": [
+      "index.html"
+    ]
+  },
+  "text_5454a8176d86": {
+    "source": "View the data table",
     "kind": "text",
     "references": [
       "index.html"
@@ -4092,13 +3544,6 @@
       "episodes.episodes[243].imdb.title"
     ]
   },
-  "text_55921b3fc007": {
-    "source": "API license",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_55aeb42c16b0": {
     "source": "Artwork belongs to its respective rights holders. Image sources are recorded in the movie data.",
     "kind": "text",
@@ -4115,24 +3560,9 @@
   },
   "text_563a1287026c": {
     "source": "One-Eyed Flashback",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[27].title"
-    ]
-  },
-  "text_566f7b7ad0c5": {
-    "source": "to check coverage and calculations.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_5678ce69ec2b": {
-    "source": "after data edits and",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_56c28481ba72": {
@@ -4151,17 +3581,15 @@
   },
   "text_56ed056f7364": {
     "source": "Whereabouts of the Dark Photograph (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[81].title"
     ]
   },
   "text_56fa7828a6f6": {
     "source": "Yusaku Kudo's Detective Show (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[239].title"
     ]
   },
@@ -4177,13 +3605,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_5789196a39d1": {
-    "source": "Durations are source listings, not exact streaming playback times.",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:58"
     ]
   },
   "text_57a8033acc3a": {
@@ -4216,7 +3637,7 @@
     "source": "Episode {0}: {1}, {2}",
     "kind": "template",
     "references": [
-      "assets/graph.js:88"
+      "assets/graph.js:99"
     ],
     "variables": [
       "n.episode",
@@ -4252,6 +3673,16 @@
       "episodes.arcs[3].name"
     ]
   },
+  "text_590ef156e18b": {
+    "source": "Needs 3 rated {0}",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:160"
+    ],
+    "variables": [
+      "w.many"
+    ]
+  },
   "text_59684e4ca27b": {
     "source": "DETECTIVE CONAN / MAIN STORY",
     "kind": "text",
@@ -4275,17 +3706,15 @@
   },
   "text_5985eefbacfe": {
     "source": "The Betrayal's Stage (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[195].title"
     ]
   },
   "text_59a5b5e3494f": {
     "source": "The Scarlet Prologue",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[170].title"
     ]
   },
@@ -4303,13 +3732,6 @@
       "index.html"
     ]
   },
-  "text_5a997ce80d3a": {
-    "source": ". Scores are IMDb's weighted user ratings, shown as a dated snapshot. IMDb terms apply to that data.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_5b5121eddb2a": {
     "source": "The Traitor's Stage: Part 2",
     "kind": "catalog content",
@@ -4317,11 +3739,20 @@
       "episodes.episodes[195].imdb.title"
     ]
   },
+  "text_5be5b270a63d": {
+    "source": "Clear focus on {0}",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:156"
+    ],
+    "variables": [
+      "groupName(focus)"
+    ]
+  },
   "text_5bf4a0ac12b7": {
     "source": "The 17-Year-Old Truth (The Far-Sighted Bishop)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[251].title"
     ]
   },
@@ -4369,9 +3800,8 @@
   },
   "text_5d9b5286b281": {
     "source": "The Desperate Revival - Shinichi's Return",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[22].title"
     ]
   },
@@ -4405,9 +3835,8 @@
   },
   "text_5e4e44f984dc": {
     "source": "On the Trail of a Silent Witness (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[51].title"
     ]
   },
@@ -4425,6 +3854,13 @@
       "movies.movies[13].imdb.title"
     ]
   },
+  "text_5ea52b734657": {
+    "source": "is-alt",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:51"
+    ]
+  },
   "text_5ea9efa65618": {
     "source": "The Birthday Party of Divine Punishment: Part 2",
     "kind": "catalog content",
@@ -4439,6 +3875,14 @@
       "episodes.episodes[81].imdb.title"
     ]
   },
+  "text_5f1260383548": {
+    "source": "Top rated",
+    "kind": "text",
+    "references": [
+      "index.html",
+      "assets/analytics.js:131"
+    ]
+  },
   "text_5f6d25772917": {
     "source": "Movie watch status",
     "kind": "text",
@@ -4448,9 +3892,8 @@
   },
   "text_5f7f220a075a": {
     "source": "The Mysterious Passenger (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[27].title"
     ]
   },
@@ -4490,13 +3933,6 @@
       "movies.movies[32].imdb.mapping"
     ]
   },
-  "text_5f9f52de44a7": {
-    "source": "runtimeSource",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_5fa7339c96d9": {
     "source": "Movie progress could not be read. This session still works.",
     "kind": "literal",
@@ -4509,13 +3945,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_5fe86c900853": {
-    "source": "is-missing",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:56"
     ]
   },
   "text_5ff363139856": {
@@ -4778,11 +4207,11 @@
       "episodes.episodes[254].runtimeMapping"
     ]
   },
-  "text_601201d21282": {
-    "source": "The release trail",
-    "kind": "text",
+  "text_601c7714f5ea": {
+    "source": "Arc, in story order",
+    "kind": "literal",
     "references": [
-      "index.html"
+      "assets/analytics.js:65"
     ]
   },
   "text_6021df238734": {
@@ -4792,25 +4221,11 @@
       "assets/app.js:45"
     ]
   },
-  "text_6056b9e456ac": {
-    "source": "Detective Conan / Case Closed: Movie Checklist",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
-  "text_6063e8bff0bd": {
-    "source": "May include advertising.",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:43"
-    ]
-  },
   "text_606f067940ea": {
     "source": "Episode {0}",
     "kind": "template",
     "references": [
-      "assets/analytics-core.js:26"
+      "assets/analytics-core.js:29"
     ],
     "variables": [
       "String(number).padStart(3,'0')"
@@ -4881,17 +4296,15 @@
   },
   "text_61d8da4ebf82": {
     "source": "The Ex-Boyfriend Living Next to a Crime Scene (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[158].title"
     ]
   },
   "text_61dac0448ea9": {
     "source": "Quarter of Silence",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[14].title"
     ]
   },
@@ -4936,9 +4349,8 @@
   },
   "text_632e2c66c4d7": {
     "source": "The Spark That Fell on the Ranch (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[235].title"
     ]
   },
@@ -4954,19 +4366,6 @@
     "kind": "catalog content",
     "references": [
       "movies.movies[7].imdb.title"
-    ]
-  },
-  "text_639bc17eb13f": {
-    "source": "Highest IMDb score",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:88"
-    ],
-    "variables": [
-      "s.highest.id",
-      "score(s.highest.rating)",
-      "esc(title(s.highest))",
-      "fmt(s.highest.votes)"
     ]
   },
   "text_63a7bd80ca87": {
@@ -4995,7 +4394,7 @@
     "kind": "text",
     "references": [
       "index.html",
-      "assets/analytics.js:43"
+      "assets/analytics.js:107"
     ]
   },
   "text_64808ec93292": {
@@ -5021,9 +4420,8 @@
   },
   "text_64c14bb4c376": {
     "source": "Who Kidnapped Conan and Azusa? (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[253].title"
     ]
   },
@@ -5050,9 +4448,8 @@
   },
   "text_65b553e76c3e": {
     "source": "Search for Maria-chan! (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[211].title"
     ]
   },
@@ -5070,13 +4467,6 @@
       "episodes.episodes[163].airDate"
     ]
   },
-  "text_6631b3dead6b": {
-    "source": ", if present after a refresh, means no rating was returned for that mapped entry. See",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_66455b8554ae": {
     "source": "255 episodes across nine arcs.",
     "kind": "text",
@@ -5084,27 +4474,18 @@
       "index.html"
     ]
   },
-  "text_66503d499976": {
-    "source": ", making that exception inspectable.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_669c37591d8b": {
     "source": "The Life-Threatening Broadcast of Love (Begin Broadcasting)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[138].title",
       "episodes.episodes[138].imdb.title"
     ]
   },
   "text_6731863fb114": {
     "source": "The Mystery Sinking in the Midsummer Pool (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[178].title"
     ]
   },
@@ -5117,9 +4498,8 @@
   },
   "text_679eb1aaa333": {
     "source": "The Shadow Approaching Haibara's Secret (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[145].title"
     ]
   },
@@ -5130,20 +4510,10 @@
       "episodes.episodes[234].imdb.title"
     ]
   },
-  "text_67d2e82df772": {
-    "source": "Download Markdown ↙",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
   "text_6816f610c538": {
     "source": "Clash of Red and Black (Coma)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[86].title"
     ]
   },
@@ -5170,17 +4540,15 @@
   },
   "text_691f4db817a4": {
     "source": "Countdown to Heaven",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[4].title"
     ]
   },
   "text_6929cf24b2a5": {
     "source": "Company President's Daughter Kidnapping Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[1].title"
     ]
   },
@@ -5189,16 +4557,6 @@
     "kind": "aria-label",
     "references": [
       "index.html"
-    ]
-  },
-  "text_69374b09b168": {
-    "source": "EN",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_69be368cb3fc": {
@@ -5215,11 +4573,11 @@
       "episodes.episodes[179].imdb.title"
     ]
   },
-  "text_6a585ab1c814": {
-    "source": "supplies episode titles and original broadcast dates. Its",
+  "text_6a6c1da1d48a": {
+    "source": "Drag to explore · + / − to zoom · Select a node to see its links",
     "kind": "text",
     "references": [
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_6a792596a387": {
@@ -5231,9 +4589,8 @@
   },
   "text_6a931d3ea84a": {
     "source": "Wedding Eve (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[130].title"
     ]
   },
@@ -5246,17 +4603,9 @@
   },
   "text_6ac93cc3b6de": {
     "source": "The Romance Novel with the Unexpected Conclusion (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[167].title"
-    ]
-  },
-  "text_6ada277b6f9a": {
-    "source": "Release year",
-    "kind": "text",
-    "references": [
-      "index.html"
     ]
   },
   "text_6aec3db8335d": {
@@ -5271,11 +4620,7 @@
     "kind": "text",
     "references": [
       "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html",
-      "assets/movies.js:31",
-      "assets/analytics.js:15"
+      "assets/movies.js:31"
     ],
     "variables": [
       "checked ? ' is-watched' : ''",
@@ -5307,6 +4652,18 @@
       "episodes.episodes[185].airDate"
     ]
   },
+  "text_6b74890feee7": {
+    "source": "in {0}",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:131",
+      "assets/analytics.js:143",
+      "assets/analytics.js:157"
+    ],
+    "variables": [
+      "groupName(focus)"
+    ]
+  },
   "text_6bde8dbce402": {
     "source": "July 14, 2008",
     "kind": "catalog content",
@@ -5314,27 +4671,17 @@
       "episodes.episodes[98].airDate"
     ]
   },
-  "text_6be090825c99": {
-    "source": "Order",
+  "text_6c72b3c28d29": {
+    "source": "IMDb /10",
     "kind": "text",
     "references": [
       "index.html"
     ]
   },
-  "text_6c72b3c28d29": {
-    "source": "IMDb /10",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html"
-    ]
-  },
   "text_6cc5a8b257be": {
     "source": "Whereabouts of the Dark Photograph (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[80].title"
     ]
   },
@@ -5345,11 +4692,22 @@
       "episodes.episodes[43].airDate"
     ]
   },
+  "text_6cf7846d1199": {
+    "source": "Ratings checked {0}. {1} scores and {2} duration listings in this view. Missing values are never treated as zero.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:169"
+    ],
+    "variables": [
+      "scope === 'episodes' ? window.CONAN_DATA.updated : window.CONAN_MOVIES.ratingsUpdated",
+      "s.rated",
+      "s.runtimeCount"
+    ]
+  },
   "text_6cfb788daa79": {
     "source": "Clash of Red and Black (Hades)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[85].title"
     ]
   },
@@ -5376,9 +4734,8 @@
   },
   "text_6de65dde70ab": {
     "source": "The Battle Game Trap (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[26].title"
     ]
   },
@@ -5407,36 +4764,14 @@
     "source": "Duration basis",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
-    ]
-  },
-  "text_6e8e9fd7a26f": {
-    "source": "ratings",
-    "kind": "text",
-    "references": [
-      "guide.html"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_6e9c036d0773": {
     "source": "Mitsuhiko's Mystifying Forest (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[50].title"
-    ]
-  },
-  "text_6ec1531b8988": {
-    "source": "6. Bourbon: revelations",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_6edf57c5a6b6": {
-    "source": "and watch in order. Services may split long specials; match by title when numbers differ. Movies are optional.",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_6ef9dcbe6fb5": {
@@ -5446,44 +4781,11 @@
       "episodes.episodes[139].imdb.title"
     ]
   },
-  "text_6f16788e8592": {
-    "source": "{2} · {3} votes",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:88"
-    ],
-    "variables": [
-      "s.highest.id",
-      "score(s.highest.rating)",
-      "esc(title(s.highest))",
-      "fmt(s.highest.votes)"
-    ]
-  },
-  "text_6f5589b0f421": {
-    "source": "{0} of {1} {2} in this view · {3} watched. Every chart follows these filters.",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:84"
-    ],
-    "variables": [
-      "s.count",
-      "full",
-      "scope==='episodes'?'main-story episodes':'films'",
-      "s.watched"
-    ]
-  },
   "text_6f5ecc8969f8": {
     "source": "Detective Conan: Fallen Angel of the Highway",
     "kind": "catalog content",
     "references": [
       "movies.movies[28].imdb.title"
-    ]
-  },
-  "text_6fbc58af0584": {
-    "source": "the median of available entry scores, or the sum of listed minutes converted to hours. Each rated entry has equal weight in the median. This is not an IMDb score for the whole arc or a vote-weighted aggregate.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_7013e900a8b1": {
@@ -5495,9 +4797,8 @@
   },
   "text_7019510234aa": {
     "source": "Holmes' Revelation (0 is Start)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[119].title"
     ]
   },
@@ -5510,9 +4811,8 @@
   },
   "text_706069c02fcd": {
     "source": "Picking Wild Plants and Clovers (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[226].title"
     ]
   },
@@ -5532,10 +4832,16 @@
   },
   "text_70dd33f13a23": {
     "source": "Metropolitan Police Detective Love Story 4 (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[30].title"
+    ]
+  },
+  "text_70e5c0fd0ccc": {
+    "source": "Selected entry",
+    "kind": "aria-label",
+    "references": [
+      "index.html"
     ]
   },
   "text_7109060ceafa": {
@@ -5547,9 +4853,8 @@
   },
   "text_711f74e602b0": {
     "source": "The Truth Behind Valentine's (The Case)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[33].title"
     ]
   },
@@ -5583,9 +4888,8 @@
   },
   "text_7175b03373a2": {
     "source": "SETUP",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "guide.html",
       "assets/app.js:81",
       "assets/app.js:111",
       "episodes.episodes[13].priority",
@@ -5632,20 +4936,6 @@
       "selected.arc === 9 ? 'disabled' : ''"
     ]
   },
-  "text_71b5af642479": {
-    "source": "9. Latest cases",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_71cbb7ac1841": {
-    "source": "listed minutes",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:56"
-    ]
-  },
   "text_724e7f7d4d38": {
     "source": "June 28, 2014",
     "kind": "catalog content",
@@ -5658,14 +4948,13 @@
     "kind": "text",
     "references": [
       "index.html",
-      "guide.html"
+      "assets/analytics.js:167"
     ]
   },
   "text_729b09db2af6": {
     "source": "Kid vs. Komei: The Targeted Lips (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[221].title"
     ]
   },
@@ -5673,11 +4962,18 @@
     "source": "Arc {0}: {1}",
     "kind": "template",
     "references": [
-      "assets/graph.js:88"
+      "assets/graph.js:99"
     ],
     "variables": [
       "n.arc",
       "arcName(n.arc)"
+    ]
+  },
+  "text_72dfcfb0c470": {
+    "source": "L",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:65"
     ]
   },
   "text_72fb4f900129": {
@@ -5690,22 +4986,6 @@
       "escape(movie.officialUrl)",
       "external",
       "escape(movie.title)"
-    ]
-  },
-  "text_72ff1c5fb7be": {
-    "source": "Guide pages",
-    "kind": "aria-label",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_73343df61cc2": {
-    "source": "3. Vermouth",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_7346400d95b5": {
@@ -5748,22 +5028,10 @@
       "assets/analytics-core.js:6"
     ]
   },
-  "text_73d0e543ccce": {
-    "source": "{0} Color identifies {1}; dots above bars mark watched entries. Equal spacing represents entry order, not elapsed time.",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:58"
-    ],
-    "variables": [
-      "metric==='rating'?'Rating axis starts at zero. Outlined bars indicate missing scores.':'Durations are source listings, not exact streaming playback times.'",
-      "scope==='episodes'?'arc':'category'"
-    ]
-  },
   "text_73dc4038506a": {
     "source": "Won't Forgive Even One Millimeter (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[137].title"
     ]
   },
@@ -5772,20 +5040,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[97].imdb.title"
-    ]
-  },
-  "text_74e44c8fb24d": {
-    "source": "IMDb scores",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_74f5729382e8": {
-    "source": "Your viewing budget",
-    "kind": "text",
-    "references": [
-      "index.html"
     ]
   },
   "text_74f74251bd95": {
@@ -5802,26 +5056,11 @@
       "episodes.episodes[164].airDate"
     ]
   },
-  "text_7562db4872b4": {
-    "source": "Title / source",
-    "kind": "text",
+  "text_75dd02564875": {
+    "source": ", unwatched only",
+    "kind": "literal",
     "references": [
-      "guide.html",
-      "movie-guide.html"
-    ]
-  },
-  "text_75a00fa7761b": {
-    "source": "All entries",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_75cd00571110": {
-    "source": "sum the listed minutes for unwatched entries in the filters, divide by daily minutes, and round up. This assumes the budget can be split across entries. Unknown durations are omitted and explicitly flagged. Film and episode progress are separate and saved on your device.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
+      "assets/analytics.js:157"
     ]
   },
   "text_7681fa018267": {
@@ -5833,17 +5072,15 @@
   },
   "text_7717f44a2aad": {
     "source": "The Secret Rushed Omission (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[38].title"
     ]
   },
   "text_773ed680f32c": {
     "source": "The Scarlet School Trip (Red Love Arc) (1 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[210].title"
     ]
   },
@@ -5857,19 +5094,18 @@
       "watched.size"
     ]
   },
-  "text_7781149bf7c5": {
-    "source": "The Tokyo-Style Detective Show Next Door (Part 2)",
-    "kind": "text",
+  "text_7773db01aeed": {
+    "source": "All caught up",
+    "kind": "literal",
     "references": [
-      "guide.html",
-      "episodes.episodes[204].title"
+      "assets/analytics.js:141"
     ]
   },
-  "text_789a6e88fabc": {
-    "source": "XerBlade",
-    "kind": "text",
+  "text_7781149bf7c5": {
+    "source": "The Tokyo-Style Detective Show Next Door (Part 2)",
+    "kind": "catalog content",
     "references": [
-      "guide.html"
+      "episodes.episodes[204].title"
     ]
   },
   "text_78ed8cfa90b3": {
@@ -5877,6 +5113,13 @@
     "kind": "literal",
     "references": [
       "assets/movies.js:19"
+    ]
+  },
+  "text_797ca3374214": {
+    "source": "60 min a day",
+    "kind": "text",
+    "references": [
+      "index.html"
     ]
   },
   "text_79825482c388": {
@@ -5893,13 +5136,6 @@
       "episodes.episodes[238].airDate"
     ]
   },
-  "text_79b721c359e1": {
-    "source": "100+ votes",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_7a347d7d2230": {
     "source": "Detective Conan: Strategy Above the Depths",
     "kind": "catalog content",
@@ -5909,17 +5145,15 @@
   },
   "text_7a42c7aa88e0": {
     "source": "The Shadow of the Black Organization (Shining Star of Pearl)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[79].title"
     ]
   },
   "text_7a6426083af3": {
     "source": "The Black Organization: One Billion Yen Robbery Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[11].title"
     ]
   },
@@ -5970,9 +5204,8 @@
   },
   "text_7aef1815ef0a": {
     "source": "Makoto Kyogoku the Understudy (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[222].title"
     ]
   },
@@ -6006,9 +5239,8 @@
   },
   "text_7bcb4a3cf9e6": {
     "source": "Clash of Red and Black (Invasion)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[87].title"
     ]
   },
@@ -6023,7 +5255,7 @@
     "source": "Metadata source",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_7be95d6650ab": {
@@ -6037,21 +5269,14 @@
     "source": "Japanese release",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_7c38b20c25e4": {
     "source": "Broadcast listing",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:32"
-    ]
-  },
-  "text_7c6066fe9991": {
-    "source": "corroborates the main film titles, including the 2026 release,",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
+      "assets/analytics-core.js:35"
     ]
   },
   "text_7cab6e872672": {
@@ -6061,37 +5286,11 @@
       "episodes.episodes[142].imdb.title"
     ]
   },
-  "text_7d75d95c525c": {
-    "source": "THE BIG PICTURE",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_7d89e79c3b11": {
-    "source": "Open Analytics",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_7d8aa110bc8c": {
     "source": "SawabS on GitHub",
     "kind": "aria-label",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_7d94537640ae": {
-    "source": "Skip to guide",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_7db4c327510b": {
@@ -6134,7 +5333,7 @@
     "kind": "literal",
     "references": [
       "assets/app.js:22",
-      "assets/app.js:271",
+      "assets/app.js:272",
       "assets/movies.js:10"
     ]
   },
@@ -6143,7 +5342,7 @@
     "kind": "text",
     "references": [
       "index.html",
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_7e8cfc6a5484": {
@@ -6160,34 +5359,37 @@
       "episodes.episodes[13].airDate"
     ]
   },
-  "text_7ebcc0f4e038": {
-    "source": "2. Haibara",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_7f9ff74d5e61": {
     "source": "Contact with the Black Organization (Desperation)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[55].title"
     ]
   },
   "text_7fbc233b3817": {
     "source": "The Crimson Love Letter",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[20].title"
+    ]
+  },
+  "text_7fbd933ca32c": {
+    "source": "{0} has a median of {1}, ranging from {2} to {3}.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:112"
+    ],
+    "variables": [
+      "groupName(focus)",
+      "score(focused.median)",
+      "score(focused.min)",
+      "score(focused.max)"
     ]
   },
   "text_7fc2d61c4894": {
     "source": "Holmes' Revelation (Grass Court Queen)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[118].title"
     ]
   },
@@ -6203,6 +5405,20 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[207].imdb.title"
+    ]
+  },
+  "text_8094774bf3b7": {
+    "source": "Each dot is one {0}, in {1} order. The line is the rolling median of {2} {3}. The axis starts at {4}, so small differences stay visible.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:114"
+    ],
+    "variables": [
+      "w.one",
+      "scope === 'episodes' ? 'story' : 'release'",
+      "trendWindow()",
+      "w.many",
+      "lo"
     ]
   },
   "text_80adc17f4177": {
@@ -6222,7 +5438,7 @@
     "source": ".overview-date strong",
     "kind": "literal",
     "references": [
-      "assets/app.js:271"
+      "assets/app.js:272"
     ]
   },
   "text_80d1ffe697f4": {
@@ -6232,23 +5448,27 @@
       "index.html"
     ]
   },
+  "text_80da231c52eb": {
+    "source": "{4} · {5} votes",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:132"
+    ],
+    "variables": [
+      "r.id",
+      "r.id === selectedId",
+      "i+1",
+      "esc(title(r))",
+      "esc(r.label)",
+      "fmt(r.votes)",
+      "score(r.rating)"
+    ]
+  },
   "text_81033ad744f4": {
     "source": "Revisit",
     "kind": "literal",
     "references": [
       "assets/graph.js:67"
-    ]
-  },
-  "text_8141dc6b5dd4": {
-    "source": "{2} selected releases",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:88"
-    ],
-    "variables": [
-      "busiest.year",
-      "busiest.year",
-      "busiest.count"
     ]
   },
   "text_818c75910ad4": {
@@ -6272,19 +5492,18 @@
       "episodes.episodes[112].imdb.title"
     ]
   },
+  "text_81fedc79bf61": {
+    "source": "Japanese release year",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:65"
+    ]
+  },
   "text_822b2ae4542b": {
     "source": "Find",
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_82503f37536f": {
-    "source": "Episode data",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "methodology.html"
     ]
   },
   "text_826db569161a": {
@@ -6303,10 +5522,19 @@
   },
   "text_828b79d739b6": {
     "source": "The Unfriendly Girls Band (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[187].title"
+    ]
+  },
+  "text_82ada151fdcf": {
+    "source": "· {0} without a duration",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:143"
+    ],
+    "variables": [
+      "s.missingRemaining"
     ]
   },
   "text_8314a21b6d53": {
@@ -6328,20 +5556,6 @@
       "data.arcs.map(a => `<button data-card-arc=\"${a.id}\" data-arc-color=\"${a.id}\">${esc(arcName(a.id))}<span>${data.episodes.filter(e => e.arc === a.id).length}</span></button>`).join('')"
     ]
   },
-  "text_832b80e480b5": {
-    "source": "One bar. One case.",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_83943456593b": {
-    "source": "The initial mapping used Japanese episode order and matching broadcast dates for 254 entries. Episode 13 was matched by order and exact title: TVmaze lists 1 April 1996, while the episode source lists 22 April 1996. The guide retains the episode source's release date. Each record stores",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_83a09ce637ba": {
     "source": "February 4, 2023",
     "kind": "catalog content",
@@ -6361,15 +5575,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[198].airDate"
-    ]
-  },
-  "text_83f9722d9bb2": {
-    "source": "Episodes",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_840bcea45d6d": {
@@ -6400,36 +5605,11 @@
       "episodes.episodes[154].airDate"
     ]
   },
-  "text_8471a9d3f8f5": {
-    "source": "Reading the charts",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_84b985056ab5": {
     "source": "The Truth Behind Valentine's (The Deduction)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[34].title"
-    ]
-  },
-  "text_853d95208559": {
-    "source": "Compare the arcs",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "assets/analytics.js:62"
-    ]
-  },
-  "text_855ed65a0c0b": {
-    "source": "SawabS",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_85664b430737": {
@@ -6443,29 +5623,21 @@
     "source": "Conan Edogawa above a coastal city under a bright blue sky",
     "kind": "literal",
     "references": [
-      "assets/presentation.js:53"
+      "assets/presentation.js:54"
     ]
   },
   "text_859c83ca5554": {
     "source": "The Bride of Halloween",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[24].title"
-    ]
-  },
-  "text_85a2bd73537c": {
-    "source": "5. Bourbon: arrival",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_85a39ab345d6": {
     "source": "Yes",
     "kind": "literal",
     "references": [
-      "assets/analytics.js:89"
+      "assets/analytics.js:168"
     ]
   },
   "text_85afe0c0c468": {
@@ -6484,9 +5656,8 @@
   },
   "text_86465009909d": {
     "source": "Clash of Red and Black (Innocence)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[93].title"
     ]
   },
@@ -6506,9 +5677,8 @@
   },
   "text_86b8b1e8c205": {
     "source": "The Tragedy of the Red Woman (Steam)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[163].title"
     ]
   },
@@ -6533,26 +5703,29 @@
       "episodes.episodes[237].airDate"
     ]
   },
+  "text_87c6cd0af8dc": {
+    "source": "{0} of {1} {2} watched",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:138"
+    ],
+    "variables": [
+      "s.watched",
+      "s.count",
+      "w.many"
+    ]
+  },
   "text_888bd6af63cd": {
     "source": "No verified IMDb entry",
     "kind": "text",
     "references": [
-      "assets/analytics.js:43"
-    ]
-  },
-  "text_8894cf30aed0": {
-    "source": "Seen",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html"
+      "assets/analytics.js:107"
     ]
   },
   "text_88a3f242daa9": {
     "source": "The Man from Chicago (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[32].title"
     ]
   },
@@ -6561,13 +5734,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[79].airDate"
-    ]
-  },
-  "text_894080173f28": {
-    "source": "CSV exports contain the filtered values, duration basis, rating check date, watched status, and source URLs. Hidden titles stay hidden in exports. Historical selection corrections remain in",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_894ac095a3d3": {
@@ -6595,32 +5761,11 @@
       "external"
     ]
   },
-  "text_89648663ac8f": {
-    "source": "prerequisite. Mark ☐ as ☑ in your copy, or use the interactive watchlist for automatic progress saving.",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_89976e9e09b2": {
-    "source": "for corrections.",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_89a4f22473aa": {
     "source": "The Treasure Chest Filled with Fruits: Part 2",
     "kind": "catalog content",
     "references": [
       "episodes.episodes[156].imdb.title"
-    ]
-  },
-  "text_89a793b61b42": {
-    "source": "CC BY-SA",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_8a25aa983510": {
@@ -6635,7 +5780,6 @@
     "kind": "text",
     "references": [
       "index.html",
-      "movie-guide.html",
       "movies.movies[32].title",
       "movies.movies[32].imdb.title"
     ]
@@ -6645,13 +5789,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[165].imdb.title"
-    ]
-  },
-  "text_8a64a754a759": {
-    "source": "supplies film categories and Japanese release dates. Individual source links are retained on every record. Release dates are treated as calendar dates, without timezone conversion.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_8aaa52e08216": {
@@ -6677,17 +5814,9 @@
   },
   "text_8af2d1603e03": {
     "source": "Festival Dolls Dyed in the Setting Sun (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[57].title"
-    ]
-  },
-  "text_8bad3a8b6bfa": {
-    "source": "supplies Japanese titles, original broadcasts, and case references.",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_8bd436ba218b": {
@@ -6706,17 +5835,15 @@
   },
   "text_8c06ed14d576": {
     "source": "Two People Who Can't Return (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[75].title"
     ]
   },
   "text_8c281f916756": {
     "source": "Crossover",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "movie-guide.html",
       "assets/movies.js:7",
       "assets/analytics-core.js:6"
     ]
@@ -6732,21 +5859,7 @@
     "source": "May",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
-    ]
-  },
-  "text_8caf228d2e9f": {
-    "source": "counts of selected entries by original Japanese release year. Years with zero releases remain visible. It does not measure the full show's production output.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_8ce5ad5b7e44": {
-    "source": "6 to <7",
-    "kind": "text",
-    "references": [
-      "index.html"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_8d51751057e5": {
@@ -6763,17 +5876,6 @@
       "episodes.episodes[31].airDate"
     ]
   },
-  "text_8d8154fc90e2": {
-    "source": "{0} total {1}",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:85"
-    ],
-    "variables": [
-      "full",
-      "scope==='episodes'?'episodes':'films'"
-    ]
-  },
   "text_8db0f8191035": {
     "source": "February 24, 1997",
     "kind": "catalog content",
@@ -6781,40 +5883,26 @@
       "episodes.episodes[6].airDate"
     ]
   },
-  "text_8db613e6c7b0": {
-    "source": "provides numbering, categories, original release dates, and runtimes. Each row links to its individual film entry. Film 29 uses its linked IMDb runtime. The",
-    "kind": "text",
+  "text_8e1e612e3560": {
+    "source": "Every {0} in this view is watched.",
+    "kind": "template",
     "references": [
-      "movie-guide.html"
-    ]
-  },
-  "text_8dd65d0952ed": {
-    "source": "Guide",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_8de0b3c47f11": {
-    "source": "S",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:15"
+      "assets/analytics.js:142"
+    ],
+    "variables": [
+      "w.one"
     ]
   },
   "text_8e2f7ffbbdb9": {
     "source": "ArrowRight",
     "kind": "literal",
     "references": [
-      "assets/app.js:248",
-      "assets/app.js:252",
-      "assets/graph.js:114",
-      "assets/graph.js:116",
-      "assets/analytics.js:107",
-      "assets/analytics.js:108"
+      "assets/app.js:249",
+      "assets/app.js:253",
+      "assets/graph.js:126",
+      "assets/graph.js:128",
+      "assets/analytics.js:189",
+      "assets/analytics.js:193"
     ]
   },
   "text_8e45a0494137": {
@@ -6833,9 +5921,8 @@
   },
   "text_8e9e73821fe6": {
     "source": "The Blind Spot in the Darkness (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[13].title"
     ]
   },
@@ -6872,18 +5959,10 @@
   },
   "text_8f44716fe146": {
     "source": "Deduction Showdown! Shinichi vs. Subaru Okiya",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[100].title",
       "episodes.episodes[100].imdb.title"
-    ]
-  },
-  "text_8f635d9334c8": {
-    "source": "Export filtered CSV ↗",
-    "kind": "text",
-    "references": [
-      "index.html"
     ]
   },
   "text_8f741c4c12ac": {
@@ -6911,7 +5990,7 @@
     "source": "December",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_8fb49ecf5018": {
@@ -6925,7 +6004,7 @@
     "source": "#sources-dialog h2 + p",
     "kind": "literal",
     "references": [
-      "assets/app.js:269"
+      "assets/app.js:270"
     ]
   },
   "text_9043ab36f3af": {
@@ -6937,9 +6016,8 @@
   },
   "text_9094ef58e0d8": {
     "source": "Diplomat Murder Case (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[5].title"
     ]
   },
@@ -6971,13 +6049,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[140].airDate"
-    ]
-  },
-  "text_91d126e3aa9b": {
-    "source": "Episode / film number or year",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:80"
     ]
   },
   "text_924195b71025": {
@@ -7036,17 +6107,15 @@
   },
   "text_935653c157a2": {
     "source": "The Treasure Chest Filled with Fruits (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[155].title"
     ]
   },
   "text_93804a4104ee": {
     "source": "Jodie's Memories and the Cherry Blossom Viewing Trap (1 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[160].title"
     ]
   },
@@ -7057,25 +6126,11 @@
       "episodes.episodes[186].imdb.title"
     ]
   },
-  "text_941de4447b2e": {
-    "source": "Movie",
+  "text_9449d8ea6f6b": {
+    "source": "is-muted",
     "kind": "literal",
     "references": [
-      "assets/analytics.js:43"
-    ]
-  },
-  "text_942ce93dc1e6": {
-    "source": "1. Origins",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_944501cfb9ec": {
-    "source": "Sources and ratings",
-    "kind": "text",
-    "references": [
-      "guide.html"
+      "assets/analytics.js:57"
     ]
   },
   "text_945645725112": {
@@ -7087,9 +6142,8 @@
   },
   "text_9459d1558f8c": {
     "source": "The Scarlet Intersection",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[172].title"
     ]
   },
@@ -7107,36 +6161,24 @@
       "movies.movies[18].imdb.title"
     ]
   },
-  "text_94b6a50df17a": {
-    "source": "Selected entries by original Japanese release year, including zero-release years. Select a year to filter. This is not the complete TV series.",
+  "text_94c116ee118a": {
+    "source": "Analytics",
     "kind": "text",
     "references": [
       "index.html"
     ]
   },
-  "text_94c116ee118a": {
-    "source": "Analytics",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
   "text_955f1fd28d83": {
     "source": "The Desperate Revival - The Promised Place",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[23].title"
     ]
   },
   "text_9567569db290": {
     "source": "Detectives' Nocturne (Bourbon)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[135].title"
     ]
   },
@@ -7151,15 +6193,13 @@
     "source": "Listed min",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html"
+      "index.html"
     ]
   },
   "text_95f3343f4db1": {
     "source": "The Mystery Sinking in the Midsummer Pool (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[177].title"
     ]
   },
@@ -7181,28 +6221,17 @@
     "source": "ArrowDown",
     "kind": "literal",
     "references": [
-      "assets/graph.js:114",
-      "assets/graph.js:116",
+      "assets/graph.js:126",
+      "assets/graph.js:128",
       "assets/language.js:59",
       "assets/language.js:61"
     ]
   },
   "text_96b2315fc0f5": {
     "source": "Clash of Red and Black (Exclamation)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[84].title"
-    ]
-  },
-  "text_96d15cf84b61": {
-    "source": "{0} min",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:74"
-    ],
-    "variables": [
-      "minutes"
     ]
   },
   "text_96dc5d117e93": {
@@ -7252,10 +6281,16 @@
   },
   "text_97358d3b2676": {
     "source": "The New Teacher's Skeleton Case (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[202].title"
+    ]
+  },
+  "text_9742d4c086d5": {
+    "source": "No IMDb score",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:89"
     ]
   },
   "text_9770d91b9fa7": {
@@ -7286,26 +6321,10 @@
       "episodes.episodes[156].airDate"
     ]
   },
-  "text_9808bc4a6c04": {
-    "source": "Analytics methodology",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html"
-    ]
-  },
-  "text_98773a2bd64b": {
-    "source": "broadcast listings",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:85"
-    ]
-  },
   "text_9959a526e052": {
     "source": "The Four Porsches (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[60].title"
     ]
   },
@@ -7318,9 +6337,8 @@
   },
   "text_9a0073f6e594": {
     "source": "Holmes' Revelation (Code Break)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[117].title"
     ]
   },
@@ -7333,54 +6351,16 @@
   },
   "text_9a693369168f": {
     "source": "The Blind Spot in the Dressing Room (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[197].title"
-    ]
-  },
-  "text_9aada18cb7d9": {
-    "source": "Longest listed duration",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:88"
-    ],
-    "variables": [
-      "s.longest.id",
-      "s.longest.runtime",
-      "esc(title(s.longest))"
-    ]
-  },
-  "text_9ad00aceb6de": {
-    "source": "Rating checked {15}.",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:43"
-    ],
-    "variables": [
-      "esc(r.label)",
-      "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
-      "r.release",
-      "score(r.rating)",
-      "fmt(r.votes)",
-      "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
-      "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
     ]
   },
   "text_9b5945c0978d": {
     "source": ".topbar, .view-tabs, .language-card",
     "kind": "literal",
     "references": [
-      "assets/presentation.js:22"
+      "assets/presentation.js:23"
     ]
   },
   "text_9b73a385f5c0": {
@@ -7404,23 +6384,10 @@
       "episodes.episodes[194].imdb.title"
     ]
   },
-  "text_9c1a81638f43": {
-    "source": "Busiest release year",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:88"
-    ],
-    "variables": [
-      "busiest.year",
-      "busiest.year",
-      "busiest.count"
-    ]
-  },
   "text_9c5a31c4e1bb": {
     "source": "Game Company Murder Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[8].title"
     ]
   },
@@ -7447,9 +6414,8 @@
   },
   "text_9cb34f2d33fe": {
     "source": "The Case of the Besieged Detective Agency (Release)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[126].title"
     ]
   },
@@ -7467,23 +6433,10 @@
       "episodes.episodes[40].airDate"
     ]
   },
-  "text_9d3eb14d6095": {
-    "source": "Ratings checked {0}. {1} scores and {2} duration listings available in this filtered view. Missing values are never treated as zero ratings.",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:90"
-    ],
-    "variables": [
-      "scope==='episodes'?window.CONAN_DATA.updated:window.CONAN_MOVIES.ratingsUpdated",
-      "s.rated",
-      "s.runtimeCount"
-    ]
-  },
   "text_9d8c7f604342": {
     "source": "Yoko Okino and the Locked Attic (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[236].title"
     ]
   },
@@ -7491,7 +6444,7 @@
     "source": "March",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_9daa93aff79f": {
@@ -7510,7 +6463,7 @@
     "source": "November",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_9df609548dde": {
@@ -7556,9 +6509,8 @@
   },
   "text_9e54acc77115": {
     "source": "Ramen So Good, It's to Die For 2 (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[184].title"
     ]
   },
@@ -7571,9 +6523,8 @@
   },
   "text_9eabf8e289ec": {
     "source": "Main film",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "movie-guide.html",
       "assets/movies.js:7"
     ]
   },
@@ -7596,9 +6547,8 @@
   },
   "text_9f38f42cb863": {
     "source": "The Target is the Metropolitan Police Traffic Department (3)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[218].title"
     ]
   },
@@ -7609,25 +6559,10 @@
       "index.html"
     ]
   },
-  "text_9f61dd13be88": {
-    "source": "TMS official catalog",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
-  "text_9f6be7ba9972": {
-    "source": "records each IMDb ID, IMDb title and numbering, mapping method, vote count, check date, runtime, duration source, and mapping audit trail.",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_9f99c337e800": {
     "source": "The Truth Behind Valentine's (The Resolution)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[35].title"
     ]
   },
@@ -7638,29 +6573,11 @@
       "episodes.episodes[44].imdb.title"
     ]
   },
-  "text_9ff318166f7a": {
-    "source": "{0} / {1} rated · equal entry weight",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:85"
-    ],
-    "variables": [
-      "s.rated",
-      "s.count"
-    ]
-  },
   "text_a00b81777985": {
     "source": "February 16, 2009",
     "kind": "catalog content",
     "references": [
       "episodes.episodes[105].airDate"
-    ]
-  },
-  "text_a01bcb498e35": {
-    "source": "Interactive movie library",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
     ]
   },
   "text_a06863788605": {
@@ -7672,13 +6589,6 @@
   },
   "text_a08120b9a1f9": {
     "source": "FILE 001 / THE INVESTIGATION BEGINS",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_a0a74097ecad": {
-    "source": "Listed duration (min)",
     "kind": "text",
     "references": [
       "index.html"
@@ -7707,32 +6617,9 @@
   },
   "text_a0c0ce54d40d": {
     "source": "Makoto Kyogoku the Understudy (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[223].title"
-    ]
-  },
-  "text_a0cb07c1143b": {
-    "source": "Group comparisons:",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_a0daef01ab98": {
-    "source": "not available",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:43"
-    ]
-  },
-  "text_a0f095106500": {
-    "source": "All years",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "assets/analytics.js:27"
     ]
   },
   "text_a0fb3cf3f398": {
@@ -7742,13 +6629,6 @@
       "episodes.episodes[179].airDate"
     ]
   },
-  "text_a14302f68b5b": {
-    "source": "1,000+ votes",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_a14746aa02d9": {
     "source": "(prefers-color-scheme: light)",
     "kind": "literal",
@@ -7756,11 +6636,20 @@
       "assets/presentation.js:5"
     ]
   },
+  "text_a15cd32af632": {
+    "source": "Strongest {0}",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:160"
+    ],
+    "variables": [
+      "w.group"
+    ]
+  },
   "text_a16eda586ef7": {
     "source": "The Birthday Party of Divine Punishment (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[233].title"
     ]
   },
@@ -7768,20 +6657,10 @@
     "source": "3D short {0}",
     "kind": "template",
     "references": [
-      "assets/analytics-core.js:26"
+      "assets/analytics-core.js:29"
     ],
     "variables": [
       "item.id.split('-').at(-1)"
-    ]
-  },
-  "text_a1e76e05c04b": {
-    "source": "CKB",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_a220a7c1090b": {
@@ -7800,9 +6679,8 @@
   },
   "text_a297133aeb2d": {
     "source": "The Desperate Revival - The Wounded Great Detective",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[19].title"
     ]
   },
@@ -7820,13 +6698,6 @@
       "episodes.episodes[29].imdb.title"
     ]
   },
-  "text_a3250646200b": {
-    "source": "imdb.runtimeMinutes",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_a33f082ab1f3": {
     "source": "reviewed title variant and year; excludes 2025 rerun",
     "kind": "catalog content",
@@ -7836,9 +6707,8 @@
   },
   "text_a37f2b446a21": {
     "source": "The Black Organization's Scheme (Identity)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[242].title",
       "episodes.episodes[242].imdb.title"
     ]
@@ -7857,14 +6727,6 @@
       "index.html"
     ]
   },
-  "text_a3fc83610a49": {
-    "source": "Detective Conan World",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "methodology.html"
-    ]
-  },
   "text_a4148f5544ae": {
     "source": "January 26, 2009",
     "kind": "catalog content",
@@ -7881,17 +6743,15 @@
   },
   "text_a467d1acd398": {
     "source": "Detectives' Nocturne (Deduction)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[134].title"
     ]
   },
   "text_a480445b54da": {
     "source": "Chinatown Deja Vu in the Rain (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[45].title"
     ]
   },
@@ -7900,13 +6760,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[75].imdb.title"
-    ]
-  },
-  "text_a52ace420f21": {
-    "source": "All",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:26"
     ]
   },
   "text_a543c11745fd": {
@@ -7918,17 +6771,15 @@
   },
   "text_a5716b540371": {
     "source": "The Scarlet Return",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[173].title"
     ]
   },
   "text_a57acbc3bb88": {
     "source": "Fallen Angel of the Highway",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[28].title"
     ]
   },
@@ -7969,7 +6820,7 @@
     "source": "Ratings checked {0}. Titles and linked sources may reveal story details.",
     "kind": "template",
     "references": [
-      "assets/app.js:272"
+      "assets/app.js:273"
     ],
     "variables": [
       "snapshotDate"
@@ -7977,9 +6828,8 @@
   },
   "text_a5fa50931618": {
     "source": "The Case of the Besieged Detective Agency (Sniping)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[125].title"
     ]
   },
@@ -7994,22 +6844,20 @@
     "source": "August",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_a677c5a56e4f": {
     "source": "Magician of the Silver Sky",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[7].title"
     ]
   },
   "text_a6bbb68753c4": {
     "source": "The Unfriendly Girls Band (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[186].title"
     ]
   },
@@ -8024,7 +6872,7 @@
     "source": "IMDb source",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_a7acaf97d5aa": {
@@ -8036,17 +6884,15 @@
   },
   "text_a7ea4dc05117": {
     "source": "Teitan High School's Ghost Story (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[67].title"
     ]
   },
   "text_a8168908e035": {
     "source": "Yoko Okino and the Locked Attic (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[237].title"
     ]
   },
@@ -8074,17 +6920,15 @@
   },
   "text_a867e4df2de1": {
     "source": "The Scarlet Bullet",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[23].title"
     ]
   },
   "text_a869c156b409": {
     "source": "English Teacher vs. Great Western Detective (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[40].title"
     ]
   },
@@ -8102,13 +6946,6 @@
       "episodes.episodes[212].imdb.title"
     ]
   },
-  "text_a8d1d35730a6": {
-    "source": "Select a group to filter. Medians exclude missing ratings; every rated entry has equal weight.",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_a8dbbff502fe": {
     "source": "Movies watched",
     "kind": "aria-label",
@@ -8116,11 +6953,16 @@
       "index.html"
     ]
   },
-  "text_a90e7e92a678": {
-    "source": "All ratings",
-    "kind": "text",
+  "text_a8fbe5ae303c": {
+    "source": "Ranked by IMDb score among {0} with at least {1} votes, the median for all {2}, so a handful of voters cannot top the list. Ties go to more votes. Select one to find it on the chart.",
+    "kind": "template",
     "references": [
-      "index.html"
+      "assets/analytics.js:134"
+    ],
+    "variables": [
+      "w.many",
+      "fmt(minVotes)",
+      "w.many"
     ]
   },
   "text_a91056692c0d": {
@@ -8146,17 +6988,9 @@
   },
   "text_a97584f0c614": {
     "source": "Three First Discoverers (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[179].title"
-    ]
-  },
-  "text_a988dbd83e6d": {
-    "source": "Episode checklist",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_a99cb6fd764c": {
@@ -8223,14 +7057,6 @@
       "episodes.episodes[69].imdb.title"
     ]
   },
-  "text_ab4e4824d86d": {
-    "source": "Median IMDb",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "assets/analytics.js:85"
-    ]
-  },
   "text_ab8f3b74dcb6": {
     "source": "Start a new investigation?",
     "kind": "text",
@@ -8238,19 +7064,15 @@
       "index.html"
     ]
   },
-  "text_abc62b5a405e": {
-    "source": "Main-story episodes, nine arcs",
-    "kind": "text",
+  "text_ac1c50215d6f": {
+    "source": "{0} is the high point, with a median of {1}.",
+    "kind": "template",
     "references": [
-      "methodology.html"
-    ]
-  },
-  "text_abf03767f6e3": {
-    "source": "Movie data",
-    "kind": "text",
-    "references": [
-      "movie-guide.html",
-      "methodology.html"
+      "assets/analytics.js:113"
+    ],
+    "variables": [
+      "groupName(best.id)",
+      "score(best.median)"
     ]
   },
   "text_ac78229d6b82": {
@@ -8262,9 +7084,8 @@
   },
   "text_acf2d9a780d0": {
     "source": "Teitan High School's Ghost Story (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[68].title"
     ]
   },
@@ -8320,26 +7141,17 @@
       "episodes.episodes[178].imdb.title"
     ]
   },
-  "text_adaf6a339216": {
-    "source": "IMDb band",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_adfcaeeb3ec2": {
     "source": "The Wizard of the Ripples (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[199].title"
     ]
   },
   "text_ae681fa120b0": {
     "source": "The Dissonance of the Stradivarius (Prelude)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[69].title"
     ]
   },
@@ -8350,33 +7162,17 @@
       "episodes.episodes[234].airDate"
     ]
   },
-  "text_ae93baf387d9": {
-    "source": "film listings",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:85"
-    ]
-  },
   "text_aed8eb70d4d3": {
     "source": "Deduction Showdown at the Haunted Hotel (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[122].title"
-    ]
-  },
-  "text_af0ecc5dfd26": {
-    "source": "and shared under",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_af3411907d7c": {
     "source": "Akemi Miyano's Time Capsule (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[243].title"
     ]
   },
@@ -8410,34 +7206,16 @@
   },
   "text_b0667cadcc1b": {
     "source": "Conan vs. Heiji, Deduction Battle Between the Detectives of the East and West (1 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[127].title"
-    ]
-  },
-  "text_b073f6c68ef8": {
-    "source": "Scope",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
-  "text_b0e2336bbe22": {
-    "source": "CORE:",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_b16624340a4b": {
     "source": "Switch theme",
     "kind": "title",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_b178498c003d": {
@@ -8479,6 +7257,16 @@
       "external"
     ]
   },
+  "text_b18b0da18114": {
+    "source": "The highest score among rated {0}.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:107"
+    ],
+    "variables": [
+      "w.many"
+    ]
+  },
   "text_b18c57e1b6c5": {
     "source": "March 7, 2015",
     "kind": "catalog content",
@@ -8491,25 +7279,13 @@
     "kind": "text",
     "references": [
       "index.html",
-      "guide.html",
-      "assets/analytics.js:43"
-    ]
-  },
-  "text_b1b7afa76db2": {
-    "source": "AR",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "assets/analytics.js:107"
     ]
   },
   "text_b1c72a3c5cd9": {
     "source": "The Unsolved Cocktail Case (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[214].title"
     ]
   },
@@ -8532,13 +7308,6 @@
       "episodes.episodes[145].airDate"
     ]
   },
-  "text_b20448d996c8": {
-    "source": "to refresh scores and votes for reviewed episode and movie IDs. It does not guess new matches. Review duration changes against the stored TVmaze IDs and individual film sources; update the runtime check date when verified. Run",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_b20c4e0da4b9": {
     "source": "The Suspect, Makoto Kyogoku: Part 2",
     "kind": "catalog content",
@@ -8546,18 +7315,10 @@
       "episodes.episodes[162].imdb.title"
     ]
   },
-  "text_b215dfeb2536": {
-    "source": "View the filtered data table",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_b223d8076d0a": {
     "source": "The Scarlet School Trip (Bright Red Arc) (1 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[209].title"
     ]
   },
@@ -8577,17 +7338,9 @@
   },
   "text_b2911c5848c5": {
     "source": "The Unsolved Cocktail Case (Part 3)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[215].title"
-    ]
-  },
-  "text_b2eb9d9e14df": {
-    "source": "Detective Conan: Main-Story Watch Guide",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_b31f0e6189e1": {
@@ -8622,17 +7375,10 @@
     "source": "Film {0}",
     "kind": "template",
     "references": [
-      "assets/analytics-core.js:26"
+      "assets/analytics-core.js:29"
     ],
     "variables": [
       "String(number).padStart(2,'0')"
-    ]
-  },
-  "text_b3c60aecf72c": {
-    "source": "8. Rum: pursuit",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_b40e56ba5ee4": {
@@ -8644,17 +7390,15 @@
   },
   "text_b41a761ed0ef": {
     "source": "Shinichi's True Face and Ran's Tears (1 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[102].title"
     ]
   },
   "text_b42ed16bd7fb": {
     "source": "Crossroad in the Ancient Capital",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[6].title"
     ]
   },
@@ -8665,13 +7409,6 @@
       "episodes.episodes[74].airDate"
     ]
   },
-  "text_b49d20ed27fc": {
-    "source": "Distinct entries",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_b4ac8aefd166": {
     "source": "Secret of the Touto Film Developer Place: Part 1",
     "kind": "catalog content",
@@ -8679,18 +7416,10 @@
       "episodes.episodes[58].imdb.title"
     ]
   },
-  "text_b51f3932400d": {
-    "source": "provide ratings and votes for 33 verified film matches. Two 3D shorts have no verified IMDb match. Scores change over time.",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_b5a3e9e42da0": {
     "source": "Hooligan's Labyrinth (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[42].title"
     ]
   },
@@ -8703,9 +7432,8 @@
   },
   "text_b5c32c5d6c59": {
     "source": "The Blue Spark of Hate (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[105].title"
     ]
   },
@@ -8714,20 +7442,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[164].imdb.title"
-    ]
-  },
-  "text_b5ed6fcfc66f": {
-    "source": "Select a bar for its card. Use arrow keys between bars. Scroll sideways for every entry.",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_b63f1f48f79d": {
-    "source": "60 min",
-    "kind": "text",
-    "references": [
-      "index.html"
     ]
   },
   "text_b6543586d16e": {
@@ -8739,17 +7453,15 @@
   },
   "text_b6de5f98f847": {
     "source": "The Jet-Black Mystery Train (Tunnel)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[148].title"
     ]
   },
   "text_b6f824d3b35a": {
     "source": "The Suggestion of Black Thirteen",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[111].title"
     ]
   },
@@ -8760,18 +7472,11 @@
       "episodes.episodes[135].airDate"
     ]
   },
-  "text_b7e94d468663": {
-    "source": "Listed minutes come from",
+  "text_b7eddfd5e47f": {
+    "source": "Unwatched only",
     "kind": "text",
     "references": [
-      "guide.html"
-    ]
-  },
-  "text_b813082177fb": {
-    "source": "Episode time is a broadcast-duration listing, not exact streaming playback.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_b838529b512c": {
@@ -8826,9 +7531,8 @@
   },
   "text_b85970c1e81d": {
     "source": "The Suspect is Makoto Kyogoku (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[162].title"
     ]
   },
@@ -8862,31 +7566,23 @@
   },
   "text_b941ee103c62": {
     "source": "Holmes Freak Murder Case (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[10].title"
-    ]
-  },
-  "text_b972805a5672": {
-    "source": "Title, episode / film number, or year",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:80"
     ]
   },
   "text_b9c0605869ed": {
     "source": "Rating checked",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_b9cde8c28712": {
     "source": "IMDb votes",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_ba0e9c07ce58": {
@@ -8900,10 +7596,7 @@
     "source": "English",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_ba249fbdc3b9": {
@@ -8913,45 +7606,10 @@
       "episodes.episodes[62].airDate"
     ]
   },
-  "text_ba64d5a855e4": {
-    "source": "· Unofficial Detective Conan fan project.",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_ba65dfa90f00": {
-    "source": "Duration source ↗",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:43"
-    ],
-    "variables": [
-      "esc(r.label)",
-      "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
-      "r.release",
-      "score(r.rating)",
-      "fmt(r.votes)",
-      "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
-      "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
-    ]
-  },
   "text_ba9467b2de7c": {
     "source": "The Life-Threatening Broadcast of Love (Desperate Situation)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[139].title"
     ]
   },
@@ -8959,10 +7617,7 @@
     "source": "CASEBOOK",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_bb11277c8bba": {
@@ -8975,6 +7630,16 @@
       "data.episodes.length",
       "watched.size",
       "data.arcs.map(a => `<button data-card-arc=\"${a.id}\" data-arc-color=\"${a.id}\">${esc(arcName(a.id))}<span>${data.episodes.filter(e => e.arc === a.id).length}</span></button>`).join('')"
+    ]
+  },
+  "text_bb1eea06f0a3": {
+    "source": "Other {0}",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:116"
+    ],
+    "variables": [
+      "w.groups"
     ]
   },
   "text_bb47999b3b5d": {
@@ -9000,9 +7665,8 @@
   },
   "text_bb99fee89f46": {
     "source": "The Shadow Approaching Haibara's Secret (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[146].title"
     ]
   },
@@ -9017,17 +7681,28 @@
     "source": "Choose language",
     "kind": "aria-label",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
+    ]
+  },
+  "text_bbca12383156": {
+    "source": "{0} of {1} {2}{3}{4} · {5} watched. Every total, list, and table below follows this view.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:157"
+    ],
+    "variables": [
+      "s.count",
+      "all.length",
+      "w.many",
+      "focus !== 'all' ? ` in ${groupName(focus)}` : ''",
+      "unwatchedOnly ? ', unwatched only' : ''",
+      "s.watched"
     ]
   },
   "text_bbd175325f5b": {
     "source": "The Hotel Serial Bombing Case (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[248].title"
     ]
   },
@@ -9045,11 +7720,11 @@
       "episodes.episodes[223].airDate"
     ]
   },
-  "text_bc2909fabcf7": {
-    "source": "8 to <9",
-    "kind": "text",
+  "text_bc63eca6da4d": {
+    "source": "· Watched",
+    "kind": "literal",
     "references": [
-      "index.html"
+      "assets/analytics.js:89"
     ]
   },
   "text_bc6ad0ac4a29": {
@@ -9107,33 +7782,19 @@
       "next ? '' : 'disabled'"
     ]
   },
-  "text_bcf8de76f3bc": {
-    "source": "Selected analytics entry",
-    "kind": "aria-label",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_bd300aec8d80": {
     "source": "Conan Edogawa standing above the city under a full moon",
     "kind": "alt",
     "references": [
       "index.html",
-      "assets/presentation.js:53"
-    ]
-  },
-  "text_bd335af7fb2b": {
-    "source": "highest available score, longest listed duration, and busiest release year within the filters. Score ties use vote count; release-year ties use the earliest year. These are descriptive findings, not quality rankings independent of IMDb voters.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
+      "assets/presentation.js:54"
     ]
   },
   "text_bd461f14f8e3": {
     "source": "#graph-card button",
     "kind": "literal",
     "references": [
-      "assets/graph.js:76"
+      "assets/graph.js:87"
     ]
   },
   "text_bd5cc0838600": {
@@ -9159,25 +7820,22 @@
   },
   "text_bdc4d3593597": {
     "source": "Search for Maria-chan! (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[212].title"
     ]
   },
   "text_be08ee837630": {
     "source": "The Wizard of the Ripples (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[200].title"
     ]
   },
   "text_be1bb72901cd": {
     "source": "The Secret Rushed Omission (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[39].title"
     ]
   },
@@ -9200,13 +7858,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_bf81c7425f76": {
-    "source": ". Adaptations by",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_c006f1d86b61": {
@@ -9232,9 +7883,8 @@
   },
   "text_c05526769266": {
     "source": "The Eleventh Striker",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[15].title"
     ]
   },
@@ -9247,17 +7897,26 @@
   },
   "text_c0a4bf616374": {
     "source": "Yusaku Kudo's Detective Show (Part 1)",
+    "kind": "catalog content",
+    "references": [
+      "episodes.episodes[238].title"
+    ]
+  },
+  "text_c0b73ccaece5": {
+    "source": "No {0} in this view have {1} or more votes yet.",
     "kind": "text",
     "references": [
-      "guide.html",
-      "episodes.episodes[238].title"
+      "assets/analytics.js:133"
+    ],
+    "variables": [
+      "w.many",
+      "fmt(minVotes)"
     ]
   },
   "text_c0f15cd85e71": {
     "source": "The Blind Spot in the Karaoke Box (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[97].title"
     ]
   },
@@ -9268,26 +7927,10 @@
       "episodes.episodes[169].airDate"
     ]
   },
-  "text_c12f32cd8897": {
-    "source": "Minimum votes",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_c169d3eb8ea0": {
-    "source": "Below 6",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "assets/analytics-core.js:7"
-    ]
-  },
   "text_c19722e92d3b": {
     "source": "Conan vs. Kid: The Pitch-Black Sniper",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[34].title"
     ]
   },
@@ -9298,18 +7941,10 @@
       "index.html"
     ]
   },
-  "text_c1e41c9f4b0b": {
-    "source": "Browse the complete movie checklist",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_c1eb50eaa46b": {
     "source": "The Girl from the Black Organization and the University Professor Murder Case (2 Hour Special)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[12].title"
     ]
   },
@@ -9327,25 +7962,11 @@
       "episodes.episodes[235].imdb.title"
     ]
   },
-  "text_c27a27af9603": {
-    "source": "Films, including extras",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_c2e86a5c18a4": {
     "source": "February 10, 2003",
     "kind": "catalog content",
     "references": [
       "episodes.episodes[53].airDate"
-    ]
-  },
-  "text_c2e9e7ae40ac": {
-    "source": "Viewing budget:",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_c2fefd1bae51": {
@@ -9355,18 +7976,11 @@
       "index.html"
     ]
   },
-  "text_c301cccc772e": {
-    "source": "records the source, official page when available, and artwork source for each entry. Covers belong to their respective rights holders. Movie checkoffs and backups are separate from episode progress.",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_c32665156a8d": {
     "source": "Another tab saved unreadable progress. This tab kept its current progress.",
     "kind": "literal",
     "references": [
-      "assets/app.js:221"
+      "assets/app.js:222"
     ]
   },
   "text_c3439ee745ee": {
@@ -9388,13 +8002,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_c36d819e7bc6": {
-    "source": "Use",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_c3a02d34bdc8": {
@@ -9459,9 +8066,8 @@
   },
   "text_c4f0598e1788": {
     "source": "Taiko Meijin's Match of Love (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[175].title"
     ]
   },
@@ -9470,13 +8076,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[120].airDate"
-    ]
-  },
-  "text_c50979425e0f": {
-    "source": "out of 10",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:56"
     ]
   },
   "text_c570833a15ee": {
@@ -9530,13 +8129,6 @@
       "episodes.episodes[247].imdb.title"
     ]
   },
-  "text_c5aaedd4deda": {
-    "source": "Analytics methodology | Conan Casebook",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_c5e82e839efd": {
     "source": "IMDb ↗",
     "kind": "text",
@@ -9571,9 +8163,8 @@
   },
   "text_c6457aaac702": {
     "source": "Clash of Red and Black (Blood Relative)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[83].title"
     ]
   },
@@ -9593,9 +8184,8 @@
   },
   "text_c68a17850ca0": {
     "source": "The Jet-Black Mystery Train (Departure)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[147].title"
     ]
   },
@@ -9622,9 +8212,8 @@
   },
   "text_c724eec9226b": {
     "source": "The Ex-Boyfriend Living Next to a Crime Scene (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[157].title"
     ]
   },
@@ -9642,11 +8231,17 @@
       "episodes.episodes[151].imdb.title"
     ]
   },
-  "text_c7536a0720e7": {
-    "source": "Analytics: how we count",
-    "kind": "text",
+  "text_c755fc53728a": {
+    "source": "M{0},{1} L{2},{3}",
+    "kind": "template",
     "references": [
-      "methodology.html"
+      "assets/graph.js:81"
+    ],
+    "variables": [
+      "s.x",
+      "s.y",
+      "t.x",
+      "t.y"
     ]
   },
   "text_c76879fc2d5e": {
@@ -9660,7 +8255,7 @@
     "source": "Listed time",
     "kind": "literal",
     "references": [
-      "assets/analytics.js:85"
+      "assets/analytics.js:161"
     ]
   },
   "text_c79802b713b7": {
@@ -9681,8 +8276,8 @@
       "episodeTitle(episodes.get(n.episode))"
     ]
   },
-  "text_c86e08ec9a02": {
-    "source": "THROUGH THE YEARS",
+  "text_c852cb9ab5cc": {
+    "source": "Where the story peaks, which arcs fans rate highest, and how long you have left.",
     "kind": "text",
     "references": [
       "index.html"
@@ -9699,7 +8294,7 @@
     "source": "February",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_c8ab9219b32a": {
@@ -9720,14 +8315,17 @@
     "source": "CASE FILE",
     "kind": "text",
     "references": [
-      "index.html"
+      "index.html",
+      "assets/analytics.js:105"
+    ],
+    "variables": [
+      "w.one"
     ]
   },
   "text_c9bfa377fb29": {
     "source": "What She Truly Wants to Ask",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[103].title"
     ]
   },
@@ -9736,13 +8334,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_c9e3f175d5c3": {
-    "source": "tvmazeId",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_ca3424ca49fc": {
@@ -9754,9 +8345,8 @@
   },
   "text_caadcaf48636": {
     "source": "The Phantom of Baker Street",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[5].title"
     ]
   },
@@ -9767,83 +8357,40 @@
       "episodes.episodes[217].imdb.title"
     ]
   },
-  "text_caf85b0888d7": {
-    "source": "Sources",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_cb5311ae8285": {
     "source": "Mitsuhiko's Mystifying Forest (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[49].title"
-    ]
-  },
-  "text_cb653fbafe42": {
-    "source": "{5} | IMDb {6} | {7} listed min | {8} votes",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:56"
-    ],
-    "variables": [
-      "r.id",
-      "r.color",
-      "r.id===selectedId?0:-1",
-      "r.id===selectedId",
-      "esc(r.label+': '+title(r)+', '+(value===null?'value unavailable':value+(metric==='rating'?' out of 10':' listed minutes')))",
-      "esc(r.label+': '+title(r))",
-      "score(r.rating)",
-      "fmt(r.runtime)",
-      "fmt(r.votes)",
-      "x-3",
-      "slot",
-      "base-25",
-      "value===null?' is-missing':''",
-      "x",
-      "y",
-      "Math.max(8,slot-6)",
-      "h",
-      "watched.has(r.id)?`<circle cx=\"${x+(slot-6)/2}\" cy=\"${Math.max(y-6,22)}\" r=\"2.5\" class=\"analytics-watched-dot\"/>`:''",
-      "x+(slot-6)/2",
-      "base+19",
-      "esc(shortLabel(r))"
     ]
   },
   "text_cb9558a6aca7": {
     "source": "Listed minutes",
     "kind": "text",
     "references": [
-      "assets/analytics.js:43",
-      "assets/analytics.js:57",
-      "assets/analytics-core.js:74"
+      "assets/analytics.js:107",
+      "assets/analytics-core.js:88"
     ],
     "variables": [
       "esc(r.label)",
       "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
+      "esc(groupName(r.group))",
       "r.release",
       "score(r.rating)",
       "fmt(r.votes)",
       "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
+      "watched.has(r.id) ? 'Watched' : 'Unwatched'",
+      "share === null ? '' : `<p class=\"chart-note\">${share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`}</p>`",
+      "scope === 'episodes' ? `<button class=\"button quiet\" data-analytics-open=\"${r.number}\">Open episode details</button>` : ''",
+      "r.imdbUrl ? `<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>` : '<span>No verified IMDb entry</span>'",
       "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
+      "scope === 'episodes' ? 'Episode' : 'Film'"
     ]
   },
   "text_cbceb4df7c87": {
     "source": "Conan vs. Kid: Shark & Jewel",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[33].title"
     ]
   },
@@ -9852,13 +8399,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[139].airDate"
-    ]
-  },
-  "text_cc5034064f75": {
-    "source": "; charts consistently use the TVmaze broadcast listing. Missing IMDb runtimes were not filled with an assumed playback duration.",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_cc5d5a378b42": {
@@ -9902,17 +8442,15 @@
   },
   "text_cd40f50e2504": {
     "source": "Clash of Red and Black (The Beginning)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[82].title"
     ]
   },
   "text_cd4dc370bf88": {
     "source": "The Spirit Detective's Murder (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[193].title"
     ]
   },
@@ -9920,7 +8458,7 @@
     "source": "September",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_cd842f44715a": {
@@ -9935,27 +8473,22 @@
     "kind": "text",
     "references": [
       "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "assets/analytics.js:43"
+      "assets/analytics.js:107"
     ],
     "variables": [
       "esc(r.label)",
       "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
+      "esc(groupName(r.group))",
       "r.release",
       "score(r.rating)",
       "fmt(r.votes)",
       "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
+      "watched.has(r.id) ? 'Watched' : 'Unwatched'",
+      "share === null ? '' : `<p class=\"chart-note\">${share === 1 ? `The highest score among rated ${w.many}.` : share === 0 ? `The lowest score among rated ${w.many}.` : `Scores higher than ${Math.round(share*100)}% of the other rated ${w.many}.`}</p>`",
+      "scope === 'episodes' ? `<button class=\"button quiet\" data-analytics-open=\"${r.number}\">Open episode details</button>` : ''",
+      "r.imdbUrl ? `<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>` : '<span>No verified IMDb entry</span>'",
       "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
+      "scope === 'episodes' ? 'Episode' : 'Film'"
     ]
   },
   "text_cd93437029d0": {
@@ -9979,53 +8512,18 @@
       "episodes.arcs[7].name"
     ]
   },
-  "text_ce674b698c3b": {
-    "source": "{2}: {3} selected releases. Filter this year.",
-    "kind": "aria-label",
-    "references": [
-      "assets/analytics.js:70"
-    ],
-    "variables": [
-      "v.year",
-      "filters.year===String(v.year)",
-      "v.year",
-      "v.count",
-      "v.year",
-      "v.count",
-      "x-2",
-      "step",
-      "x",
-      "base-h",
-      "step-5",
-      "h",
-      "x+(step-5)/2",
-      "base+20",
-      "x+(step-5)/2",
-      "base+20",
-      "v.year"
-    ]
-  },
   "text_ce7caf204ce8": {
     "source": "The Strange Person Hunt Murder Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[3].title",
       "episodes.episodes[3].imdb.title"
     ]
   },
-  "text_ce8832ce32ee": {
-    "source": "Scrollable entry chart",
-    "kind": "aria-label",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_ce8d71b871b7": {
     "source": "The Fourteenth Target",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[1].title"
     ]
   },
@@ -10057,11 +8555,20 @@
       "episodes.episodes[8].airDate"
     ]
   },
-  "text_cf30caa95cdf": {
-    "source": "Who Kidnapped Conan and Azusa? (Part 2)",
+  "text_cf2466c923db": {
+    "source": "{0} without a score, not plotted",
     "kind": "text",
     "references": [
-      "guide.html",
+      "assets/analytics.js:116"
+    ],
+    "variables": [
+      "missing"
+    ]
+  },
+  "text_cf30caa95cdf": {
+    "source": "Who Kidnapped Conan and Azusa? (Part 2)",
+    "kind": "catalog content",
+    "references": [
       "episodes.episodes[254].title"
     ]
   },
@@ -10086,15 +8593,6 @@
       "episodes.episodes[176].airDate"
     ]
   },
-  "text_d03e3f620c9d": {
-    "source": "Scrollable guide table",
-    "kind": "aria-label",
-    "references": [
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
   "text_d040faef4c15": {
     "source": "Detective Conan: The Fist of Blue Sapphire",
     "kind": "catalog content",
@@ -10104,9 +8602,8 @@
   },
   "text_d0be071cf02f": {
     "source": "The Shadow of the Black Organization (The Young Witness)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[76].title"
     ]
   },
@@ -10133,9 +8630,8 @@
   },
   "text_d1f2b5141987": {
     "source": "Just Like a 17 Years Old Crime Scene (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[191].title"
     ]
   },
@@ -10148,9 +8644,8 @@
   },
   "text_d228601d575c": {
     "source": "Shinichi Kudo's New York Case (The Deduction)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[47].title"
     ]
   },
@@ -10161,26 +8656,17 @@
       "episodes.episodes[131].airDate"
     ]
   },
-  "text_d23e2b9adfd7": {
-    "source": "Listed durations",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_d2727ae81345": {
     "source": "Conan in a Locked Room",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[151].title"
     ]
   },
   "text_d27a85170158": {
     "source": "The Desperate Revival - The Third Choice",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[20].title"
     ]
   },
@@ -10200,17 +8686,9 @@
   },
   "text_d2bcbd169f4f": {
     "source": "Kid vs. Komei: The Targeted Lips (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[220].title"
-    ]
-  },
-  "text_d2d81f73bc00": {
-    "source": "episode IDs",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_d2dfbcfe7376": {
@@ -10250,17 +8728,15 @@
   },
   "text_d3388ff8bb66": {
     "source": "Library Murder Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[7].title"
     ]
   },
   "text_d3399e6123dc": {
     "source": "Hooligan's Labyrinth (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[43].title"
     ]
   },
@@ -10298,9 +8774,8 @@
   },
   "text_d3d49ab06531": {
     "source": "The Life-Threatening Broadcast of Love (Enter the Scene)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[140].title"
     ]
   },
@@ -10311,18 +8786,11 @@
       "index.html"
     ]
   },
-  "text_d4066d5208d9": {
-    "source": "node --test tests/*.test.js",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_d426ce3b6441": {
     "source": "{0}h {1}m",
     "kind": "template",
     "references": [
-      "assets/analytics.js:10"
+      "assets/analytics.js:11"
     ],
     "variables": [
       "Math.floor(n/60)",
@@ -10336,13 +8804,6 @@
       "index.html"
     ]
   },
-  "text_d45453a5eb6b": {
-    "source": "IMDb's non-commercial datasets",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_d46584ccc809": {
     "source": "The Tense Tea Party: Part 2",
     "kind": "catalog content",
@@ -10350,29 +8811,21 @@
       "episodes.episodes[169].imdb.title"
     ]
   },
-  "text_d4bb7c234fe5": {
-    "source": "{0} to <{1}",
+  "text_d50fefc17824": {
+    "source": "Dot: median score. Bar: the middle half of {0} (25th to 75th percentile). Thin line: lowest to highest. The vertical rule is the overall median, {1}. Select a row to focus it everywhere.",
     "kind": "template",
     "references": [
-      "assets/analytics-core.js:7"
+      "assets/analytics.js:127"
     ],
     "variables": [
-      "n",
-      "n + 1"
-    ]
-  },
-  "text_d4f066f57a6e": {
-    "source": "python3 scripts/refresh_ratings.py",
-    "kind": "text",
-    "references": [
-      "methodology.html"
+      "w.many",
+      "score(overall)"
     ]
   },
   "text_d53772f1a4b7": {
     "source": "CORE",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[0].priority",
       "episodes.episodes[1].priority",
       "episodes.episodes[2].priority",
@@ -10632,14 +9085,13 @@
     "source": "June",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_d5926cace49f": {
     "source": "Zero the Enforcer",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[21].title"
     ]
   },
@@ -10652,32 +9104,22 @@
   },
   "text_d5bb7f914387": {
     "source": "Sweet and Cold Delivery Service (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[154].title"
     ]
   },
   "text_d5d0c449d133": {
     "source": "The Dissonance of the Stradivarius (Interlude)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[70].title"
-    ]
-  },
-  "text_d5d5233e906c": {
-    "source": "listed durations in minutes",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:57"
     ]
   },
   "text_d5f274ff1fcb": {
     "source": "Black Iron Submarine",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[25].title"
     ]
   },
@@ -10685,7 +9127,6 @@
     "source": "Priority",
     "kind": "text",
     "references": [
-      "guide.html",
       "assets/app.js:110"
     ],
     "variables": [
@@ -10757,10 +9198,16 @@
   },
   "text_d6b5052a660e": {
     "source": "Clash of Red and Black (Awakening)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[88].title"
+    ]
+  },
+  "text_d6e2ccb5d758": {
+    "source": "· some durations missing",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:162"
     ]
   },
   "text_d735d0a84a04": {
@@ -10781,34 +9228,24 @@
   },
   "text_d75199c6d22b": {
     "source": "Secret of the Tohto Film Development Studio (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[58].title"
     ]
   },
   "text_d7698fcc1af7": {
     "source": "Detectives' Nocturne (Kidnapping)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[133].title"
     ]
   },
   "text_d77fad7736e7": {
     "source": "Momiji Ooka's Challenge (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[230].title",
       "episodes.episodes[230].imdb.title"
-    ]
-  },
-  "text_d793cfdeee2a": {
-    "source": "Longest duration",
-    "kind": "text",
-    "references": [
-      "index.html"
     ]
   },
   "text_d7f8e43773a8": {
@@ -10820,24 +9257,15 @@
   },
   "text_d846921e7d0a": {
     "source": "The Professor's Video Site (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[129].title"
-    ]
-  },
-  "text_d847b74300c5": {
-    "source": "title metadata",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_d8699cae2160": {
     "source": "Strategy Above the Depths",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[8].title"
     ]
   },
@@ -10855,18 +9283,10 @@
       "index.html"
     ]
   },
-  "text_d8a7041f36aa": {
-    "source": "Snapshot checked",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_d8b5cfecd0e2": {
     "source": "The Last Wizard of the Century",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[2].title"
     ]
   },
@@ -10891,11 +9311,17 @@
       "episodes.episodes[224].imdb.title"
     ]
   },
+  "text_d927abb38f1e": {
+    "source": "class=\"is-text\"",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:163"
+    ]
+  },
   "text_d93893a180e3": {
     "source": "Jolly Roger in the Deep Azure",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[10].title"
     ]
   },
@@ -10916,25 +9342,18 @@
       "assets/language.js:2"
     ]
   },
-  "text_d9ad71b7e310": {
-    "source": "titles",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_da10c346c451": {
-    "source": "provides a reference for central-story cases and prerequisites. This checklist contains 255 distinct episodes across nine arcs.",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_da386acf87cd": {
     "source": "The Man from Chicago: Part 1",
     "kind": "catalog content",
     "references": [
       "episodes.episodes[31].imdb.title"
+    ]
+  },
+  "text_da4471fb8740": {
+    "source": "RATINGS ACROSS THE STORY",
+    "kind": "text",
+    "references": [
+      "index.html"
     ]
   },
   "text_da834af33681": {
@@ -10953,17 +9372,9 @@
   },
   "text_da8cebf9b794": {
     "source": "Emergency Situation 252 (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[120].title"
-    ]
-  },
-  "text_dae6ae77bbb0": {
-    "source": "runtimeBasis",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_db5f70ea60a5": {
@@ -10973,19 +9384,26 @@
       "episodes.episodes[76].airDate"
     ]
   },
-  "text_dbc299ac1fa8": {
-    "source": "Makoto Kyogoku the Understudy (Part 3)",
-    "kind": "text",
+  "text_db866350ca77": {
+    "source": "{0} {1} in {2} order, IMDb scores from {3} to {4}. Use the left and right arrow keys to move between {5} and Enter to open one.",
+    "kind": "template",
     "references": [
-      "guide.html",
-      "episodes.episodes[224].title"
+      "assets/analytics.js:65"
+    ],
+    "variables": [
+      "plotted.length",
+      "w.many",
+      "scope==='episodes'?'story':'release'",
+      "lo",
+      "hi",
+      "w.many"
     ]
   },
-  "text_dbd591bff272": {
-    "source": "8 September 2026",
-    "kind": "text",
+  "text_dbc299ac1fa8": {
+    "source": "Makoto Kyogoku the Understudy (Part 3)",
+    "kind": "catalog content",
     "references": [
-      "methodology.html"
+      "episodes.episodes[224].title"
     ]
   },
   "text_dbe15bcbf4e7": {
@@ -10995,13 +9413,6 @@
       "episodes.episodes[7].imdb.title"
     ]
   },
-  "text_dbe164350b1a": {
-    "source": "All arcs",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_dc135ef8f4c5": {
     "source": "May 29, 2000",
     "kind": "catalog content",
@@ -11009,13 +9420,34 @@
       "episodes.episodes[22].airDate"
     ]
   },
+  "text_dc74d204a3c0": {
+    "source": "{0} has no ratings yet.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:112"
+    ],
+    "variables": [
+      "groupName(focus)"
+    ]
+  },
+  "text_dc7672398df7": {
+    "source": "Open episode details",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:107"
+    ],
+    "variables": [
+      "r.number"
+    ]
+  },
   "text_dc8659db6d41": {
     "source": "Enter",
     "kind": "literal",
     "references": [
-      "assets/graph.js:112",
-      "assets/graph.js:162",
-      "assets/analytics.js:106"
+      "assets/graph.js:124",
+      "assets/graph.js:174",
+      "assets/analytics.js:189",
+      "assets/analytics.js:192"
     ]
   },
   "text_dc8d5e48ebbf": {
@@ -11029,7 +9461,7 @@
     "source": "Unrecognized release date: {0}",
     "kind": "template",
     "references": [
-      "assets/analytics-core.js:17"
+      "assets/analytics-core.js:20"
     ],
     "variables": [
       "value"
@@ -11039,10 +9471,7 @@
     "source": "Website language",
     "kind": "aria-label",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_dcef3e68fde0": {
@@ -11057,14 +9486,13 @@
     "kind": "text",
     "references": [
       "index.html",
-      "assets/graph.js:80"
+      "assets/graph.js:91"
     ]
   },
   "text_dd2ce5402201": {
     "source": "The Darkness of the Prefectural Police (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[182].title"
     ]
   },
@@ -11080,13 +9508,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[5].airDate"
-    ]
-  },
-  "text_dde264a5d7b1": {
-    "source": "Individual bars:",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_de4d9db19316": {
@@ -11120,6 +9541,14 @@
       "episodes.episodes[205].imdb.title"
     ]
   },
+  "text_df1220334ebf": {
+    "source": "Ratings across the story.",
+    "kind": "text",
+    "references": [
+      "index.html",
+      "assets/analytics.js:113"
+    ]
+  },
   "text_df6b14879285": {
     "source": "The New Teacher's Skeleton Case: Part 1",
     "kind": "catalog content",
@@ -11127,26 +9556,25 @@
       "episodes.episodes[201].imdb.title"
     ]
   },
+  "text_df6f2a36e2a0": {
+    "source": "Finish around {0} at this pace.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:142"
+    ],
+    "variables": [
+      "dateLabel(plan.date)"
+    ]
+  },
   "text_dfa50f9ddadf": {
     "source": "Hidden Bathroom Secret (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[62].title"
     ]
   },
   "text_dff924b69f96": {
     "source": "Movies",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
-    ]
-  },
-  "text_e0113205643c": {
-    "source": "Filtered entries with IMDb scores, vote counts, release dates, and listed durations",
     "kind": "text",
     "references": [
       "index.html"
@@ -11182,9 +9610,8 @@
   },
   "text_e0b59175ded0": {
     "source": "Clash of Red and Black (Disguise)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[90].title"
     ]
   },
@@ -11193,6 +9620,13 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[1].imdb.title"
+    ]
+  },
+  "text_e11d995046d1": {
+    "source": "Which arcs score highest",
+    "kind": "text",
+    "references": [
+      "index.html"
     ]
   },
   "text_e2161614648f": {
@@ -11220,9 +9654,8 @@
   },
   "text_e279bdae7821": {
     "source": "The Unsolved Cocktail Case (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[213].title"
     ]
   },
@@ -11231,6 +9664,20 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[165].airDate"
+    ]
+  },
+  "text_e29ae151eb8b": {
+    "source": "Every entry in this view is watched. Turn off Unwatched only to see the full picture.",
+    "kind": "text",
+    "references": [
+      "index.html"
+    ]
+  },
+  "text_e2ab11f14bb4": {
+    "source": "MUST-WATCH",
+    "kind": "text",
+    "references": [
+      "index.html"
     ]
   },
   "text_e2bca368b88b": {
@@ -11242,32 +9689,23 @@
   },
   "text_e2f79e5b6033": {
     "source": "N/A",
-    "kind": "text",
+    "kind": "literal",
     "references": [
-      "guide.html",
-      "movie-guide.html",
       "assets/app.js:77",
       "assets/app.js:110",
       "assets/graph.js:66",
       "assets/graph.js:71",
       "assets/analytics.js:8",
-      "assets/analytics.js:9",
-      "assets/analytics.js:89"
+      "assets/analytics.js:10",
+      "assets/analytics.js:160",
+      "assets/analytics.js:168"
     ]
   },
   "text_e2fe27a2edcb": {
     "source": "The Scarlet Pursuit",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[171].title"
-    ]
-  },
-  "text_e34ba177a5d5": {
-    "source": "Scrollable annual release chart",
-    "kind": "aria-label",
-    "references": [
-      "index.html"
     ]
   },
   "text_e3a0a8c0995e": {
@@ -11284,11 +9722,15 @@
       "episodes.episodes[196].imdb.title"
     ]
   },
-  "text_e3df1c322190": {
-    "source": "Release timeline:",
-    "kind": "text",
+  "text_e4197f84dc21": {
+    "source": "Median {0} across {1} rated",
+    "kind": "template",
     "references": [
-      "methodology.html"
+      "assets/analytics.js:160"
+    ],
+    "variables": [
+      "score(best.median)",
+      "best.rated"
     ]
   },
   "text_e42161f1d106": {
@@ -11300,18 +9742,17 @@
   },
   "text_e444a83e5e73": {
     "source": "Roller Coaster Murder Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[0].title",
       "episodes.episodes[0].imdb.title"
     ]
   },
-  "text_e46af186583d": {
-    "source": "Main-story guide | Conan Casebook",
+  "text_e474c5de64f5": {
+    "source": "Case closed.",
     "kind": "text",
     "references": [
-      "guide.html"
+      "index.html"
     ]
   },
   "text_e495f5fbd650": {
@@ -11324,6 +9765,13 @@
       "assets/movies.js:26"
     ]
   },
+  "text_e4b7eebebc59": {
+    "source": "Median IMDb score",
+    "kind": "literal",
+    "references": [
+      "assets/analytics.js:159"
+    ]
+  },
   "text_e4befdb27e6b": {
     "source": "November 22, 2014",
     "kind": "catalog content",
@@ -11331,34 +9779,31 @@
       "episodes.episodes[166].airDate"
     ]
   },
-  "text_e57de80a0ea9": {
-    "source": ". One row represents one Japanese-numbered episode or one film entry.",
-    "kind": "text",
+  "text_e53d17dd2a10": {
+    "source": "is-focus",
+    "kind": "literal",
     "references": [
-      "methodology.html"
+      "assets/analytics.js:51"
     ]
   },
   "text_e57ef0e5fb42": {
     "source": "The Antique Tray Can't Be Hidden (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[227].title"
     ]
   },
   "text_e6a77337e97a": {
     "source": "The Tragedy of the Red Woman (Revenge)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[165].title"
     ]
   },
   "text_e6b0cc7f44c4": {
     "source": "The Million-dollar Pentagram",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[26].title"
     ]
   },
@@ -11369,11 +9814,14 @@
       "episodes.episodes[190].airDate"
     ]
   },
-  "text_e6ff87036443": {
-    "source": "Episode matches use title, year, and multipart order rather than IMDb season numbering. Movie matches use reviewed titles and release years, including documented translated-title variants. Every mapped entry stores its IMDb ID and mapping note. Missing matches or scores remain null, never a zero rating. A future refresh may change coverage.",
+  "text_e6f4de4ac5f2": {
+    "source": "Pick a dot",
     "kind": "text",
     "references": [
-      "methodology.html"
+      "assets/analytics.js:105"
+    ],
+    "variables": [
+      "w.one"
     ]
   },
   "text_e713e6327f31": {
@@ -11390,33 +9838,17 @@
       "episodes.episodes[32].imdb.title"
     ]
   },
-  "text_e7893fc66162": {
-    "source": "IMDb ratings from 0 to 10",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:57"
-    ]
-  },
-  "text_e79c59f6f9b5": {
-    "source": "Find the peaks. Trace the years. Plan your next watch.",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_e79cab884512": {
     "source": "Sunflowers of Inferno",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[18].title"
     ]
   },
   "text_e7b2c0fd3b11": {
     "source": "Akemi Miyano's Time Capsule (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[244].title"
     ]
   },
@@ -11439,9 +9871,8 @@
   },
   "text_e84900994f9c": {
     "source": "The Antique Tray Can't Be Hidden (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[228].title"
     ]
   },
@@ -11454,18 +9885,16 @@
   },
   "text_e8f98b0b7295": {
     "source": "Conan Edogawa Kidnapping Case",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[4].title",
       "episodes.episodes[4].imdb.title"
     ]
   },
   "text_e9024979f9a3": {
     "source": "Mystery of the Burning Tent (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[207].title"
     ]
   },
@@ -11478,58 +9907,31 @@
   },
   "text_e960af39224f": {
     "source": "The Black Organization's Scheme (Hunt)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[240].title",
       "episodes.episodes[240].imdb.title"
     ]
   },
   "text_e97ce34aff00": {
     "source": "Captured in Her Eyes",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[3].title"
-    ]
-  },
-  "text_e980ab03b6b6": {
-    "source": "{13} source ↗",
-    "kind": "text",
-    "references": [
-      "assets/analytics.js:43"
-    ],
-    "variables": [
-      "esc(r.label)",
-      "esc(title(r))",
-      "esc(filters.hideTitles&&scope==='episodes'?`Arc ${r.group}`:r.groupName)",
-      "r.release",
-      "score(r.rating)",
-      "fmt(r.votes)",
-      "fmt(r.runtime)",
-      "watched.has(r.id)?'Watched':'Unwatched'",
-      "r.runtimeBasis",
-      "scope==='episodes'?'May include advertising.':'Runtime varies by edition.'",
-      "r.imdbUrl?`<a href=\"${esc(r.imdbUrl)}\" target=\"_blank\" rel=\"noopener noreferrer\">IMDb entry ↗</a>`:'<span>No verified IMDb entry</span>'",
-      "esc(r.runtimeSource || r.source)",
-      "esc(r.source)",
-      "scope==='episodes'?'Episode':'Movie'",
-      "scope==='episodes'?`<button class=\"text-button\" data-analytics-open=\"${r.number}\">Open episode details ↗</button>`:''",
-      "r.checked || 'not available'"
     ]
   },
   "text_e9cf7a1ca4a7": {
     "source": "July",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_e9e5995e96fc": {
     "source": "IMDb rating",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:74"
+      "assets/analytics-core.js:88"
     ]
   },
   "text_ea17655ec4e9": {
@@ -11543,7 +9945,8 @@
     "source": "is-watched",
     "kind": "literal",
     "references": [
-      "assets/movies.js:31"
+      "assets/movies.js:31",
+      "assets/analytics.js:57"
     ]
   },
   "text_eabdc5753e8f": {
@@ -11562,17 +9965,9 @@
   },
   "text_eac034c22ac7": {
     "source": "The Four Porsches (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[61].title"
-    ]
-  },
-  "text_eb0fed30aff1": {
-    "source": "runtimeMapping",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_eb26c3aede9d": {
@@ -11586,10 +9981,7 @@
     "source": "Main navigation",
     "kind": "aria-label",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_eb448ef89a67": {
@@ -11627,25 +10019,10 @@
       "index.html"
     ]
   },
-  "text_ebf940f2b3ea": {
-    "source": "Measure",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_ec32dfb9b15f": {
-    "source": "Filtered analytics exported with source links.",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:126"
-    ]
-  },
   "text_eca3d2a0275a": {
     "source": "The Battle Game Trap (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[25].title"
     ]
   },
@@ -11663,14 +10040,6 @@
       "episodes.episodes[97].airDate"
     ]
   },
-  "text_ecec88c33adb": {
-    "source": "CHANGELOG",
-    "kind": "text",
-    "references": [
-      "guide.html",
-      "methodology.html"
-    ]
-  },
   "text_ed71f6207ebd": {
     "source": "The Ex-Boyfriend Living Next to a Crime Scene: Part 1",
     "kind": "catalog content",
@@ -11680,9 +10049,8 @@
   },
   "text_eda615146a22": {
     "source": "The Betrayal's Stage (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[194].title"
     ]
   },
@@ -11702,9 +10070,8 @@
   },
   "text_ee58173a326f": {
     "source": "Holmes' Revelation (Holmes' Apprentice)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[114].title"
     ]
   },
@@ -11745,9 +10112,8 @@
   },
   "text_ef741308ded6": {
     "source": "The Wedding Reception and the Two Gunshots",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[159].title"
     ]
   },
@@ -11755,10 +10121,7 @@
     "source": "Story map",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_efe3c9fe5932": {
@@ -11772,10 +10135,7 @@
     "source": "Watchlist",
     "kind": "text",
     "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
+      "index.html"
     ]
   },
   "text_f01c4126063b": {
@@ -11783,13 +10143,6 @@
     "kind": "catalog content",
     "references": [
       "episodes.episodes[38].imdb.title"
-    ]
-  },
-  "text_f0416fb6abfe": {
-    "source": ". IMDb uses different season numbering. Mappings were checked by title, year, and multipart order, including translated title variants; reruns were excluded. IMDb scores are weighted user ratings and change over time.",
-    "kind": "text",
-    "references": [
-      "guide.html"
     ]
   },
   "text_f045bc807214": {
@@ -11954,6 +10307,35 @@
       "episodes.episodes[254].imdb.mapping"
     ]
   },
+  "text_f09e71ad8279": {
+    "source": "{5} rated",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:125"
+    ],
+    "variables": [
+      "esc(g.id)",
+      "focus === g.id",
+      "esc(g.rated ? `${groupName(g.id)}: median ${score(g.median)}, middle half ${score(g.q1)} to ${score(g.q3)}, ${g.rated} rated.` : `${groupName(g.id)}: no ratings.`)",
+      "scope === 'episodes' && !getHideTitles() ? `<b>${pad(g.id,2)}</b>` : ''",
+      "esc(groupName(g.id))",
+      "g.rated",
+      "g.rated ? `<i class=\"arc-row-range\" style=\"left:${pos(g.min)};width:calc(${pos(g.max)} - ${pos(g.min)})\"></i><i class=\"arc-row-iqr\" style=\"left:${pos(g.q1)};width:calc(${pos(g.q3)} - ${pos(g.q1)})\"></i><i class=\"arc-row-median\" style=\"left:${pos(g.median)}\"></i>` : ''",
+      "score(g.median)"
+    ]
+  },
+  "text_f0c4107fd042": {
+    "source": "{0} of {1} {2} rated",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:159"
+    ],
+    "variables": [
+      "s.rated",
+      "s.count",
+      "w.many"
+    ]
+  },
   "text_f11d76cb56af": {
     "source": "March 24, 2012",
     "kind": "catalog content",
@@ -11970,37 +10352,17 @@
   },
   "text_f194894a0b34": {
     "source": "The Desperate Revival - The Cavern of the Detective Boys",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[18].title"
     ]
   },
   "text_f20165d6a7c3": {
     "source": "Lupin III vs. Detective Conan: The Movie",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[29].title",
       "movies.movies[29].imdb.title"
-    ]
-  },
-  "text_f20823943380": {
-    "source": "{3} entries, {4}",
-    "kind": "aria-label",
-    "references": [
-      "assets/analytics.js:57"
-    ],
-    "variables": [
-      "width",
-      "height",
-      "width",
-      "entries.length",
-      "metric==='rating'?'IMDb ratings from 0 to 10':'listed durations in minutes'",
-      "left",
-      "metric==='rating'?'IMDb / 10':'Listed minutes'",
-      "grid",
-      "bars"
     ]
   },
   "text_f23fbea3c0ef": {
@@ -12020,25 +10382,9 @@
   },
   "text_f27134bee555": {
     "source": "The Woman with White Hands (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[206].title"
-    ]
-  },
-  "text_f294c6f0b0ea": {
-    "source": "{0} · {1} IMDb {2} / 10 · {3} votes {4} listed min · {5}",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:47"
-    ],
-    "variables": [
-      "r.label",
-      "title(r)",
-      "score(r.rating)",
-      "fmt(r.votes)",
-      "fmt(r.runtime)",
-      "r.release"
     ]
   },
   "text_f296550b45c0": {
@@ -12062,18 +10408,10 @@
       "episodes.episodes[110].imdb.title"
     ]
   },
-  "text_f30dfe1cfb6d": {
-    "source": "supply",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
   "text_f319a0e7df0a": {
     "source": "Bourbon Figures It Out",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[152].title",
       "episodes.episodes[152].imdb.title"
     ]
@@ -12106,19 +10444,6 @@
       "episodes.episodes[247].airDate"
     ]
   },
-  "text_f41dc4ec67cb": {
-    "source": "Selected releases per year",
-    "kind": "aria-label",
-    "references": [
-      "assets/analytics.js:70"
-    ],
-    "variables": [
-      "width",
-      "width",
-      "grid",
-      "years.map((v,i)=>{const h=v.count/(Math.ceil(max/4)*4)*plot,x=40+i*step;return `<g role=\"button\" tabindex=\"0\" data-year=\"${v.year}\" aria-pressed=\"${filters.year===String(v.year)}\" aria-label=\"${v.year}: ${v.count} selected releases. Filter this year.\"><title>${v.year}: ${v.count} selected releases</title><rect class=\"analytics-bar-hit\" x=\"${x-2}\" y=\"40\" width=\"${step}\" height=\"175\"/><rect class=\"analytics-year-bar\" x=\"${x}\" y=\"${base-h}\" width=\"${step-5}\" height=\"${h}\" rx=\"3\"/><text class=\"analytics-axis\" x=\"${x+(step-5)/2}\" y=\"${base+20}\" text-anchor=\"middle\" transform=\"rotate(-45 ${x+(step-5)/2} ${base+20})\">${v.year}</text></g>`;}).join('')"
-    ]
-  },
   "text_f4262548cb99": {
     "source": "INPUT",
     "kind": "literal",
@@ -12144,18 +10469,17 @@
     "source": "{0} unwatched{1}",
     "kind": "template",
     "references": [
-      "assets/analytics.js:85"
+      "assets/analytics.js:162"
     ],
     "variables": [
       "s.remainingCount",
-      "s.missingRemaining?' · durations incomplete':''"
+      "s.missingRemaining ? ' · some durations missing' : ''"
     ]
   },
   "text_f4d39e20c413": {
     "source": "Metropolitan Police Detective Love Story 4 (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[29].title"
     ]
   },
@@ -12163,40 +10487,18 @@
     "source": "End",
     "kind": "literal",
     "references": [
-      "assets/app.js:248",
-      "assets/app.js:251",
-      "assets/analytics.js:107",
-      "assets/analytics.js:108",
+      "assets/app.js:249",
+      "assets/app.js:252",
+      "assets/analytics.js:189",
+      "assets/analytics.js:193",
       "assets/language.js:61"
-    ]
-  },
-  "text_f4fe2a0b2586": {
-    "source": "500+ votes",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
-  "text_f526c5e0c58f": {
-    "source": "· durations incomplete",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:85"
     ]
   },
   "text_f558d690ed7d": {
     "source": "The Romance Novel with the Unexpected Conclusion (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[166].title"
-    ]
-  },
-  "text_f5622fe2cc9e": {
-    "source": "IMDb supplies raw runtimes for only 12 of the 255 selected episodes in this snapshot. Those values remain separately available in",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_f573a6552df5": {
@@ -12511,18 +10813,45 @@
   },
   "text_f68b79fec90b": {
     "source": "Shinichi Kudo's New York Case (The Case)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[46].title"
     ]
   },
   "text_f6cbe5eb7daf": {
     "source": "The Blue Spark of Hate (Part 1)",
+    "kind": "catalog content",
+    "references": [
+      "episodes.episodes[104].title"
+    ]
+  },
+  "text_f6d3bbc7a123": {
+    "source": "Export CSV ↗",
     "kind": "text",
     "references": [
-      "guide.html",
-      "episodes.episodes[104].title"
+      "index.html"
+    ]
+  },
+  "text_f75688995580": {
+    "source": "Hover to preview any {0}. Select one, or focus the chart and use the arrow keys, to see its score, votes, and sources here.",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:105"
+    ],
+    "variables": [
+      "w.one"
+    ]
+  },
+  "text_f7591d47458f": {
+    "source": "Rolling median",
+    "kind": "text",
+    "references": [
+      "assets/analytics.js:116"
+    ],
+    "variables": [
+      "w.one",
+      "focus !== 'all' ? `<span><i class=\"key-muted\"></i>Other ${w.groups}</span>` : ''",
+      "missing ? `<span>${missing} without a score, not plotted</span>` : ''"
     ]
   },
   "text_f77832cdfacc": {
@@ -12543,32 +10872,11 @@
       "episodes.episodes[56].airDate"
     ]
   },
-  "text_f85867cbaae4": {
-    "source": "Arc / category",
-    "kind": "text",
-    "references": [
-      "index.html"
-    ]
-  },
   "text_f8a719bcf4aa": {
     "source": "Dissonance of the Stradivarius Violin, Part 3: Last Tune",
     "kind": "catalog content",
     "references": [
       "episodes.episodes[71].imdb.title"
-    ]
-  },
-  "text_f918920b61fe": {
-    "source": ". Broadcast listings may include advertising and differ from streaming playback.",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
-  "text_f939a966d4b7": {
-    "source": "Ratings and releases",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_f952f18cced5": {
@@ -12587,24 +10895,9 @@
   },
   "text_f9da98cdf32d": {
     "source": "The Story of Ai Haibara ~Black Iron Mystery Train~",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[31].title"
-    ]
-  },
-  "text_f9fb5a83ac31": {
-    "source": "Highlights:",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_fa2502fe679b": {
-    "source": "Creative Commons Attribution-ShareAlike 4.0",
-    "kind": "text",
-    "references": [
-      "methodology.html"
     ]
   },
   "text_fa7df6bc0d8d": {
@@ -12635,19 +10928,25 @@
       "episodes.episodes[206].airDate"
     ]
   },
-  "text_fb65a58d1542": {
-    "source": "; N/A means no verified score is available.",
-    "kind": "text",
-    "references": [
-      "movie-guide.html"
-    ]
-  },
   "text_fbaa1e7ee437": {
     "source": "Wedding Eve (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[131].title"
+    ]
+  },
+  "text_fbc4b8338f8c": {
+    "source": "{0}: median {1}, middle half {2} to {3}, {4} rated.",
+    "kind": "template",
+    "references": [
+      "assets/analytics.js:125"
+    ],
+    "variables": [
+      "groupName(g.id)",
+      "score(g.median)",
+      "score(g.q1)",
+      "score(g.q3)",
+      "g.rated"
     ]
   },
   "text_fbf1a2c7772f": {
@@ -12661,14 +10960,7 @@
     "source": "#sources-dialog .source-list li:nth-child(3) span",
     "kind": "literal",
     "references": [
-      "assets/app.js:273"
-    ]
-  },
-  "text_fc46c4464bda": {
-    "source": "Durations and provenance",
-    "kind": "text",
-    "references": [
-      "methodology.html"
+      "assets/app.js:274"
     ]
   },
   "text_fc61259dbe15": {
@@ -12678,31 +10970,14 @@
       "episodes.episodes[121].imdb.title"
     ]
   },
-  "text_fcd2c1eaeba9": {
-    "source": "SETUP:",
-    "kind": "text",
-    "references": [
-      "guide.html"
-    ]
-  },
   "text_fce63bfb9eba": {
     "source": "(prefers-reduced-motion: reduce)",
     "kind": "literal",
     "references": [
       "assets/app.js:127",
-      "assets/app.js:257",
+      "assets/app.js:258",
+      "assets/analytics.js:101",
       "assets/presentation.js:6"
-    ]
-  },
-  "text_fd3221ed4a24": {
-    "source": "{0} rated entries; {1} missing scores excluded. Select a band to filter; select it again to clear.",
-    "kind": "template",
-    "references": [
-      "assets/analytics.js:67"
-    ],
-    "variables": [
-      "summary.rated",
-      "summary.count-summary.rated"
     ]
   },
   "text_fd661fa1bb65": {
@@ -12712,25 +10987,11 @@
       "episodes.episodes[148].airDate"
     ]
   },
-  "text_fd6c3cbbf49a": {
-    "source": "ratings and votes",
-    "kind": "text",
-    "references": [
-      "methodology.html"
-    ]
-  },
-  "text_fd92b0a673cc": {
-    "source": "In this view",
-    "kind": "literal",
-    "references": [
-      "assets/analytics.js:85"
-    ]
-  },
   "text_fdd791787b64": {
     "source": "October",
     "kind": "literal",
     "references": [
-      "assets/analytics-core.js:16"
+      "assets/analytics-core.js:19"
     ]
   },
   "text_fe1cdfa6c10f": {
@@ -12749,33 +11010,29 @@
   },
   "text_fe7b69d2f8c9": {
     "source": "The Fist of Blue Sapphire",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "movie-guide.html",
       "movies.movies[22].title"
     ]
   },
   "text_fe7fed25ac2a": {
     "source": "Yusaku Kudo's Cold Case (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[143].title"
     ]
   },
   "text_fed5ee643239": {
     "source": "Froth, Steam, and Smoke (Part 1)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[141].title"
     ]
   },
   "text_fef588462d07": {
     "source": "Ran's Suspicions",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[72].title",
       "episodes.episodes[72].imdb.title"
     ]
@@ -12789,18 +11046,28 @@
   },
   "text_ff7514f12985": {
     "source": "Momiji Ooka's Sweet Trap (Part 2)",
-    "kind": "text",
+    "kind": "catalog content",
     "references": [
-      "guide.html",
       "episodes.episodes[246].title"
     ]
   },
   "text_ff9b781c4ff5": {
     "source": "Dimensional Sniper",
+    "kind": "catalog content",
+    "references": [
+      "movies.movies[17].title"
+    ]
+  },
+  "text_ff9be4ce6638": {
+    "source": "IMDb score, one {0}",
     "kind": "text",
     "references": [
-      "movie-guide.html",
-      "movies.movies[17].title"
+      "assets/analytics.js:116"
+    ],
+    "variables": [
+      "w.one",
+      "focus !== 'all' ? `<span><i class=\"key-muted\"></i>Other ${w.groups}</span>` : ''",
+      "missing ? `<span>${missing} without a score, not plotted</span>` : ''"
     ]
   },
   "text_ffb6f5764bdd": {

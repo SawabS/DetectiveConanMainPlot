@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-11: Analytics redesign, story-map energy, and Markdown-only guides
+
+- Rebuilt Analytics around four questions: how ratings move across the story (one dot per entry on a focused axis, arc bands, a rolling-median trend, and labeled peaks), which arcs score highest (median, middle half, and range on the same scale), what to watch first (a top ten with a median-vote floor), and when you will finish (daily budget, projected date, and the next unwatched entry). One highlight hue plus gray replaces nine arc colors; the data table and CSV export remain.
+- Replaced six filters and two chart selectors with a dataset toggle, arc focus, and an unwatched-only switch. Removed the release-year chart, rating bands, and highlight cards.
+- Selecting a story-map node now sends pulses along its links, to its arc hub and neighboring episodes or from a hub to every episode in its arc, with a ripple on arrival. Reduced motion shows the links without animation.
+- Removed the rendered guide, movie checklist, and methodology pages along with their Markdown renderer and tests. Links now open the Markdown on GitHub, and the generated guides link to the live site.
+- Made the language card more opaque with a stronger blur, listing only language names. Navigation icons no longer tilt on hover.
+
 ## 2026-09-11: Stretching surfaces and a quieter language menu
 
 - Moved the single grid canvas behind the page so cards, tables, and the hero always cover it. The pointer glow and warp rest while the pointer is over a surface.
