@@ -1,0 +1,272 @@
+[
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 0",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_0.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_0_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 1",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_1.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_1_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 2",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_2.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_2_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 3",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_3.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_3_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 4",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_4.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_4_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 5",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_5.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_5_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 6",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_6.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_6_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 7",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_7.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_7_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 8",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_8.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_8_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb JSON 9",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_9.json. It maps keys to English text. Translate all the English text values to language 'ckb'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ckb_9_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb Doc README.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/README.md. Translate the entire document to language 'ckb'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ckb/README.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb Doc analytics-methodology.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/analytics-methodology.md. Translate the entire document to language 'ckb'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ckb/analytics-methodology.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb Doc detective_conan_main_story_watch_guide.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/detective_conan_main_story_watch_guide.md. Translate the entire document to language 'ckb'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ckb/detective_conan_main_story_watch_guide.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb Doc detective_conan_movies.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/detective_conan_movies.md. Translate the entire document to language 'ckb'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ckb/detective_conan_movies.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ckb Doc CREDITS.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/CREDITS.md. Translate the entire document to language 'ckb'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ckb/CREDITS.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 0",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_0.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_0_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 1",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_1.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_1_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 2",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_2.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_2_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 3",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_3.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_3_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 4",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_4.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_4_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 5",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_5.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_5_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 6",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_6.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_6_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 7",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_7.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_7_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 8",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_8.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_8_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar JSON 9",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_9.json. It maps keys to English text. Translate all the English text values to language 'ar'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ar_9_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar Doc README.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/README.md. Translate the entire document to language 'ar'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ar/README.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar Doc analytics-methodology.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/analytics-methodology.md. Translate the entire document to language 'ar'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ar/analytics-methodology.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar Doc detective_conan_main_story_watch_guide.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/detective_conan_main_story_watch_guide.md. Translate the entire document to language 'ar'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ar/detective_conan_main_story_watch_guide.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar Doc detective_conan_movies.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/detective_conan_movies.md. Translate the entire document to language 'ar'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ar/detective_conan_movies.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ar Doc CREDITS.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/CREDITS.md. Translate the entire document to language 'ar'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ar/CREDITS.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 0",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_0.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_0_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 1",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_1.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_1_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 2",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_2.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_2_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 3",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_3.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_3_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 4",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_4.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_4_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 5",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_5.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_5_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 6",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_6.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_6_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 7",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_7.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_7_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 8",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_8.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_8_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja JSON 9",
+    "Prompt": "Read the JSON file /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_9.json. It maps keys to English text. Translate all the English text values to language 'ja'. Write the result as a strict JSON file mapping the exact same keys to the translated strings, and save it to /home/sawab/myfolders/DetectiveConanMainPlot/translations/tasks/chunk_ja_9_out.json.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja Doc README.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/README.md. Translate the entire document to language 'ja'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ja/README.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja Doc analytics-methodology.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/analytics-methodology.md. Translate the entire document to language 'ja'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ja/analytics-methodology.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja Doc detective_conan_main_story_watch_guide.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/detective_conan_main_story_watch_guide.md. Translate the entire document to language 'ja'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ja/detective_conan_main_story_watch_guide.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja Doc detective_conan_movies.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/detective_conan_movies.md. Translate the entire document to language 'ja'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ja/detective_conan_movies.md.",
+    "Model": "flash"
+  },
+  {
+    "TypeName": "translation_agent",
+    "Role": "Translator ja Doc CREDITS.md",
+    "Prompt": "Read the Markdown file /home/sawab/myfolders/DetectiveConanMainPlot/translations/source/documents/CREDITS.md. Translate the entire document to language 'ja'. Preserve all tables, links, code, factual numbers, and Markdown structure. Write the translated Markdown to /home/sawab/myfolders/DetectiveConanMainPlot/translations/documents/ja/CREDITS.md.",
+    "Model": "flash"
+  }
+]

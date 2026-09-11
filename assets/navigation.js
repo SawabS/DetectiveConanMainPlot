@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const containers = document.querySelectorAll('.topbar > nav, .view-tabs');
+  const containers = document.querySelectorAll('.topbar > nav');
   for (const container of containers) {
     container.classList.add('glass-navigation');
     const pill = document.createElement('span');

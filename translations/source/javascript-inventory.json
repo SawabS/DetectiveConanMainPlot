@@ -5527,13 +5527,7 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 17,
-    "kind": "literal",
-    "text": "site-grid"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 20,
+    "line": 18,
     "kind": "literal",
     "text": "tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2"
   },
@@ -5545,15 +5539,9 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 22,
-    "kind": "literal",
-    "text": "button, a, input, select, summary"
-  },
-  {
-    "file": "assets/presentation.js",
     "line": 24,
     "kind": "literal",
-    "text": "--liquid-scale"
+    "text": "is-stretched"
   },
   {
     "file": "assets/presentation.js",
@@ -5563,201 +5551,201 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 28,
+    "line": 27,
     "kind": "literal",
-    "text": "--liquid-scale"
+    "text": "is-stretched"
   },
   {
     "file": "assets/presentation.js",
-    "line": 33,
+    "line": 29,
     "kind": "literal",
-    "text": "dialog[open]"
+    "text": "tr"
   },
   {
     "file": "assets/presentation.js",
-    "line": 36,
+    "line": 30,
     "kind": "literal",
-    "text": "open"
+    "text": "--liquid-sx"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 31,
+    "kind": "literal",
+    "text": "--liquid-sy"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 38,
+    "kind": "literal",
+    "text": "--liquid-ox"
   },
   {
     "file": "assets/presentation.js",
     "line": 39,
     "kind": "literal",
+    "text": "--liquid-oy"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 43,
+    "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/presentation.js",
-    "line": 45,
+    "line": 49,
     "kind": "literal",
     "text": "aria-label"
   },
   {
     "file": "assets/presentation.js",
-    "line": 45,
+    "line": 49,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 45,
+    "line": 49,
     "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 45,
+    "line": 49,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 45,
+    "line": 49,
     "kind": "template",
     "text": "Switch to {0} theme",
     "variables": [
       "theme === 'dark' ? 'light' : 'dark'"
     ]
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 46,
-    "kind": "literal",
-    "text": "dark"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 46,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 46,
-    "kind": "literal",
-    "text": "dark"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 46,
-    "kind": "template",
-    "text": "Switch to {0} theme",
-    "variables": [
-      "theme === 'dark' ? 'light' : 'dark'"
-    ]
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 47,
-    "kind": "literal",
-    "text": "meta[name=\"theme-color\"]"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 47,
-    "kind": "literal",
-    "text": "dark"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 47,
-    "kind": "literal",
-    "text": "#eef5fd"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 48,
-    "kind": "literal",
-    "text": ".hero-art"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "assets/conan-daylight.jpg"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "assets/conan-moon.jpg"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "Conan Edogawa above a coastal city under a bright blue sky"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 49,
-    "kind": "literal",
-    "text": "Conan Edogawa standing above the city under a full moon"
   },
   {
     "file": "assets/presentation.js",
     "line": 50,
     "kind": "literal",
-    "text": "--ambient-rgb"
+    "text": "dark"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 50,
+    "kind": "literal",
+    "text": "light"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 50,
+    "kind": "literal",
+    "text": "dark"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 50,
+    "kind": "template",
+    "text": "Switch to {0} theme",
+    "variables": [
+      "theme === 'dark' ? 'light' : 'dark'"
+    ]
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 51,
+    "kind": "literal",
+    "text": "meta[name=\"theme-color\"]"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 51,
+    "kind": "literal",
+    "text": "dark"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 51,
+    "kind": "literal",
+    "text": "#eef5fd"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 52,
+    "kind": "literal",
+    "text": ".hero-art"
   },
   {
     "file": "assets/presentation.js",
     "line": 53,
     "kind": "literal",
+    "text": "light"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 53,
+    "kind": "literal",
+    "text": "assets/conan-daylight.jpg"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 53,
+    "kind": "literal",
+    "text": "assets/conan-moon.jpg"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 53,
+    "kind": "literal",
+    "text": "light"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 53,
+    "kind": "literal",
+    "text": "Conan Edogawa above a coastal city under a bright blue sky"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 53,
+    "kind": "literal",
+    "text": "Conan Edogawa standing above the city under a full moon"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 54,
+    "kind": "literal",
+    "text": "--ambient-rgb"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 57,
+    "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/presentation.js",
-    "line": 54,
+    "line": 58,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 54,
+    "line": 58,
     "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 54,
+    "line": 58,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 55,
+    "line": 59,
     "kind": "literal",
     "text": "conan-casebook:theme"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "change"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "light"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 58,
-    "kind": "literal",
-    "text": "dark"
   },
   {
     "file": "assets/presentation.js",
@@ -5767,13 +5755,31 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 63,
+    "line": 62,
+    "kind": "literal",
+    "text": "light"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 62,
+    "kind": "literal",
+    "text": "dark"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 66,
     "kind": "literal",
     "text": "change"
   },
   {
     "file": "assets/presentation.js",
-    "line": 72,
+    "line": 67,
+    "kind": "literal",
+    "text": "change"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 76,
     "kind": "template",
     "text": "rgba({0},{1})",
     "variables": [
@@ -5783,7 +5789,7 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 73,
+    "line": 77,
     "kind": "template",
     "text": "rgba({0},{1})",
     "variables": [
@@ -5793,37 +5799,37 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 87,
+    "line": 91,
     "kind": "literal",
     "text": "false"
   },
   {
     "file": "assets/presentation.js",
-    "line": 92,
+    "line": 96,
     "kind": "literal",
     "text": "--pointer-x"
   },
   {
     "file": "assets/presentation.js",
-    "line": 92,
+    "line": 96,
     "kind": "literal",
     "text": "--pointer-y"
   },
   {
     "file": "assets/presentation.js",
-    "line": 109,
+    "line": 113,
     "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/presentation.js",
-    "line": 124,
+    "line": 129,
     "kind": "literal",
     "text": "--pointer-x"
   },
   {
     "file": "assets/presentation.js",
-    "line": 124,
+    "line": 129,
     "kind": "template",
     "text": "{0}px",
     "variables": [
@@ -5832,13 +5838,13 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 124,
+    "line": 129,
     "kind": "literal",
     "text": "--pointer-y"
   },
   {
     "file": "assets/presentation.js",
-    "line": 124,
+    "line": 129,
     "kind": "template",
     "text": "{0}px",
     "variables": [
@@ -5847,109 +5853,109 @@
   },
   {
     "file": "assets/presentation.js",
-    "line": 129,
+    "line": 134,
     "kind": "literal",
     "text": "pointermove"
   },
   {
     "file": "assets/presentation.js",
-    "line": 130,
+    "line": 135,
     "kind": "literal",
     "text": "touch"
   },
   {
     "file": "assets/presentation.js",
-    "line": 133,
-    "kind": "literal",
-    "text": "true"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 134,
-    "kind": "literal",
-    "text": "true"
-  },
-  {
-    "file": "assets/presentation.js",
     "line": 139,
     "kind": "literal",
-    "text": "false"
+    "text": "true"
   },
   {
     "file": "assets/presentation.js",
-    "line": 144,
+    "line": 140,
     "kind": "literal",
-    "text": "pointerleave"
+    "text": "true"
   },
   {
     "file": "assets/presentation.js",
     "line": 145,
     "kind": "literal",
-    "text": "pointerdown"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 146,
-    "kind": "literal",
-    "text": "scroll"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 147,
-    "kind": "literal",
-    "text": "hashchange"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 148,
-    "kind": "literal",
-    "text": "blur"
-  },
-  {
-    "file": "assets/presentation.js",
-    "line": 149,
-    "kind": "literal",
-    "text": "visibilitychange"
+    "text": "false"
   },
   {
     "file": "assets/presentation.js",
     "line": 150,
     "kind": "literal",
-    "text": "resize"
+    "text": "pointerleave"
   },
   {
     "file": "assets/presentation.js",
     "line": 151,
     "kind": "literal",
-    "text": "storage"
+    "text": "pointerdown"
   },
   {
     "file": "assets/presentation.js",
     "line": 152,
     "kind": "literal",
-    "text": "conan-casebook:theme"
+    "text": "scroll"
   },
   {
     "file": "assets/presentation.js",
     "line": 153,
     "kind": "literal",
+    "text": "hashchange"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 154,
+    "kind": "literal",
+    "text": "blur"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 155,
+    "kind": "literal",
+    "text": "visibilitychange"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 156,
+    "kind": "literal",
+    "text": "resize"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 157,
+    "kind": "literal",
+    "text": "storage"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 158,
+    "kind": "literal",
+    "text": "conan-casebook:theme"
+  },
+  {
+    "file": "assets/presentation.js",
+    "line": 159,
+    "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 153,
+    "line": 159,
     "kind": "literal",
     "text": "dark"
   },
   {
     "file": "assets/presentation.js",
-    "line": 154,
+    "line": 160,
     "kind": "literal",
     "text": "light"
   },
   {
     "file": "assets/presentation.js",
-    "line": 154,
+    "line": 160,
     "kind": "literal",
     "text": "dark"
   },
@@ -5963,7 +5969,7 @@
     "file": "assets/navigation.js",
     "line": 3,
     "kind": "literal",
-    "text": ".topbar > nav, .view-tabs"
+    "text": ".topbar > nav"
   },
   {
     "file": "assets/navigation.js",
@@ -6253,221 +6259,175 @@
   },
   {
     "file": "assets/language.js",
-    "line": 50,
-    "kind": "literal",
-    "text": "language-status"
-  },
-  {
-    "file": "assets/language.js",
-    "line": 50,
-    "kind": "literal",
-    "text": "Translation in preparation. Untranslated text is shown in English."
-  },
-  {
-    "file": "assets/language.js",
-    "line": 50,
-    "kind": "literal",
-    "text": "en"
-  },
-  {
-    "file": "assets/language.js",
-    "line": 50,
-    "kind": "literal",
-    "text": "English"
-  },
-  {
-    "file": "assets/language.js",
-    "line": 50,
-    "kind": "literal",
-    "text": "Translation available."
-  },
-  {
-    "file": "assets/language.js",
     "line": 51,
-    "kind": "literal",
-    "text": " (translation preview)"
-  },
-  {
-    "file": "assets/language.js",
-    "line": 51,
-    "kind": "template",
-    "text": "Language: {0}{1}",
-    "variables": [
-      "locale.toUpperCase()",
-      "pending?' (translation preview)':''"
-    ]
-  },
-  {
-    "file": "assets/language.js",
-    "line": 52,
     "kind": "literal",
     "text": "conan:language"
   },
   {
     "file": "assets/language.js",
-    "line": 54,
+    "line": 53,
     "kind": "literal",
     "text": "[data-language]"
   },
   {
     "file": "assets/language.js",
-    "line": 55,
+    "line": 54,
     "kind": "literal",
     "text": "aria-expanded"
   },
   {
     "file": "assets/language.js",
-    "line": 55,
+    "line": 54,
     "kind": "literal",
     "text": "true"
   },
   {
     "file": "assets/language.js",
-    "line": 56,
+    "line": 55,
     "kind": "literal",
     "text": "aria-expanded"
   },
   {
     "file": "assets/language.js",
-    "line": 56,
+    "line": 55,
     "kind": "literal",
     "text": "false"
   },
   {
     "file": "assets/language.js",
-    "line": 57,
+    "line": 56,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/language.js",
-    "line": 58,
+    "line": 57,
     "kind": "literal",
     "text": "pointerenter"
   },
   {
     "file": "assets/language.js",
-    "line": 58,
+    "line": 57,
     "kind": "literal",
     "text": "touch"
   },
   {
     "file": "assets/language.js",
-    "line": 59,
+    "line": 58,
     "kind": "literal",
     "text": "pointerleave"
   },
   {
     "file": "assets/language.js",
-    "line": 60,
+    "line": 59,
     "kind": "literal",
     "text": "keydown"
   },
   {
     "file": "assets/language.js",
-    "line": 60,
+    "line": 59,
     "kind": "literal",
     "text": "ArrowDown"
   },
   {
     "file": "assets/language.js",
-    "line": 61,
+    "line": 60,
     "kind": "literal",
     "text": "click"
   },
   {
     "file": "assets/language.js",
-    "line": 61,
+    "line": 60,
     "kind": "literal",
     "text": "[data-language]"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "keydown"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "ArrowDown"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "ArrowUp"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "Home"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "End"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "Home"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "End"
   },
   {
     "file": "assets/language.js",
-    "line": 62,
+    "line": 61,
     "kind": "literal",
     "text": "ArrowDown"
   },
   {
     "file": "assets/language.js",
-    "line": 63,
+    "line": 62,
     "kind": "literal",
     "text": "keydown"
   },
   {
     "file": "assets/language.js",
-    "line": 63,
+    "line": 62,
     "kind": "literal",
     "text": "Escape"
   },
   {
     "file": "assets/language.js",
-    "line": 64,
+    "line": 63,
     "kind": "literal",
     "text": "pointerdown"
   },
   {
     "file": "assets/language.js",
-    "line": 65,
+    "line": 64,
     "kind": "literal",
     "text": "focusout"
   },
   {
     "file": "assets/language.js",
-    "line": 66,
+    "line": 65,
     "kind": "literal",
     "text": "storage"
   },
   {
     "file": "assets/language.js",
-    "line": 66,
+    "line": 65,
     "kind": "literal",
     "text": "conan-casebook:language"
   },
   {
     "file": "assets/language.js",
-    "line": 66,
+    "line": 65,
     "kind": "literal",
     "text": "en"
   }

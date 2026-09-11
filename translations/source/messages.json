@@ -131,7 +131,7 @@
     "kind": "literal",
     "references": [
       "assets/analytics.js:104",
-      "assets/language.js:63"
+      "assets/language.js:62"
     ]
   },
   "text_0390b54374b9": {
@@ -686,7 +686,7 @@
     "kind": "literal",
     "references": [
       "assets/graph.js:114",
-      "assets/language.js:62"
+      "assets/language.js:61"
     ]
   },
   "text_122dd52da198": {
@@ -1153,7 +1153,7 @@
     "source": "tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2",
     "kind": "literal",
     "references": [
-      "assets/presentation.js:20"
+      "assets/presentation.js:18"
     ]
   },
   "text_1bb0bfaa9d73": {
@@ -1202,6 +1202,13 @@
     "kind": "text",
     "references": [
       "index.html"
+    ]
+  },
+  "text_1c63eee82747": {
+    "source": ".topbar > nav",
+    "kind": "literal",
+    "references": [
+      "assets/navigation.js:3"
     ]
   },
   "text_1ca5958f6c2b": {
@@ -1315,13 +1322,6 @@
     "kind": "literal",
     "references": [
       "assets/analytics.js:89"
-    ]
-  },
-  "text_1ec084c62d75": {
-    "source": "button, a, input, select, summary",
-    "kind": "literal",
-    "references": [
-      "assets/presentation.js:22"
     ]
   },
   "text_1ed360ae6b10": {
@@ -1739,8 +1739,8 @@
     "source": "Switch to {0} theme",
     "kind": "template",
     "references": [
-      "assets/presentation.js:45",
-      "assets/presentation.js:46"
+      "assets/presentation.js:49",
+      "assets/presentation.js:50"
     ],
     "variables": [
       "theme === 'dark' ? 'light' : 'dark'"
@@ -2752,7 +2752,7 @@
       "assets/graph.js:122",
       "assets/analytics.js:107",
       "assets/analytics.js:108",
-      "assets/language.js:62"
+      "assets/language.js:61"
     ]
   },
   "text_3a83781832db": {
@@ -4076,16 +4076,6 @@
     "kind": "catalog content",
     "references": [
       "movies.movies[23].imdb.title"
-    ]
-  },
-  "text_549f4b9035a3": {
-    "source": "English is available. Kurdish, Arabic, and Japanese are being prepared.",
-    "kind": "text",
-    "references": [
-      "index.html",
-      "guide.html",
-      "movie-guide.html",
-      "methodology.html"
     ]
   },
   "text_54e40b1a2d4d": {
@@ -5663,13 +5653,6 @@
       "episodes.episodes[161].airDate"
     ]
   },
-  "text_725c7d3d52ac": {
-    "source": "Translation available.",
-    "kind": "literal",
-    "references": [
-      "assets/language.js:50"
-    ]
-  },
   "text_7291b1b6320f": {
     "source": "Arc",
     "kind": "text",
@@ -6460,7 +6443,7 @@
     "source": "Conan Edogawa above a coastal city under a bright blue sky",
     "kind": "literal",
     "references": [
-      "assets/presentation.js:49"
+      "assets/presentation.js:53"
     ]
   },
   "text_859c83ca5554": {
@@ -7200,8 +7183,8 @@
     "references": [
       "assets/graph.js:114",
       "assets/graph.js:116",
-      "assets/language.js:60",
-      "assets/language.js:62"
+      "assets/language.js:59",
+      "assets/language.js:61"
     ]
   },
   "text_96b2315fc0f5": {
@@ -7280,13 +7263,6 @@
     "kind": "catalog content",
     "references": [
       "movies.movies[12].imdb.title"
-    ]
-  },
-  "text_9773d6fcf793": {
-    "source": ".topbar > nav, .view-tabs",
-    "kind": "literal",
-    "references": [
-      "assets/navigation.js:3"
     ]
   },
   "text_977b2a4a9268": {
@@ -8927,8 +8903,7 @@
       "index.html",
       "guide.html",
       "movie-guide.html",
-      "methodology.html",
-      "assets/language.js:50"
+      "methodology.html"
     ]
   },
   "text_ba249fbdc3b9": {
@@ -9144,7 +9119,7 @@
     "kind": "alt",
     "references": [
       "index.html",
-      "assets/presentation.js:49"
+      "assets/presentation.js:53"
     ]
   },
   "text_bd335af7fb2b": {
@@ -11107,13 +11082,6 @@
       "episodes.episodes[5].airDate"
     ]
   },
-  "text_ddc7ac130bdd": {
-    "source": "(translation preview)",
-    "kind": "literal",
-    "references": [
-      "assets/language.js:51"
-    ]
-  },
   "text_dde264a5d7b1": {
     "source": "Individual bars:",
     "kind": "text",
@@ -11482,17 +11450,6 @@
     "kind": "text",
     "references": [
       "index.html"
-    ]
-  },
-  "text_e89db3a3931c": {
-    "source": "Language: {0}{1}",
-    "kind": "template",
-    "references": [
-      "assets/language.js:51"
-    ],
-    "variables": [
-      "locale.toUpperCase()",
-      "pending?' (translation preview)':''"
     ]
   },
   "text_e8f98b0b7295": {
@@ -12105,13 +12062,6 @@
       "episodes.episodes[110].imdb.title"
     ]
   },
-  "text_f2ea00a515d7": {
-    "source": "Translation in preparation. Untranslated text is shown in English.",
-    "kind": "literal",
-    "references": [
-      "assets/language.js:50"
-    ]
-  },
   "text_f30dfe1cfb6d": {
     "source": "supply",
     "kind": "text",
@@ -12217,7 +12167,7 @@
       "assets/app.js:251",
       "assets/analytics.js:107",
       "assets/analytics.js:108",
-      "assets/language.js:62"
+      "assets/language.js:61"
     ]
   },
   "text_f4fe2a0b2586": {

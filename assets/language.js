@@ -47,8 +47,7 @@
     compile();apply();
     for(const item of card.querySelectorAll('[data-language]'))item.setAttribute('aria-checked',String(item.dataset.language===locale));
     const pending=locale!=='en'&&dictionary[locale]?.status!=='reviewed';
-    document.getElementById('language-status').textContent=pending?'Translation in preparation. Untranslated text is shown in English.':locale==='en'?'English':'Translation available.';
-    button.dataset.language=locale;button.title=`Language: ${locale.toUpperCase()}${pending?' (translation preview)':''}`;
+    button.dataset.language=locale;
     window.dispatchEvent(new CustomEvent('conan:language',{detail:{locale,pending}}));
   }
   const items=()=>[...card.querySelectorAll('[data-language]')];

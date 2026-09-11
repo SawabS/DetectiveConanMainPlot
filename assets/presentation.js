@@ -13,27 +13,31 @@
   const canvas = document.getElementById('ambient-canvas');
   const context = canvas.getContext('2d');
   const { RADIUS, warpPoint } = window.ConanGridCore;
-  // One canvas, one geometry pass: no independently sampled foreground duplicate.
-  canvas.classList.add('site-grid');
-  document.body.append(canvas);
+  // One canvas, one geometry pass, kept behind the page so cards and tables always cover it.
   let activeSurface = null;
   const surfaces = 'tbody tr, .movie-card, .progress-card, .analytics-card, .analytics-inspector, .analytics-kpis > div, .analytics-highlights > button, .analytics-planner, .graph-card, .hero, .overview > div, .source-list li, .detail-stats > div, .guide-article > p, .guide-article > ul, .guide-article > h2';
+  // A hovered surface grows by about this many pixels per axis, whatever its size.
+  const STRETCH = 10;
   function selectSurface(target, pressed = false) {
-    const next = !pressed && target instanceof Element && !target.closest('.topbar, .view-tabs, .language-card') ? target.closest(surfaces) || target.closest('button, a, input, select, summary') : null;
+    const next = !pressed && target instanceof Element && !target.closest('.topbar, .view-tabs, .language-card') ? target.closest(surfaces) : null;
     if (next === activeSurface) return;
-    activeSurface?.style.removeProperty('--liquid-scale');
+    activeSurface?.classList.remove('is-stretched');
     activeSurface = next;
     if (activeSurface) {
-      activeSurface.classList.add('liquid-surface');
-      activeSurface.style.setProperty('--liquid-scale', '.992');
+      activeSurface.classList.add('liquid-surface', 'is-stretched');
+      // Table cells paint separately, so scaling a row sideways opens hairline seams between them.
+      const sx = activeSurface.matches('tr') ? 1 : 1 + Math.min(STRETCH / Math.max(activeSurface.offsetWidth, 1), .03);
+      activeSurface.style.setProperty('--liquid-sx', String(sx));
+      activeSurface.style.setProperty('--liquid-sy', String(1 + Math.min(STRETCH / Math.max(activeSurface.offsetHeight, 1), .04)));
     }
   }
-  function positionSurfaceLayer() {
-    // Native dialogs occupy the browser's top layer, above ordinary z-index values.
-    const host = [...document.querySelectorAll('dialog[open]')].at(-1) || document.body;
-    if (canvas.parentElement !== host) host.append(canvas);
+  function followSurface(x, y) {
+    if (!activeSurface) return;
+    // Scaling from the pointer keeps the content under it still while the rest stretches outward.
+    const box = activeSurface.getBoundingClientRect();
+    activeSurface.style.setProperty('--liquid-ox', `${Math.max(0, Math.min(100, (x - box.left) / box.width * 100))}%`);
+    activeSurface.style.setProperty('--liquid-oy', `${Math.max(0, Math.min(100, (y - box.top) / box.height * 100))}%`);
   }
-  new MutationObserver(positionSurfaceLayer).observe(document.body, {subtree:true, attributes:true, attributeFilter:['open']});
   let color = '', previousTime = 0;
   const field = { x: 0, y: 0, strength: 0, pullX: 0, pullY: 0 };
   if (context) root.dataset.gridCanvas = 'true';
@@ -107,7 +111,8 @@
     previousTime = time;
     const ease = 1 - Math.exp(-elapsed / 125);
     const active = root.dataset.pointerActive === 'true';
-    const desiredStrength = active ? 1 : 0;
+    // Over a card or table the grid rests; the surface itself responds instead.
+    const desiredStrength = active && !activeSurface ? 1 : 0;
     current.x += (target.x - current.x) * ease; current.y += (target.y - current.y) * ease;
     field.x = current.x; field.y = current.y;
     field.strength += (desiredStrength - field.strength) * ease;
@@ -129,6 +134,7 @@
   window.addEventListener('pointermove', event => {
     if (!motionEnabled() || event.pointerType === 'touch') return;
     selectSurface(event.target, Boolean(event.buttons));
+    followSurface(event.clientX, event.clientY);
     target = { x: event.clientX, y: event.clientY };
     if (root.dataset.pointerActive !== 'true') current = { ...target };
     root.dataset.pointerActive = 'true';

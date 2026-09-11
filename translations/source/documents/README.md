@@ -69,6 +69,6 @@ The [Conan rooftop key visual](https://www.animeclick.it/news/101509-anime-previ
 
 ## Languages
 
-The globe beside the theme control opens English, Sorani, Arabic, and Japanese choices. The three new locales are **translation previews**, with navigation labels and English fallback until the agent completes review. Sorani and Arabic use RTL and bundled IBM Plex Sans Arabic; Japanese uses IBM Plex Sans JP with system fallbacks. Language preferences are saved separately from watch progress.
+The translation icon beside the theme control opens English, Sorani, Arabic, and Japanese choices. The three new locales are **translation previews**, with navigation labels and English fallback until the agent completes review. Sorani and Arabic use RTL and bundled IBM Plex Sans Arabic; Japanese uses IBM Plex Sans JP with system fallbacks. Language preferences are saved separately from watch progress.
 
 Give your translation agent [translations/AGENT_PROMPT.md](translations/AGENT_PROMPT.md). The [translation directory](translations/README.md) contains editable catalogs and full inventories of interface text, dynamic JavaScript strings, episode/movie content, and source documents. Compile completed translations with `python3 scripts/translations.py`.

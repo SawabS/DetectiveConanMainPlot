@@ -634,12 +634,11 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
 /* Geometric centering is independent of the arrow glyph and mobile fonts. */
 .detail-button svg { display: block; width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .episode-table td:last-child { text-align: center; vertical-align: middle; }
-/* The local liquid patch sits above opaque surfaces and never captures input. */
-.surface-liquid { position: fixed; top: 0; left: 0; width: 304px; height: 304px; z-index: 60; pointer-events: none; contain: strict; }
-.liquid-surface { scale: var(--liquid-scale, 1); transition: scale 350ms cubic-bezier(.2,.7,.2,1); }
+/* Hovered cards, rows, and sections stretch outward from the pointer; the grid stays behind them. */
+:root .liquid-surface { transform-origin: var(--liquid-ox, 50%) var(--liquid-oy, 50%); transition: scale 560ms cubic-bezier(.3,1.5,.55,1), background-color .2s, border-color .2s, box-shadow .2s; }
+:root .liquid-surface.is-stretched { scale: var(--liquid-sx, 1) var(--liquid-sy, 1); }
 @media (prefers-reduced-motion: reduce), (pointer: coarse) {
-  .surface-liquid { display: none; }
-  .liquid-surface { scale: none; transition: none; }
+  :root .liquid-surface, :root .liquid-surface.is-stretched { scale: none; transition: none; }
 }
 /* Rendered reading pages retain the casebook's navigation and typography. */
 .guide-page { padding-top: 40px; padding-bottom: 60px; }
@@ -651,7 +650,7 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
 .guide-article a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .guide-article strong { color: var(--ink); }
 .guide-article code { font-size: .88em; background: var(--row); padding: 2px 5px; border-radius: 4px; overflow-wrap: anywhere; }
-.guide-article .guide-table-scroll { overflow-x: auto; margin: 24px 0; border: 1px solid var(--line); border-radius: 10px; }
+.guide-article .guide-table-scroll { overflow-x: auto; overflow-y: hidden; margin: 24px 0; border: 1px solid var(--line); border-radius: 10px; }
 .guide-article table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 13px; }
 .guide-article th { background: var(--panel-light); color: var(--ink); text-align: left; }
 .guide-article td, .guide-article th { padding: 13px 12px; border-bottom: 1px solid var(--line); }
@@ -660,8 +659,6 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
 @media (max-width: 800px) { .topbar .nav-guide { display: inline; } }
 @media (max-width: 580px) { .topbar nav { gap: 11px; } .topbar nav a { font-size: 11px; } }
 
-/* A single viewport canvas prevents doubled lines at the liquid patch boundary. */
-.site-grid { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 40; pointer-events: none; }
 .glass-navigation { position: relative; isolation: isolate; }
 .topbar > nav { gap: 8px; }
 .glass-navigation > a, .glass-navigation > button { position: relative; z-index: 1; border-radius: 10px; transition: transform .28s cubic-bezier(.2,.8,.2,1),color .2s; }
@@ -669,6 +666,9 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
 .glass-navigation > a:hover, .glass-navigation > button:hover { transform: translateY(-2px) scale(1.035); }
 .nav-glass-pill { position: absolute; left: 0; top: 0; z-index: 0; pointer-events: none; border-radius: 11px; border: 1px solid rgba(var(--ambient-rgb),.2); background: linear-gradient(135deg,rgba(var(--ambient-rgb),.14),rgba(var(--ambient-rgb),.025)); box-shadow: inset 0 1px 0 #ffffff30,0 4px 18px #0712250c; backdrop-filter: blur(12px) saturate(150%); -webkit-backdrop-filter: blur(12px) saturate(150%); transition: transform .4s cubic-bezier(.22,.8,.2,1),width .4s cubic-bezier(.22,.8,.2,1),height .25s; }
 .view-tabs button[aria-selected='true'] { border-color: transparent; }
+/* View tabs highlight their text only; the glass pill belongs to the main navigation. */
+.view-tabs button { transition: color .2s; }
+.view-tabs button:not([aria-selected='true']):hover { color: var(--ink); }
 .topbar > nav { max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 4px 0; }
 .topbar > nav::-webkit-scrollbar { display: none; }
 .language-control { position: relative; }
@@ -677,9 +677,8 @@ dialog a { color: var(--blue); text-decoration: underline; text-underline-offset
 .language-card .eyebrow { font-size: 10px; margin: 0 8px 10px; }
 .language-card button { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; padding: 11px 12px; border: 1px solid transparent; background: transparent; border-radius: 10px; text-align: start; transition: transform .24s,background .24s,box-shadow .24s; }
 .language-card button:hover, .language-card button:focus-visible { transform: translateY(-1px) scale(1.035); background: rgba(var(--ambient-rgb),.11); box-shadow: inset 0 1px 0 #ffffff22; }
-.language-card button[aria-checked='true'] { background: rgba(var(--ambient-rgb),.12); color: var(--accent); }
+.language-card button[aria-checked='true'] { color: var(--accent); }
 .language-card button small { font-size: 10px; opacity: .7; }
-.language-status { font-size: 11px; line-height: 1.65; color: var(--muted); margin: 12px 8px 3px; }
 @keyframes language-reveal { from { opacity: 0; transform: translateY(-7px) scale(.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
 [data-theme='light'] .hero { background: #e3f2ff; color: #123653; }
 [data-theme='light'] .hero:after { background: linear-gradient(90deg,#e3f2ff 0%,#e3f2ff 28%,#e3f2ffce 47%,#e3f2ff10 78%); }

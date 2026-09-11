@@ -1,0 +1,1750 @@
+[
+  {
+    "key": "text_4fa102e38529",
+    "english": "September 15, 2003",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[59].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_4fb8e726cd2c",
+    "english": "The Target is the Metropolitan Police Traffic Department (1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[216].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_4fd3aafd4e6b",
+    "english": "The Shadow of the Black Organization (The Strange Illumination)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[77].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5012ec8ffd2c",
+    "english": "Arc {1}",
+    "kind": "text",
+    "refs": [
+      "assets/graph.js:67"
+    ],
+    "vars": [
+      "selected.arc",
+      "String(selected.arc).padStart(2,'0')",
+      "esc(arcName(selected.arc))",
+      "members[0].episode",
+      "members.at(-1).episode",
+      "done",
+      "members.length",
+      "average",
+      "members.length - done",
+      "next.episode",
+      "done === members.length ? 'Revisit' : 'Continue with'",
+      "pad(next.episode)",
+      "selected.arc",
+      "Math.max(1,selected.arc-1)",
+      "selected.arc === 1 ? 'disabled' : ''",
+      "Math.min(9,selected.arc+1)",
+      "selected.arc === 9 ? 'disabled' : ''"
+    ]
+  },
+  {
+    "key": "text_501860398a5f",
+    "english": "Bourbon: revelations",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.arcs[5].name"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_50e5c615c4e4",
+    "english": "Enter a selected Japanese episode number, such as 1, 129, or 345.",
+    "kind": "literal",
+    "refs": [
+      "assets/graph.js:158"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_51057c5748b4",
+    "english": "The Case of the Besieged Detective Agency (Outbreak)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[124].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5137ae70ca06",
+    "english": "August 4, 2018",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[208].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5157a81c7893",
+    "english": "The Desperate Revival - The Black Knight",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[21].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_51ce6c4f7bae",
+    "english": "Search movies by title, number, or year",
+    "kind": "aria-label",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_51e42c82e245",
+    "english": "TMS official catalog ↗",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_52237328fcc7",
+    "english": "Clash of Red and Black: Invasion",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[87].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_523487a5de21",
+    "english": "Coverage",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_523772fe6a1a",
+    "english": "The Magician of the Wave: Part 1",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[199].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_524449d1fa53",
+    "english": "Three First Discoverers (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[180].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_524f4c66ff2f",
+    "english": "This interactive watchlist needs JavaScript.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5257feee1485",
+    "english": "IMDb title",
+    "kind": "text",
+    "refs": [
+      "assets/app.js:111"
+    ],
+    "vars": [
+      "escape(e.imdb.title)"
+    ]
+  },
+  {
+    "key": "text_526d94dd7590",
+    "english": "January 19, 2009",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[101].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_52cef0e30916",
+    "english": "Haibara",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.arcs[1].name"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_52cfd703fd19",
+    "english": "Meeting with the Black Organization Again: Part 2 - Conan",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[16].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_52d8f329ac08",
+    "english": "July 17, 2010",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[113].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5325b4bb43ec",
+    "english": "Ikkaku Rock's Disappearing Fish (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[106].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_53549c2875a8",
+    "english": "January 25, 2014",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[155].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_53804d91adfe",
+    "english": "Reference for main-story episodes and prerequisites.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_539a1d703abd",
+    "english": "Rating distribution:",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_539c7575ee1f",
+    "english": "Detectives' Nocturne: Bourbon",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[135].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_53f86c9a23fc",
+    "english": "Sort episodes",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_548418a0e953",
+    "english": "Detective Conan: The Scarlet Bullet",
+    "kind": "catalog content",
+    "refs": [
+      "movies.movies[23].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_549f4b9035a3",
+    "english": "English is available. Kurdish, Arabic, and Japanese are being prepared.",
+    "kind": "text",
+    "refs": [
+      "index.html",
+      "guide.html",
+      "movie-guide.html",
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_54e40b1a2d4d",
+    "english": "Just Like a 17-Year-Old Crime Scene: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[191].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_54ebde18baca",
+    "english": "Akemi Miyano's Time Capsule: Part 1",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[243].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_55921b3fc007",
+    "english": "API license",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_55aeb42c16b0",
+    "english": "Artwork belongs to its respective rights holders. Image sources are recorded in the movie data.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_561a699aebb7",
+    "english": "The Tokyo-Style Detective Show Next Door: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[204].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_563a1287026c",
+    "english": "One-Eyed Flashback",
+    "kind": "text",
+    "refs": [
+      "movie-guide.html",
+      "movies.movies[27].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_566f7b7ad0c5",
+    "english": "to check coverage and calculations.",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5678ce69ec2b",
+    "english": "after data edits and",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_56c28481ba72",
+    "english": "The Deduction Showdown in the Haunted Hotel: Part 1",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[122].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_56cf00fd01c8",
+    "english": "The Woman With White Hands: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[206].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_56ed056f7364",
+    "english": "Whereabouts of the Dark Photograph (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[81].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_56fa7828a6f6",
+    "english": "Yusaku Kudo's Detective Show (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[239].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_570938aa4d54",
+    "english": "Shadows of the Black Organization: Mystery of the Huge Reward",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[78].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_575450617310",
+    "english": "Node size: IMDb rating",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5789196a39d1",
+    "english": "Durations are source listings, not exact streaming playback times.",
+    "kind": "literal",
+    "refs": [
+      "assets/analytics.js:58"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_57a8033acc3a",
+    "english": "March 5, 2001",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[26].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_57d7ff296cec",
+    "english": "One continuous story.",
+    "kind": "text",
+    "refs": [
+      "assets/graph.js:59"
+    ],
+    "vars": [
+      "data.episodes.length",
+      "watched.size",
+      "data.arcs.map(a => `<button data-card-arc=\"${a.id}\" data-arc-color=\"${a.id}\">${esc(arcName(a.id))}<span>${data.episodes.filter(e => e.arc === a.id).length}</span></button>`).join('')"
+    ]
+  },
+  {
+    "key": "text_5801b9784127",
+    "english": "September 7, 2019",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[214].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5826f1bfae3c",
+    "english": "Episode {0}: {1}, {2}",
+    "kind": "template",
+    "refs": [
+      "assets/graph.js:88"
+    ],
+    "vars": [
+      "n.episode",
+      "episodeTitle(episodes.get(n.episode))",
+      "done ? 'watched' : 'unwatched'"
+    ]
+  },
+  {
+    "key": "text_589bcd5eb703",
+    "english": "November 6, 2021",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[231].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_58a463e76541",
+    "english": "February 11, 2008",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[86].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_58eca5646d6c",
+    "english": "October 30, 2021",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[230].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_58f595fd393f",
+    "english": "Kir",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.arcs[3].name"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_59684e4ca27b",
+    "english": "DETECTIVE CONAN / MAIN STORY",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5969bc85ce2f",
+    "english": "Japanese episode order and exact title; TVmaze date differs from the episode source",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[3].runtimeMapping"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5983e531411c",
+    "english": "Progress exported. Keep the JSON file as your backup.",
+    "kind": "literal",
+    "refs": [
+      "assets/app.js:189"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5985eefbacfe",
+    "english": "The Betrayal's Stage (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[195].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_59a5b5e3494f",
+    "english": "The Scarlet Prologue",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[170].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_59f47b9b612c",
+    "english": "September 1, 2012",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[130].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5a0ede474157",
+    "english": "XerBlade's episode guide ↗",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5a997ce80d3a",
+    "english": ". Scores are IMDb's weighted user ratings, shown as a dated snapshot. IMDb terms apply to that data.",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5b5121eddb2a",
+    "english": "The Traitor's Stage: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[195].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5bf4a0ac12b7",
+    "english": "The 17-Year-Old Truth (The Far-Sighted Bishop)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[251].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5c868a7b8bf7",
+    "english": "All case files complete ✓",
+    "kind": "literal",
+    "refs": [
+      "assets/app.js:58"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5ca1ee054664",
+    "english": "March 10, 2003",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[57].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5ce9e944b390",
+    "english": "July 29, 2002",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[48].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5d16631d798f",
+    "english": "Definitions & sources ↗",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5d2a2a7197e5",
+    "english": "December 14, 1998",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[11].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5d4fe9d8e150",
+    "english": "February 2, 2013",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[142].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5d9b5286b281",
+    "english": "The Desperate Revival - Shinichi's Return",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[22].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5d9b9b8d4e66",
+    "english": "February 18, 2017",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[189].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5dc4e806402a",
+    "english": "March 17, 2018",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[205].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5dd913cef735",
+    "english": "Follow the clues.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5e2207a69ef5",
+    "english": "SawabS ↗",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5e4e44f984dc",
+    "english": "On the Trail of a Silent Witness (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[51].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5e763ea0fc80",
+    "english": "Sources & notes ↗",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5e83fd46d2e0",
+    "english": "Detective Conan: The Lost Ship in the Sky",
+    "kind": "catalog content",
+    "refs": [
+      "movies.movies[13].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5ea9efa65618",
+    "english": "The Birthday Party of Divine Punishment: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[233].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5efcd7f3ee95",
+    "english": "The Black Photograph's Whereabouts: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[81].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5f6d25772917",
+    "english": "Movie watch status",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5f7f220a075a",
+    "english": "The Mysterious Passenger (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[27].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5f926d659127",
+    "english": "normalized title and release year",
+    "kind": "catalog content",
+    "refs": [
+      "movies.movies[0].imdb.mapping",
+      "movies.movies[1].imdb.mapping",
+      "movies.movies[2].imdb.mapping",
+      "movies.movies[3].imdb.mapping",
+      "movies.movies[4].imdb.mapping",
+      "movies.movies[5].imdb.mapping",
+      "movies.movies[6].imdb.mapping",
+      "movies.movies[7].imdb.mapping",
+      "movies.movies[8].imdb.mapping",
+      "movies.movies[9].imdb.mapping",
+      "movies.movies[10].imdb.mapping",
+      "movies.movies[11].imdb.mapping",
+      "movies.movies[12].imdb.mapping",
+      "movies.movies[13].imdb.mapping",
+      "movies.movies[14].imdb.mapping",
+      "movies.movies[15].imdb.mapping",
+      "movies.movies[16].imdb.mapping",
+      "movies.movies[18].imdb.mapping",
+      "movies.movies[19].imdb.mapping",
+      "movies.movies[21].imdb.mapping",
+      "movies.movies[22].imdb.mapping",
+      "movies.movies[23].imdb.mapping",
+      "movies.movies[24].imdb.mapping",
+      "movies.movies[25].imdb.mapping",
+      "movies.movies[26].imdb.mapping",
+      "movies.movies[27].imdb.mapping",
+      "movies.movies[28].imdb.mapping",
+      "movies.movies[29].imdb.mapping",
+      "movies.movies[30].imdb.mapping",
+      "movies.movies[32].imdb.mapping"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5f9f52de44a7",
+    "english": "runtimeSource",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5fa7339c96d9",
+    "english": "Movie progress could not be read. This session still works.",
+    "kind": "literal",
+    "refs": [
+      "assets/movies.js:16"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5fc8ff738b20",
+    "english": "A constellation of clues",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5fe86c900853",
+    "english": "is-missing",
+    "kind": "literal",
+    "refs": [
+      "assets/analytics.js:56"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_5ff363139856",
+    "english": "Japanese episode order and air date",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[0].runtimeMapping",
+      "episodes.episodes[1].runtimeMapping",
+      "episodes.episodes[2].runtimeMapping",
+      "episodes.episodes[4].runtimeMapping",
+      "episodes.episodes[5].runtimeMapping",
+      "episodes.episodes[6].runtimeMapping",
+      "episodes.episodes[7].runtimeMapping",
+      "episodes.episodes[8].runtimeMapping",
+      "episodes.episodes[9].runtimeMapping",
+      "episodes.episodes[10].runtimeMapping",
+      "episodes.episodes[11].runtimeMapping",
+      "episodes.episodes[12].runtimeMapping",
+      "episodes.episodes[13].runtimeMapping",
+      "episodes.episodes[14].runtimeMapping",
+      "episodes.episodes[15].runtimeMapping",
+      "episodes.episodes[16].runtimeMapping",
+      "episodes.episodes[17].runtimeMapping",
+      "episodes.episodes[18].runtimeMapping",
+      "episodes.episodes[19].runtimeMapping",
+      "episodes.episodes[20].runtimeMapping",
+      "episodes.episodes[21].runtimeMapping",
+      "episodes.episodes[22].runtimeMapping",
+      "episodes.episodes[23].runtimeMapping",
+      "episodes.episodes[24].runtimeMapping",
+      "episodes.episodes[25].runtimeMapping",
+      "episodes.episodes[26].runtimeMapping",
+      "episodes.episodes[27].runtimeMapping",
+      "episodes.episodes[28].runtimeMapping",
+      "episodes.episodes[29].runtimeMapping",
+      "episodes.episodes[30].runtimeMapping",
+      "episodes.episodes[31].runtimeMapping",
+      "episodes.episodes[32].runtimeMapping",
+      "episodes.episodes[33].runtimeMapping",
+      "episodes.episodes[34].runtimeMapping",
+      "episodes.episodes[35].runtimeMapping",
+      "episodes.episodes[36].runtimeMapping",
+      "episodes.episodes[37].runtimeMapping",
+      "episodes.episodes[38].runtimeMapping",
+      "episodes.episodes[39].runtimeMapping",
+      "episodes.episodes[40].runtimeMapping",
+      "episodes.episodes[41].runtimeMapping",
+      "episodes.episodes[42].runtimeMapping",
+      "episodes.episodes[43].runtimeMapping",
+      "episodes.episodes[44].runtimeMapping",
+      "episodes.episodes[45].runtimeMapping",
+      "episodes.episodes[46].runtimeMapping",
+      "episodes.episodes[47].runtimeMapping",
+      "episodes.episodes[48].runtimeMapping",
+      "episodes.episodes[49].runtimeMapping",
+      "episodes.episodes[50].runtimeMapping",
+      "episodes.episodes[51].runtimeMapping",
+      "episodes.episodes[52].runtimeMapping",
+      "episodes.episodes[53].runtimeMapping",
+      "episodes.episodes[54].runtimeMapping",
+      "episodes.episodes[55].runtimeMapping",
+      "episodes.episodes[56].runtimeMapping",
+      "episodes.episodes[57].runtimeMapping",
+      "episodes.episodes[58].runtimeMapping",
+      "episodes.episodes[59].runtimeMapping",
+      "episodes.episodes[60].runtimeMapping",
+      "episodes.episodes[61].runtimeMapping",
+      "episodes.episodes[62].runtimeMapping",
+      "episodes.episodes[63].runtimeMapping",
+      "episodes.episodes[64].runtimeMapping",
+      "episodes.episodes[65].runtimeMapping",
+      "episodes.episodes[66].runtimeMapping",
+      "episodes.episodes[67].runtimeMapping",
+      "episodes.episodes[68].runtimeMapping",
+      "episodes.episodes[69].runtimeMapping",
+      "episodes.episodes[70].runtimeMapping",
+      "episodes.episodes[71].runtimeMapping",
+      "episodes.episodes[72].runtimeMapping",
+      "episodes.episodes[73].runtimeMapping",
+      "episodes.episodes[74].runtimeMapping",
+      "episodes.episodes[75].runtimeMapping",
+      "episodes.episodes[76].runtimeMapping",
+      "episodes.episodes[77].runtimeMapping",
+      "episodes.episodes[78].runtimeMapping",
+      "episodes.episodes[79].runtimeMapping",
+      "episodes.episodes[80].runtimeMapping",
+      "episodes.episodes[81].runtimeMapping",
+      "episodes.episodes[82].runtimeMapping",
+      "episodes.episodes[83].runtimeMapping",
+      "episodes.episodes[84].runtimeMapping",
+      "episodes.episodes[85].runtimeMapping",
+      "episodes.episodes[86].runtimeMapping",
+      "episodes.episodes[87].runtimeMapping",
+      "episodes.episodes[88].runtimeMapping",
+      "episodes.episodes[89].runtimeMapping",
+      "episodes.episodes[90].runtimeMapping",
+      "episodes.episodes[91].runtimeMapping",
+      "episodes.episodes[92].runtimeMapping",
+      "episodes.episodes[93].runtimeMapping",
+      "episodes.episodes[94].runtimeMapping",
+      "episodes.episodes[95].runtimeMapping",
+      "episodes.episodes[96].runtimeMapping",
+      "episodes.episodes[97].runtimeMapping",
+      "episodes.episodes[98].runtimeMapping",
+      "episodes.episodes[99].runtimeMapping",
+      "episodes.episodes[100].runtimeMapping",
+      "episodes.episodes[101].runtimeMapping",
+      "episodes.episodes[102].runtimeMapping",
+      "episodes.episodes[103].runtimeMapping",
+      "episodes.episodes[104].runtimeMapping",
+      "episodes.episodes[105].runtimeMapping",
+      "episodes.episodes[106].runtimeMapping",
+      "episodes.episodes[107].runtimeMapping",
+      "episodes.episodes[108].runtimeMapping",
+      "episodes.episodes[109].runtimeMapping",
+      "episodes.episodes[110].runtimeMapping",
+      "episodes.episodes[111].runtimeMapping",
+      "episodes.episodes[112].runtimeMapping",
+      "episodes.episodes[113].runtimeMapping",
+      "episodes.episodes[114].runtimeMapping",
+      "episodes.episodes[115].runtimeMapping",
+      "episodes.episodes[116].runtimeMapping",
+      "episodes.episodes[117].runtimeMapping",
+      "episodes.episodes[118].runtimeMapping",
+      "episodes.episodes[119].runtimeMapping",
+      "episodes.episodes[120].runtimeMapping",
+      "episodes.episodes[121].runtimeMapping",
+      "episodes.episodes[122].runtimeMapping",
+      "episodes.episodes[123].runtimeMapping",
+      "episodes.episodes[124].runtimeMapping",
+      "episodes.episodes[125].runtimeMapping",
+      "episodes.episodes[126].runtimeMapping",
+      "episodes.episodes[127].runtimeMapping",
+      "episodes.episodes[128].runtimeMapping",
+      "episodes.episodes[129].runtimeMapping",
+      "episodes.episodes[130].runtimeMapping",
+      "episodes.episodes[131].runtimeMapping",
+      "episodes.episodes[132].runtimeMapping",
+      "episodes.episodes[133].runtimeMapping",
+      "episodes.episodes[134].runtimeMapping",
+      "episodes.episodes[135].runtimeMapping",
+      "episodes.episodes[136].runtimeMapping",
+      "episodes.episodes[137].runtimeMapping",
+      "episodes.episodes[138].runtimeMapping",
+      "episodes.episodes[139].runtimeMapping",
+      "episodes.episodes[140].runtimeMapping",
+      "episodes.episodes[141].runtimeMapping",
+      "episodes.episodes[142].runtimeMapping",
+      "episodes.episodes[143].runtimeMapping",
+      "episodes.episodes[144].runtimeMapping",
+      "episodes.episodes[145].runtimeMapping",
+      "episodes.episodes[146].runtimeMapping",
+      "episodes.episodes[147].runtimeMapping",
+      "episodes.episodes[148].runtimeMapping",
+      "episodes.episodes[149].runtimeMapping",
+      "episodes.episodes[150].runtimeMapping",
+      "episodes.episodes[151].runtimeMapping",
+      "episodes.episodes[152].runtimeMapping",
+      "episodes.episodes[153].runtimeMapping",
+      "episodes.episodes[154].runtimeMapping",
+      "episodes.episodes[155].runtimeMapping",
+      "episodes.episodes[156].runtimeMapping",
+      "episodes.episodes[157].runtimeMapping",
+      "episodes.episodes[158].runtimeMapping",
+      "episodes.episodes[159].runtimeMapping",
+      "episodes.episodes[160].runtimeMapping",
+      "episodes.episodes[161].runtimeMapping",
+      "episodes.episodes[162].runtimeMapping",
+      "episodes.episodes[163].runtimeMapping",
+      "episodes.episodes[164].runtimeMapping",
+      "episodes.episodes[165].runtimeMapping",
+      "episodes.episodes[166].runtimeMapping",
+      "episodes.episodes[167].runtimeMapping",
+      "episodes.episodes[168].runtimeMapping",
+      "episodes.episodes[169].runtimeMapping",
+      "episodes.episodes[170].runtimeMapping",
+      "episodes.episodes[171].runtimeMapping",
+      "episodes.episodes[172].runtimeMapping",
+      "episodes.episodes[173].runtimeMapping",
+      "episodes.episodes[174].runtimeMapping",
+      "episodes.episodes[175].runtimeMapping",
+      "episodes.episodes[176].runtimeMapping",
+      "episodes.episodes[177].runtimeMapping",
+      "episodes.episodes[178].runtimeMapping",
+      "episodes.episodes[179].runtimeMapping",
+      "episodes.episodes[180].runtimeMapping",
+      "episodes.episodes[181].runtimeMapping",
+      "episodes.episodes[182].runtimeMapping",
+      "episodes.episodes[183].runtimeMapping",
+      "episodes.episodes[184].runtimeMapping",
+      "episodes.episodes[185].runtimeMapping",
+      "episodes.episodes[186].runtimeMapping",
+      "episodes.episodes[187].runtimeMapping",
+      "episodes.episodes[188].runtimeMapping",
+      "episodes.episodes[189].runtimeMapping",
+      "episodes.episodes[190].runtimeMapping",
+      "episodes.episodes[191].runtimeMapping",
+      "episodes.episodes[192].runtimeMapping",
+      "episodes.episodes[193].runtimeMapping",
+      "episodes.episodes[194].runtimeMapping",
+      "episodes.episodes[195].runtimeMapping",
+      "episodes.episodes[196].runtimeMapping",
+      "episodes.episodes[197].runtimeMapping",
+      "episodes.episodes[198].runtimeMapping",
+      "episodes.episodes[199].runtimeMapping",
+      "episodes.episodes[200].runtimeMapping",
+      "episodes.episodes[201].runtimeMapping",
+      "episodes.episodes[202].runtimeMapping",
+      "episodes.episodes[203].runtimeMapping",
+      "episodes.episodes[204].runtimeMapping",
+      "episodes.episodes[205].runtimeMapping",
+      "episodes.episodes[206].runtimeMapping",
+      "episodes.episodes[207].runtimeMapping",
+      "episodes.episodes[208].runtimeMapping",
+      "episodes.episodes[209].runtimeMapping",
+      "episodes.episodes[210].runtimeMapping",
+      "episodes.episodes[211].runtimeMapping",
+      "episodes.episodes[212].runtimeMapping",
+      "episodes.episodes[213].runtimeMapping",
+      "episodes.episodes[214].runtimeMapping",
+      "episodes.episodes[215].runtimeMapping",
+      "episodes.episodes[216].runtimeMapping",
+      "episodes.episodes[217].runtimeMapping",
+      "episodes.episodes[218].runtimeMapping",
+      "episodes.episodes[219].runtimeMapping",
+      "episodes.episodes[220].runtimeMapping",
+      "episodes.episodes[221].runtimeMapping",
+      "episodes.episodes[222].runtimeMapping",
+      "episodes.episodes[223].runtimeMapping",
+      "episodes.episodes[224].runtimeMapping",
+      "episodes.episodes[225].runtimeMapping",
+      "episodes.episodes[226].runtimeMapping",
+      "episodes.episodes[227].runtimeMapping",
+      "episodes.episodes[228].runtimeMapping",
+      "episodes.episodes[229].runtimeMapping",
+      "episodes.episodes[230].runtimeMapping",
+      "episodes.episodes[231].runtimeMapping",
+      "episodes.episodes[232].runtimeMapping",
+      "episodes.episodes[233].runtimeMapping",
+      "episodes.episodes[234].runtimeMapping",
+      "episodes.episodes[235].runtimeMapping",
+      "episodes.episodes[236].runtimeMapping",
+      "episodes.episodes[237].runtimeMapping",
+      "episodes.episodes[238].runtimeMapping",
+      "episodes.episodes[239].runtimeMapping",
+      "episodes.episodes[240].runtimeMapping",
+      "episodes.episodes[241].runtimeMapping",
+      "episodes.episodes[242].runtimeMapping",
+      "episodes.episodes[243].runtimeMapping",
+      "episodes.episodes[244].runtimeMapping",
+      "episodes.episodes[245].runtimeMapping",
+      "episodes.episodes[246].runtimeMapping",
+      "episodes.episodes[247].runtimeMapping",
+      "episodes.episodes[248].runtimeMapping",
+      "episodes.episodes[249].runtimeMapping",
+      "episodes.episodes[250].runtimeMapping",
+      "episodes.episodes[251].runtimeMapping",
+      "episodes.episodes[252].runtimeMapping",
+      "episodes.episodes[253].runtimeMapping",
+      "episodes.episodes[254].runtimeMapping"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_601201d21282",
+    "english": "The release trail",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6021df238734",
+    "english": "Browser storage is unavailable. Export your progress before closing.",
+    "kind": "literal",
+    "refs": [
+      "assets/app.js:45"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6056b9e456ac",
+    "english": "Detective Conan / Case Closed: Movie Checklist",
+    "kind": "text",
+    "refs": [
+      "movie-guide.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6063e8bff0bd",
+    "english": "May include advertising.",
+    "kind": "literal",
+    "refs": [
+      "assets/analytics.js:43"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_606f067940ea",
+    "english": "Episode {0}",
+    "kind": "template",
+    "refs": [
+      "assets/analytics-core.js:26"
+    ],
+    "vars": [
+      "String(number).padStart(3,'0')"
+    ]
+  },
+  {
+    "key": "text_60d64ee9a653",
+    "english": "Meeting with the Black Organization Again: Part 3 - The Resolution",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[17].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_60f38a0bd831",
+    "english": "August 5, 2023",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[243].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_60f74c1a5d7a",
+    "english": "August 31, 2019",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[213].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_612c3b288a28",
+    "english": "Main films (29)",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_615795127b00",
+    "english": "June 7, 2025",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[249].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_617762b96e5a",
+    "english": "Main episodes",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_617fa53617fd",
+    "english": "February 9, 2009",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[104].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_618ed304129d",
+    "english": "The Darkness of the Prefectural Police: Part 3",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[183].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_61c618f93804",
+    "english": "June 6, 2015",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[171].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_61d8da4ebf82",
+    "english": "The Ex-Boyfriend Living Next to a Crime Scene (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[158].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_61dac0448ea9",
+    "english": "Quarter of Silence",
+    "kind": "text",
+    "refs": [
+      "movie-guide.html",
+      "movies.movies[14].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6201db188c4e",
+    "english": "June 26, 2010",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[110].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_625d6cc1fccc",
+    "english": "{5} min · broadcast listing ↗",
+    "kind": "text",
+    "refs": [
+      "assets/app.js:110"
+    ],
+    "vars": [
+      "e.imdb.rating === null ? 'N/A' : e.imdb.rating.toFixed(1)",
+      "(e.imdb.votes ?? 0).toLocaleString()",
+      "escape(e.airDate)",
+      "escape(e.runtimeSource)",
+      "external",
+      "e.runtimeMinutes",
+      "e.imdb.season",
+      "e.imdb.episode",
+      "e.imdb.id",
+      "filters.hideTitles ? '' : `<dt>IMDb title</dt><dd>${escape(e.imdb.title)}</dd>`",
+      "escape(e.imdb.checked)",
+      "e.priority === 'SETUP' ? 'Setup for later story developments' : 'Core story selection'",
+      "escape(e.source)",
+      "external",
+      "imdbUrl(e)",
+      "external"
+    ]
+  },
+  {
+    "key": "text_627d4d885804",
+    "english": "Detective Conan: The Scarlet Alibi",
+    "kind": "catalog content",
+    "refs": [
+      "movies.movies[30].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_632e2c66c4d7",
+    "english": "The Spark That Fell on the Ranch (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[235].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6337acfd9cb7",
+    "english": "Detective Conan: Crossroad in the Ancient Capital",
+    "kind": "catalog content",
+    "refs": [
+      "movies.movies[6].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6345d6050f87",
+    "english": "Detective Conan: Magician of the Silver Sky",
+    "kind": "catalog content",
+    "refs": [
+      "movies.movies[7].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_639bc17eb13f",
+    "english": "Highest IMDb score",
+    "kind": "text",
+    "refs": [
+      "assets/analytics.js:88"
+    ],
+    "vars": [
+      "s.highest.id",
+      "score(s.highest.rating)",
+      "esc(title(s.highest))",
+      "fmt(s.highest.votes)"
+    ]
+  },
+  {
+    "key": "text_63a7bd80ca87",
+    "english": "Blue Spark of Hatred: Part 2",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[105].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_642d355b8848",
+    "english": "THE PAPER TRAIL",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_644b81a4676a",
+    "english": "November 10, 2012",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[136].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_645d39e24412",
+    "english": "Unwatched",
+    "kind": "text",
+    "refs": [
+      "index.html",
+      "assets/analytics.js:43"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_64808ec93292",
+    "english": "November 29, 2014",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[167].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6481b6abe6f5",
+    "english": "August 20, 2007",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[80].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_648f719319f1",
+    "english": "No clues here.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_64c14bb4c376",
+    "english": "Who Kidnapped Conan and Azusa? (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[253].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_64d30f76692c",
+    "english": "December 14, 2013",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[153].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6538016c57ef",
+    "english": "January 5, 2004",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[66].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_656b35b5777b",
+    "english": "The Unsolved Cocktail Case: Part 1",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[213].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_65b553e76c3e",
+    "english": "Search for Maria-chan! (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[211].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_65dc0748467d",
+    "english": "Head-to-Head Match with the Black Organization: A Dual Mystery on a Full Moon Night",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[66].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_65ea369ca1d9",
+    "english": "October 11, 2014",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[163].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6631b3dead6b",
+    "english": ", if present after a refresh, means no rating was returned for that mapped entry. See",
+    "kind": "text",
+    "refs": [
+      "guide.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_66455b8554ae",
+    "english": "255 episodes across nine arcs.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_66503d499976",
+    "english": ", making that exception inspectable.",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_669c37591d8b",
+    "english": "The Life-Threatening Broadcast of Love (Begin Broadcasting)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[138].title",
+      "episodes.episodes[138].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6731863fb114",
+    "english": "The Mystery Sinking in the Midsummer Pool (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[178].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_678309f6adbd",
+    "english": "The Black Organization 10 Hundred Million Yen Robbery Case",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[11].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_679eb1aaa333",
+    "english": "The Shadow Approaching Haibara's Secret (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[145].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_67bf61a613e8",
+    "english": "The Spark That Fell on the Ranch: Part 1",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[234].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_67d2e82df772",
+    "english": "Download Markdown ↙",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "movie-guide.html",
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6816f610c538",
+    "english": "Clash of Red and Black (Coma)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[86].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_68cb4044b1be",
+    "english": "Sources and episode details",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_68fa2b0382cc",
+    "english": "Catalog checked 7 September 2026. Japanese release dates. TV specials, OVAs, and unreleased films are excluded.",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6914caa262f7",
+    "english": "June 21, 2025",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[251].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_691f4db817a4",
+    "english": "Countdown to Heaven",
+    "kind": "text",
+    "refs": [
+      "movie-guide.html",
+      "movies.movies[4].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6929cf24b2a5",
+    "english": "Company President's Daughter Kidnapping Case",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[1].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_69371af8df88",
+    "english": "Watch status",
+    "kind": "aria-label",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_69374b09b168",
+    "english": "EN",
+    "kind": "text",
+    "refs": [
+      "index.html",
+      "guide.html",
+      "movie-guide.html",
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_69be368cb3fc",
+    "english": "Close credits",
+    "kind": "aria-label",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_69e001536bdf",
+    "english": "Three First Discoverers: Part 1",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[179].imdb.title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6a585ab1c814",
+    "english": "supplies episode titles and original broadcast dates. Its",
+    "kind": "text",
+    "refs": [
+      "methodology.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6a792596a387",
+    "english": "June 4, 2022",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[232].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6a931d3ea84a",
+    "english": "Wedding Eve (Part 1)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[130].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6aa57ea86cd5",
+    "english": "IMDb rating unavailable",
+    "kind": "literal",
+    "refs": [
+      "assets/movies.js:34"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6ac93cc3b6de",
+    "english": "The Romance Novel with the Unexpected Conclusion (Part 2)",
+    "kind": "text",
+    "refs": [
+      "guide.html",
+      "episodes.episodes[167].title"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6ada277b6f9a",
+    "english": "Release year",
+    "kind": "text",
+    "refs": [
+      "index.html"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6aec3db8335d",
+    "english": "February 13, 2006",
+    "kind": "catalog content",
+    "refs": [
+      "episodes.episodes[75].airDate"
+    ],
+    "vars": null
+  },
+  {
+    "key": "text_6b23c0d5f35d",
+    "english": "C",
+    "kind": "text",
+    "refs": [
+      "index.html",
+      "guide.html",
+      "movie-guide.html",
+      "methodology.html",
+      "assets/movies.js:31",
+      "assets/analytics.js:15"
+    ],
+    "vars": [
+      "checked ? ' is-watched' : ''",
+      "number",
+      "movie.poster ? `<img src=\"${escape(movie.poster)}\" alt=\"Artwork for ${escape(movie.title)}\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\">` : ''",
+      "movie.number ? `FILM ${number}` : labels[movie.category].toUpperCase()",
+      "labels[movie.category]",
+      "movie.releaseDate.slice(0, 4)",
+      "movie.runtimeMinutes ? ` · ${movie.runtimeMinutes} min` : ''",
+      "escape(movie.title)",
+      "movie.releaseDate",
+      "date(movie.releaseDate)",
+      "movie.imdb?.rating !== null && movie.imdb?.rating !== undefined ? `<a href=\"https://www.imdb.com/title/${movie.imdb.id}/\" ${external}>★ ${movie.imdb.rating.toFixed(1)} IMDb · ${movie.imdb.votes.toLocaleString()} votes ↗</a>` : 'IMDb rating unavailable'",
+      "escape(movie.source)",
+      "external",
+      "escape(movie.title)",
+      "movie.officialUrl ? `<a href=\"${escape(movie.officialUrl)}\" ${external} aria-label=\"Official page for ${escape(movie.title)}\">Official ↗</a>` : ''",
+      "movie.id",
+      "movie.id",
+      "checked ? 'checked' : ''",
+      "escape(movie.title)",
+      "checked ? 'Watched' : 'Mark watched'"
+    ]
+  }
+]

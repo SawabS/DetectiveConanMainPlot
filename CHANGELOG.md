@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-11: Stretching surfaces and a quieter language menu
+
+- Moved the single grid canvas behind the page so cards, tables, and the hero always cover it. The pointer glow and warp rest while the pointer is over a surface.
+- Replaced the compressing hover with a stretch: hovered cards, rows, stats, and guide sections grow about 10px outward from the pointer and settle with a soft elastic ease. Touch and reduced-motion users see no movement.
+- Removed the glass pill and lift from the view tabs; they now highlight their text only. The sliding glass pill remains on the main navigation.
+- Replaced the language globe with a translation icon, removed the status line and native tooltip from the language card, and marked the selected language by text color alone so hovering another language shows a single highlight.
+
+## 2026-09-11: Single grid, glass navigation, and translation handoff
+
+- Replaced separately sampled background and foreground grid layers with a single canvas, eliminating doubled grid strokes.
+- Added a sliding glass highlight and subtle lift to navigation and view tabs, with keyboard and reduced-motion support.
+- Added an accessible language popover for English, Sorani, Arabic, and Japanese. Draft locales explicitly use English fallback; saved preferences, RTL, and IBM Plex typography are wired in.
+- Added complete text inventories, editable locale catalogs, source documents, and a translation-agent prompt under `translations/`.
+- Added a credited daylight Conan cover for light mode while retaining the moonlight cover in dark mode.
+
 ## 2026-09-11: Reading pages and surface motion
 
 - Removed hover borders from the navigation theme and GitHub controls while preserving keyboard focus indicators.
@@ -57,11 +72,3 @@
 - Added the responsive Conan Casebook interface, persistent checkoffs, arc/status/rating filters, title hiding, deep links, backup import/export, and source details.
 - Added a single data source, deterministic guide generation, a rating refresh script, and integrity checks.
 - Removed em dashes and repetitive guide sections.
-
-## 2026-09-11: Single grid, glass navigation, and translation handoff
-
-- Replaced separately sampled background and foreground grid layers with a single canvas, eliminating doubled grid strokes.
-- Added a sliding glass highlight and subtle lift to navigation and view tabs, with keyboard and reduced-motion support.
-- Added an accessible language popover for English, Sorani, Arabic, and Japanese. Draft locales explicitly use English fallback; saved preferences, RTL, and IBM Plex typography are wired in.
-- Added complete text inventories, editable locale catalogs, source documents, and a translation-agent prompt under `translations/`.
-- Added a credited daylight Conan cover for light mode while retaining the moonlight cover in dark mode.
